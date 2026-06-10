@@ -44,9 +44,106 @@ Additional categories to be built:
 - phylogenetics (IQ-TREE, BEAST, pangenomes)
 - clinical-translation (clinical trials, IND/NDA, regulatory pathways)
 
+## How to install
+
+The skills are plain markdown + YAML. There is **nothing to compile, install, or run** — your AI agent just needs to be told where the skills live and how to load them.
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/pradyumnasagar/open-research-skills.git
+cd open-research-skills
+```
+
+Or with SSH:
+
+```bash
+git clone git@github.com:pradyumnasagar/open-research-skills.git
+cd open-research-skills
+```
+
+You can also install it as a git submodule inside another project:
+
+```bash
+git submodule add git@github.com:pradyumnasagar/open-research-skills.git .skills/open-research-skills
+```
+
+### 2. Point your agent at it
+
+The exact mechanism depends on your agent runtime. The general idea is the same: tell the agent where the `SKILL.md` files live and let it read the ones it needs.
+
+**Claude Code (CLI) — point the agent at the repo**
+
+The simplest approach is to start Claude Code with the repo as the working directory (or as a parent). Claude will discover `SKILL.md` files automatically when they're relevant to the conversation:
+
+```bash
+# Either way works — the agent will pick up the SKILL.md files
+cd open-research-skills
+claude
+
+# Or add it as a subdirectory of an existing project
+cd ~/myproject
+claude    # Claude will see ../open-research-skills/*/SKILL.md
+```
+
+You can also mention a specific skill by name in your prompt, e.g.:
+
+> "Use the ors-bwa-alignment skill to align these reads."
+
+**Cursor / Continue / Cody / Aider / Windsurf / other IDE agents**
+
+Add the repo (or a subset of categories) to the agent's context sources. Most agents let you drop a folder into a "skills" or "rules" panel. The `SKILL.md` files are valid markdown and will be read as instructions.
+
+**Claude API / Anthropic SDK / Bedrock / Vertex — use the skills as system context**
+
+Read the `SKILL.md` files yourself and concatenate them into the `system` parameter of your API call. Example for a single skill:
+
+```python
+import pathlib
+
+skill = pathlib.Path("open-research-skills/scientific-writing/manuscript-structure/SKILL.md").read_text()
+
+response = client.messages.create(
+    model="claude-opus-4-8",
+    max_tokens=4096,
+    system=f"You are a research assistant. Use the following skill:\n\n{skill}",
+    messages=[{"role": "user", "content": "Help me write the methods section for a ChIP-seq paper."}]
+)
+```
+
+For multi-skill workflows, concatenate the frontmatter of all relevant skills (frontmatter is the YAML between `---` markers) into a routing prompt, and only inject the full `SKILL.md` of the skill the agent ends up using.
+
+**Custom agents / LangChain / LlamaIndex / OpenAI Assistants**
+
+Use any of the standard "load documents → chunk → inject into context" patterns. The `SKILL.md` files are small (most are 200–500 lines, ~5–15 KB) so they fit comfortably in a single retrieval-augmented context window.
+
+### 3. Pin a version (recommended for reproducibility)
+
+Tag the release you depend on:
+
+```bash
+git clone --branch v0.2.0 https://github.com/pradyumnasagar/open-research-skills.git
+```
+
+…then update at your own cadence by `git pull`-ing later. We follow [semantic versioning](https://semver.org/) — a new minor version (0.3.0) will add categories without breaking existing skills.
+
+### 4. Verify the install
+
+```bash
+# How many skills did you get?
+find open-research-skills -name "SKILL.md" | wc -l
+# Expected on v0.2.0: 118
+```
+
 ## How to use
 
-Each skill is self-contained. The agent reads `SKILL.md` and follows it. The frontmatter tells the agent:
+Once the agent has the skills loaded, the workflow is:
+
+1. **Describe the task** in your prompt (e.g. "Help me draft an R01 specific aims page").
+2. The agent matches the task to one or more `ors-*` skills (the frontmatter's `description:` field is written for this).
+3. The agent reads the full `SKILL.md`, follows the workflow, uses the code patterns, avoids the pitfalls, and runs the validation.
+
+The frontmatter tells the agent:
 
 - **When** the skill applies (`description`, `when to use` section)
 - **What** tools to use (frontmatter `prerequisites.tools`)
@@ -71,11 +168,11 @@ Gap skills (e.g. grant writing, ethics, mentorship, open science) were authored 
 
 ## License
 
-MIT. See `LICENSE`. All 18 category subfolders and the `_meta/`, `_templates/`, `_inventory/` directories are original work by Pradyumna Jayaram.
+MIT. See `LICENSE`. All 18 category subfolders and the root `CONTRIBUTING.md`, `SCHEMA.md`, `TAXONOMY.md` files are original work by Pradyumna Jayaram.
 
 ## Contributing
 
-See `CONTRIBUTING.md` and the schema in `_meta/SCHEMA.md`. Short version:
+See `CONTRIBUTING.md` and the schema in `SCHEMA.md`. Short version:
 
 1. Use the template at `_templates/SKILL-TEMPLATE.md`.
 2. Folder name = `name:` in frontmatter = `ors-<category>-<skill-slug>`.
@@ -85,9 +182,43 @@ See `CONTRIBUTING.md` and the schema in `_meta/SCHEMA.md`. Short version:
 
 ## Versioning
 
-**v0.1.0** (2026-06-10) — Initial release with 58 skills across 7 source-mapped categories.  
-**v0.2.0** (2026-06-10) — Gap-build round with 59 additional skills across 11 new categories, including K-Dense-style skills for thinking, peer review, literature, visualization, and humanizer workflows.
+**v0.1.0** (2026-06-10) — Initial release with 58 skills across 6 source-mapped categories.
+**v0.2.0** (2026-06-10) — Gap-build round with 60 additional skills across 12 new categories, including K-Dense-style skills for thinking, peer review, literature, visualization, and humanizer workflows.
+
+## Repository layout
+
+```
+open-research-skills/
+├── README.md                  # this file
+├── LICENSE                    # MIT
+├── CONTRIBUTING.md            # how to add a skill
+├── SCHEMA.md                  # frontmatter schema
+├── TAXONOMY.md                # category list
+├── INDEX.md                   # per-skill table (118 rows)
+├── CHANGELOG.md               # release notes
+├── ROADMAP.md                 # what's done / what's next
+├── _templates/
+│   └── SKILL-TEMPLATE.md      # copy this to make a new skill
+├── bioinformatics-sequence/   # category folders (one per category)
+├── career-navigation/
+├── chemoinformatics/
+├── data-engineering/
+├── ethics-compliance/
+├── humanizer-skills/
+├── image-analysis-microscopy/
+├── lab-automation/
+├── literature-research/
+├── machine-learning-bio/
+├── mentorship-teaching/
+├── open-science/
+├── peer-review/
+├── research-grants/
+├── scientific-communication/
+├── scientific-thinking/
+├── scientific-visualization/
+└── scientific-writing/
+```
 
 ## Index
 
-See `INDEX.md` for a per-skill table (path, name, description, difficulty).
+See `INDEX.md` for a per-skill table (slug, description, difficulty).
