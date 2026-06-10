@@ -11,7 +11,7 @@ Each subfolder contains a `SKILL.md` file that an AI agent reads to gain deep, d
 
 ## Current Status (v0.2.0)
 
-**18 categories, 117 skills** — See `INDEX.md` for the full table.
+**18 categories, 118 skills** — See `INDEX.md` for the full table.
 
 | Category | Skills | Description |
 |---|---|---|
