@@ -1,0 +1,46 @@
+{
+  "plugins": [
+    {
+      "name": "ors-research",
+      "owner": "pradyumnasagar",
+      "description": "Research workflow skills — grants, writing, thinking, communication, peer review, literature, visualization",
+      "version": "1.0.0",
+      "skills": [
+        "skills/research-grants",
+        "skills/scientific-writing",
+        "skills/scientific-thinking",
+        "skills/scientific-communication",
+        "skills/peer-review",
+        "skills/literature-research",
+        "skills/scientific-visualization"
+      ]
+    },
+    {
+      "name": "ors-bioinformatics",
+      "owner": "pradyumnasagar",
+      "description": "Bioinformatics and chemoinformatics skills — sequence alignment, variant calling, RDKit, virtual screening",
+      "version": "1.0.0",
+      "skills": [
+        "skills/bioinformatics-sequence",
+        "skills/chemoinformatics"
+      ]
+    },
+    {
+      "name": "ors-career-ethics",
+      "owner": "pradyumnasagar",
+      "description": "Career navigation, ethics compliance, open science, mentorship, lab automation, ML for bio",
+      "version": "1.0.0",
+      "skills": [
+        "skills/career-navigation",
+        "skills/ethics-compliance",
+        "skills/open-science",
+        "skills/mentorship-teaching",
+        "skills/lab-automation",
+        "skills/machine-learning-bio",
+        "skills/data-engineering",
+        "skills/humanizer-skills",
+        "skills/image-analysis-microscopy"
+      ]
+    }
+  ]
+}
