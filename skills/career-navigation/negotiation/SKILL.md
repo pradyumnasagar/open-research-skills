@@ -1,8 +1,10 @@
 ---
+
 name: negotiation
 description: "Negotiate academic and industry offers: startup packages, postdoc salaries, industry offers and counter-offers, dual-career accommodation, equity vs salary trade-offs, BATNA analysis, and the difference between written and verbal offers. Use when preparing for, conducting, or evaluating a negotiation."
 license: MIT
 ---
+
 
 
 
@@ -11,33 +13,9 @@ category: career-navigation
 version: 1.0.0
 author: Pradyumna Jayaram
 tags:
-- negotiation
-- salary
-- start-up
-- batna
-- equity
-- dual-career
-- counter-offer
-difficulty: advanced
-prerequisites:
-  tools:
-  - markdown
-  - latex
-  - pandoc
-  - spreadsheet
-  skills:
-  - ors-career-navigation-faculty-interview
-  - ors-career-navigation-industry-transition"
-sources: "Fisher R, Ury W, Patton B. 'Getting to Yes' (3rd ed., 2011) — BATNA,\
-  \ interests vs positions, objective criteria; Mnookin R, Peppet S, Tulumello A.\
-  \ 'Beyond Winning' — negotiation in the legal and behavioral-economics tradition;\
-  \ Voss C, Raz T. 'Never Split the Difference' — tactical empathy, labeling,\
-  \ mirroring; Babcock L, Laschever S. 'Women Don't Ask' — gender and negotiation;\
-  \ Shell GR. 'Bargaining for Advantage' — negotiation strategies and styles;\
-  \ BLS Occupational Employment Statistics (public wage data by occupation and metro\
-  \ area); Levels.fyi public compensation methodology; AAUP salary surveys and institutional\
-  \ data (public summaries); NSF PAPPG and NIH grant policies for start-up and indirect\
-  \ cost considerations"
+  - career-navigation
+  - research
+difficulty: intermediate
 -->
 
 # Salary and Package Negotiation

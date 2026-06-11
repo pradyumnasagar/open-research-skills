@@ -1,8 +1,10 @@
 ---
+
 name: reviewer-response
 description: "Write a respectful, point-by-point response to peer-reviewer comments (rebuttal): tone, structure, line-numbered references, conflict handling, partial-response strategy, and appeal of a desk reject."
 license: MIT
 ---
+
 
 
 
@@ -11,26 +13,9 @@ category: peer-review
 version: 1.0.0
 author: Pradyumna Jayaram
 tags:
-- peer-review
-- rebuttal
-- response-to-reviewers
-- revision
-- appeal
-difficulty: advanced
-prerequisites:
-  tools: []
-  skills: []"
-sources: "ICMJE Recommendations for the Conduct, Reporting, Editing, and Publication\
-  \ of Scholarly Work in Medical Journals (icmje.org); COPE — Peer Review and\
-  \ appeals guidance (publicationethics.org); Nature — Revision submission guidance\
-  \ (nature.com/nature-portfolio/editorial-processes/peer-review); eLife — Reviewer-anonymized\
-  \ published reviews and consolidated responses (elifesciences.org); F1000Research\
-  \ — Open peer-review and post-publication review model (f1000research.com);\
-  \ EMBO Journal — Author guidelines on revision and response (embopress.org);\
-  \ PLOS — Author guidelines on revision and response (plos.org); NIH —\
-  \ Grant resubmission policy and introduction-page format (grants.nih.gov); EQUATOR\
-  \ Network — reporting-checklist updates on revisions (equator-network.org);\
-  \ Committee on Publication Ethics (COPE) — Conflict of Interest framework (publicationethics.org)"
+  - peer-review
+  - research
+difficulty: intermediate
 -->
 
 # Response to Peer Reviewers

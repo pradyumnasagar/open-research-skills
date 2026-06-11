@@ -1,8 +1,10 @@
 ---
+
 name: transcription-translation
 description: "Transcribe DNA to RNA (and back), translate coding sequences to protein using NCBI codon tables, and pick the right genetic code for mitochondria, plastids, or non-standard organisms."
 license: MIT
 ---
+
 
 
 
@@ -11,21 +13,9 @@ category: bioinformatics-sequence
 version: 1.0.0
 author: Pradyumna Jayaram
 tags:
-- biopython
-- transcription
-- translation
-- codon-table
-- mrna
-difficulty: beginner
-prerequisites:
-  tools:
-  - python>=3.10
-  - biopython>=1.83
-  skills:
-  - ors-bioinformatics-sequence-seq-objects
-sources: 'Original: bio-transcription-translation (bioSkills-main/sequence-manipulation/transcription-translation);
-  Adapted: NCBI codon table list (2026 current), added CDS validation patterns.; Improvisions:
-  added the cds=True argument behavior, mitochondrial table quick reference.'
+  - bioinformatics-sequence
+  - research
+difficulty: intermediate
 -->
 
 # Transcription and Translation

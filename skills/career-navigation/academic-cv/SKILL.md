@@ -1,8 +1,10 @@
 ---
+
 name: academic-cv
 description: "Build an academic CV for US/EU faculty or postdoc applications, with proper section ordering, professional service, mentoring statements, and NSF/NIH biosketch cross-reference. Use when applying to tenure-track or postdoctoral positions."
 license: MIT
 ---
+
 
 
 
@@ -11,24 +13,9 @@ category: career-navigation
 version: 1.0.0
 author: Pradyumna Jayaram
 tags:
-- cv
-- academic
-- faculty
-- postdoc
-- biosketch
-- mentoring
+  - career-navigation
+  - research
 difficulty: intermediate
-prerequisites:
-  tools:
-  - latex
-  - markdown
-  - pandoc
-  skills: []
-sources: NSF PAPPG 24-1 (Proposal & Award Policies & Procedures Guide) for biosketch
-  structure; NIH Biosketch Format Page (NOT-OD-15-032 and subsequent updates); University
-  of California, Berkeley Office of Faculty Affairs CV guidance; Stanford University
-  School of Medicine faculty CV guidance; Hirsch JE (2005) 'An index to quantify an
-  individual's scientific research output' PNAS
 -->
 
 # Academic CV (US/EU Faculty/Postdoc)

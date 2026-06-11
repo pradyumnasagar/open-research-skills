@@ -1,4 +1,5 @@
 ---
+
 name: teaching-syllabus
 description: "Translates course design into a complete syllabus with learning outcomes mapped to Bloom's Taxonomy, weekly schedule, assessment rubrics, inclusive teaching policies, and Universal Design for Learning (UDL) accommodations. Use when creating a new syllabus, revising an existing one, or aligning course policies with institutional accessibility requirements."
 license: MIT
@@ -6,17 +7,15 @@ license: MIT
 
 
 
+
 <!-- metadata:
-category: ''
+category: mentorship-teaching
 version: 1.0.0
 author: Pradyumna Jayaram
-tags: []
-difficulty: beginner
-sources: Backward Design (Wiggins & McTighe); Bloom's Taxonomy (revised, Anderson
-  & Krathwohl 2001); Universal Design for Learning (UDL) guidelines (CAST.org); NSF
-  PAPPG Mentoring Plan requirements; Entering Mentoring curriculum (CIMER Project,
-  University of Wisconsin-Madison); NIH Broadening Experiences in Scientific Training
-  (BEST)
+tags:
+  - mentorship-teaching
+  - research
+difficulty: intermediate
 -->
 
 ## Version Compatibility

@@ -1,8 +1,10 @@
 ---
+
 name: grant-review
 description: "Review a research grant proposal (NIH/NSF/ERC/private foundation): section-by-section criteria, panel process, criterion scoring, overall impact, reviewer etiquette, and a defensible written critique."
 license: MIT
 ---
+
 
 
 
@@ -11,28 +13,9 @@ category: peer-review
 version: 1.0.0
 author: Pradyumna Jayaram
 tags:
-- peer-review
-- grant
-- proposal
-- nih
-- nsf
-- erc
-- panel-review
-difficulty: advanced
-prerequisites:
-  tools: []
-  skills: []"
-sources: "NIH — Peer Review Process for Research Grant Applications (grants.nih.gov);\
-  \ NIH — Guidance for Reviewers (grants.nih.gov/grants/peer_review_guidance.htm);\
-  \ NIH — Review Criteria for Research Grant Applications (grants.nih.gov/grants/peer/critiques/rpg.htm);\
-  \ NSF — Proposal & Award Policies & Procedures Guide (PAPPG), Merit Review\
-  \ Principles & Criteria (nsf.gov); ERC — Evaluation Panels and Peer Review\
-  \ (erc.europa.eu); European Science Foundation — Reviewers' Guide (esf.org);\
-  \ Council of European Unions — ERC Work Programme peer-review description (erc.europa.eu);\
-  \ American Association for the Advancement of Science — Reviewer training resources\
-  \ (aaas.org); Committee on Publication Ethics (COPE) — Conflict of Interest\
-  \ framework (publicationethics.org); Open Researcher and Contributor ID (ORCID)\
-  \ — funder/personal identifier (orcid.org)"
+  - peer-review
+  - research
+difficulty: intermediate
 -->
 
 # Grant Proposal Review

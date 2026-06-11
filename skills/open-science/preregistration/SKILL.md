@@ -1,8 +1,10 @@
 ---
+
 name: preregistration
 description: "Use when preregistering a study design (hypothesis, methods, analysis plan) before data collection on OSF Registries or AsPredicted, applying for ClinicalTrials.gov registration for interventional trials, or submitting a Registered Report."
 license: MIT
 ---
+
 
 
 
@@ -11,26 +13,9 @@ category: open-science
 version: 1.0.0
 author: Pradyumna Jayaram
 tags:
-- preregistration
-- osf
-- aspredicted
-- registered-reports
-- clinicaltrials.gov
+  - open-science
+  - research
 difficulty: intermediate
-prerequisites:
-  tools:
-  - web-browser
-  - orcid
-  - latex-or-word
-  skills: []"
-sources: "Original: OSF Registries help and documentation (https://osf.io/registries).;\
-  \ Original: AsPredicted.org template and FAQ (https://aspredicted.org/).; Original:\
-  \ ClinicalTrials.gov registration (https://clinicaltrials.gov/).; Original: Open\
-  \ Science Framework (https://osf.io/).; Original: Registered Reports — cRedi\
-  \ (https://cos.io/rr/).; Original: SPIRIT 2013 statement for clinical trial protocols.;\
-  \ Original: CONSORT 2010 for reporting.; Improvisions: Pradyumna Jayaram —\
-  \ OSF template comparison, AsPredicted vs OSF decision tree, clinical-trial registration\
-  \ flowchart, Registered Report format comparison (1/2/3)."
 -->
 
 # Preregistration

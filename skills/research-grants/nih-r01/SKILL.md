@@ -1,8 +1,10 @@
 ---
+
 name: nih-r01
 description: "Use when planning, drafting, or revising an NIH R01 (Research Project Grant) application: Specific Aims, Significance/Innovation/Approach, Authentication, Budget Justification, Resubmission (A1) strategy, and study-section navigation. Anchored to NIH Forms-H/I and the NIH SF424 Application Guide."
 license: MIT
 ---
+
 
 
 
@@ -11,26 +13,9 @@ category: research-grants
 version: 1.0.0
 author: Pradyumna Jayaram
 tags:
-- nih
-- r01
-- grants
-- specific-aims
-- approach
-- resubmission
-difficulty: advanced
-prerequisites:
-  tools:
-  - SciENcv
-  - ASSIST
-  - eRA Commons
-  skills:
-  - ors-research-grants-specific-aims
-  - ors-research-grants-bio-sketch"
-sources: "NIH: Forms-H/I application instructions and SF424 Application Guide (grants.nih.gov);\
-  \ NIH Grants Policy Statement (NIH GPS) — current revision; NIH Center for\
-  \ Scientific Review (CSR) study section / IRG guidance; Improvisions: integrated\
-  \ Forms-H/I page-limit changes, A1 introduction rules, Authentication requirement,\
-  \ Project Narrative guidance"
+  - research-grants
+  - research
+difficulty: intermediate
 -->
 
 # NIH R01 Research Project Grant

@@ -1,8 +1,10 @@
 ---
+
 name: rebuttal-letter
 description: "Structures the rebuttal letter to reviewers and editor after peer review: response architecture, point-by-point format, how to handle conflicting reviewers, polite disagreement, framing new experiments, and what to do when the reviewer is wrong."
 license: MIT
 ---
+
 
 
 
@@ -11,20 +13,9 @@ category: scientific-writing
 version: 1.0.0
 author: Pradyumna Jayaram
 tags:
-- rebuttal
-- peer-review
-- response
-- scientific-disagreement
-- reviewer-comments
+  - scientific-writing
+  - research
 difficulty: intermediate
-prerequisites:
-  tools: []
-  skills:
-  - ors-scientific-writing-response-to-reviewers
-sources: ICMJE Recommendations (icmje.org); Nature peer-review policy (nature.com/nature-portfolio/editorial-policies/peer-review);
-  eLife peer-review model (elifesciences.org/peer-review); COPE discussion documents
-  (publicationethics.org); Public peer-review reports from eLife, PLOS, F1000Research,
-  BMJ Open (sample rebuttals)
 -->
 
 # Rebuttal Letter (Response to Reviewers)

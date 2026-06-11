@@ -1,8 +1,10 @@
 ---
+
 name: deep-learning-genomics
 description: "Use CNNs (DeepBind, Basset), RNNs, and transformers (DNABERT, HyenaDNA, Evo, Nucleotide Transformer) for genomic sequence analysis. Use when predicting TF binding, chromatin profiles, splicing, or noncoding variant effects from raw sequence."
 license: MIT
 ---
+
 
 
 
@@ -11,28 +13,9 @@ category: machine-learning-bio
 version: 1.0.0
 author: Pradyumna Jayaram
 tags:
-- deepbind
-- genomics
-- cnn
-- transformer
-- dnabert
-- hyenadna
+  - machine-learning-bio
+  - research
 difficulty: intermediate
-prerequisites:
-  tools:
-  - python
-  - pytorch
-  - keras
-  - biotite
-  - pybedtools
-  - bedtools2
-  skills: []"
-sources: "Original: DeepBind (Alipanahi et al. 2015 Nat. Biotechnol.); Adapted: CNN\
-  \ workflow, TF binding / motif discovery framing; Original: DNABERT (github.com/3011git/DeepBug);\
-  \ Adapted: practical fine-tuning, variant calling use case; Original: HyenaDNA (Nature\
-  \ Methods 2024); Adapted: fast tokenization patterns; Original: Nouaille et al.\
-  \ / Hertzano et al. — Nucleotide Transformer; Adapted: embedding extraction;\
-  \ Improvisions: model selection rubric, GPU baselines, multi-modal context"
 -->
 
 # Deep Learning for Genomics

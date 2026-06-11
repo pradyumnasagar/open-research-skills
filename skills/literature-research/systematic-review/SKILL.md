@@ -1,8 +1,10 @@
 ---
+
 name: systematic-review
 description: "Conduct rigorous systematic reviews and meta-analyses following PRISMA 2020, including risk-of-bias assessment, heterogeneity analysis, publication bias evaluation, and evidence grading with GRADE."
 license: MIT
 ---
+
 
 
 
@@ -11,31 +13,9 @@ category: literature-research
 version: 1.0.0
 author: Pradyumna Jayaram
 tags:
-- meta-analysis
-- prisma
-- risk-of-bias
-- heterogeneity
-- publication-bias
-- grade-evidence
-difficulty: advanced
-prerequisites:
-  tools:
-  - R (metafor
-  - robvis
-  - amr)
-  - RevMan
-  - Covidence/Rayyan
-  - Cochrane RoB 2 tool
-  skills:
-  - ors-literature-research-literature-search
-  - ors-literature-research-citation-management"
-sources: "PRISMA 2020 Statement (prisma-statement.org); Adapted: Updated to PRISMA\
-  \ 2020 27-item checklist; Cochrane Handbook for Systematic Reviews of Interventions,\
-  \ Chapters 8–10 (training.cochrane.org/handbook); Adapted: Modern risk-of-bias\
-  \ tools, metafor code examples; GRADE Handbook (gradeworkinggroup.org); Adapted:\
-  \ GRADE for certainty of evidence assessment; ROBINS-I, RoB 2, AMSTAR 2 manuals\
-  \ (riskofbias.info); Adapted: Implementation in R; Higgins & Green, Cochrane Handbook\
-  \ of Research Synthesis; Adapted: Modern heterogeneity statistics"
+  - literature-research
+  - research
+difficulty: intermediate
 -->
 
 # Systematic Review and Meta-Analysis

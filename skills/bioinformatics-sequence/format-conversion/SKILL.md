@@ -1,8 +1,10 @@
 ---
+
 name: format-conversion
 description: "Convert between sequence and annotation formats using Biopython SeqIO.convert and custom writers — including batch, lossy, and round-trip-safe patterns."
 license: MIT
 ---
+
 
 
 
@@ -11,23 +13,9 @@ category: bioinformatics-sequence
 version: 1.0.0
 author: Pradyumna Jayaram
 tags:
-- biopython
-- seqio
-- fasta
-- genbank
-- embl
-- fastq
-- conversion
-difficulty: beginner
-prerequisites:
-  tools:
-  - python>=3.10
-  - biopython>=1.83
-  skills: []"
-sources: "Original: bio-format-conversion (bioSkills-main/sequence-io/format-conversion);\
-  \ Adapted: pruned the 'convert' pitfalls, added 2026-era notes on round-trip-safe\
-  \ formats and seqkit open alternative.; Improvisions: new lossless-vs-lossy table,\
-  \ recommendations for EMBL → GenBank via UniParc."
+  - bioinformatics-sequence
+  - research
+difficulty: intermediate
 -->
 
 # Sequence Format Conversion

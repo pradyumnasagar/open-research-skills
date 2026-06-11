@@ -1,8 +1,10 @@
 ---
+
 name: sequence-statistics
 description: "Compute length, GC, N50, L50, and per-file summaries for FASTA/FASTQ — including the N50 trick and modern streaming stats with Polars."
 license: MIT
 ---
+
 
 
 
@@ -11,25 +13,9 @@ category: bioinformatics-sequence
 version: 1.0.0
 author: Pradyumna Jayaram
 tags:
-- biopython
-- n50
-- l50
-- gc
-- fastq
-- fasta
-- stats
-difficulty: beginner
-prerequisites:
-  tools:
-  - python>=3.10
-  - biopython>=1.83
-  - numpy
-  - polars
-  skills: []
-sources: 'Original: bio-sequence-statistics (bioSkills-main/sequence-io/sequence-statistics);
-  Adapted: added N50/L50 derivation, 2026 Bio.SeqUtils API notes, polars/pydantic
-  modern output.; Improvisions: included assembly-aware stats (N50, L50, auN) for
-  contig-level reporting.'
+  - bioinformatics-sequence
+  - research
+difficulty: intermediate
 -->
 
 # Sequence Statistics

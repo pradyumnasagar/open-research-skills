@@ -1,4 +1,5 @@
 ---
+
 name: virtual-screening
 description: "Performs structure-based virtual screening using AutoDock Vina, SMINA, GNINA (CNN scoring), and DiffDock-L hybrid workflows with explicit choice rules across rigid vs flexible docking, cross-docking vs self-docking, binding-site detection (P2Rank, fpocket), receptor preparation (PDB2PQR, PROPKA), ligand preparation (meeko, OpenBabel), and ultralarge-library screening (ZINC22, Enamine REAL). Use when screening chemical libraries against a protein target to find candidate binders, ranking docking poses, or selecting a docking workflow for a specific scenario."
 license: MIT
@@ -6,15 +7,15 @@ license: MIT
 
 
 
+
 <!-- metadata:
-category: ''
+category: chemoinformatics
 version: 1.0.0
 author: Pradyumna Jayaram
-tags: []
-difficulty: beginner
-sources: bioSkills-main/chemoinformatics/virtual-screening/SKILL.md; SciAgent-Skills-main/skills/structural-biology-drug-discovery/autodock-vina-docking/SKILL.md;
-  SciAgent-Skills-main/skills/structural-biology-drug-discovery/smina-molecular-docking/SKILL.md;
-  SciAgent-Skills-main/skills/structural-biology-drug-discovery/diffdock/SKILL.md
+tags:
+  - chemoinformatics
+  - research
+difficulty: intermediate
 -->
 
 ## Version Compatibility

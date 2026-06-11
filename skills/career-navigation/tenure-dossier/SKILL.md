@@ -1,8 +1,10 @@
 ---
+
 name: tenure-dossier
 description: "Assemble a tenure case from research statement, teaching portfolio, external letters, internal documentation, mentoring record, service, and counter-narrative for low-citation fields. Use when preparing a tenure case packet for a US/EU tenure review."
 license: MIT
 ---
+
 
 
 
@@ -11,26 +13,9 @@ category: career-navigation
 version: 1.0.0
 author: Pradyumna Jayaram
 tags:
-- tenure
-- dossier
-- promotion
-- academic
-- faculty
-difficulty: advanced
-prerequisites:
-  tools:
-  - latex
-  - markdown
-  - pandoc
-  - citation-manager
-  skills:
-  - ors-career-navigation-academic-cv
-sources: AAUP (American Association of University Professors) statements on tenure
-  standards; American Association of Colleges and Universities (AAC&U) guidelines
-  on faculty evaluation; COARA (Coalition for Advancing Research Assessment) Agreement
-  on reforming research assessment; DORA (Declaration on Research Assessment); MIT,
-  Stanford, and University of Michigan tenure dossier guides (publicly available faculty
-  handbooks); Hutchinson SR, Mitchell K '50 Years of Tenure' AAUP data and commentary
+  - career-navigation
+  - research
+difficulty: intermediate
 -->
 
 # Tenure Dossier Assembly

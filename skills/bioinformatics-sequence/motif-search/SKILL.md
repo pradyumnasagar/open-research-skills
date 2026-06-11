@@ -1,8 +1,10 @@
 ---
+
 name: motif-search
 description: "Find patterns, motifs, and binding sites in DNA/RNA/protein sequences — using regex, IUPAC patterns, position weight matrices, and modern motif databases (JASPAR 2024, CIS-BP)."
 license: MIT
 ---
+
 
 
 
@@ -11,24 +13,9 @@ category: bioinformatics-sequence
 version: 1.0.0
 author: Pradyumna Jayaram
 tags:
-- biopython
-- regex
-- motif
-- pwm
-- jaspar
-- binding-site
+  - bioinformatics-sequence
+  - research
 difficulty: intermediate
-prerequisites:
-  tools:
-  - python>=3.10
-  - biopython>=1.83
-  - regex>=2024.5
-  skills:
-  - ors-bioinformatics-sequence-seq-objects
-sources: 'Original: bio-motif-search (bioSkills-main/sequence-manipulation/motif-search);
-  Adapted: Bio.motifs 2026 status, added JASPAR 2024 fetch, modern alternative is
-  pyjaspar.; Improvisions: added position weight matrix scanning, de novo motif discovery
-  pointer (MEME, STREME).'
 -->
 
 # Motif and Pattern Search

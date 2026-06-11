@@ -1,8 +1,10 @@
 ---
+
 name: hisat2-alignment
 description: "Splice-aware RNA-seq alignment with HISAT2 — fast, memory-efficient, and the default in many bulk RNA-seq pipelines alongside STAR."
 license: MIT
 ---
+
 
 
 
@@ -11,21 +13,9 @@ category: bioinformatics-sequence
 version: 1.0.0
 author: Pradyumna Jayaram
 tags:
-- hisat2
-- rna-seq
-- splice
-- alignment
-- illumina
+  - bioinformatics-sequence
+  - research
 difficulty: intermediate
-prerequisites:
-  tools:
-  - hisat2>=2.2
-  - samtools>=1.19
-  skills:
-  - ors-bioinformatics-sequence-fastp-workflow
-sources: 'Original: bio-hisat2-alignment (bioSkills-main/read-alignment/hisat2-alignment);
-  Adapted: 2026 HISAT2 2.2.x, added known-splice-site index, graph-based index guidance.;
-  Improvisions: added nf-core integration, GRCh38 GENCODE splice-site index note.'
 -->
 
 # HISAT2 RNA-seq Alignment

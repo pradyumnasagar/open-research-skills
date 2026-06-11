@@ -1,8 +1,10 @@
 ---
+
 name: critical-thinking
 description: "Evaluate scientific claims and evidence quality. Use for assessing experimental design validity, identifying biases and confounders, applying evidence grading frameworks (GRADE, Cochrane ROB), or teaching critical analysis."
 license: MIT
 ---
+
 
 
 
@@ -11,22 +13,9 @@ category: scientific-thinking
 version: 1.0.0
 author: Pradyumna Jayaram
 tags:
-- evidence-quality
-- bias-detection
-- study-design
-- statistical-validity
-- peer-review
+  - scientific-thinking
+  - research
 difficulty: intermediate
-prerequisites:
-  tools: []
-  skills: []
-sources: GRADE Working Group methodology (gradeworkinggroup.org); Cochrane Risk of
-  Bias tools (RoB 2, ROBINS-I; training.cochrane.org); Bradford Hill criteria (Hill,
-  1965, Proceedings of the Royal Society of Medicine); STROBE statement for observational
-  studies (strobe-statement.org); CONSORT 2010 statement for randomized trials (consort-statement.org);
-  Open Science Collaboration. Estimating the reproducibility of psychological science.
-  Science 349(6251); Simmons, J.P., Nelson, L.D., & Simonsohn, U.. False-positive
-  psychology. Psychological Science 22(11)
 -->
 
 # Scientific Critical Thinking

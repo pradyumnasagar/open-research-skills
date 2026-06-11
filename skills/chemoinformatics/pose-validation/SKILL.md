@@ -1,4 +1,5 @@
 ---
+
 name: pose-validation
 description: "Validates docked / generated protein-ligand poses using PoseBusters physical-validity tests, strain energy quantification, geometric checks (planarity, vdW overlap, bond/angle distortion), and pose-energy reasonableness. Filters AI-docking outputs (DiffDock, EquiBind, NeuralPLexer) where ~50% of poses fail physical-validity tests. Use when QC-ing docking results, comparing classical vs ML docking outputs, or filtering pose lists before SAR analysis."
 license: MIT
@@ -6,13 +7,15 @@ license: MIT
 
 
 
+
 <!-- metadata:
-category: ''
+category: chemoinformatics
 version: 1.0.0
 author: Pradyumna Jayaram
-tags: []
-difficulty: beginner
-sources: bioSkills-main/chemoinformatics/pose-validation/SKILL.md; SciAgent-Skills-main/skills/structural-biology-drug-discovery/diffdock/SKILL.md
+tags:
+  - chemoinformatics
+  - research
+difficulty: intermediate
 -->
 
 ## Version Compatibility

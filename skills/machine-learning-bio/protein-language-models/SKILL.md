@@ -1,8 +1,10 @@
 ---
+
 name: protein-language-models
 description: "Use ESM-2, ESMFold, ProtTrans, AlphaFold 2/3, Boltz-1, RoseTTAFold and OmegaFold for protein embeddings, zero-shot mutational-effect prediction, and 3D structure prediction. Use when scoring variants without a structure, designing mutant libraries, or predicting conformations."
 license: MIT
 ---
+
 
 
 
@@ -11,29 +13,9 @@ category: machine-learning-bio
 version: 1.0.0
 author: Pradyumna Jayaram
 tags:
-- esm
-- alphafold
-- protein
-- language-model
-- transformers
-- structure-prediction
+  - machine-learning-bio
+  - research
 difficulty: intermediate
-prerequisites:
-  tools:
-  - python
-  - pytorch
-  - transformers
-  - fair-esm
-  - biotite
-  - py3Dmol
-  skills: []
-sources: 'Original: Meta AI ESM repository (facebookresearch/esm); Adapted: condensed
-  install patterns, modern HuggingFace loaders, added fine-tuning and zero-shot recipes;
-  Original: AlphaFold 2 paper, Jumper et al. 2021 Nature; Adapted: practical input/MSA
-  pipeline using MMseqs2, paired with Boltz-1 trade-offs; Original: Boltz-1 GitHub
-  (jwohlwend/boltz); Adapted: inference and confidence interpretation; Improvisions:
-  selection rubric, GPU sizing, AFDB query patterns, fine-tuning on variant effect
-  data'
 -->
 
 # Protein Language Models

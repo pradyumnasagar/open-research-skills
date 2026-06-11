@@ -1,8 +1,10 @@
 ---
+
 name: star-alignment
 description: "Splice-aware RNA-seq alignment with STAR — the gold-standard aligner for novel junction discovery, with 2-pass mapping and genome-generation strategies for 2026."
 license: MIT
 ---
+
 
 
 
@@ -11,23 +13,9 @@ category: bioinformatics-sequence
 version: 1.0.0
 author: Pradyumna Jayaram
 tags:
-- star
-- rna-seq
-- splice
-- alignment
-- illumina
-- junction
-difficulty: advanced
-prerequisites:
-  tools:
-  - star>=2.7.11
-  - samtools>=1.19
-  skills:
-  - ors-bioinformatics-sequence-fastp-workflow
-sources: 'Original: bio-star-alignment (bioSkills-main/read-alignment/star-alignment);
-  Adapted: 2026 STAR 2.7.11+ flag updates, added 2-pass mapping strategy, modern RAM
-  guidance.; Improvisions: added cloud-friendly streaming notes, splice junction database
-  access.'
+  - bioinformatics-sequence
+  - research
+difficulty: intermediate
 -->
 
 # STAR RNA-seq Alignment

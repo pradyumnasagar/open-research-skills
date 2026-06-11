@@ -1,8 +1,10 @@
 ---
+
 name: ai-disclosure-statement
 description: "Use when drafting or auditing an AI/LLM disclosure statement for a manuscript, preprint, grant, or venue — what to include, where to put it, and how to meet major journal and conference policies."
 license: MIT
 ---
+
 
 
 
@@ -11,26 +13,9 @@ category: humanizer-skills
 version: 1.0.0
 author: Pradyumna Jayaram
 tags:
-- disclosure
-- ai-policy
-- authorship
-- integrity
-- methods
-- acknowledgments
+  - humanizer-skills
+  - research
 difficulty: intermediate
-prerequisites:
-  tools: []
-  skills:
-  - ors-humanizer-skills-ai-detection-awareness"
-sources: "Original: ICMJE Recommendations — Adapted: condensed authorship-vs-acknowledgment\
-  \ criteria relevant to AI tools; Original: COPE position statement on AI authorship\
-  \ — Adapted: paraphrased; verify in current COPE guidance; Original: COPE /\
-  \ Nature / Science / Cell / PNAS / PLOS / eLife / ICML / NeurIPS / AAAI / ACL /\
-  \ JAMA / Lancet / BMJ / NEJM public policy pages — Adapted: structure only;\
-  \ specific text is paraphrased and policies update frequently, verify in current\
-  \ journal guidelines; Improvisions: venue-by-venue disclosure template map, decision\
-  \ tree for where to put the statement, common over-disclosure and under-disclosure\
-  \ failure modes"
 -->
 
 # AI Disclosure Statement

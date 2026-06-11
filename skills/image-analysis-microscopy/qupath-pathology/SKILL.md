@@ -1,8 +1,10 @@
 ---
+
 name: qupath-pathology
 description: "Use QuPath 0.5.x for whole-slide image import, annotation, cell detection, pixel classification, deep-learning workflows (StarDist, Cellpose), and multiplexed analysis in digital pathology."
 license: MIT
 ---
+
 
 
 
@@ -11,24 +13,9 @@ category: image-analysis-microscopy
 version: 1.0.0
 author: Pradyumna Jayaram
 tags:
-- qupath
-- digital-pathology
-- whole-slide
-- cell-detection
-- pixel-classification
-- stardist
-- cellpose
+  - image-analysis-microscopy
+  - research
 difficulty: intermediate
-prerequisites:
-  tools:
-  - qupath>=0.5
-  - java>=17
-  - jdk>=17
-  skills: []
-sources: 'Original: QuPath documentation (qupath.readthedocs.io); Adapted: 2026 QuPath
-  0.5.x features, modernized StarDist/Cellpose extension install notes.; Improvisions:
-  added TMA workflow pointers, multiplexed analysis notes (e.g. OME-TIFF multi-channel),
-  and JUPYTER-via-QuPath section.'
 -->
 
 # QuPath for Digital Pathology and Whole-Slide Image Analysis

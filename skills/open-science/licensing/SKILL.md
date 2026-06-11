@@ -1,8 +1,10 @@
 ---
+
 name: licensing
 description: "Use when choosing a Creative Commons license (CC0, CC-BY, CC-BY-SA) for data, picking a software license (MIT, Apache-2.0, GPL), handling EU database sui generis rights, or planning dual-licensing for a research project."
 license: MIT
 ---
+
 
 
 
@@ -11,31 +13,9 @@ category: open-science
 version: 1.0.0
 author: Pradyumna Jayaram
 tags:
-- licensing
-- creative-commons
-- mit
-- apache
-- gpl
-- open-source
-- database-rights
-- dual-licensing
+  - open-science
+  - research
 difficulty: intermediate
-prerequisites:
-  tools:
-  - web-browser
-  - knowledge of project IP situation
-  skills: []"
-sources: "Original: Creative Commons license chooser and license deeds (https://creativecommons.org/licenses/).;\
-  \ Original: Open Source Initiative (OSI) approved licenses (https://opensource.org/licenses).;\
-  \ Original: Software Package Data Exchange (SPDX) license list (https://spdx.org/licenses/).;\
-  \ Original: GNU General Public License v3 (https://www.gnu.org/licenses/gpl-3.0.html).;\
-  \ Original: Apache License 2.0 (https://www.apache.org/licenses/LICENSE-2.0).; Original:\
-  \ MIT license (https://opensource.org/licenses/MIT).; Original: EU Directive 96/9/EC\
-  \ on the legal protection of databases (database sui generis right).; Original:\
-  \ Wellcome Trust open access policy 2024+.; Original: Plan S rights retention strategy.;\
-  \ Improvisions: Pradyumna Jayaram — license decision trees (data, code, mixed,\
-  \ databases), the 'what does open mean here' table, dual-licensing flowchart, common-failure\
-  \ table."
 -->
 
 # Licensing

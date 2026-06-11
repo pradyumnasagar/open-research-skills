@@ -1,8 +1,10 @@
 ---
+
 name: scrnaseq-deep-learning
 description: "Use scVI, scANVI, totalVI, scGPT, Geneformer, and scFoundation for single-cell RNA-seq analysis. Use for batch correction, label transfer, perturbation prediction, and foundation model fine-tuning. Covers training, inference, GPU sizing, and evaluation metrics."
 license: MIT
 ---
+
 
 
 
@@ -11,28 +13,9 @@ category: machine-learning-bio
 version: 1.0.0
 author: Pradyumna Jayaram
 tags:
-- scvi
-- scgpt
-- geneformer
-- scrnaseq
-- batch-correction
-- foundation-model
+  - machine-learning-bio
+  - research
 difficulty: intermediate
-prerequisites:
-  tools:
-  - python
-  - scanpy
-  - scvi-tools
-  - torch
-  - torch-geometric
-  - transformers
-  skills: []
-sources: 'Original: scVI (Lopez et al. 2018); Adapted: foundational scRNA-seq VAE
-  patterns, batch correction workflow; Original: scGPT (Liu et al. 2023); Adapted:
-  transformer embedding for downstream tasks; Original: Geneformer (Theodoris et al.
-  2023); Adapted: gene expression foundation model fine-tuning; Original: scFoundation
-  (Zhao et al. 2023); Adapted: multi-scale architecture, evaluation framework; Improvisions:
-  GPU sizing guide, evaluation metric choice, perturbation prediction workflows'
 -->
 
 # Deep Learning for scRNA-seq

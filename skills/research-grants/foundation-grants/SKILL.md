@@ -1,8 +1,10 @@
 ---
+
 name: foundation-grants
 description: "Use when applying for private foundation grants: Templeton, HHMI (Investigator, Freeman Hrabowski, Hanna Gray), Damon Runyon, Searle, Pew Scholars, McKnight, Packard, Keck. Narrative-driven, no-overhead-allowed, collaboration-letter heavy."
 license: MIT
 ---
+
 
 
 
@@ -11,34 +13,9 @@ category: research-grants
 version: 1.0.0
 author: Pradyumna Jayaram
 tags:
-- foundation-grants
-- hhmi
-- templeton
-- damon-runyon
-- searle
-- pew
-- mcknight
-- packard
-- keck
-- narrative
-difficulty: advanced
-prerequisites:
-- tools:
-  - Foundation submission portals
-  - eRA Commons (if co-submitted)
-  - SciENcv (for some)
-- skills:
-  - ors-research-grants-specific-aims
-  - ors-research-grants-bio-sketch
-sources: 'HHMI: Investigator competition and Freeman Hrabowski Program (hhmi.org);
-  Damon Runyon Cancer Research Foundation: Scholar and related programs; Searle Scholars
-  Program: program description and rubric; Pew Scholars Program: program description
-  and rubric; John Templeton Foundation: program description, narrative structure,
-  and no-overhead policy; W. M. Keck Foundation: research program description and
-  concepts; McKnight Endowment Fund for Neuroscience: Memory and Cognitive Disorders
-  Award; David and Lucile Packard Foundation: Packard Fellowships for Science and
-  Engineering; Improvisions: Cross-foundation comparison table, narrative vs structural
-  differences'
+  - research-grants
+  - research
+difficulty: intermediate
 -->
 
 # Private Foundation Grants

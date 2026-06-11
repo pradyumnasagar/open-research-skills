@@ -1,8 +1,10 @@
 ---
+
 name: imagej-fiji-macro
 description: "Record, write, and run ImageJ/Fiji macros for batch processing, ROI handling, intensity measurement, colocalization, time-lapse, FRET, and plugin installation in life-sciences microscopy."
 license: MIT
 ---
+
 
 
 
@@ -11,22 +13,9 @@ category: image-analysis-microscopy
 version: 1.0.0
 author: Pradyumna Jayaram
 tags:
-- imagej
-- fiji
-- macro
-- microscopy
-- colocalization
-- batch-processing
-difficulty: beginner
-prerequisites:
-  tools:
-  - fiji>=2.14
-  - java>=11
-  skills: []
-sources: 'Original: ImageJ/Fiji documentation at fiji.sc and the macro reference at
-  imagej.net; Adapted: 2026 macro language update, modernized headless options.; Improvisions:
-  added `pyimagej` and SciJava scripting pointers; clarified ROI Manager usage and
-  2026 plugin install path (via the updater).'
+  - image-analysis-microscopy
+  - research
+difficulty: intermediate
 -->
 
 # ImageJ / Fiji Macro Language for Bioimage Analysis

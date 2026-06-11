@@ -1,8 +1,10 @@
 ---
+
 name: samtools-bam-processing
 description: "Process BAM files with samtools — sort, index, merge, flagstat, mark duplicates, fixmate, depth, filter, and stream — the standard CLI toolkit for 2026."
 license: MIT
 ---
+
 
 
 
@@ -11,23 +13,9 @@ category: bioinformatics-sequence
 version: 1.0.0
 author: Pradyumna Jayaram
 tags:
-- samtools
-- bam
-- sam
-- sorting
-- indexing
-- markdup
+  - bioinformatics-sequence
+  - research
 difficulty: intermediate
-prerequisites:
-  tools:
-  - samtools>=1.19
-  - bcftools>=1.19
-  skills:
-  - ors-bioinformatics-sequence-sam-bam-basics"
-sources: "Original: bio-samtools-bam-processing (SciAgent-Skills genomics-bioinformatics/alignment/samtools-bam-processing);\
-  \ Adapted: modernized to samtools 1.19+ pipeline, added correct BAM processing workflow.;\
-  \ Improvisions: added the canonical alignment → sort → fixmate →\
-  \ markdup → sort → index workflow."
 -->
 
 # samtools BAM Processing

@@ -1,8 +1,10 @@
 ---
+
 name: cover-letter
 description: "Crafts a cover letter to a biomedical journal editor: addressing the editor, novelty statement, suggested and recommended-against reviewers, conflicts of interest, what not to say, and how to respond to a desk-rejection for 'out of scope'."
 license: MIT
 ---
+
 
 
 
@@ -11,20 +13,9 @@ category: scientific-writing
 version: 1.0.0
 author: Pradyumna Jayaram
 tags:
-- cover-letter
-- editor
-- submission
-- suggested-reviewers
-- conflicts-of-interest
-difficulty: beginner
-prerequisites:
-  tools: []
-  skills: []"
-sources: "ICMJE Recommendations (icmje.org/icmje-recommendations.pdf); Nature author\
-  \ guidelines — cover letter (nature.com/nature-portfolio/editorial-policies/submission);\
-  \ Science author information (science.org/content/page/information-authors); Cell\
-  \ author guidelines (cell.com/cell/authors); BMJ cover letter guidance (bmj.com/about-bmj/resources-authors);\
-  \ COPE conflict-of-interest framework (publicationethics.org)"
+  - scientific-writing
+  - research
+difficulty: intermediate
 -->
 
 # Cover Letter to Journal Editor

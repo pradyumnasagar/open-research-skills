@@ -1,8 +1,10 @@
 ---
+
 name: paper-lookup
 description: "Look up and resolve academic papers by DOI, PMID, arXiv ID, or title using Crossref, PubMed, OpenAlex, Semantic Scholar, and check retractions, preprints, and forward citations."
 license: MIT
 ---
+
 
 
 
@@ -11,26 +13,9 @@ category: literature-research
 version: 1.0.0
 author: Pradyumna Jayaram
 tags:
-- doi
-- pmid
-- crossref
-- pubmed
-- retraction-watch
-- openalex
-difficulty: beginner
-prerequisites:
-  tools:
-  - python
-  - requests
-  - biopython (optional)
-  skills: []
-sources: 'Crossref API documentation (api.crossref.org); Adapted: DOI resolution and
-  metadata; NCBI E-utilities (eutils.ncbi.nlm.nih.gov); Adapted: PMID and PMC ID handling;
-  OpenAlex API (docs.openalex.org); Adapted: Open scholarly metadata; Semantic Scholar
-  API (api.semanticscholar.org); Adapted: Citation graph and recommendations; Retraction
-  Watch database (retractionwatch.com); Adapted: Retraction status checking; arXiv
-  API (arxiv.org/help/api); Adapted: Preprint lookup; ORCID (orcid.org); Adapted:
-  Author disambiguation'
+  - literature-research
+  - research
+difficulty: intermediate
 -->
 
 # Paper Lookup and Resolution

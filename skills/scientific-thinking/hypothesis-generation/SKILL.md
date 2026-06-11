@@ -1,8 +1,10 @@
 ---
+
 name: hypothesis-generation
 description: "Generate testable hypotheses from literature and observation. Use for converting research gaps, contradictory findings, cross-domain analogies, or clinical observations into falsifiable predictions for experimental design."
 license: MIT
 ---
+
 
 
 
@@ -11,23 +13,9 @@ category: scientific-thinking
 version: 1.0.0
 author: Pradyumna Jayaram
 tags:
-- hypothesis
-- experimental-design
-- falsifiability
-- research-gap
-- scientific-method
+  - scientific-thinking
+  - research
 difficulty: intermediate
-prerequisites:
-  tools: []
-  skills:
-  - ors-scientific-thinking-brainstorming
-  - ors-scientific-thinking-critical-thinking
-sources: Popper, K.R.. The Logic of Scientific Discovery - falsifiability criterion;
-  Lakatos, I.. Falsification and the Methodology of Scientific Research Programmes;
-  Runeson, P. & Host, M.. A Guide to Software Product Line Engineering; Wears, R.L.
-  & Henson, M.. Understanding diagnostic reasoning in the context of clinical hypothesis
-  generation; Scargle, J.D.. Bayesian inference in paleontology. Statistical Science
-  15(3)
 -->
 
 # Hypothesis Generation

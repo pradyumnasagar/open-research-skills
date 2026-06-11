@@ -1,4 +1,5 @@
 ---
+
 name: comm-elevator-pitch
 description: "Crafts a 30-second, 60-second, and 2-minute scientific elevator pitch (a researcher describing their work to a non-specialist) using the Problem-Approach-Result-So-What (PARS) frame, the Alda Center's improv-and-clarity discipline, and the Gopen & Swan stress-position principle. Use when preparing for a job fair, networking at a conference, raising funds from a non-scientific donor, or introducing a research project to a collaborator outside the field."
 license: MIT
@@ -6,15 +7,15 @@ license: MIT
 
 
 
+
 <!-- metadata:
-category: ''
+category: scientific-communication
 version: 1.0.0
 author: Pradyumna Jayaram
-tags: []
-difficulty: beginner
-sources: Alda Center for Communicating Science; AAAS Communication Toolkit; NIH Plain"
-  Language guidelines; Gopen & Swan, "The Science of Scientific Writing"; Loui & Smith,
-  "Talk to the audience"; Anderson, "The Way We're Working Isn't Working"
+tags:
+  - scientific-communication
+  - research
+difficulty: intermediate
 -->
 
 ## Version Compatibility

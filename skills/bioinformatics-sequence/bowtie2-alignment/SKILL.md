@@ -1,8 +1,10 @@
 ---
+
 name: bowtie2-alignment
 description: "Align short reads to a reference with Bowtie2 — the standard aligner for ChIP-seq, ATAC-seq, and other short-fragment applications where sensitivity for short indels matters less than speed."
 license: MIT
 ---
+
 
 
 
@@ -11,21 +13,9 @@ category: bioinformatics-sequence
 version: 1.0.0
 author: Pradyumna Jayaram
 tags:
-- bowtie2
-- alignment
-- chip-seq
-- atac-seq
-- short-read
+  - bioinformatics-sequence
+  - research
 difficulty: intermediate
-prerequisites:
-  tools:
-  - bowtie2>=2.5
-  - samtools>=1.19
-  skills:
-  - ors-bioinformatics-sequence-fastp-workflow
-sources: 'Original: bio-bowtie2-alignment (bioSkills-main/read-alignment/bowtie2-alignment);
-  Adapted: 2026 Bowtie2 2.5.x flag updates, added ATAC-seq-specific notes.; Improvisions:
-  added modern nf-core/chipseq and nf-core/atacseq integration pointers.'
 -->
 
 # Bowtie2 Alignment for ChIP-seq / ATAC-seq

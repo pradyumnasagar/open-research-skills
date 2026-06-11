@@ -1,8 +1,10 @@
 ---
+
 name: read-write-sequences
 description: "Read and write FASTA, FASTQ, GenBank, EMBL using Biopython SeqIO — including indexed random access, conversion, and 2026 best practices."
 license: MIT
 ---
+
 
 
 
@@ -11,21 +13,9 @@ category: bioinformatics-sequence
 version: 1.0.0
 author: Pradyumna Jayaram
 tags:
-- biopython
-- seqio
-- fasta
-- fastq
-- genbank
-- embl
-difficulty: beginner
-prerequisites:
-  tools:
-  - python>=3.10
-  - biopython>=1.83
-  skills: []
-sources: 'Original: bio-read-sequences + bio-write-sequences (bioSkills-main/sequence-io/);
-  Adapted: merged read+write into one canonical skill, added 2026 SeqIO.index() guidance.;
-  Improvisions: included indexed random-access example, modern format strings table.'
+  - bioinformatics-sequence
+  - research
+difficulty: intermediate
 -->
 
 # Read and Write Sequence Files

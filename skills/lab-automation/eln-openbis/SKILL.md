@@ -1,4 +1,5 @@
 ---
+
 name: eln-openbis
 description: "openBIS open LIMS/ELN for life-sciences facilities via REST and Python API. Sample tracking across collections, spaces, datasets, vocabularies; integration with instruments and high-throughput pipelines. Open-source alternative to LabWare, Benchling LIMS. For notebook-style workflows use eln-elabftw; for chemistry use eln-chemotion."
 license: MIT
@@ -6,13 +7,15 @@ license: MIT
 
 
 
+
 <!-- metadata:
-category: ''
+category: lab-automation
 version: 1.0.0
 author: Pradyumna Jayaram
-tags: []
-difficulty: beginner
-sources: SciAgent-Skills-main/skills/lab-automation/benchling-integration/SKILL.md
+tags:
+  - lab-automation
+  - research
+difficulty: intermediate
 -->
 
 # openBIS LIMS / ELN

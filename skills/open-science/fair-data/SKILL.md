@@ -1,8 +1,10 @@
 ---
+
 name: fair-data
 description: "Use when designing a data management plan, choosing a repository, structuring metadata, or making research data Findable, Accessible, Interoperable, and Reusable per Wilkinson et al. 2016."
 license: MIT
 ---
+
 
 
 
@@ -11,28 +13,9 @@ category: open-science
 version: 1.0.0
 author: Pradyumna Jayaram
 tags:
-- fair
-- data-management
-- metadata
-- repositories
-- reproducibility
-- open-data
+  - open-science
+  - research
 difficulty: intermediate
-prerequisites:
-  tools:
-  - git
-  - zenodo-cli OR web-browser
-  - schema.org OR DATS validator
-  - orcid
-  skills: []"
-sources: "Original: Wilkinson et al. The FAIR Guiding Principles for scientific data\
-  \ management and stewardship. Sci Data 3:160018.; Original: GO-FAIR initiative (https://www.go-fair.org/fair-principles/).;\
-  \ Original: FAIRsharing registry (https://fairsharing.org/).; Original: Creative\
-  \ Commons CC-BY 4.0 license (https://creativecommons.org/licenses/by/4.0/).; Original:\
-  \ NIH Genomic Data Sharing Policy 2014 + 2023 update.; Original: ELIXIR FAIR Cookbook\
-  \ (https://elixir-europe.org/services/fair-cookbook).; Improvisions: Pradyumna Jayaram\
-  \ — domain-specific metadata checklist (MIAME/MINSEQE/MIAPE/MIxS/REMBI), repository\
-  \ selection decision tree, and FAIRness self-assessment rubric."
 -->
 
 # FAIR Data Principles

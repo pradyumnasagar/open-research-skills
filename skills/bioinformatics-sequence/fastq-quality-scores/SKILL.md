@@ -1,8 +1,10 @@
 ---
+
 name: fastq-quality-scores
 description: "Access, filter, and trim Phred quality scores in FASTQ reads using Biopython 1.83+ — including per-position profiles and encoding auto-detection."
 license: MIT
 ---
+
 
 
 
@@ -11,21 +13,9 @@ category: bioinformatics-sequence
 version: 1.0.0
 author: Pradyumna Jayaram
 tags:
-- biopython
-- fastq
-- phred
-- quality
-- trimming
+  - bioinformatics-sequence
+  - research
 difficulty: intermediate
-prerequisites:
-  tools:
-  - python>=3.10
-  - biopython>=1.83
-  skills: []
-sources: 'Original: bio-fastq-quality (bioSkills-main/sequence-io/fastq-quality);
-  Adapted: rewritten prose, 2026 Phred+33 dominance note, added streaming percentiles
-  with NumPy.; Improvisions: replaced verbose quality-encoding detection with a 10-line
-  ASCII-range heuristic, added fastp open alternative.'
 -->
 
 # FASTQ Quality Scores

@@ -1,8 +1,10 @@
 ---
+
 name: sequence-properties
 description: "Compute GC content, molecular weight, melting temperature, isoelectric point, and instability index for DNA, RNA, and protein sequences."
 license: MIT
 ---
+
 
 
 
@@ -11,22 +13,9 @@ category: bioinformatics-sequence
 version: 1.0.0
 author: Pradyumna Jayaram
 tags:
-- biopython
-- gc
-- molecular-weight
-- tm
-- isoelectric-point
-- protein
-difficulty: beginner
-prerequisites:
-  tools:
-  - python>=3.10
-  - biopython>=1.83
-  skills: []
-sources: 'Original: bio-sequence-properties (bioSkills-main/sequence-manipulation/sequence-properties);
-  Adapted: tightened to canonical properties, 2026 Bio.SeqUtils API split between
-  ProtParam and nt_utilities.; Improvisions: added Tm primer-design caveats, modern
-  2026 primer3-py cross-link.'
+  - bioinformatics-sequence
+  - research
+difficulty: intermediate
 -->
 
 # Sequence Properties

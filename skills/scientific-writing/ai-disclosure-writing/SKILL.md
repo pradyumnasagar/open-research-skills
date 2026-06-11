@@ -1,8 +1,10 @@
 ---
+
 name: ai-disclosure-writing
 description: "AI/LLM usage disclosure for biomedical manuscripts: which journals require disclosure (Nature, Science, Cell), what counts as AI authorship (banned) vs. AI tool use (allowed with disclosure), text snippets for common policies, ICMJE/COPE positions, and image-AI specific rules."
 license: MIT
 ---
+
 
 
 
@@ -11,24 +13,9 @@ category: scientific-writing
 version: 1.0.0
 author: Pradyumna Jayaram
 tags:
-- ai-disclosure
-- llm
-- chatgpt
-- authorship
-- image-ai
-- icmje
-- cope
+  - scientific-writing
+  - research
 difficulty: intermediate
-prerequisites:
-  tools: []
-  skills: []
-sources: Nature editorial policies on AI (nature.com/nature-portfolio/editorial-policies/ai);
-  Science AI use policy (science.org/policies/ai-use); Cell Press AI policy (cell.com/press-room/ai);
-  ICMJE Recommendations (icmje.org/icmje-recommendations.pdf); COPE position on AI
-  authorship (publicationethics.org/cope-position-position-authorship); World Association
-  of Medical Editors (WAME) recommendations on AI (wame.org); NIH policy on AI use
-  in peer review (nih.gov); Elsevier AI policy (elsevier.com/about/policies-and-standards/publishing-ethics);
-  eLife AI policy (elifesciences.org/peer-review)
 -->
 
 # AI/LLM Usage Disclosure in Manuscripts

@@ -1,8 +1,10 @@
 ---
+
 name: bio-sketch
 description: "Use when generating an NIH or NSF Biographical Sketch in SciENcv (current format): personal statement, contribution statements (new 2025 NIH format), positions and honors, research support. Covers NIH vs NSF differences."
 license: MIT
 ---
+
 
 
 
@@ -11,29 +13,9 @@ category: research-grants
 version: 1.0.0
 author: Pradyumna Jayaram
 tags:
-- bio-sketch
-- sciencv
-- orcid
-- biosketch
-- personal-statement
-- contributions
+  - research-grants
+  - research
 difficulty: intermediate
-prerequisites:
-- tools:
-  - SciENcv (my.ncbi.nlm.nih.gov)
-  - eRA Commons
-  - ORCID
-  - MyBibliography
-- skills:
-  - ors-research-grants-nih-r01
-  - ors-research-grants-nsf-standard
-  - ors-research-grants-nih-k-series
-sources: 'NIH: Biosketch format and instructions (grants.nih.gov/grants/forms.htm);
-  NIH: SciENcv FAQ and personal-statement / contribution-statement guidance; NIH:
-  Format change in 2021 (Personal Statement expanded; Contributions to Science section
-  retained); subsequent refinements; NSF: Biographical Sketch format and SciENcv NSF
-  format; Improvisions: Side-by-side NIH vs NSF comparison, the contribution-statement
-  pattern, the SciENcv-edit-then-export workflow'
 -->
 
 # NIH/NSF Biographical Sketch via SciENcv

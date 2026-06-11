@@ -1,8 +1,10 @@
 ---
+
 name: fellowships
 description: "Use when applying to pre-doctoral fellowships: NSF GRFP, Hertz, NDSEG, Ford, Rhodes, Marshall, Churchill, AAAS. Distinguishes personal statement vs research statement, builds a graduate-school list, coordinates referee timing, and aligns submission cycles."
 license: MIT
 ---
+
 
 
 
@@ -11,32 +13,9 @@ category: research-grants
 version: 1.0.0
 author: Pradyumna Jayaram
 tags:
-- fellowships
-- nsf-grfp
-- hertz
-- ndseg
-- ford
-- rhodes
-- marshall
-- churchill
-- grad-school
+  - research-grants
+  - research
 difficulty: intermediate
-prerequisites:
-- tools:
-  - NSF FastLane / Research.gov
-  - individual foundation portals
-- skills:
-  - ors-research-grants-specific-aims
-  - ors-research-grants-bio-sketch
-sources: 'NSF: Graduate Research Fellowship Program (GRFP) program solicitation and
-  instructions; Hertz Foundation: Graduate Fellowship application and rubric; DoD:
-  National Defense Science and Engineering Graduate (NDSEG) Fellowship program; Ford
-  Foundation Fellowship: National Academies of Sciences, Engineering, and Medicine
-  program; Rhodes Trust: Rhodes Scholarship application and timeline; Marshall Aid
-  Commemoration Commission: Marshall Scholarship; Winston Churchill Foundation: Churchill
-  Scholarship; AAAS: Science & Technology Policy Fellowship (STPF); Improvisions:
-  Personal Statement vs Research Statement cross-comparison, referee coordination,
-  submission timing'
 -->
 
 # Pre-doctoral Fellowships

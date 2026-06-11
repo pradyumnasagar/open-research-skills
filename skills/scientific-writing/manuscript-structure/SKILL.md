@@ -1,8 +1,10 @@
 ---
+
 name: manuscript-structure
 description: "Section-by-section guidance for biomedical manuscripts using the IMRAD frame (Introduction, Methods, Results, Discussion), title and abstract strategies, figure/table selection, citation styles, and reporting checklists (CONSORT, STROBE, PRISMA, ARRIVE 2.0, MIAME, MINSEQE)."
 license: MIT
 ---
+
 
 
 
@@ -11,22 +13,9 @@ category: scientific-writing
 version: 1.0.0
 author: Pradyumna Jayaram
 tags:
-- manuscript
-- imrad
-- abstract
-- citations
-- reporting-checklists
-- biomedical
+  - scientific-writing
+  - research
 difficulty: intermediate
-prerequisites:
-  tools: []
-  skills: []
-sources: ICMJE Recommendations (icmje.org/icmje-recommendations.pdf); CONSORT 2010
-  statement and CONSORT extensions (consort-statement.org); STROBE statement for observational
-  studies (strobe-statement.org); PRISMA 2020 statement (prisma-statement.org); ARRIVE
-  2.0 guidelines (arriveguidelines.org); MIAME standard for microarray data (fg.ed.ac.uk/miame);
-  MINSEQE for sequencing experiments (fg.edu.au/MINSEQE); Nature, Science, Cell author
-  instructions (publicly available)
 -->
 
 # Manuscript Structure (IMRAD)

@@ -1,8 +1,10 @@
 ---
+
 name: cellprofiler-pipelines
 description: "Use CellProfiler 5.x to build reproducible pipelines for cell/nuclei segmentation, illumination correction, feature extraction, and high-content screening assays including CellPainting."
 license: MIT
 ---
+
 
 
 
@@ -11,22 +13,9 @@ category: image-analysis-microscopy
 version: 1.0.0
 author: Pradyumna Jayaram
 tags:
-- cellprofiler
-- high-content-screening
-- cellpainting
-- segmentation
-- image-analysis
+  - image-analysis-microscopy
+  - research
 difficulty: intermediate
-prerequisites:
-  tools:
-  - cellprofiler>=5.0
-  - python>=3.10
-  - java>=11
-  skills: []
-sources: 'Original: Broad Institute CellProfiler documentation (cellprofiler.org);
-  Adapted: 2026 CellProfiler 5.x module reorganization, modern CellPainting pipeline
-  references.; Improvisions: consolidated cross-references to CellProfiler Analyst
-  and downstream tools; clarified version-5 plugin install path.'
 -->
 
 # CellProfiler Pipelines for High-Content Image Analysis

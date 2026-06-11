@@ -1,8 +1,10 @@
 ---
+
 name: ai-disclosure
 description: "Use when writing, reviewing, or editing the AI/LLM usage disclosure in a research manuscript, grant, or submission — covers venue-specific policies (Nature, Science, Cell, NEJM, Lancet, ICML, NeurIPS, AAAI, ACL), COPE position statement, ICMJE recommendations, prompt disclosure, and what is permitted vs banned per venue (2025-2026). Name the venue explicitly; when in doubt, name 'varies by venue' rather than invent."
 license: MIT
 ---
+
 
 
 
@@ -11,29 +13,9 @@ category: ethics-compliance
 version: 1.0.0
 author: Pradyumna Jayaram
 tags:
-- ai
-- llm
-- chatgpt
-- disclosure
-- authorship
-- coposition-statement
-- icmje
-- journal-policy
+  - ethics-compliance
+  - research
 difficulty: intermediate
-prerequisites:
-  tools: []
-  skills:
-  - ors-scientific-writing-imrad-drafting
-sources: 'Original: COPE Position Statement on Generative AI in Authorship (Feb 2023);
-  Adapted: disclosure rules and author accountability; Original: ICMJE Recommendations
-  (last revised to add AI/authorship language in 2023); Adapted: AI in research vs
-  writing; Original: Nature Editorial ''Authorship policies for AI tools''; Adapted:
-  chatgpt-cannot-be-author rule; Original: Science Editorial ''The use of generative
-  AI in scientific publishing'' (2023, updated); Adapted: ban on chatgpt-as-author
-  and image/text rules; Original: Cell Press Editorial Policies; Adapted: generative
-  AI disclosure template; Original: ICML / NeurIPS / AAAI / ACL conference policies;
-  Adapted: summary of policy variation by venue; Improvisions: venue-by-venue matrix,
-  prompt-disclosure guidance, what varies by venue section, LLM citation rules'
 -->
 
 # AI / LLM Usage Disclosure in Research

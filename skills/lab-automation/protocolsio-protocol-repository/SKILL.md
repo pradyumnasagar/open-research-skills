@@ -1,4 +1,5 @@
 ---
+
 name: protocolsio-protocol-repository
 description: "Search and download published wet-lab protocols from protocols.io REST API. Find 90,000+ community protocols by keyword, DOI, or filter; extract steps, reagents, materials, timing, equipment. Free for public protocols. Use to build automation with opentrons-protocol-api or record runs in an ELN."
 license: MIT
@@ -6,13 +7,15 @@ license: MIT
 
 
 
+
 <!-- metadata:
-category: ''
+category: lab-automation
 version: 1.0.0
 author: Pradyumna Jayaram
-tags: []
-difficulty: beginner
-sources: SciAgent-Skills-main/skills/lab-automation/protocolsio-integration/SKILL.md
+tags:
+  - lab-automation
+  - research
+difficulty: intermediate
 -->
 
 # protocols.io Protocol Repository

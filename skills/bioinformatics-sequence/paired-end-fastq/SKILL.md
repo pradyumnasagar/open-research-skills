@@ -1,8 +1,10 @@
 ---
+
 name: paired-end-fastq
 description: "Keep R1/R2 reads in lockstep — synchronize iteration, filter pairs together, interleave, and deinterleave — using Biopython and the 2026 best practices."
 license: MIT
 ---
+
 
 
 
@@ -11,23 +13,9 @@ category: bioinformatics-sequence
 version: 1.0.0
 author: Pradyumna Jayaram
 tags:
-- biopython
-- fastq
-- paired-end
-- illumina
-- sequencing
+  - bioinformatics-sequence
+  - research
 difficulty: intermediate
-prerequisites:
-  tools:
-  - python>=3.10
-  - biopython>=1.83
-  - seqkit
-  skills:
-  - ors-bioinformatics-sequence-fastq-quality-scores
-sources: 'Original: bio-paired-end-fastq (bioSkills-main/sequence-io/paired-end-fastq);
-  Adapted: modernized for 2026, added deinterleave patterns and seqkit open alternative.;
-  Improvisions: added the ''do NOT sort FASTQ files'' warning, modern UMI handling
-  pointer.'
 -->
 
 # Paired-End FASTQ Handling

@@ -1,8 +1,10 @@
 ---
+
 name: erc
 description: "Use when drafting or revising an ERC proposal: B1 Extended Synopsis (2 pp), B2 Full Proposal (≈7–8 pp), CV, Track Record, resources, ethics issues table, and host institution commitment letter in the ERC format."
 license: MIT
 ---
+
 
 
 
@@ -11,22 +13,9 @@ category: research-grants
 version: 1.0.0
 author: Pradyumna Jayaram
 tags:
-- erc
-- european-research-council
-- starting-grant
-- consolidator-grant
-- advanced-grant
-- host-institution
-difficulty: advanced
-prerequisites:
-- tools:
-  - ERC application portal (Submission system)
-  - eSubmission
-- skills: []
-sources: 'ERC: Work Programme and Information for Applicants (current call); ERC:
-  Evaluation panels and evaluation criteria; ERC: Host Institution requirements and
-  support letters; Improvisions: Explicit B1/B2 separation, Track Record emphasis,
-  ethics issues table structure'
+  - research-grants
+  - research
+difficulty: intermediate
 -->
 
 # ERC Starting/Consolidator/Advanced Grants

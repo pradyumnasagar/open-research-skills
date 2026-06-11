@@ -1,4 +1,5 @@
 ---
+
 name: eln-elabftw
 description: "eLabFTW open-source electronic lab notebook via REST API. Self-hosted ELN/LIMS alternative to Benchling and LabArchives: experiments, database entries, inventory, equipment booking, experiments linking. Use for free, open lab notebook management. For chemistry-focused work use eln-chemotion; for assay/LIMS-heavy pipelines use eln-openbis."
 license: MIT
@@ -6,13 +7,15 @@ license: MIT
 
 
 
+
 <!-- metadata:
-category: ''
+category: lab-automation
 version: 1.0.0
 author: Pradyumna Jayaram
-tags: []
-difficulty: beginner
-sources: SciAgent-Skills-main/skills/lab-automation/benchling-integration/SKILL.md
+tags:
+  - lab-automation
+  - research
+difficulty: intermediate
 -->
 
 # eLabFTW Electronic Lab Notebook
