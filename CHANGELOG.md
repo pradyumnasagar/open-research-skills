@@ -94,7 +94,7 @@ thinking, peer review, literature, visualization, and humanizer (AI-writing) wor
 
 ### Source attribution
 
-All v0.2.0 skills were written fresh by Claude based on publicly documented
+All v0.2.0 skills were written fresh by Pradyumna Jayaram based on publicly documented
 frameworks, agency guidelines, and reference materials. No text was copied verbatim
 from any source. Where specific facts could not be verified (e.g., current
 journal AI policy details, current NSF PAPPG page counts), the skills point the
@@ -184,4 +184,3 @@ All skills authored by Pradyumna Jayaram, license MIT, last_updated 2026-06-10.
 
 ### Authors
 - Pradyumna Jayaram (creator, primary author)
-- Claude (AI assistant, skill drafting and source adaptation)
