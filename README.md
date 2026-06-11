@@ -1,4 +1,5 @@
 # open-research-skills
+[![DOI](https://sandbox.zenodo.org/badge/1265757749.svg)](https://handle.test.datacite.org/10.5072/zenodo.512325)
 
 > A curated collection of research-domain skills for AI agents.
 > Authored by **Pradyumna Jayaram**, 2026.
