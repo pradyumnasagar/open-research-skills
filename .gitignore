@@ -14,8 +14,8 @@
 **/CLAUDE.md
 **/claude.md
 
-# Other AI assistants
-**/AGENTS.md
+# Other AI assistants (only ignore lowercase, generic agent configs)
+# Note: AGENTS.md (uppercase) at the repo root or in skills/ is ours, keep it.
 **/agents.md
 .cursor/
 .aider*
