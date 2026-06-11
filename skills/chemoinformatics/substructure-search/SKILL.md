@@ -1,4 +1,5 @@
 ---
+
 name: substructure-search
 description: "Searches molecular libraries for substructure matches using SMARTS patterns with explicit handling of recursive SMARTS, ring membership, aromaticity dialect, vector binding, atom map indices, and reactive/PAINS/REOS/Brenk/Aldridge filter catalogs. Use when filtering compounds by pharmacophore features, functional groups, scaffold matches, or screening for assay-interference / structural alerts."
 license: MIT
@@ -6,13 +7,15 @@ license: MIT
 
 
 
+
 <!-- metadata:
-category: ''
+category: chemoinformatics
 version: 1.0.0
 author: Pradyumna Jayaram
-tags: []
-difficulty: beginner
-sources: bioSkills-main/chemoinformatics/substructure-search/SKILL.md; SciAgent-Skills-main/skills/structural-biology-drug-discovery/rdkit-cheminformatics/SKILL.md
+tags:
+  - chemoinformatics
+  - research
+difficulty: intermediate
 -->
 
 ## Version Compatibility

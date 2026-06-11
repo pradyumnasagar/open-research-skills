@@ -1,4 +1,5 @@
 ---
+
 name: molecular-standardization
 description: "Standardizes molecular structures using ChEMBL chembl_structure_pipeline and RDKit rdMolStandardize covering sanitization, salt/solvent stripping, neutralization, tautomer canonicalization, stereochemistry standardization, mixture handling, and isotope normalization. Explicitly compares ChEMBL pipeline, canSARchem, and PubChem standardization choices. Use when preparing libraries for QSAR training, joining datasets across sources, deduplicating compound collections, or building canonical compound registries."
 license: MIT
@@ -6,14 +7,15 @@ license: MIT
 
 
 
+
 <!-- metadata:
-category: ''
+category: chemoinformatics
 version: 1.0.0
 author: Pradyumna Jayaram
-tags: []
-difficulty: beginner
-sources: bioSkills-main/chemoinformatics/molecular-standardization/SKILL.md; SciAgent-Skills-main/skills/structural-biology-drug-discovery/rdkit-cheminformatics/SKILL.md;
-  SciAgent-Skills-main/skills/structural-biology-drug-discovery/datamol-cheminformatics/SKILL.md
+tags:
+  - chemoinformatics
+  - research
+difficulty: intermediate
 -->
 
 ## Version Compatibility

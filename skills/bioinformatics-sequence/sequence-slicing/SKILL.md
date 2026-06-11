@@ -1,8 +1,10 @@
 ---
+
 name: sequence-slicing
 description: "Slice, subset, and extract regions from sequences and SeqRecords — including feature extraction, fuzzy ends, and the location algebra behind GenBank features."
 license: MIT
 ---
+
 
 
 
@@ -11,22 +13,9 @@ category: bioinformatics-sequence
 version: 1.0.0
 author: Pradyumna Jayaram
 tags:
-- biopython
-- slicing
-- features
-- location
-- seqfeature
+  - bioinformatics-sequence
+  - research
 difficulty: intermediate
-prerequisites:
-  tools:
-  - python>=3.10
-  - biopython>=1.83
-  skills:
-  - ors-bioinformatics-sequence-seq-objects
-sources: 'Original: bio-sequence-slicing (bioSkills-main/sequence-manipulation/sequence-slicing);
-  Adapted: added 2026 SeqFeature location algebra, fuzzy-end handling, modern SimpleLocation
-  usage.; Improvisions: cross-references to genome-intervals/BED skills for genomic
-  windows.'
 -->
 
 # Sequence Slicing and Subsetting

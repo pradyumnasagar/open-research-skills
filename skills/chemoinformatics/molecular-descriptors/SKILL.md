@@ -1,4 +1,5 @@
 ---
+
 name: molecular-descriptors
 description: "Calculates molecular fingerprints (ECFP/Morgan, FCFP, MACCS, RDKit, AtomPair, TopologicalTorsion, Avalon, MAP4, MHFP6) and physicochemical descriptors (Lipinski, QED, TPSA, Crippen LogP, 3D shape) with explicit choice tables, bit vs count semantics, and partial-charge model selection. Use when featurizing molecules for similarity, QSAR, virtual screening, or ML, or selecting the correct fingerprint for a chemotype-aware task."
 license: MIT
@@ -6,14 +7,15 @@ license: MIT
 
 
 
+
 <!-- metadata:
-category: ''
+category: chemoinformatics
 version: 1.0.0
 author: Pradyumna Jayaram
-tags: []
-difficulty: beginner
-sources: bioSkills-main/chemoinformatics/molecular-descriptors/SKILL.md; SciAgent-Skills-main/skills/structural-biology-drug-discovery/rdkit-cheminformatics/SKILL.md;
-  SciAgent-Skills-main/skills/structural-biology-drug-discovery/molfeat-molecular-featurization/SKILL.md
+tags:
+  - chemoinformatics
+  - research
+difficulty: intermediate
 -->
 
 ## Version Compatibility

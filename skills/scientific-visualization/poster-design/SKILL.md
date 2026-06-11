@@ -1,8 +1,10 @@
 ---
+
 name: poster-design
 description: "Design academic posters for conferences. Covers A0 portrait/landscape, the 6-foot test, grid layout, hierarchy, QR codes, accessibility, and online sessions on iPosters."
 license: MIT
 ---
+
 
 
 
@@ -11,29 +13,9 @@ category: scientific-visualization
 version: 1.0.0
 author: Pradyumna Jayaram
 tags:
-- poster
-- a0
-- latex
-- beamerposter
-- tikzposter
-- baposter
-- iposters
-- accessibility
-- conference
+  - scientific-visualization
+  - research
 difficulty: intermediate
-prerequisites:
-  tools:
-  - inkscape>=1.0 OR powerpoint/keynote OR texlive-with-beamerposter-tikzposter-baposter
-    OR quarto
-  skills:
-  - ors-scientific-visualization-figure-design
-  - ors-scientific-visualization-schematics-diagrams
-  - ors-scientific-visualization-color-and-accessibility
-sources: 'Original: latex-research-posters (scientific-agent-skills, K-Dense Inc.);
-  Adapted: narrowed to a single skill, added PowerPoint/Inkscape paths alongside LaTeX,
-  added online poster-session and iPosters patterns; Improvisions: added a QR-code
-  workflow, accessibility audit (CVD, contrast, font legibility), a 6-foot test, and
-  a print-vs-digital checklist'
 -->
 
 # Academic Poster Design

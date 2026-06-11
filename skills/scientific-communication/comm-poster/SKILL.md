@@ -1,20 +1,20 @@
 ---
 name: comm-poster
-description: "Designs and presents a scientific conference poster (A0 / 48x36 inches) for a 2-minute scan by a passing expert, a 10-minute deep read by a collaborator, and a 3-minute Q&A with the presenting author. Uses the single-take-home-message structure, the decide-support-imply grid, and the Loui & Smith signposting adapted to the visual register. Use when preparing a first poster draft, converting a paper to a poster, or defending a poster against a "what's new compared to your last poster" question."
+description: "Designs and presents a scientific conference poster (A0 / 48x36 inches) for a 2-minute scan by a passing expert, a 10-minute deep read by a collaborator, and a 3-minute Q&A with the presenting author. Uses the single-take-home-message structure, the decide-support-imply grid, and the Loui & Smith signposting adapted to the visual register. Use when preparing a first poster draft, converting a paper to a poster, or defending a poster against a \"what's new compared to your last poster\" question."
 license: MIT
 ---
 
 
 
+
 <!-- metadata:
-category: ''
+category: scientific-communication
 version: 1.0.0
 author: Pradyumna Jayaram
-tags: []
-difficulty: beginner
-sources: Loui & Smith, "Talk to the audience"; AAAS Communication Toolkit; Nature
-  Masterclasses on Poster Presentation; Anderson, "The Way We're Working Isn't Working";
-  Alda Center for Communicating Science
+tags:
+  - scientific-communication
+  - research
+difficulty: intermediate
 -->
 
 ## Version Compatibility

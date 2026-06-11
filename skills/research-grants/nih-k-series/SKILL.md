@@ -1,8 +1,10 @@
 ---
+
 name: nih-k-series
 description: "Use when planning or drafting an NIH mentored career-development award (K01, K08, K23, K99/R00, K25, K22, K07): Candidate Section, Mentorship Plan, Training Plan, Sponsor/Co-Sponsor statements, and the K99-to-R00 transition logic. Anchored to the K Kiosk on the NIH website and current Forms-H/I."
 license: MIT
 ---
+
 
 
 
@@ -11,28 +13,9 @@ category: research-grants
 version: 1.0.0
 author: Pradyumna Jayaram
 tags:
-- nih
-- k-award
-- k99
-- r00
-- career-development
-- mentorship
-- training
-difficulty: advanced
-prerequisites:
-  tools:
-  - SciENcv
-  - ASSIST
-  - eRA Commons
-  skills:
-  - ors-research-grants-nih-r01
-  - ors-research-grants-specific-aims
-  - ors-research-grants-bio-sketch"
-sources: "NIH K Kiosk (grants.nih.gov/training/career-development-awards.htm) —\
-  \ K mechanism descriptions; NIH SF424 Application Guide — Career Development\
-  \ Award instructions (Forms-H/I); NIH Table of K activity codes and eligibility\
-  \ windows; Improvisions: K99-to-R00 transition checklist, Mentor/Mentee Plan template,\
-  \ R00 start-up matrix"
+  - research-grants
+  - research
+difficulty: intermediate
 -->
 
 # NIH K-Series Mentored Career Awards

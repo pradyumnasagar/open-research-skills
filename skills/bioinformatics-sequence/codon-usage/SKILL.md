@@ -1,8 +1,10 @@
 ---
+
 name: codon-usage
 description: "Compute codon usage frequencies, RSCU, CAI, and tRNA adaptation — for gene expression prediction, heterologous expression design, and comparative genomics."
 license: MIT
 ---
+
 
 
 
@@ -11,22 +13,9 @@ category: bioinformatics-sequence
 version: 1.0.0
 author: Pradyumna Jayaram
 tags:
-- biopython
-- codon
-- cai
-- rscu
-- gene-expression
+  - bioinformatics-sequence
+  - research
 difficulty: intermediate
-prerequisites:
-  tools:
-  - python>=3.10
-  - biopython>=1.83
-  skills:
-  - ors-bioinformatics-sequence-transcription-translation
-sources: 'Original: bio-codon-usage (bioSkills-main/sequence-manipulation/codon-usage);
-  Adapted: 2026 CAI/RSCU formulas, modern alternative to deprecated Bio.SeqUtils.CodonUsage.;
-  Improvisions: added codon harmonization for cross-species expression, 2026 open
-  alternatives (DNA Chisel, GeneDesign).'
 -->
 
 # Codon Usage and Bias

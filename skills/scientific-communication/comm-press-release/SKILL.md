@@ -1,4 +1,5 @@
 ---
+
 name: comm-press-release
 description: "Drafts a 400-word scientific press release for the public and journalists using the Inverted Pyramid structure, the AAAS Newsmakers framework, and the Gopen & Swan sentence stress-position principle to prioritize the take-home message. Translates technical jargon to plain language and frames the result in terms of public health, policy, or funding impact. Use when announcing a breakthrough publication, communicating a grant award, or defending research for public accountability."
 license: MIT
@@ -6,15 +7,15 @@ license: MIT
 
 
 
+
 <!-- metadata:
-category: ''
+category: scientific-communication
 version: 1.0.0
 author: Pradyumna Jayaram
-tags: []
-difficulty: beginner"
-sources: AAAS Communication Toolkit; AAAS Newsmakers framework; Gopen & Swan, "The
-  Science of Scientific Writing"; NIH Plain Language guidelines; Nature Editorial
-  guidelines for press releases
+tags:
+  - scientific-communication
+  - research
+difficulty: intermediate
 -->
 
 ## Version Compatibility

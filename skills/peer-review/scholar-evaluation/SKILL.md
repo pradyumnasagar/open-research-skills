@@ -1,8 +1,10 @@
 ---
+
 name: scholar-evaluation
 description: "Evaluate a researcher's portfolio (CV, publications, citations, funding, mentorship, service, software, talks) for tenure, awards, recruitment, or promotion: field-normalized metrics, evidence weighting, fit assessment, and a defensible written evaluation."
 license: MIT
 ---
+
 
 
 
@@ -11,30 +13,9 @@ category: peer-review
 version: 1.0.0
 author: Pradyumna Jayaram
 tags:
-- peer-review
-- evaluation
-- cv
-- h-index
-- tenure
-- awards
-- metrics
-difficulty: advanced
-prerequisites:
-  tools: []
-  skills: []"
-sources: "ORCID — public researcher identifier and record (orcid.org); OpenAlex\
-  \ — open citation index and bibliometric API (openalex.org); Semantic Scholar\
-  \ — open citation and paper metadata (semanticscholar.org); Google Scholar\
-  \ Profiles — author-level citation metrics (scholar.google.com); Scopus Author\
-  \ Profile — Elsevier's curated author metrics (scopus.com); Clarivate Web of\
-  \ Science — Journal Citation Reports and InCites (webofscience.com); CWTS Leiden\
-  \ Ranking — field-normalized citation indicators (leidenranking.com); DORA\
-  \ — Declaration on Research Assessment (sfdora.org); CoARA — Coalition\
-  \ for Advancing Research Assessment (coara.eu); NIH — Biosketch format and\
-  \ guidance (grants.nih.gov); NSF — Current and Pending Support and Biosketch\
-  \ format (nsf.gov); Committee on Publication Ethics (COPE) — Authorship and\
-  \ contributor guidance (publicationethics.org); CRediT — Contributor Roles\
-  \ Taxonomy (credit.niso.org)"
+  - peer-review
+  - research
+difficulty: intermediate
 -->
 
 # Scholar / Researcher Evaluation

@@ -1,4 +1,5 @@
 ---
+
 name: comm-conference-talk
 description: "Designs, scripts, and rehearses a 10-20 minute scientific conference talk (job talk, contributed talk, plenary, lightning) for a technical but non-specialist audience. Enforces a single-take-home-message structure (motivation-gap-evidence-claim-implication), prescribes slide-budget allocation by time, and codifies the Loui & Smith audience-engagement rubric. Use when preparing a contributed conference talk, defending a thesis chapter, writing a job-talk job talk, or rewriting a sprawling results-heavy talk into a 12-minute contribution."
 license: MIT
@@ -6,15 +7,15 @@ license: MIT
 
 
 
+
 <!-- metadata:
-category: ''
+category: scientific-communication
 version: 1.0.0
 author: Pradyumna Jayaram
-tags: []
-difficulty: beginner"
-sources: Loui & Smith, "Talk to the audience" (peer-reviewed paper on scientific talks);
-  Gopen & Swan, "The Science of Scientific Writing"; Nature Masterclasses on Scientific
-  Presentation; AAAS Communication Toolkit; Alda Center for Communicating Science
+tags:
+  - scientific-communication
+  - research
+difficulty: intermediate
 -->
 
 ## Version Compatibility

@@ -1,8 +1,10 @@
 ---
+
 name: irb-protocol
 description: "Use when writing, reviewing, or revising an Institutional Review Board (IRB) protocol for human-subjects research — anchors the protocol to the Belmont Report, the Common Rule (45 CFR 46), and the specific subparts for vulnerable populations."
 license: MIT
 ---
+
 
 
 
@@ -11,22 +13,9 @@ category: ethics-compliance
 version: 1.0.0
 author: Pradyumna Jayaram
 tags:
-- irb
-- common-rule
-- belmont
-- informed-consent
-- human-subjects
-- vulnerable-populations
-difficulty: advanced
-prerequisites:
-  tools: []
-  skills: []
-sources: 'Original: 45 CFR 46 (Common Rule, revised eff. 2019-01-21); Adapted: synthesized
-  into protocol-writing workflow; Original: The Belmont Report (1979, OHRP); Adapted:
-  principles translated into protocol sections; Original: OHRP Guidance on Reviewing
-  and Reporting Unanticipated Problems; Adapted: reportable-events checklist; Improvisions:
-  reviewer-psychology section, decision-matrix for review level, modern electronic-IRB
-  notes (IRBNet, Cayuse, Huron)'
+  - ethics-compliance
+  - research
+difficulty: intermediate
 -->
 
 # IRB Protocol Writing

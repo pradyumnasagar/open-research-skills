@@ -1,8 +1,10 @@
 ---
+
 name: slides-design
 description: "Design scientific conference and lecture slides. Covers the 6x6 rule, results-first structure, the 5-second test, build progression, citation format, dark-mode contrast, and accessibility."
 license: MIT
 ---
+
 
 
 
@@ -11,33 +13,9 @@ category: scientific-visualization
 version: 1.0.0
 author: Pradyumna Jayaram
 tags:
-- slides
-- presentation
-- keynote
-- powerpoint
-- beamer
-- revealjs
-- marp
-- quarto
-- dark-mode
-- accessibility
+  - scientific-visualization
+  - research
 difficulty: intermediate
-prerequisites:
-  tools:
-  - powerpoint or keynote or google-slides
-  - latex-beamer (optional)
-  - marp-cli (optional)
-  - quarto (optional)
-  - reveal.js (optional)
-  skills:
-  - ors-scientific-visualization-figure-design
-  - ors-scientific-visualization-schematics-diagrams
-  - ors-scientific-visualization-color-and-accessibility
-sources: 'Original: scientific-slides (scientific-agent-skills, K-Dense Inc.); Adapted:
-  removed demo deck scripts, restructured around the 6x6 / 5-second-test / results-first
-  triad, added Beamer and Marp/Quarto code patterns; Improvisions: added dark-mode
-  guidance for projector venues, citation-on-slide conventions, animation-restrained
-  build patterns, and an accessibility checklist for screen-readers'
 -->
 
 # Scientific Slide Design

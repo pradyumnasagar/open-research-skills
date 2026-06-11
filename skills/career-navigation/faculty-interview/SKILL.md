@@ -1,8 +1,10 @@
 ---
+
 name: faculty-interview
 description: "Prepare for an academic job interview: job talk, chalk talk, 1:1 meetings with PIs and deans, dean's talk, dinner etiquette, thank-you emails, and start-up package negotiation (funds, lab space, equipment, moving, partner accommodation). Use when invited for an on-site or virtual on-site for a faculty position."
 license: MIT
 ---
+
 
 
 
@@ -11,28 +13,9 @@ category: career-navigation
 version: 1.0.0
 author: Pradyumna Jayaram
 tags:
-- faculty
-- interview
-- job-talk
-- chalk-talk
-- negotiation
-- start-up
-difficulty: advanced
-prerequisites:
-  tools:
-  - latex
-  - beamer
-  - keynote
-  - google-slides
-  skills:
-  - ors-career-navigation-academic-cv
-  - ors-career-navigation-negotiation
-sources: MIT, Stanford, and UC Berkeley faculty search committee handbooks (publicly
-  available); AAUP standards on academic hiring; Nature Careers 'Futures' column on
-  academic interviewing; Science Careers 'Interviewing for an Academic Job' article
-  series; Hertz Foundation interview preparation guidance (publicly available); Public
-  university policies on dual-career accommodation (published on institutional HR
-  pages)
+  - career-navigation
+  - research
+difficulty: intermediate
 -->
 
 # Academic Faculty Job Interview

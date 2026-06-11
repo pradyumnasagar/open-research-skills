@@ -1,8 +1,10 @@
 ---
+
 name: fellowship-application
 description: "Apply for predoctoral fellowships (Hertz, NDSEG, NSF GRFP, Ford, AAAS Mass Media) and the Packard postdoctoral fellowship. Covers personal statement, research statement, transcript curation, grad school list, referee coordination, and submission timing. Use when applying for a major external fellowship as a PhD applicant or early postdoc."
 license: MIT
 ---
+
 
 
 
@@ -11,28 +13,9 @@ category: career-navigation
 version: 1.0.0
 author: Pradyumna Jayaram
 tags:
-- fellowship
-- hertz
-- ndseg
-- nsf-grfp
-- ford
-- packard
-- science-writing
-difficulty: advanced
-prerequisites:
-  tools:
-  - latex
-  - markdown
-  - citation-manager
-  skills:
-  - ors-career-navigation-academic-cv
-sources: Hertz Foundation fellowship application guidelines (publicly available on
-  hertzfoundation.org); NSF Graduate Research Fellowship Program (GRFP) program solicitation
-  (NSF 24-586 and updates); NDSEG (National Defense Science and Engineering Graduate)
-  program public FAQ; Ford Foundation Fellowship Programs (NSF-managed) public solicitation;
-  AAAS Mass Media Science and Engineering Fellowship public program description; Packard
-  Foundation Fellowship for Science and Engineering public program description; NSF
-  PAPPG 24-1 reference for personal statement structure
+  - career-navigation
+  - research
+difficulty: intermediate
 -->
 
 # Pre-Doctoral and Postdoctoral Fellowship Application

@@ -1,4 +1,5 @@
 ---
+
 name: mentorship-goal-setting
 description: "Creates research and career development plans using the SMART framework, AAAS MyIDP structured self-assessment, and Bloom's Taxonomy (revised) to set appropriate, measurable, and developmentally sequenced goals. Use when establishing mentee development plans (IDPs), creating promotion packets, preparing for performance reviews, or transitioning mentees to independence."
 license: MIT
@@ -6,17 +7,15 @@ license: MIT
 
 
 
+
 <!-- metadata:
-category: ''
+category: mentorship-teaching
 version: 1.0.0
 author: Pradyumna Jayaram
-tags: []
-difficulty: beginner
-sources: AAAS MyIDP (Individual Development Plan); NSF PAPPG Mentoring Plan requirements;
-  NIH Broadening Experiences in Scientific Training (BEST); Bloom's Taxonomy (revised,
-  Anderson & Krathwohl 2001); Backward Design (Wiggins & McTighe); Universal Design
-  for Learning (UDL) guidelines (CAST.org); Entering Mentoring curriculum (CIMER Project,
-  University of Wisconsin-Madison)
+tags:
+  - mentorship-teaching
+  - research
+difficulty: intermediate
 -->
 
 ## Version Compatibility

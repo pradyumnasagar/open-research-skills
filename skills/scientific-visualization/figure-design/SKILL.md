@@ -1,8 +1,10 @@
 ---
+
 name: figure-design
 description: "Design publication-quality scientific figures in Python (matplotlib, seaborn, plotly) and R (ggplot2). Covers DPI, vector vs raster, color-blind safe palettes, fonts, multi-panel layout, legends, scale bars, and axis labels with units."
 license: MIT
 ---
+
 
 
 
@@ -11,30 +13,9 @@ category: scientific-visualization
 version: 1.0.0
 author: Pradyumna Jayaram
 tags:
-- figures
-- matplotlib
-- seaborn
-- plotly
-- ggplot2
-- publication
-- dpi
-- vector-graphics
-- colorblind
+  - scientific-visualization
+  - research
 difficulty: intermediate
-prerequisites:
-  tools:
-  - python>=3.9
-  - R>=4.0 (optional)
-  - matplotlib>=3.5
-  - seaborn>=0.12
-  - plotly>=5.0
-  - ggplot2 (R)
-  skills: []
-sources: 'Original: scientific-visualization (scientific-agent-skills, K-Dense Inc.);
-  Adapted: dropped bundled scripts, removed AI image-generation workflow, restructured
-  around reusable pattern library; Improvisions: added ggplot2 R patterns, journal-column-width
-  reference table, scale-bar/scale-label conventions, vector vs raster decision matrix,
-  journal DPI rules consolidated'
 -->
 
 # Publication-Quality Figure Design

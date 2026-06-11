@@ -1,4 +1,5 @@
 ---
+
 name: protac-degraders
 description: "Designs PROTACs, molecular glues, and bivalent degraders with explicit handling of E3 ligase choice (VHL, CRBN, IAP, MDM2, KEAP1), linker design (length, composition, rigidity), ternary complex prediction (PRosettaC, DeepTernary, AlphaFold3 with constraints), cooperativity (alpha), DC50 / Dmax characterization, hook effect, and prediction-experiment reconciliation. Use when designing targeted protein degraders, planning linker SAR, predicting ternary complex stability, or building generative degrader workflows."
 license: MIT
@@ -6,13 +7,15 @@ license: MIT
 
 
 
+
 <!-- metadata:
-category: ''
+category: chemoinformatics
 version: 1.0.0
 author: Pradyumna Jayaram
-tags: []
-difficulty: beginner
-sources: bioSkills-main/chemoinformatics/protac-degraders/SKILL.md; SciAgent-Skills-main/skills/structural-biology-drug-discovery/protac-rd/SKILL.md
+tags:
+  - chemoinformatics
+  - research
+difficulty: intermediate
 -->
 
 ## Version Compatibility

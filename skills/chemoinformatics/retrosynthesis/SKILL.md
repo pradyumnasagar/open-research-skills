@@ -1,4 +1,5 @@
 ---
+
 name: retrosynthesis
 description: "Performs retrosynthetic planning using AiZynthFinder (MCTS, template-based), Chemformer (template-free transformer), ASKCOS, and emerging RetroSynFormer with explicit handling of route scoring, building-block availability (eMolecules, Enamine, Mcule), forward prediction validation (Molecular Transformer), and disconnection-aware multi-objective search (MO-MCTS). Use when assessing synthetic feasibility of generated or selected molecules, planning multi-step syntheses, building synthesis-aware design pipelines, or screening libraries for retro-route feasibility."
 license: MIT
@@ -6,13 +7,15 @@ license: MIT
 
 
 
+
 <!-- metadata:
-category: ''
+category: chemoinformatics
 version: 1.0.0
 author: Pradyumna Jayaram
-tags: []
-difficulty: beginner
-sources: bioSkills-main/chemoinformatics/retrosynthesis/SKILL.md; SciAgent-Skills-main/skills/structural-biology-drug-discovery/aizynthfinder/SKILL.md
+tags:
+  - chemoinformatics
+  - research
+difficulty: intermediate
 -->
 
 ## Version Compatibility

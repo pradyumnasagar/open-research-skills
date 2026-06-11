@@ -1,8 +1,10 @@
 ---
+
 name: brainstorming
 description: "Creative research ideation and exploration. Use for open-ended brainstorming, interdisciplinary connections, challenging assumptions, or identifying research gaps in early-stage research planning."
 license: MIT
 ---
+
 
 
 
@@ -11,19 +13,9 @@ category: scientific-thinking
 version: 1.0.0
 author: Pradyumna Jayaram
 tags:
-- ideation
-- creativity
-- research-planning
-- cross-domain
-- hypothesis-generation
-difficulty: beginner
-prerequisites:
-  tools: []
-  skills: []
-sources: 'Osborn, A.F. (1963). Applied Imagination: Principles and Procedures of Creative
-  Problem-Solving; SCAMPER technique (Eberle, 1971); Six Thinking Hats framework (de
-  Bono, 1985); Biomimicry Institute methodology (biomimicry.org); TRIZ inventive principles
-  (Altshuller, 1984)'
+  - scientific-thinking
+  - research
+difficulty: intermediate
 -->
 
 # Scientific Brainstorming

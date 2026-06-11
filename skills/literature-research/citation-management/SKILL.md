@@ -1,8 +1,10 @@
 ---
+
 name: citation-management
 description: "Set up and use reference managers (Zotero, Mendeley, EndNote) with citation styles, group libraries, PDF annotation, DOI/PMID workflows, and BibTeX export for reproducible research."
 license: MIT
 ---
+
 
 
 
@@ -11,27 +13,9 @@ category: literature-research
 version: 1.0.0
 author: Pradyumna Jayaram
 tags:
-- zotero
-- mendeley
-- bibtex
-- citation-style
-- doi
-- reference-manager
-difficulty: beginner
-prerequisites:
-  tools:
-  - Zotero 6+
-  - ZotFile/Zotero PDF Translate
-  - Better BibTeX
-  - RStudio/VSCode (optional)
-  skills: []
-sources: 'Zotero documentation and community guides (zotero.org/support); Adapted:
-  Integration with literature research workflow; Citation Style Language specification
-  (citationstyles.org); Adapted: Format examples and CSL editing; Better BibTeX for
-  Zotero (retorque.re/zotero-better-bibtex); Adapted: Modern export patterns; DOI
-  resolution via doi.org and Crossref (crossref.org); Adapted: Programmatic DOI workflows;
-  APA 7th Edition Style Guide, Vancouver Style guidelines; Adapted: Modern format
-  examples'
+  - literature-research
+  - research
+difficulty: intermediate
 -->
 
 # Citation and Reference Management

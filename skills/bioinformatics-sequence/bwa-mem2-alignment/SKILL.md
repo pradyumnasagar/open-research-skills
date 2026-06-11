@@ -1,8 +1,10 @@
 ---
+
 name: bwa-mem2-alignment
 description: "Use BWA-MEM2 — the SIMD-accelerated BWA-MEM replacement — for 2-3x speedup on human genome alignment with identical results to BWA-MEM."
 license: MIT
 ---
+
 
 
 
@@ -11,23 +13,9 @@ category: bioinformatics-sequence
 version: 1.0.0
 author: Pradyumna Jayaram
 tags:
-- bwa-mem2
-- bwa
-- alignment
-- illumina
-- performance
-- simd
+  - bioinformatics-sequence
+  - research
 difficulty: intermediate
-prerequisites:
-  tools:
-  - bwa-mem2>=2.2.1
-  - samtools>=1.19
-  skills:
-  - ors-bioinformatics-sequence-bwa-alignment"
-sources: "Original: SciAgent-Skills genomics-bioinformatics/alignment/bwa-mem2-dna-aligner;\
-  \ Adapted: modernized to BWA-MEM2 2.2.1, 2026 best practices, swapped flags for\
-  \ variant-calling readiness.; Improvisions: added gap-skill context — BWA-MEM2\
-  \ is the gap-filler for production speed-critical pipelines."
 -->
 
 # BWA-MEM2 — Faster BWA-MEM

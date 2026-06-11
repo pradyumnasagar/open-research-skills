@@ -1,4 +1,5 @@
 ---
+
 name: teaching-course-design
 description: "Designs research training courses using Wiggins and McTighe's Backward Design framework, Bloom's Taxonomy (revised) for cognitive scaffolding, and Universal Design for Learning (UDL) principles for accessibility. Use when designing new courses, redesigning existing curricula, creating research training modules, or building learning progressions."
 license: MIT
@@ -6,16 +7,15 @@ license: MIT
 
 
 
+
 <!-- metadata:
-category: ''
+category: mentorship-teaching
 version: 1.0.0
 author: Pradyumna Jayaram
-tags: []
-difficulty: beginner
-sources: Backward Design (Wiggins & McTighe); Bloom's Taxonomy (revised, Anderson
-  & Krathwohl 2001); Universal Design for Learning (UDL) guidelines (CAST.org); Entering
-  Mentoring curriculum (CIMER Project, University of Wisconsin-Madison); AAAS MyIDP
-  (Individual Development Plan)
+tags:
+  - mentorship-teaching
+  - research
+difficulty: intermediate
 -->
 
 ## Version Compatibility

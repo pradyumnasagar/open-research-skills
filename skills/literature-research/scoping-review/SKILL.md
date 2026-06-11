@@ -1,8 +1,10 @@
 ---
+
 name: scoping-review
 description: "Map evidence landscapes in emerging fields using Arksey-O'Malley and JBI scoping review frameworks. Includes charting, narrative synthesis, consultation exercise, and gap identification without formal quality assessment."
 license: MIT
 ---
+
 
 
 
@@ -11,26 +13,9 @@ category: literature-research
 version: 1.0.0
 author: Pradyumna Jayaram
 tags:
-- scoping-review
-- arksey-omalley
-- jbi
-- evidence-mapping
-- gap-analysis
+  - literature-research
+  - research
 difficulty: intermediate
-prerequisites:
-  tools:
-  - reference manager (Zotero)
-  - spreadsheet/Excel
-  - NVivo/ATLAS.ti (optional for qualitative charting)
-  skills:
-  - ors-literature-research-literature-search
-sources: 'Arksey & O''Malley ''Scoping studies: towards a methodological framework''
-  (International Journal of Social Research Methodology); Adapted: Modern JBI methodology;
-  JBI Manual for Evidence Synthesis, Chapter 11: Scoping Reviews (jbi-global); Adapted:
-  PCC framework, evidence gap maps; Peters et al. PRISMA-ScR extension; Adapted: Reporting
-  checklist; Levac, Colquhoun & O''Brien ''Scoping studies: advancing the methodology''
-  (Implementation Science); Adapted: Consultation exercise guidance; Munn et al. ''Systematic
-  review or scoping review?'' (BMC Med Res Methodol); Adapted: Decision guidance'
 -->
 
 # Scoping Review Methodology

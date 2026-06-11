@@ -1,8 +1,10 @@
 ---
+
 name: bwa-alignment
 description: "Align Illumina short reads to a reference genome with BWA-MEM — including index, MEM algorithm, paired-end, alt-contig handling, and 2026 best practices."
 license: MIT
 ---
+
 
 
 
@@ -11,26 +13,9 @@ category: bioinformatics-sequence
 version: 1.0.0
 author: Pradyumna Jayaram
 tags:
-- bwa
-- bwa-mem
-- alignment
-- illumina
-- short-read
-- sam
-- bam
+  - bioinformatics-sequence
+  - research
 difficulty: intermediate
-prerequisites:
-  tools:
-  - bwa>=0.7.17
-  - samtools>=1.19
-  - reference-index
-  skills:
-  - ors-bioinformatics-sequence-sam-bam-basics
-  - ors-bioinformatics-sequence-fastp-workflow
-sources: 'Original: bio-bwa-alignment (bioSkills-main/read-alignment/bwa-alignment);
-  Adapted: 2026 BWA-MEM2 alternative, alt-aware alignment (GRCh38), added `-K` and
-  `-Y` flag explanations.; Improvisions: added 2026 recommendation to default to BWA-MEM2,
-  nf-core integration.'
 -->
 
 # BWA-MEM Short-Read Alignment

@@ -1,8 +1,10 @@
 ---
+
 name: specific-aims
 description: "Use when drafting or revising the NIH Specific Aims page (1 page) for an R01, R21, R03, F-series, or K-series: concrete structure, opening-paragraph formula, Aim-construction pattern, decision rules, common failure modes."
 license: MIT
 ---
+
 
 
 
@@ -11,23 +13,9 @@ category: research-grants
 version: 1.0.0
 author: Pradyumna Jayaram
 tags:
-- nih
-- specific-aims
-- r01
-- k-award
-- 1-page
-- draft-iterations
+  - research-grants
+  - research
 difficulty: intermediate
-prerequisites:
-- tools:
-  - NIH Forms-H/I package
-- skills:
-  - ors-research-grants-nih-r01
-  - ors-research-grants-nih-k-series"
-sources: "NIH: Forms-H/I Specific Aims page (1 page limit) — grants.nih.gov/grants/forms.htm;\
-  \ NIH: SF424 Application Guide — Specific Aims guidance; Improvisions: Concrete\
-  \ opening-paragraph formula, Aim-construction pattern, common failure mode list,\
-  \ decision-rule phrasing"
 -->
 
 # NIH Specific Aims Page (1 page)

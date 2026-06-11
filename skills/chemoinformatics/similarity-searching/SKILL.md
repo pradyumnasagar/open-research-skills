@@ -1,4 +1,5 @@
 ---
+
 name: similarity-searching
 description: "Performs molecular similarity searching using Tanimoto, Tversky, Dice, and cosine coefficients on bit/count fingerprints with explicit choice rules for symmetric vs asymmetric measures, scaffold-hopping vs lead-optimization regimes, activity-cliff diagnosis, and large-library nearest-neighbor methods (BulkTanimoto, Annoy MHFP6, USRCAT). Use when ranking compounds by structural resemblance to a query, clustering libraries, finding analogs, or diagnosing activity cliffs."
 license: MIT
@@ -6,14 +7,15 @@ license: MIT
 
 
 
+
 <!-- metadata:
-category: ''
+category: chemoinformatics
 version: 1.0.0
 author: Pradyumna Jayaram
-tags: []
-difficulty: beginner
-sources: bioSkills-main/chemoinformatics/similarity-searching/SKILL.md; SciAgent-Skills-main/skills/structural-biology-drug-discovery/rdkit-cheminformatics/SKILL.md;
-  SciAgent-Skills-main/skills/structural-biology-drug-discovery/molfeat-molecular-featurization/SKILL.md
+tags:
+  - chemoinformatics
+  - research
+difficulty: intermediate
 -->
 
 ## Version Compatibility

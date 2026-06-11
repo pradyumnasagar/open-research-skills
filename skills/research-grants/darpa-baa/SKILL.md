@@ -1,8 +1,10 @@
 ---
+
 name: darpa-baa
 description: "Use when responding to a DARPA Broad Agency Announcement: white paper vs full proposal, Heilmeier Catechism framing, program manager engagement, BAA-specific formatting, cost volume construction."
 license: MIT
 ---
+
 
 
 
@@ -11,28 +13,9 @@ category: research-grants
 version: 1.0.0
 author: Pradyumna Jayaram
 tags:
-- darpa
-- baa
-- baa-procurement
-- heilmeier
-- program-manager
-- white-paper
-- cost-volume
-difficulty: advanced
-prerequisites:
-- tools:
-  - DARPA BAA submission portal (often DSIP
-  - SAM.gov)
-  - eRA Commons
-  - SciENcv
-- skills:
-  - ors-research-grants-specific-aims
-  - ors-research-grants-bio-sketch
-sources: 'DARPA: Broad Agency Announcements (BAAs) at darpa.mil/work-with-us/baa;
-  DARPA: Heilmeier Catechism (origin: George H. Heilmeier, DARPA Director 1975-1977);
-  DARPA: Cost proposal guidance and SF424 R&R budget guidance; DARPA: DSIP submission
-  portal (Defense SBIR/STTR Innovation Portal); Improvisions: White paper vs full
-  proposal gate decision, Heilmeier-question-by-question mapping'
+  - research-grants
+  - research
+difficulty: intermediate
 -->
 
 # DARPA Broad Agency Announcement (BAA)

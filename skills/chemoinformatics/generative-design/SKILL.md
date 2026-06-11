@@ -1,4 +1,5 @@
 ---
+
 name: generative-design
 description: "Designs novel molecules using REINVENT 4 (de novo, scaffold decoration, linker design, R-group, molecular optimization), MolMIM, Diffusion-based generators (DiGress, DiffSMol), and JT-VAE with explicit handling of multi-parameter optimization (MPO), goal-directed scoring functions, transfer/reinforcement/curriculum learning, synthetic accessibility scoring, and chemical space exploration vs exploitation. Use when designing new chemical matter against a target, decorating a scaffold, linking fragments, or optimizing a hit for multiple ADMET / activity properties simultaneously."
 license: MIT
@@ -6,14 +7,15 @@ license: MIT
 
 
 
+
 <!-- metadata:
-category: ''
+category: chemoinformatics
 version: 1.0.0
 author: Pradyumna Jayaram
-tags: []
-difficulty: beginner
-sources: bioSkills-main/chemoinformatics/generative-design/SKILL.md; SciAgent-Skills-main/skills/structural-biology-drug-discovery/reinvent/SKILL.md;
-  SciAgent-Skills-main/skills/structural-biology-drug-discovery/molmim/SKILL.md
+tags:
+  - chemoinformatics
+  - research
+difficulty: intermediate
 -->
 
 ## Version Compatibility

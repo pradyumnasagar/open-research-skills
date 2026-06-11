@@ -1,8 +1,10 @@
 ---
+
 name: batch-processing
 description: "Process many FASTA/FASTQ/GenBank files in batch — merge, split, convert, summarize, organize — using Biopython 1.83+."
 license: MIT
 ---
+
 
 
 
@@ -11,23 +13,9 @@ category: bioinformatics-sequence
 version: 1.0.0
 author: Pradyumna Jayaram
 tags:
-- biopython
-- seqio
-- batch
-- fasta
-- fastq
-- automation
+  - bioinformatics-sequence
+  - research
 difficulty: intermediate
-prerequisites:
-  tools:
-  - python>=3.10
-  - biopython>=1.83
-  skills: []
-sources: 'Original: bio-batch-processing (bioSkills-main/sequence-io/batch-processing);
-  Adapted: rewritten prose, added streaming memory tips, 2025-2026 Biopython 1.83+
-  API notes, dropped multiprocessing deep-dive in favor of Polars-friendly patterns.;
-  Improvisions: new ''aggregate to Parquet'' pattern, 2026-era guidance on nf-core
-  and BioContainers for true production batch jobs.'
 -->
 
 # Batch Sequence File Processing

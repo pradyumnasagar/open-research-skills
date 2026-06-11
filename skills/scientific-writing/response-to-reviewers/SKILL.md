@@ -1,8 +1,10 @@
 ---
+
 name: response-to-reviewers
 description: "Detailed how-to for the actual response-to-reviewers document: tone discipline, heading structure (Reviewer N, Comment M: ... Response: ...), line-number references, embedding revised figure panels, and when to send the response with vs. without an editor's cover letter."
 license: MIT
 ---
+
 
 
 
@@ -11,20 +13,9 @@ category: scientific-writing
 version: 1.0.0
 author: Pradyumna Jayaram
 tags:
-- response-document
-- line-numbers
-- figure-embedding
-- response-format
-- peer-review
+  - scientific-writing
+  - research
 difficulty: intermediate
-prerequisites:
-  tools: []
-  skills:
-  - ors-scientific-writing-rebuttal-letter
-sources: ICMJE Recommendations (icmje.org); Nature peer-review policy (nature.com/nature-portfolio/editorial-policies/peer-review);
-  eLife reviewed-preprint model (elifesciences.org/peer-review); PLOS peer-review
-  policy (plos.org/peer-review); F1000Research open peer-review platform (sample responses);
-  BMJ Open peer-review history (sample responses)
 -->
 
 # Response to Reviewers (How-To)

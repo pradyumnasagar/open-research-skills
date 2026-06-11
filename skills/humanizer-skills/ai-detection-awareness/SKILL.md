@@ -1,8 +1,10 @@
 ---
+
 name: ai-detection-awareness
 description: "Use when you or your institution are using, evaluating, or responding to AI-detection tools (GPTZero, Turnitin, Copyleaks, Originality.ai, Pangram) — how detectors work, their failure modes, the limits of paraphrasing tools, and the move toward process-based assessment."
 license: MIT
 ---
+
 
 
 
@@ -11,25 +13,9 @@ category: humanizer-skills
 version: 1.0.0
 author: Pradyumna Jayaram
 tags:
-- ai-detection
-- perplexity
-- burstiness
-- integrity
-- paraphrasing
-- process-based-assessment
+  - humanizer-skills
+  - research
 difficulty: intermediate
-prerequisites:
-  tools: []
-  skills:
-  - ors-humanizer-skills-text-humanizing-editorial
-  - ors-humanizer-skills-ai-disclosure-statement"
-sources: "Original: public statements and product pages from GPTZero, Turnitin, Copyleaks,\
-  \ Originality.ai, Pangram — Adapted: structural summary; specific accuracy\
-  \ claims not repeated, verify in current vendor documentation; Original: university\
-  \ teaching-and-learning center guidance on AI detection (representative institutions)\
-  \ — Adapted: structural summary of common themes, verify in current institutional\
-  \ guidance; Improvisions: false-positive analysis by population, paraphrase-tool\
-  \ failure mode, process-based assessment as the institutional response"
 -->
 
 # AI Detection Awareness

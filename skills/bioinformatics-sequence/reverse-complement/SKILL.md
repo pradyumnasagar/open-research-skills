@@ -1,8 +1,10 @@
 ---
+
 name: reverse-complement
 description: "Compute reverse complements, complements, and strand-aware operations on DNA/RNA — including IUPAC ambiguity support, batch processing, and the orientation trap."
 license: MIT
 ---
+
 
 
 
@@ -11,22 +13,9 @@ category: bioinformatics-sequence
 version: 1.0.0
 author: Pradyumna Jayaram
 tags:
-- biopython
-- reverse-complement
-- iupac
-- strand
-- dna
-difficulty: beginner
-prerequisites:
-  tools:
-  - python>=3.10
-  - biopython>=1.83
-  skills:
-  - ors-bioinformatics-sequence-seq-objects
-sources: 'Original: bio-reverse-complement (bioSkills-main/sequence-manipulation/reverse-complement);
-  Adapted: dropped deprecated Bio.Alphabet patterns, added IUPAC table, 2026 pysam/seqkit
-  cross-reference.; Improvisions: orientation-confusion decision tree, batch processing
-  patterns.'
+  - bioinformatics-sequence
+  - research
+difficulty: intermediate
 -->
 
 # Reverse Complement and Strand Operations

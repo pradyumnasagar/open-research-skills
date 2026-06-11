@@ -1,8 +1,10 @@
 ---
+
 name: preprints
 description: "Use when choosing a preprint server (bioRxiv, medRxiv, ChemRxiv, SSRN, arXiv), selecting a license (CC-BY vs CC-BY-NC-ND), versioning, scoop protection, or planning journal transfer with In Review / Reviewed Preprint services."
 license: MIT
 ---
+
 
 
 
@@ -11,28 +13,9 @@ category: open-science
 version: 1.0.0
 author: Pradyumna Jayaram
 tags:
-- preprints
-- biorxiv
-- medrxiv
-- open-access
-- licensing
-- scoop-protection
-- journal-transfer
-difficulty: beginner
-prerequisites:
-  tools:
-  - web-browser
-  - orcid
-  - latex-or-word
-  skills: []"
-sources: "Original: Cold Spring Harbor Laboratory bioRxiv/medRxiv posting guide (https://www.biorxiv.org/).;\
-  \ Original: ASAPbio preprint server list (https://asapbio.org/preprint-servers).;\
-  \ Original: Creative Commons license chooser (https://creativecommons.org/choose/).;\
-  \ Original: NIH Preprint Pilot in PubMed Central (https://www.ncbi.nlm.nih.gov/pmc/).;\
-  \ Original: STM 2024 statement on co-reviewed preprints.; Original: bioRxiv/medRxiv\
-  \ In Review and Reviewed Preprint (https://www.biorxiv.org/).; Improvisions: Pradyumna\
-  \ Jayaram — server-selection decision tree, license comparison table, scoop-protection\
-  \ timeline, journal-transfer flow diagram."
+  - open-science
+  - research
+difficulty: intermediate
 -->
 
 # Preprints

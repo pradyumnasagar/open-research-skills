@@ -1,8 +1,10 @@
 ---
+
 name: filter-sequences
 description: "Filter FASTA/FASTQ records by length, identity, regex on headers, GC window, complexity, and custom predicates — streaming with Biopython 1.83+."
 license: MIT
 ---
+
 
 
 
@@ -11,24 +13,9 @@ category: bioinformatics-sequence
 version: 1.0.0
 author: Pradyumna Jayaram
 tags:
-- biopython
-- filter
-- regex
-- gc
-- length
-- fastq
-- fasta
-difficulty: beginner
-prerequisites:
-  tools:
-  - python>=3.10
-  - biopython>=1.83
-  skills:
-  - ors-bioinformatics-sequence-fastq-quality-scores
-sources: 'Original: bio-filter-sequences (bioSkills-main/sequence-io/filter-sequences);
-  Adapted: tightened to streaming-only patterns, added 2026 regex tips for header
-  parsing.; Improvisions: added complexity filter (Shannon entropy), 2026 seqkit open
-  alternative.'
+  - bioinformatics-sequence
+  - research
+difficulty: intermediate
 -->
 
 # Filter Sequences by Criteria

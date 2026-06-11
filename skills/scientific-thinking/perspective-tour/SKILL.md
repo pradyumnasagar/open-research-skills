@@ -1,8 +1,10 @@
 ---
+
 name: perspective-tour
 description: "Multi-perspective exploration of a research question using 5-7 expert lenses. Use for grant specific aims, manuscript framing, project scoping, or when a question benefits from theoretical, methodological, clinical, and ethical viewpoints."
 license: MIT
 ---
+
 
 
 
@@ -11,21 +13,9 @@ category: scientific-thinking
 version: 1.0.0
 author: Pradyumna Jayaram
 tags:
-- multi-perspective
-- framing
-- grant-writing
-- project-scoping
-- interdisciplinary
+  - scientific-thinking
+  - research
 difficulty: intermediate
-prerequisites:
-  tools: []
-  skills:
-  - ors-scientific-thinking-brainstorming
-  - ors-scientific-thinking-critical-thinking
-sources: 'de Bono, E.. Six Thinking Hats framework; Kuhn, T.S.. The Structure of Scientific
-  Revolutions; Laudan, L.. Progress and Its Problems: Toward a Theory of Scientific
-  Growth; Feyerabend, P.. Against Method; Lakatos, I.. Falsification and the Methodology
-  of Scientific Research Programmes'
 -->
 
 # Perspective Tour

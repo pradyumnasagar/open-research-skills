@@ -1,8 +1,10 @@
 ---
+
 name: nsf-standard
 description: "Use when planning, drafting, or revising an NSF Standard Research Proposal: Project Description (15 pp), Data Management Plan, Postdoc Mentoring Plan, Broader Impacts, biographical sketch via SciENcv, and current PAPPG compliance."
 license: MIT
 ---
+
 
 
 
@@ -11,25 +13,9 @@ category: research-grants
 version: 1.0.0
 author: Pradyumna Jayaram
 tags:
-- nsf
-- pappg
-- project-description
-- broader-impacts
-- biographical-sketch
-- sciencv
-difficulty: advanced
-prerequisites:
-  tools:
-  - SciENcv
-  - Research.gov
-  - FastLane
-  skills:
-  - ors-research-grants-bio-sketch
-sources: 'NSF: Proposal & Award Policies & Procedures Guide (PAPPG), current edition;
-  NSF: biographical sketch / SciENcv guidance; NSF: Data Management Plan policy and
-  revised 2-page DMP template; NSF: Postdoctoral Researcher Mentoring Plan requirement;
-  Improvisions: explicit Broader Impacts vs. Intellectual Merits separation, PAPPG
-  versioning check'
+  - research-grants
+  - research
+difficulty: intermediate
 -->
 
 # NSF Standard Research Proposal

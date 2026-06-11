@@ -1,8 +1,10 @@
 ---
+
 name: schematics-diagrams
 description: "Design scientific schematics, workflow diagrams, and architecture figures."
 license: MIT
 ---
+
 
 
 
@@ -11,31 +13,9 @@ category: scientific-visualization
 version: 1.0.0
 author: Pradyumna Jayaram
 tags:
-- schematics
-- diagrams
-- drawio
-- inkscape
-- mermaid
-- graphviz
-- tikz
-- biorender
-- workflow
+  - scientific-visualization
+  - research
 difficulty: intermediate
-prerequisites:
-  tools:
-  - inkscape>=1.0
-  - drawio-desktop (or app.diagrams.net)
-  - mermaid-cli (optional)
-  - graphviz (optional)
-  - texlive-tikz (optional)
-  skills:
-  - ors-scientific-visualization-figure-design
-  - ors-scientific-visualization-color-and-accessibility
-sources: 'Original: scientific-schematics (scientific-agent-skills, K-Dense Inc.);
-  Adapted: removed bundled templates, narrowed AI-image workflow into disclosure guidance,
-  restructured around tool-selection matrix; Improvisions: added Mermaid and Graphviz
-  declarative patterns, TikZ figure skeleton, accessibility checklist for diagrams,
-  journal schematic conventions (Nature/Cell/PNAS)'
 -->
 
 # Scientific Schematics and Diagrams

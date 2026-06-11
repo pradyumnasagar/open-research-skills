@@ -1,4 +1,5 @@
 ---
+
 name: molecular-io
 description: "Reads, writes, and converts molecular file formats (SMILES, InChI, SDF V2000/V3000, MOL2, PDB, MMTF) using RDKit and Open Babel with rigorous handling of aromaticity perception, stereochemistry, implicit/explicit hydrogens, kekulization, and salt/fragment separation. Use when loading chemical libraries, debugging parse failures, or preparing molecules for downstream standardization, descriptor calculation, or docking."
 license: MIT
@@ -6,14 +7,15 @@ license: MIT
 
 
 
+
 <!-- metadata:
-category: ''
+category: chemoinformatics
 version: 1.0.0
 author: Pradyumna Jayaram
-tags: []
-difficulty: beginner
-sources: bioSkills-main/chemoinformatics/molecular-io/SKILL.md; SciAgent-Skills-main/skills/structural-biology-drug-discovery/rdkit-cheminformatics/SKILL.md;
-  SciAgent-Skills-main/skills/structural-biology-drug-discovery/datamol-cheminformatics/SKILL.md
+tags:
+  - chemoinformatics
+  - research
+difficulty: intermediate
 -->
 
 ## Version Compatibility

@@ -1,4 +1,5 @@
 ---
+
 name: covalent-design
 description: "Designs covalent inhibitors and warheads targeting cysteine (most common, ~98% of covalent drugs), lysine, serine, threonine, tyrosine, and aspartate residues, with explicit handling of warhead reactivity (acrylamide, chloroacetamide, vinyl sulfone, sulfonyl fluoride, fluorosulfate, aldehyde, boronate, nitrile), reversibility (kinact/Ki, t_residence), glutathione (GSH) stability, intrinsic reactivity assays, and covalent docking (DOCKovalent, GOLD, HCovDock). Use when designing covalent inhibitors for targeted covalent inhibition (TCI), KRAS G12C-style approaches, or rationalizing covalent SAR."
 license: MIT
@@ -6,13 +7,15 @@ license: MIT
 
 
 
+
 <!-- metadata:
-category: ''
+category: chemoinformatics
 version: 1.0.0
 author: Pradyumna Jayaram
-tags: []
-difficulty: beginner
-sources: bioSkills-main/chemoinformatics/covalent-design/SKILL.md; SciAgent-Skills-main/skills/structural-biology-drug-discovery/cysdb-covalent/SKILL.md
+tags:
+  - chemoinformatics
+  - research
+difficulty: intermediate
 -->
 
 ## Version Compatibility

@@ -1,14 +1,18 @@
 ---
 
+
 name: docking-rescoring
 description: "Performs ML-based protein-ligand pose prediction and scoring using DiffDock-L (diffusion-based), Boltz-1 / Boltz-2 (foundation model with affinity), Chai-1, AlphaFold3 ligand, EquiBind, TANKBind, NeuralPLexer, and hybrid workflows (DiffDock pose + GNINA rescore + PoseBusters QC). Explicit handling of when ML beats classical docking, when classical beats ML, the PB-invalid pose problem, and rescoring as the standard production hybrid. Use when modern docking is needed: foundation-model ligand-pose prediction, AI rescoring of classical poses, or scaffold-hopping in cross-docking scenarios."
 license: MIT
 ---
+
 <!-- metadata:
 category: chemoinformatics
 version: 1.0.0
 author: Pradyumna Jayaram
-tags: [chemoinformatics, research]
+tags:
+  - chemoinformatics
+  - research
 difficulty: intermediate
 -->
 

@@ -1,8 +1,10 @@
 ---
+
 name: sam-bam-basics
 description: "Understand the SAM format header, alignment records, FLAGs, MAPQ, CIGAR, and coordinate conventions — the foundation for all downstream BAM analysis."
 license: MIT
 ---
+
 
 
 
@@ -11,20 +13,9 @@ category: bioinformatics-sequence
 version: 1.0.0
 author: Pradyumna Jayaram
 tags:
-- sam
-- bam
-- flag
-- mapq
-- cigar
-- format
-difficulty: beginner
-prerequisites:
-  tools:
-  - samtools>=1.19
-  skills: []
-sources: 'Original: bio-sam-bam-basics (bioSkills-main/alignment-files/sam-bam-basics);
-  Adapted: tightened SAM/BAM conventions, added 2026 samtools view flags.; Improvisions:
-  added the canonical SAM field table, FLAG decode examples, PAF comparison.'
+  - bioinformatics-sequence
+  - research
+difficulty: intermediate
 -->
 
 # SAM / BAM File Basics

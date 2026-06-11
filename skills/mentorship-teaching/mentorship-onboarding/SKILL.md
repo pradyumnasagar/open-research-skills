@@ -1,4 +1,5 @@
 ---
+
 name: mentorship-onboarding
 description: "Establishes effective mentor-mentee relationships through structured onboarding using the Entering Mentoring curriculum (CIMER, UW-Madison), defining expectations, communication cadences, and feedback norms. Use when initiating a new mentoring relationship, transitioning between mentors, or formalizing an informal mentorship."
 license: MIT
@@ -6,16 +7,15 @@ license: MIT
 
 
 
+
 <!-- metadata:
-category: ''
+category: mentorship-teaching
 version: 1.0.0
 author: Pradyumna Jayaram
-tags: []
-difficulty: beginner
-sources: NSF PAPPG Mentoring Plan requirements; NIH Broadening Experiences in Scientific
-  Training (BEST) programs; AAAS MyIDP (Individual Development Plan) tools; Entering
-  Mentoring curriculum (CIMER Project, University of Wisconsin-Madison); Universal
-  Design for Learning (UDL) guidelines (CAST.org)
+tags:
+  - mentorship-teaching
+  - research
+difficulty: intermediate
 -->
 
 ## Version Compatibility

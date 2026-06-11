@@ -1,4 +1,5 @@
 ---
+
 name: comm-podcast
 description: "Produces a 20-60 minute scientific podcast episode (interview, narrated story, or panel) for a general audience, with a pre-published show note, three-act structure, host prep, guest prep, and an editorial pass. Applies the Anderson TED-principle of the one-idea transmission, the Gopen & Swan listener-stress-position principle, and the AAAS Toolkit audience-first discipline. Use when launching a science podcast, preparing for an interview, recording a research-summary episode, or producing a panel discussion."
 license: MIT
@@ -6,15 +7,15 @@ license: MIT
 
 
 
+
 <!-- metadata:
-category: ''
+category: scientific-communication
 version: 1.0.0
 author: Pradyumna Jayaram
-tags: []
-difficulty: beginner"
-sources: Anderson, "The Way We're Working Isn't Working"; Gopen & Swan, "The Science
-  of Scientific Writing"; AAAS Communication Toolkit; NIH Plain Language guidelines;
-  Alda Center for Communicating Science; Nature Masterclasses on Podcast Production
+tags:
+  - scientific-communication
+  - research
+difficulty: intermediate
 -->
 
 ## Version Compatibility

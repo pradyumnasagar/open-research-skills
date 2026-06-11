@@ -1,8 +1,10 @@
 ---
+
 name: industry-transition
 description: "Translate a PhD into an industry resume, navigate technical screens and system design for ML roles, and compare biotech, big-pharma, ML-for-bio, science writing, and consulting paths. Includes startup vs established company trade-offs. Use when a PhD student or postdoc is preparing for a job search outside academia."
 license: MIT
 ---
+
 
 
 
@@ -11,27 +13,9 @@ category: career-navigation
 version: 1.0.0
 author: Pradyumna Jayaram
 tags:
-- industry
-- career-transition
-- resume
-- biotech
-- ml
-- consulting
-- science-writing
+  - career-navigation
+  - research
 difficulty: intermediate
-prerequisites:
-  tools:
-  - markdown
-  - pandoc
-  - latex
-  skills:
-  - ors-career-navigation-academic-cv
-sources: AAAS Science Careers 'PhD to Industry' resources; iBiology 'Career Skills'
-  short course transcripts (publicly available); Nature Careers 'Turning Point' column
-  archive; Bureau of Labor Statistics (BLS) occupational outlook for life and physical
-  scientists; Levels.fyi publicly shared compensation data methodology; Public recruiting
-  pages at biotech, ML-for-bio, and consulting firms (general descriptions of role
-  categories)
 -->
 
 # PhD to Industry Career Transition

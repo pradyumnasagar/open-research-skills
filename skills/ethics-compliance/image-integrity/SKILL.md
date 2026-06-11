@@ -1,8 +1,10 @@
 ---
+
 name: image-integrity
 description: "Use when preparing, reviewing, or auditing research images (Western blots, gels, microscopy, EM, multi-panel figures) for submission — covers manipulation detection by proofreader tools and human review, figure assembly best practices, raw data retention, journal image-checking policies (e.g., Nature's screening), RRIDs, and concrete examples of what gets flagged."
 license: MIT
 ---
+
 
 
 
@@ -11,26 +13,9 @@ category: ethics-compliance
 version: 1.0.0
 author: Pradyumna Jayaram
 tags:
-- image-integrity
-- western-blot
-- figure-prep
-- research-integrity
-- rrid
-- microscopy
+  - ethics-compliance
+  - research
 difficulty: intermediate
-prerequisites:
-  tools: []
-  skills:
-  - ors-scientific-visualization-multipanel-figures
-sources: 'Original: Nature Editorial ''What constitutes image manipulation?'' and
-  the Nature Portfolio image-screening policy; Adapted: screening policy and image-policy
-  checklist; Original: Rossner & Yamada, ''What''s in a picture? The temptation of
-  image manipulation'' (Journal of Cell Biology, 2004); Adapted: manipulation rules
-  and figure-prep discipline; Original: ORI Guidelines for Scientific Images; Adapted:
-  ''no specific feature may be enhanced, obscured, moved, removed, or introduced'';
-  Original: SciForums / PubPeer image-screening reports; Adapted: case-pattern library
-  of what gets flagged; Improvisions: toolchain (Proofreader, ImageJ, image-validator),
-  RRID section, raw-data retention policy, worked example of an unflagged figure'
 -->
 
 # Research Image Integrity

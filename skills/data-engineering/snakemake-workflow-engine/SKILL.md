@@ -1,8 +1,10 @@
 ---
+
 name: snakemake-workflow-engine
 description: "Python-based workflow manager for reproducible, scalable pipelines. Define rules with file-based dependencies; Snakemake resolves execution order and parallelism. Runs local, SLURM, LSF, AWS, GCP via profiles; per-rule conda/Singularity envs. For NGS pipelines, ML training, and multi-step file processing. Use Nextflow for Groovy dataflow or nf-core integration."
 license: MIT
 ---
+
 
 
 
@@ -11,24 +13,9 @@ category: data-engineering
 version: 1.0.0
 author: Pradyumna Jayaram
 tags:
-- snakemake
-- workflow
-- pipeline
-- hpc
-- reproducibility
+  - data-engineering
+  - research
 difficulty: intermediate
-prerequisites:
-  tools:
-  - snakemake>=8
-  - graphviz
-  - conda
-  skills: []"
-sources: "Original: snakemake-workflow-engine (SciAgent-Skills-main/scientific-computing/snakemake-workflow-engine);\
-  \ Adapted: trimmed verbose examples, added 2026 SLURM profile guidance, added nf-core\
-  \ / Nextflow disambiguation, added modern container options (Apptainer vs Singularity,\
-  \ pixi support).; Improvisions: rewrote for data-engineering category audience —\
-  \ emphasised data pipeline patterns (Parquet/Zarr/HDF5 outputs), DVC integration,\
-  \ FAIR output handling, added `module` workflow composition."
 -->
 
 # Snakemake Workflow Engine

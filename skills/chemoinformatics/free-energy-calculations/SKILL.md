@@ -1,4 +1,5 @@
 ---
+
 name: free-energy-calculations
 description: "Performs alchemical free-energy calculations including relative binding free energy (RBFE / FEP+) and absolute binding free energy (ABFE) via OpenFE, FEP+, GROMACS, AMBER pmemd, and OpenMM with explicit lambda window scheduling, soft-core potentials, REST2 enhanced sampling, MBAR/BAR analysis, and cycle closure validation. Compares ML alternatives (Boltz-2 affinity, DeepDock). Use when ranking analogs by binding affinity beyond docking accuracy, performing prospective lead optimization, or validating SAR predictions."
 license: MIT
@@ -6,13 +7,15 @@ license: MIT
 
 
 
+
 <!-- metadata:
-category: ''
+category: chemoinformatics
 version: 1.0.0
 author: Pradyumna Jayaram
-tags: []
-difficulty: beginner
-sources: bioSkills-main/chemoinformatics/free-energy-calculations/SKILL.md
+tags:
+  - chemoinformatics
+  - research
+difficulty: intermediate
 -->
 
 ## Version Compatibility

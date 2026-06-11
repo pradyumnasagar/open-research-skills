@@ -1,8 +1,10 @@
 ---
+
 name: compressed-sequence-files
 description: "Read and write gzip, bzip2, and BGZF-compressed FASTA/FASTQ using Python stdlib and Biopython — including indexable BGZF."
 license: MIT
 ---
+
 
 
 
@@ -11,22 +13,9 @@ category: bioinformatics-sequence
 version: 1.0.0
 author: Pradyumna Jayaram
 tags:
-- biopython
-- bgzf
-- gzip
-- compression
-- fasta
-- fastq
-difficulty: beginner
-prerequisites:
-  tools:
-  - python>=3.10
-  - biopython>=1.83
-  skills: []
-sources: 'Original: bio-compressed-files (bioSkills-main/sequence-io/compressed-files);
-  Adapted: trimmed mode-table, added 2025-2026 BGZF guidance, added SeqKit/HTSlib
-  open alternatives.; Improvisions: new auto-detect helper, htslib bgzip recommendation
-  for BAM/VCF pipelines.'
+  - bioinformatics-sequence
+  - research
+difficulty: intermediate
 -->
 
 # Compressed Sequence Files (gzip / bzip2 / BGZF)

@@ -1,8 +1,10 @@
 ---
+
 name: manuscript-review
 description: "Conduct a formal peer review of a scientific manuscript for a journal: section-by-section evaluation, reporting-checklist compliance, major/minor comments, recommendation to editor."
 license: MIT
 ---
+
 
 
 
@@ -11,29 +13,9 @@ category: peer-review
 version: 1.0.0
 author: Pradyumna Jayaram
 tags:
-- peer-review
-- manuscript
-- journal
-- reporting-checklist
-- reviewer-recommendation
-difficulty: advanced
-prerequisites:
-  tools: []
-  skills: []"
-sources: "ICMJE Recommendations for the Conduct, Reporting, Editing, and Publication\
-  \ of Scholarly Work in Medical Journals (icmje.org); EQUATOR Network — reporting-guidelines\
-  \ registry (equator-network.org); CONSORT 2010 / CONSORT-AI / CONSORT-Cluster extensions\
-  \ (bibr.iumio.ch); STROBE Statement for observational studies (strobe-statement.org);\
-  \ PRISMA 2020 Statement for systematic reviews (prisma-statement.org); ARRIVE 2.0\
-  \ — Animal Research: Reporting of In Vivo Experiments (arriveguidelines.org);\
-  \ MIAME — Minimum Information About a Microarray Experiment (fgcz.ch); MINSEQE\
-  \ — Minimum Information about a Sequencing Experiment (grnasp.org); TRIPOD+AI\
-  \ — prediction model reporting (tripod-statement.org); SPIRIT 2013 — trial\
-  \ protocol reporting (spirit-statement.org); CARE 2017 — case report reporting\
-  \ (care-statement.org); CHEERS 2022 — economic evaluation reporting (cheers-statement.org);\
-  \ Committee on Publication Ethics (COPE) Peer Review guidance (publicationethics.org);\
-  \ Elsevier — Role of a reviewer (elsevier.com/reviewers/role); Nature —\
-  \ Formal peer-review guidance (nature.com/nature-portfolio/editorial-processes/peer-review)"
+  - peer-review
+  - research
+difficulty: intermediate
 -->
 
 # Manuscript Peer Review

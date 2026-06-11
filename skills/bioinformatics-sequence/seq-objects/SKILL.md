@@ -1,8 +1,10 @@
 ---
+
 name: seq-objects
 description: "Master the Seq, MutableSeq, and SeqRecord objects — slicing, immutability, ambiguity codes, alphabets, and the 2026 Biopython alphabet deprecation reality."
 license: MIT
 ---
+
 
 
 
@@ -11,21 +13,9 @@ category: bioinformatics-sequence
 version: 1.0.0
 author: Pradyumna Jayaram
 tags:
-- biopython
-- seq
-- seqrecord
-- alphabets
-- slicing
-difficulty: beginner
-prerequisites:
-  tools:
-  - python>=3.10
-  - biopython>=1.83
-  skills: []
-sources: 'Original: bio-seq-objects (bioSkills-main/sequence-manipulation/seq-objects);
-  Adapted: 2026 alphabet-IUPAC reality, MutableSeq patterns for in-place edits, SeqRecord
-  feature handling.; Improvisions: added reverse-complement tie-in, parity with Bio.SeqUtils
-  1.83+.'
+  - bioinformatics-sequence
+  - research
+difficulty: intermediate
 -->
 
 # Biopython Seq and SeqRecord Objects

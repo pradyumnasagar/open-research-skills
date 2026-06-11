@@ -1,8 +1,10 @@
 ---
+
 name: alphafold-structure-prediction
 description: "Run AlphaFold 2/3 and Boltz-1 for protein structure prediction, including MSA generation with MMseqs2/JackHMMER, pLDDT/PAE interpretation, multimer prediction, and querying the AlphaFold Database (AFDB)."
 license: MIT
 ---
+
 
 
 
@@ -11,33 +13,9 @@ category: machine-learning-bio
 version: 1.0.0
 author: Pradyumna Jayaram
 tags:
-- alphafold
-- boltz
-- structure-prediction
-- pLDDT
-- PAE
-- MSA
-- mmseqs2
-difficulty: advanced
-prerequisites:
-  tools:
-  - python
-  - pytorch
-  - mmseqs2
-  - jackhmmer
-  - hh-suite
-  - biotite
-  - py3Dmol
-  skills:
-  - machine-learning-bio/protein-language-models
-sources: 'Original: Jumper et al. 2021 Nature (AlphaFold 2); Adapted: practical MSA
-  + inference workflow, pLDDT/PAE interpretation rules; Original: Abramson et al.
-  2024 Nature (AlphaFold 3); Adapted: input YAML format, complex/ligand handling;
-  Original: Wohlwend et al. 2024 (Boltz-1, github.com/jwohlwend/boltz); Adapted: inference,
-  confidence interpretation; Original: Mirdita et al. ColabFold; Adapted: batch /
-  MMseqs2 pipeline; Original: Varadi et al. AlphaFold Database (EMBL-EBI); Adapted:
-  programmatic query patterns; Improvisions: multimer guidance, MSA pitfalls, GPU
-  sizing, validation rubric'
+  - machine-learning-bio
+  - research
+difficulty: intermediate
 -->
 
 # AlphaFold & Boltz-1 Structure Prediction

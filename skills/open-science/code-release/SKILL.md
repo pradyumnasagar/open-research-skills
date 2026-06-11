@@ -1,14 +1,18 @@
 ---
 
+
 name: code-release
 description: "Use when releasing research code: Zenodo-GitHub integration for a citable DOI, Citation File Format (CFF), containerization with Docker/Apptainer, conda lockfiles, and reproducibility badges for end-to-end reproducibility."
 license: MIT
 ---
+
 <!-- metadata:
 category: open-science
 version: 1.0.0
 author: Pradyumna Jayaram
-tags: [open-science, research]
+tags:
+  - open-science
+  - research
 difficulty: intermediate
 -->
 

@@ -1,8 +1,10 @@
 ---
+
 name: text-humanizing-editorial
 description: "Use when editing AI-assisted or AI-generated text so that it reads as written by a knowledgeable human — workflow from AI draft to authorial voice, what to keep, what to rewrite, and the line that humanizing must not cross."
 license: MIT
 ---
+
 
 
 
@@ -11,25 +13,9 @@ category: humanizer-skills
 version: 1.0.0
 author: Pradyumna Jayaram
 tags:
-- editing
-- voice
-- ai-tells
-- rewriting
-- scientific-writing
-- integrity
+  - humanizer-skills
+  - research
 difficulty: intermediate
-prerequisites:
-  tools: []
-  skills:
-  - ors-humanizer-skills-scientific-voice-style
-  - ors-humanizer-skills-ai-detection-awareness"
-sources: "Original: Pinker, S. The Sense of Style — Adapted: reader-experience\
-  \ and unit-of-thought passes paraphrased for AI-assisted editing; Original: Sword,\
-  \ H. Stylish Academic Writing — Adapted: 'rewrite from understanding' rule\
-  \ applied to AI drafts; Original: Gopen, G. D. & Swan, J. A. The Science of Scientific\
-  \ Writing — Adapted: structural pass is the final edit, not the first; Improvisions:\
-  \ AI-tell -> rewrite playbook, 'what to keep / what to rewrite / what not to do'\
-  \ rule set, paraphrasing-tool failure mode explained structurally"
 -->
 
 # Text Humanizing (Editorial)

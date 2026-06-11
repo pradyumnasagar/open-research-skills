@@ -1,8 +1,10 @@
 ---
+
 name: data-privacy
 description: "Use when designing or reviewing the privacy plan for a study that uses human data — covers HIPAA Safe Harbor vs Expert Determination, GDPR for research, de-identification, datathons, federated learning, differential privacy basics, single-IRB (sIRB), Certificates of Confidentiality, and the interaction between IRB and Data Use Agreements."
 license: MIT
 ---
+
 
 
 
@@ -11,27 +13,9 @@ category: ethics-compliance
 version: 1.0.0
 author: Pradyumna Jayaram
 tags:
-- hipaa
-- gdpr
-- de-identification
-- privacy
-- federated-learning
-- datathon
-- sirb
-- certificate-of-confidentiality
-difficulty: advanced
-prerequisites:
-  tools: []
-  skills:
-  - ors-ethics-compliance-irb-protocol
-sources: 'Original: 45 CFR 164.514 (HIPAA de-identification); Adapted: Safe Harbor
-  vs Expert Determination decision matrix; Original: GDPR Articles 4, 6, 9, 13, 14,
-  89 (Regulation EU 2016/679); Adapted: research-specific lawful bases and safeguards;
-  Original: NIH Genomic Data Sharing Policy; Adapted: data-use-agreement template
-  language; Original: 42 USC 241(d) Certificate of Confidentiality authority (revised
-  2017); Adapted: CoC applicability checklist; Improvisions: datathon-specific guidance
-  (data enclave, synthetic data, output review), federated learning primer, differential-privacy
-  intuition, IRB + DUA coordination'
+  - ethics-compliance
+  - research
+difficulty: intermediate
 -->
 
 # Data Privacy for Research

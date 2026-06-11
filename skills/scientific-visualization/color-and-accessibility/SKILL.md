@@ -1,8 +1,10 @@
 ---
+
 name: color-and-accessibility
 description: "Choose and audit color palettes for scientific figures. Covers ColorBrewer, viridis, color-blindness simulators (Coblis, Sim Daltonism), texture/pattern encoding, WCAG 2.1 contrast, and alt text."
 license: MIT
 ---
+
 
 
 
@@ -11,32 +13,9 @@ category: scientific-visualization
 version: 1.0.0
 author: Pradyumna Jayaram
 tags:
-- color
-- accessibility
-- colorblind
-- viridis
-- colorbrewer
-- wcag
-- contrast
-- alt-text
-- palette
+  - scientific-visualization
+  - research
 difficulty: intermediate
-prerequisites:
-  tools:
-  - python>=3.9 with matplotlib>=3.5
-  - seaborn>=0.12
-  - colorblind>=0.0.5 (optional)
-  - coolors.co (web)
-  - coblis (web)
-  - sim-daltonism (macOS)
-  skills:
-  - ors-scientific-visualization-figure-design"
-sources: "Original: scientific-visualization (scientific-agent-skills, K-Dense Inc.)\
-  \ and color-palettes (bioinformatics subskill); Adapted: merged into a single color-and-accessibility\
-  \ skill, restructured around an audit workflow (palette → simulate → contrast\
-  \ → alt text); Improvisions: added a CVD simulator matrix, texture-and-pattern\
-  \ pairing patterns, WCAG 2.1 AA / AAA contrast targets with code, and a color-choice\
-  \ decision tree for ordinal / categorical / sequential / diverging data"
 -->
 
 # Color and Accessibility in Scientific Figures

@@ -1,8 +1,10 @@
 ---
+
 name: failure-handling
 description: "Handle negative results, failed experiments, preregistration violations, and replication failures. Use for reporting null findings, deciding when to revise vs. discard hypotheses, and connecting to preregistration and registered reports."
 license: MIT
 ---
+
 
 
 
@@ -11,24 +13,9 @@ category: scientific-thinking
 version: 1.0.0
 author: Pradyumna Jayaram
 tags:
-- negative-results
-- replication
-- preregistration
-- hypothesis-revision
-- scientific-integrity
+  - scientific-thinking
+  - research
 difficulty: intermediate
-prerequisites:
-  tools: []
-  skills:
-  - ors-scientific-thinking-critical-thinking
-  - ors-scientific-thinking-hypothesis-generation"
-sources: "Lakatos, I.. Falsification and the Methodology of Scientific Research Programmes;\
-  \ Open Science Collaboration. Estimating the reproducibility of psychological science.\
-  \ Science 349; Nosek, B.A. et al.. Preregistration is hard, and worthwhile. Trends\
-  \ in Cognitive Sciences; Munaf\xF2, M.R. et al.. A manifesto for reproducible science.\
-  \ Nature Human Behaviour 1; Errington, T.M. et al.. Reproducibility in Cancer Biology:\
-  \ Challenges for assessing replicability; Chambers, C.D. et al.. Registered Reports\
-  \ - Realigning incentives in scientific publishing"
 -->
 
 # Failure Handling

@@ -1,8 +1,10 @@
 ---
+
 name: scientific-voice-style
 description: "Use when developing or auditing a distinctive scientific writing voice that survives AI-generation — voice as a signal of authorship, common AI tells to avoid, and craft habits that build a recognisable authorial register."
 license: MIT
 ---
+
 
 
 
@@ -11,22 +13,9 @@ category: humanizer-skills
 version: 1.0.0
 author: Pradyumna Jayaram
 tags:
-- voice
-- style
-- writing-craft
-- ai-tells
-- scientific-writing
+  - humanizer-skills
+  - research
 difficulty: intermediate
-prerequisites:
-  tools: []
-  skills: []"
-sources: "Original: Pinker, S. The Sense of Style — Adapted: condensed the reader-vs-writer\
-  \ perspective into a checklist of voice-builders; Original: Sword, H. Stylish Academic\
-  \ Writing — Adapted: reframed her 'four freedoms' for the AI-assistance era;\
-  \ Original: Gopen, G. D. & Swan, J. A. The Science of Scientific Writing —\
-  \ Adapted: pulled forward their unit-of-thought principle as a structural diagnostic;\
-  \ Improvisions: 2025-2026 AI-tell taxonomy (em-dash overuse, parallel triads, false\
-  \ balance, bolded conclusions), voice-build workflow with AI only as editor"
 -->
 
 # Scientific Voice & Style

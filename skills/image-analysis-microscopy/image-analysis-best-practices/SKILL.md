@@ -1,8 +1,10 @@
 ---
+
 name: image-analysis-best-practices
 description: "Apply best practices for microscopy image analysis: pixel-size calibration, channel bleed-through, exposure and dynamic range, controls, publication figures, color-blind safe palettes, and proper statistical handling of n=cells vs n=images vs n=animals."
 license: MIT
 ---
+
 
 
 
@@ -11,26 +13,9 @@ category: image-analysis-microscopy
 version: 1.0.0
 author: Pradyumna Jayaram
 tags:
-- image-analysis
-- best-practices
-- controls
-- publication
-- statistics
-- color-blind
+  - image-analysis-microscopy
+  - research
 difficulty: intermediate
-prerequisites:
-  tools:
-  - python>=3.10
-  - imageio
-  - numpy
-  - scipy
-  - matplotlib
-  skills: []
-sources: 'Original: Rossner & Yamada 2004 JCB editorial ''What''s in a picture?'';
-  Adapted: 2026 image-ethics framing, modernized to current ARRIVE 2.0 and NIH figure
-  guidelines.; Improvisions: consolidated exposure, scale-bar, and color-blind guidance;
-  added hierarchical-statistics section referencing the n=cells vs n=images vs n=animals
-  debate.'
 -->
 
 # Image Analysis Best Practices: Acquisition, Controls, and Publication

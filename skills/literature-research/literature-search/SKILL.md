@@ -1,8 +1,10 @@
 ---
+
 name: literature-search
 description: "Design reproducible, multi-database literature searches for biomedical and scientific questions. Covers PubMed/Web of Science/Scopus/Embase/IEEE/ACM/AGRICOLA/ERIC/PsycINFO, open indexes (OpenAlex, Semantic Scholar, Google Scholar), MeSH, Boolean operators, snowballing, citation alerts, and PRISMA-S compliant reporting."
 license: MIT
 ---
+
 
 
 
@@ -11,28 +13,9 @@ category: literature-research
 version: 1.0.0
 author: Pradyumna Jayaram
 tags:
-- pubmed
-- web-of-science
-- scopus
-- openalex
-- mesh
-- prisma-s
-- boolean-search
+  - literature-research
+  - research
 difficulty: intermediate
-prerequisites:
-  tools:
-  - python
-  - requests
-  - biopython
-  - requests-cache
-  skills:
-  - ors-literature-research-paper-lookup
-  - ors-literature-research-citation-management
-sources: PRISMA 2020 statement and PRISMA-S extension for search reporting (prisma-statement.org);
-  Cochrane Handbook for Systematic Reviews of Interventions, Chapter 4 (training.cochrane.org/handbook);
-  NCBI PubMed User Guide and MeSH Browser (ncbi.nlm.nih.gov/mesh, pubmed.ncbi.nlm.nih.gov/help);
-  OpenAlex API documentation (docs.openalex.org); Semantic Scholar API documentation
-  (api.semanticscholar.org)
 -->
 
 # Literature Search Strategy

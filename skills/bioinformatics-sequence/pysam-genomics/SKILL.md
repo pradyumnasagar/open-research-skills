@@ -1,8 +1,10 @@
 ---
+
 name: pysam-genomics
 description: "Programmatically read, modify, filter, and write BAM/CRAM/VCF files using pysam 0.22+ — the Python interface to htslib for NGS I/O, variant calling, and custom pipelines."
 license: MIT
 ---
+
 
 
 
@@ -11,22 +13,9 @@ category: bioinformatics-sequence
 version: 1.0.0
 author: Pradyumna Jayaram
 tags:
-- pysam
-- bam
-- sam
-- htslib
-- python
-- variant
+  - bioinformatics-sequence
+  - research
 difficulty: intermediate
-prerequisites:
-  tools:
-  - python>=3.10
-  - pysam>=0.22
-  skills:
-  - ors-bioinformatics-sequence-sam-bam-basics
-sources: 'Original: bio-pysam-genomic-files (SciAgent-Skills-main genomics-bioinformatics/alignment/pysam-genomic-files);
-  Adapted: modernized for pysam 0.22+ and htslib 1.19+.; Improvisions: added the canonical
-  open/iteration patterns, htsidx notes for 2026.'
 -->
 
 # pysam — BAM/CRAM Python Interface
