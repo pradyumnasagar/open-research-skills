@@ -1,6 +1,6 @@
 ---
 name: nih-k-series
-description: "Use when planning or drafting an NIH mentored career-development award"
+description: "Use when planning or drafting an NIH mentored career-development award (K01, K08, K23, K99/R00, K25, K22, K07): Candidate Section, Mentorship Plan, Training Plan, Sponsor/Co-Sponsor statements, and the K99-to-R00 transition logic. Anchored to the K Kiosk on the NIH website and current Forms-H/I."
 license: MIT
 ---
 

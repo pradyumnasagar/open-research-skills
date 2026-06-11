@@ -1,6 +1,6 @@
 ---
 name: negotiation
-description: "Negotiate academic and industry offers: startup packages, postdoc salaries,"
+description: "Negotiate academic and industry offers: startup packages, postdoc salaries, industry offers and counter-offers, dual-career accommodation, equity vs salary trade-offs, BATNA analysis, and the difference between written and verbal offers. Use when preparing for, conducting, or evaluating a negotiation."
 license: MIT
 ---
 

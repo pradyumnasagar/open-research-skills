@@ -1,6 +1,6 @@
 ---
 name: image-integrity
-description: "Use when preparing, reviewing, or auditing research images (Western"
+description: "Use when preparing, reviewing, or auditing research images (Western blots, gels, microscopy, EM, multi-panel figures) for submission — covers manipulation detection by proofreader tools and human review, figure assembly best practices, raw data retention, journal image-checking policies (e.g., Nature's screening), RRIDs, and concrete examples of what gets flagged."
 license: MIT
 ---
 

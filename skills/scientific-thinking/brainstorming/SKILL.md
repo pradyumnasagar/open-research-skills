@@ -1,6 +1,6 @@
 ---
 name: brainstorming
-description: "Creative research ideation and exploration. Use for open-ended brainstorming,"
+description: "Creative research ideation and exploration. Use for open-ended brainstorming, interdisciplinary connections, challenging assumptions, or identifying research gaps in early-stage research planning."
 license: MIT
 ---
 

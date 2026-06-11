@@ -1,6 +1,6 @@
 ---
 name: motif-search
-description: "Find patterns, motifs, and binding sites in DNA/RNA/protein sequences"
+description: "Find patterns, motifs, and binding sites in DNA/RNA/protein sequences — using regex, IUPAC patterns, position weight matrices, and modern motif databases (JASPAR 2024, CIS-BP)."
 license: MIT
 ---
 

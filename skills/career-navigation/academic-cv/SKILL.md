@@ -1,6 +1,6 @@
 ---
 name: academic-cv
-description: "Build an academic CV for US/EU faculty or postdoc applications, with"
+description: "Build an academic CV for US/EU faculty or postdoc applications, with proper section ordering, professional service, mentoring statements, and NSF/NIH biosketch cross-reference. Use when applying to tenure-track or postdoctoral positions."
 license: MIT
 ---
 

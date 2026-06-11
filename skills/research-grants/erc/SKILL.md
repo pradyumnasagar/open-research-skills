@@ -1,6 +1,6 @@
 ---
 name: erc
-description: "Use when drafting or revising an ERC proposal: B1 Extended Synopsis"
+description: "Use when drafting or revising an ERC proposal: B1 Extended Synopsis (2 pp), B2 Full Proposal (≈7–8 pp), CV, Track Record, resources, ethics issues table, and host institution commitment letter in the ERC format."
 license: MIT
 ---
 

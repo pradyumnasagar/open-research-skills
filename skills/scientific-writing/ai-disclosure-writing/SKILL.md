@@ -1,6 +1,6 @@
 ---
 name: ai-disclosure-writing
-description: "AI/LLM usage disclosure for biomedical manuscripts: which journals require"
+description: "AI/LLM usage disclosure for biomedical manuscripts: which journals require disclosure (Nature, Science, Cell), what counts as AI authorship (banned) vs. AI tool use (allowed with disclosure), text snippets for common policies, ICMJE/COPE positions, and image-AI specific rules."
 license: MIT
 ---
 

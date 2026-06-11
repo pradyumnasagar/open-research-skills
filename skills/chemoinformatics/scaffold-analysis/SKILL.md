@@ -1,6 +1,6 @@
 ---
 name: scaffold-analysis
-description: "Analyzes chemical libraries by scaffold using Bemis-Murcko scaffolds,"
+description: "Analyzes chemical libraries by scaffold using Bemis-Murcko scaffolds, generic frameworks, cyclic skeletons, matched molecular pair (MMP) analysis via mmpdb, R-group decomposition, Free-Wilson analysis, scaffold hopping, and chemotype-aware ML train/test splits. Use when identifying chemotype clusters in a library, deriving SAR transformation rules, decomposing series into R-groups, performing scaffold-balanced QSAR splits, or planning analog campaigns."
 license: MIT
 ---
 

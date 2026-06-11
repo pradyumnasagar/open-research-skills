@@ -1,6 +1,6 @@
 ---
 name: licensing
-description: "Use when choosing a Creative Commons license (CC0, CC-BY, CC-BY-SA) for"
+description: "Use when choosing a Creative Commons license (CC0, CC-BY, CC-BY-SA) for data, picking a software license (MIT, Apache-2.0, GPL), handling EU database sui generis rights, or planning dual-licensing for a research project."
 license: MIT
 ---
 

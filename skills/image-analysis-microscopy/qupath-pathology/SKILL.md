@@ -1,6 +1,6 @@
 ---
 name: qupath-pathology
-description: "Use QuPath 0.5.x for whole-slide image import, annotation, cell detection,"
+description: "Use QuPath 0.5.x for whole-slide image import, annotation, cell detection, pixel classification, deep-learning workflows (StarDist, Cellpose), and multiplexed analysis in digital pathology."
 license: MIT
 ---
 

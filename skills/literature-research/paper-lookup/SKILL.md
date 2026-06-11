@@ -1,6 +1,6 @@
 ---
 name: paper-lookup
-description: "Look up and resolve academic papers by DOI, PMID, arXiv ID, or title"
+description: "Look up and resolve academic papers by DOI, PMID, arXiv ID, or title using Crossref, PubMed, OpenAlex, Semantic Scholar, and check retractions, preprints, and forward citations."
 license: MIT
 ---
 

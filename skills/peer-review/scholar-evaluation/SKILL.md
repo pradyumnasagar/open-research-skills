@@ -1,6 +1,6 @@
 ---
 name: scholar-evaluation
-description: "Evaluate a researcher's portfolio (CV, publications, citations, funding,"
+description: "Evaluate a researcher's portfolio (CV, publications, citations, funding, mentorship, service, software, talks) for tenure, awards, recruitment, or promotion: field-normalized metrics, evidence weighting, fit assessment, and a defensible written evaluation."
 license: MIT
 ---
 

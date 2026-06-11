@@ -1,6 +1,6 @@
 ---
 name: alphafold-structure-prediction
-description: "Run AlphaFold 2/3 and Boltz-1 for protein structure prediction, including"
+description: "Run AlphaFold 2/3 and Boltz-1 for protein structure prediction, including MSA generation with MMseqs2/JackHMMER, pLDDT/PAE interpretation, multimer prediction, and querying the AlphaFold Database (AFDB)."
 license: MIT
 ---
 

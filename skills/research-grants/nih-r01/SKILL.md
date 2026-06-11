@@ -1,6 +1,6 @@
 ---
 name: nih-r01
-description: "Use when planning, drafting, or revising an NIH R01 (Research Project"
+description: "Use when planning, drafting, or revising an NIH R01 (Research Project Grant) application: Specific Aims, Significance/Innovation/Approach, Authentication, Budget Justification, Resubmission (A1) strategy, and study-section navigation. Anchored to NIH Forms-H/I and the NIH SF424 Application Guide."
 license: MIT
 ---
 

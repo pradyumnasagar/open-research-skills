@@ -1,6 +1,6 @@
 ---
 name: industry-transition
-description: "Translate a PhD into an industry resume, navigate technical screens and"
+description: "Translate a PhD into an industry resume, navigate technical screens and system design for ML roles, and compare biotech, big-pharma, ML-for-bio, science writing, and consulting paths. Includes startup vs established company trade-offs. Use when a PhD student or postdoc is preparing for a job search outside academia."
 license: MIT
 ---
 

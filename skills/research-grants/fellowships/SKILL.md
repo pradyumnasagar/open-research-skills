@@ -1,6 +1,6 @@
 ---
 name: fellowships
-description: "Use when applying to pre-doctoral fellowships: NSF GRFP, Hertz, NDSEG,"
+description: "Use when applying to pre-doctoral fellowships: NSF GRFP, Hertz, NDSEG, Ford, Rhodes, Marshall, Churchill, AAAS. Distinguishes personal statement vs research statement, builds a graduate-school list, coordinates referee timing, and aligns submission cycles."
 license: MIT
 ---
 

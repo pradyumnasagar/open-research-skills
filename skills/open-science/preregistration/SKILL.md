@@ -1,6 +1,6 @@
 ---
 name: preregistration
-description: "Use when preregistering a study design (hypothesis, methods, analysis"
+description: "Use when preregistering a study design (hypothesis, methods, analysis plan) before data collection on OSF Registries or AsPredicted, applying for ClinicalTrials.gov registration for interventional trials, or submitting a Registered Report."
 license: MIT
 ---
 

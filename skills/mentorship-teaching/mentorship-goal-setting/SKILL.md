@@ -1,6 +1,6 @@
 ---
 name: mentorship-goal-setting
-description: "Creates research and career development plans using the SMART framework,"
+description: "Creates research and career development plans using the SMART framework, AAAS MyIDP structured self-assessment, and Bloom's Taxonomy (revised) to set appropriate, measurable, and developmentally sequenced goals. Use when establishing mentee development plans (IDPs), creating promotion packets, preparing for performance reviews, or transitioning mentees to independence."
 license: MIT
 ---
 

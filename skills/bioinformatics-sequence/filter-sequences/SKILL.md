@@ -1,6 +1,6 @@
 ---
 name: filter-sequences
-description: "Filter FASTA/FASTQ records by length, identity, regex on headers, GC"
+description: "Filter FASTA/FASTQ records by length, identity, regex on headers, GC window, complexity, and custom predicates — streaming with Biopython 1.83+."
 license: MIT
 ---
 

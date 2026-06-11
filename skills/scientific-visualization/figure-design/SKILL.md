@@ -1,6 +1,6 @@
 ---
 name: figure-design
-description: "Design publication-quality scientific figures in Python (matplotlib,"
+description: "Design publication-quality scientific figures in Python (matplotlib, seaborn, plotly) and R (ggplot2). Covers DPI, vector vs raster, color-blind safe palettes, fonts, multi-panel layout, legends, scale bars, and axis labels with units."
 license: MIT
 ---
 
