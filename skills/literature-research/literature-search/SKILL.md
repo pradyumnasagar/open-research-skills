@@ -1,6 +1,6 @@
 ---
 name: literature-search
-description: "Design reproducible, multi-database literature searches for biomedical"
+description: "Design reproducible, multi-database literature searches for biomedical and scientific questions. Covers PubMed/Web of Science/Scopus/Embase/IEEE/ACM/AGRICOLA/ERIC/PsycINFO, open indexes (OpenAlex, Semantic Scholar, Google Scholar), MeSH, Boolean operators, snowballing, citation alerts, and PRISMA-S compliant reporting."
 license: MIT
 ---
 

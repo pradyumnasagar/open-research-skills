@@ -1,6 +1,6 @@
 ---
 name: darpa-baa
-description: "Use when responding to a DARPA Broad Agency Announcement: white paper"
+description: "Use when responding to a DARPA Broad Agency Announcement: white paper vs full proposal, Heilmeier Catechism framing, program manager engagement, BAA-specific formatting, cost volume construction."
 license: MIT
 ---
 

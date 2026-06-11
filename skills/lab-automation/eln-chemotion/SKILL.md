@@ -1,6 +1,6 @@
 ---
 name: eln-chemotion
-description: "Chemotion open electronic lab notebook for chemists via REST API. Molecule"
+description: "Chemotion open electronic lab notebook for chemists via REST API. Molecule editor, reactions, samples, spectra (NMR/IR/MS), inventory. Open-source alternative to ChemAxon/Accelrys for synthetic chemistry. For biology workflows use eln-elabftw; for assay pipelines use eln-openbis."
 license: MIT
 ---
 

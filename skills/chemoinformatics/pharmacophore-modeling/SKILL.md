@@ -1,6 +1,6 @@
 ---
 name: pharmacophore-modeling
-description: "Builds and applies 3D pharmacophore models using RDKit Pharm3D, the apo2ph4"
+description: "Builds and applies 3D pharmacophore models using RDKit Pharm3D, the apo2ph4 receptor-based workflow, Pharmer / Pharmit (search), and PharmacoForge (diffusion-based generation), covering ligand-based pharmacophore (from active set alignment) and receptor-based pharmacophore (from binding pocket geometry). Explicit handling of feature types, geometric tolerances, partial matching, and pharmacophore-based virtual screening. Use when identifying scaffold-hopping candidates, building shape-and-feature search queries, or transferring SAR across chemotypes."
 license: MIT
 ---
 

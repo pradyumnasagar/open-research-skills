@@ -1,6 +1,6 @@
 ---
 name: sequence-statistics
-description: "Compute length, GC, N50, L50, and per-file summaries for FASTA/FASTQ"
+description: "Compute length, GC, N50, L50, and per-file summaries for FASTA/FASTQ — including the N50 trick and modern streaming stats with Polars."
 license: MIT
 ---
 

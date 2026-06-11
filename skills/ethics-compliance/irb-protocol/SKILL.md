@@ -1,6 +1,6 @@
 ---
 name: irb-protocol
-description: "Use when writing, reviewing, or revising an Institutional Review Board"
+description: "Use when writing, reviewing, or revising an Institutional Review Board (IRB) protocol for human-subjects research — anchors the protocol to the Belmont Report, the Common Rule (45 CFR 46), and the specific subparts for vulnerable populations."
 license: MIT
 ---
 

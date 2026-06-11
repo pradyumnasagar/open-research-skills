@@ -1,6 +1,6 @@
 ---
 name: rebuttal-letter
-description: "Structures the rebuttal letter to reviewers and editor after peer review:"
+description: "Structures the rebuttal letter to reviewers and editor after peer review: response architecture, point-by-point format, how to handle conflicting reviewers, polite disagreement, framing new experiments, and what to do when the reviewer is wrong."
 license: MIT
 ---
 

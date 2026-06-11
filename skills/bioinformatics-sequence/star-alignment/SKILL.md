@@ -1,6 +1,6 @@
 ---
 name: star-alignment
-description: "Splice-aware RNA-seq alignment with STAR — the gold-standard aligner"
+description: "Splice-aware RNA-seq alignment with STAR — the gold-standard aligner for novel junction discovery, with 2-pass mapping and genome-generation strategies for 2026."
 license: MIT
 ---
 

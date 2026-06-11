@@ -1,6 +1,6 @@
 ---
 name: fellowship-application
-description: "Apply for predoctoral fellowships (Hertz, NDSEG, NSF GRFP, Ford, AAAS"
+description: "Apply for predoctoral fellowships (Hertz, NDSEG, NSF GRFP, Ford, AAAS Mass Media) and the Packard postdoctoral fellowship. Covers personal statement, research statement, transcript curation, grad school list, referee coordination, and submission timing. Use when applying for a major external fellowship as a PhD applicant or early postdoc."
 license: MIT
 ---
 

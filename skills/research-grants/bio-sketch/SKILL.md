@@ -1,6 +1,6 @@
 ---
 name: bio-sketch
-description: "Use when generating an NIH or NSF Biographical Sketch in SciENcv (current"
+description: "Use when generating an NIH or NSF Biographical Sketch in SciENcv (current format): personal statement, contribution statements (new 2025 NIH format), positions and honors, research support. Covers NIH vs NSF differences."
 license: MIT
 ---
 

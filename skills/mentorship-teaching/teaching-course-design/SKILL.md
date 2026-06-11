@@ -1,6 +1,6 @@
 ---
 name: teaching-course-design
-description: "Designs research training courses using Wiggins and McTighe's Backward"
+description: "Designs research training courses using Wiggins and McTighe's Backward Design framework, Bloom's Taxonomy (revised) for cognitive scaffolding, and Universal Design for Learning (UDL) principles for accessibility. Use when designing new courses, redesigning existing curricula, creating research training modules, or building learning progressions."
 license: MIT
 ---
 

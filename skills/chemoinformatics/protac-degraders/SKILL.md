@@ -1,6 +1,6 @@
 ---
 name: protac-degraders
-description: "Designs PROTACs, molecular glues, and bivalent degraders with explicit"
+description: "Designs PROTACs, molecular glues, and bivalent degraders with explicit handling of E3 ligase choice (VHL, CRBN, IAP, MDM2, KEAP1), linker design (length, composition, rigidity), ternary complex prediction (PRosettaC, DeepTernary, AlphaFold3 with constraints), cooperativity (alpha), DC50 / Dmax characterization, hook effect, and prediction-experiment reconciliation. Use when designing targeted protein degraders, planning linker SAR, predicting ternary complex stability, or building generative degrader workflows."
 license: MIT
 ---
 

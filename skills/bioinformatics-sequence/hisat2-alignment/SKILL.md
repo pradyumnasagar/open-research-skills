@@ -1,6 +1,6 @@
 ---
 name: hisat2-alignment
-description: "Splice-aware RNA-seq alignment with HISAT2 — fast, memory-efficient,"
+description: "Splice-aware RNA-seq alignment with HISAT2 — fast, memory-efficient, and the default in many bulk RNA-seq pipelines alongside STAR."
 license: MIT
 ---
 

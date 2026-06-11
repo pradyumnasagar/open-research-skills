@@ -1,6 +1,6 @@
 ---
 name: nsf-standard
-description: "Use when planning, drafting, or revising an NSF Standard Research Proposal:"
+description: "Use when planning, drafting, or revising an NSF Standard Research Proposal: Project Description (15 pp), Data Management Plan, Postdoc Mentoring Plan, Broader Impacts, biographical sketch via SciENcv, and current PAPPG compliance."
 license: MIT
 ---
 

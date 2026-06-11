@@ -1,6 +1,6 @@
 ---
 name: pose-validation
-description: "Validates docked / generated protein-ligand poses using PoseBusters physical-validity"
+description: "Validates docked / generated protein-ligand poses using PoseBusters physical-validity tests, strain energy quantification, geometric checks (planarity, vdW overlap, bond/angle distortion), and pose-energy reasonableness. Filters AI-docking outputs (DiffDock, EquiBind, NeuralPLexer) where ~50% of poses fail physical-validity tests. Use when QC-ing docking results, comparing classical vs ML docking outputs, or filtering pose lists before SAR analysis."
 license: MIT
 ---
 

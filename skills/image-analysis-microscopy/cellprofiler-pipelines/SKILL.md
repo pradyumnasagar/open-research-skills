@@ -1,6 +1,6 @@
 ---
 name: cellprofiler-pipelines
-description: "Use CellProfiler 5.x to build reproducible pipelines for cell/nuclei"
+description: "Use CellProfiler 5.x to build reproducible pipelines for cell/nuclei segmentation, illumination correction, feature extraction, and high-content screening assays including CellPainting."
 license: MIT
 ---
 

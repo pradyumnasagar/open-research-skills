@@ -1,6 +1,6 @@
 ---
 name: hypothesis-generation
-description: "Generate testable hypotheses from literature and observation. Use for"
+description: "Generate testable hypotheses from literature and observation. Use for converting research gaps, contradictory findings, cross-domain analogies, or clinical observations into falsifiable predictions for experimental design."
 license: MIT
 ---
 

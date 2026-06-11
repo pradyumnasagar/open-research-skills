@@ -1,6 +1,6 @@
 ---
 name: sam-bam-basics
-description: "Understand the SAM format header, alignment records, FLAGs, MAPQ, CIGAR,"
+description: "Understand the SAM format header, alignment records, FLAGs, MAPQ, CIGAR, and coordinate conventions — the foundation for all downstream BAM analysis."
 license: MIT
 ---
 

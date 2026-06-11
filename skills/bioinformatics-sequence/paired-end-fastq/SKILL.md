@@ -1,6 +1,6 @@
 ---
 name: paired-end-fastq
-description: "Keep R1/R2 reads in lockstep — synchronize iteration, filter pairs"
+description: "Keep R1/R2 reads in lockstep — synchronize iteration, filter pairs together, interleave, and deinterleave — using Biopython and the 2026 best practices."
 license: MIT
 ---
 

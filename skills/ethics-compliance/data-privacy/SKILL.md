@@ -1,6 +1,6 @@
 ---
 name: data-privacy
-description: "Use when designing or reviewing the privacy plan for a study that uses"
+description: "Use when designing or reviewing the privacy plan for a study that uses human data — covers HIPAA Safe Harbor vs Expert Determination, GDPR for research, de-identification, datathons, federated learning, differential privacy basics, single-IRB (sIRB), Certificates of Confidentiality, and the interaction between IRB and Data Use Agreements."
 license: MIT
 ---
 

@@ -1,6 +1,6 @@
 ---
 name: retrosynthesis
-description: "Performs retrosynthetic planning using AiZynthFinder (MCTS, template-based),"
+description: "Performs retrosynthetic planning using AiZynthFinder (MCTS, template-based), Chemformer (template-free transformer), ASKCOS, and emerging RetroSynFormer with explicit handling of route scoring, building-block availability (eMolecules, Enamine, Mcule), forward prediction validation (Molecular Transformer), and disconnection-aware multi-objective search (MO-MCTS). Use when assessing synthetic feasibility of generated or selected molecules, planning multi-step syntheses, building synthesis-aware design pipelines, or screening libraries for retro-route feasibility."
 license: MIT
 ---
 

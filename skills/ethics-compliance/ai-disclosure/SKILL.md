@@ -1,6 +1,6 @@
 ---
 name: ai-disclosure
-description: "Use when writing, reviewing, or editing the AI/LLM usage disclosure"
+description: "Use when writing, reviewing, or editing the AI/LLM usage disclosure in a research manuscript, grant, or submission — covers venue-specific policies (Nature, Science, Cell, NEJM, Lancet, ICML, NeurIPS, AAAI, ACL), COPE position statement, ICMJE recommendations, prompt disclosure, and what is permitted vs banned per venue (2025-2026). Name the venue explicitly; when in doubt, name 'varies by venue' rather than invent."
 license: MIT
 ---
 

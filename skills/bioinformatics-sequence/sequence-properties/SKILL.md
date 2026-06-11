@@ -1,6 +1,6 @@
 ---
 name: sequence-properties
-description: "Compute GC content, molecular weight, melting temperature, isoelectric"
+description: "Compute GC content, molecular weight, melting temperature, isoelectric point, and instability index for DNA, RNA, and protein sequences."
 license: MIT
 ---
 
