@@ -1,11 +1,10 @@
 ---
-name: to-reviewers
-description: "Detailed how-to for the actual response-to-reviewers document: tone
-  discipline, heading structure (Reviewer N, Comment M: ... Response: ...), line-number
-  references, embedding revised figure panels, and when to send the response with
-  vs. without an editor's cover letter.'
+name: response-to-reviewers
+description: "Detailed how-to for the actual response-to-reviewers document: tone"
 license: MIT
 ---
+
+
 
 <!-- metadata:
 category: scientific-writing

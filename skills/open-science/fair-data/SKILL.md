@@ -1,10 +1,10 @@
 ---
 name: fair-data
-description: "Use when designing a data management plan, choosing a repository, structuring
-  metadata, or making research data Findable, Accessible, Interoperable, and Reusable
-  per Wilkinson et al. 2016.
+description: "Use when designing a data management plan, choosing a repository, structuring"
 license: MIT
 ---
+
+
 
 <!-- metadata:
 category: open-science

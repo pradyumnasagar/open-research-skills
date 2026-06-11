@@ -1,9 +1,10 @@
 ---
 name: format-conversion
-description: "Convert between sequence and annotation formats using Biopython SeqIO.convert\
-  \ and custom writers — including batch, lossy, and round-trip-safe patterns.
+description: "Convert between sequence and annotation formats using Biopython SeqIO.convert"
 license: MIT
 ---
+
+
 
 <!-- metadata:
 category: bioinformatics-sequence

@@ -1,11 +1,10 @@
 ---
 name: faculty-interview
-description: "Prepare for an academic job interview: job talk, chalk talk, 1:1 meetings
-  with PIs and deans, dean's talk, dinner etiquette, thank-you emails, and start-up
-  package negotiation (funds, lab space, equipment, moving, partner accommodation).
-  Use when invited for an on-site or virtual on-site for a faculty position.'
+description: "Prepare for an academic job interview: job talk, chalk talk, 1:1 meetings"
 license: MIT
 ---
+
+
 
 <!-- metadata:
 category: career-navigation

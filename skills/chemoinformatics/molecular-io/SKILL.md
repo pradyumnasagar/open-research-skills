@@ -1,13 +1,10 @@
 ---
 name: molecular-io
-description: "Reads, writes, and converts molecular file formats (SMILES, InChI, SDF
-  V2000/V3000, MOL2, PDB, MMTF) using RDKit and Open Babel with rigorous handling
-  of aromaticity perception, stereochemistry, implicit/explicit hydrogens, kekulization,
-  and salt/fragment separation. Use when loading chemical libraries, debugging parse
-  failures, or preparing molecules for downstream standardization, descriptor calculation,
-  or docking.
+description: "Reads, writes, and converts molecular file formats (SMILES, InChI, SDF"
 license: MIT
 ---
+
+
 
 <!-- metadata:
 category: ''

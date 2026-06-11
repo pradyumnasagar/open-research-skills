@@ -1,11 +1,10 @@
 ---
 name: tenure-dossier
-description: "Assemble a tenure case from research statement, teaching portfolio, external
-  letters, internal documentation, mentoring record, service, and counter-narrative
-  for low-citation fields. Use when preparing a tenure case packet for a US/EU tenure
-  review.
+description: "Assemble a tenure case from research statement, teaching portfolio, external"
 license: MIT
 ---
+
+
 
 <!-- metadata:
 category: career-navigation

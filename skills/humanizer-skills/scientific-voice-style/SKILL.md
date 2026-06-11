@@ -1,10 +1,10 @@
 ---
-name: voice-style
-description: "Use when developing or auditing a distinctive scientific writing voice\
-  \ that survives AI-generation — voice as a signal of authorship, common AI\
-  \ tells to avoid, and craft habits that build a recognisable authorial register.
+name: scientific-voice-style
+description: "Use when developing or auditing a distinctive scientific writing voice"
 license: MIT
 ---
+
+
 
 <!-- metadata:
 category: humanizer-skills

@@ -1,10 +1,10 @@
 ---
-name: and-accessibility
-description: "Choose and audit color palettes for scientific figures. Covers ColorBrewer,
-  viridis, color-blindness simulators (Coblis, Sim Daltonism), texture/pattern encoding,
-  WCAG 2.1 contrast, and alt text.
+name: color-and-accessibility
+description: "Choose and audit color palettes for scientific figures. Covers ColorBrewer,"
 license: MIT
 ---
+
+
 
 <!-- metadata:
 category: scientific-visualization

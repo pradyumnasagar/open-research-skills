@@ -1,12 +1,10 @@
 ---
-name: vendor-agnostic
-description: "PyLabRobot hardware-agnostic Python liquid-handler library for Hamilton
-  STAR, Tecan Freedom EVO, Opentrons OT-2, and simulator. Write protocols once, run
-  on any robot. Async-first API. Plate reformatting, cherry-picking, serial dilutions.
-  Use for vendor-agnostic workflows; use opentrons-ot2-protocols for Opentrons-only
-  features.
+name: pylabrobot-vendor-agnostic
+description: "PyLabRobot hardware-agnostic Python liquid-handler library for Hamilton"
 license: MIT
 ---
+
+
 
 <!-- metadata:
 category: ''

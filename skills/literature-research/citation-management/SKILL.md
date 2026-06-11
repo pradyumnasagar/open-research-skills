@@ -1,10 +1,10 @@
 ---
 name: citation-management
-description: "Set up and use reference managers (Zotero, Mendeley, EndNote) with citation
-  styles, group libraries, PDF annotation, DOI/PMID workflows, and BibTeX export for
-  reproducible research.
+description: "Set up and use reference managers (Zotero, Mendeley, EndNote) with citation"
 license: MIT
 ---
+
+
 
 <!-- metadata:
 category: literature-research

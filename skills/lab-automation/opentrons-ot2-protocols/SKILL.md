@@ -1,11 +1,10 @@
 ---
-name: ot2-protocols
-description: "Opentrons Python Protocol API v2 for OT-2 and Flex robots. Liquid handling
-  protocols for PCR, ELISA, plate stamping, magnetic bead cleanup. Hardware modules:
-  thermocycler, heater-shaker, magnetic, temperature. Simulate with opentrons_simulate
-  before robot runs. For vendor-agnostic protocols use pylabrobot-vendor-agnostic.
-license: Apache-2.0
+name: opentrons-ot2-protocols
+description: "Opentrons Python Protocol API v2 for OT-2 and Flex robots. Liquid handling"
+license: MIT
 ---
+
+
 
 <!-- metadata:
 category: ''

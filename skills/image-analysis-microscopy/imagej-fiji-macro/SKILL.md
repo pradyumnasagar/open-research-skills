@@ -1,10 +1,10 @@
 ---
-name: fiji-macro
-description: "Record, write, and run ImageJ/Fiji macros for batch processing, ROI handling,
-  intensity measurement, colocalization, time-lapse, FRET, and plugin installation
-  in life-sciences microscopy.
+name: imagej-fiji-macro
+description: "Record, write, and run ImageJ/Fiji macros for batch processing, ROI handling,"
 license: MIT
 ---
+
+
 
 <!-- metadata:
 category: image-analysis-microscopy

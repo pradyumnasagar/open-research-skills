@@ -1,11 +1,10 @@
 ---
-name: language-models
-description: "Use ESM-2, ESMFold, ProtTrans, AlphaFold 2/3, Boltz-1, RoseTTAFold and
-  OmegaFold for protein embeddings, zero-shot mutational-effect prediction, and 3D
-  structure prediction. Use when scoring variants without a structure, designing mutant
-  libraries, or predicting conformations.
+name: protein-language-models
+description: "Use ESM-2, ESMFold, ProtTrans, AlphaFold 2/3, Boltz-1, RoseTTAFold and"
 license: MIT
 ---
+
+
 
 <!-- metadata:
 category: machine-learning-bio

@@ -1,10 +1,10 @@
 ---
 name: failure-handling
-description: "Handle negative results, failed experiments, preregistration violations,
-  and replication failures. Use for reporting null findings, deciding when to revise
-  vs. discard hypotheses, and connecting to preregistration and registered reports.
+description: "Handle negative results, failed experiments, preregistration violations,"
 license: MIT
 ---
+
+
 
 <!-- metadata:
 category: scientific-thinking

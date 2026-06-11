@@ -1,10 +1,10 @@
 ---
 name: foundation-grants
-description: "Use when applying for private foundation grants: Templeton, HHMI (Investigator,
-  Freeman Hrabowski, Hanna Gray), Damon Runyon, Searle, Pew Scholars, McKnight, Packard,
-  Keck. Narrative-driven, no-overhead-allowed, collaboration-letter heavy.
+description: "Use when applying for private foundation grants: Templeton, HHMI (Investigator,"
 license: MIT
 ---
+
+
 
 <!-- metadata:
 category: research-grants

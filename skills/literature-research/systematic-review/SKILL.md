@@ -1,10 +1,10 @@
 ---
 name: systematic-review
-description: "Conduct rigorous systematic reviews and meta-analyses following PRISMA
-  2020, including risk-of-bias assessment, heterogeneity analysis, publication bias
-  evaluation, and evidence grading with GRADE.
+description: "Conduct rigorous systematic reviews and meta-analyses following PRISMA"
 license: MIT
 ---
+
+
 
 <!-- metadata:
 category: literature-research

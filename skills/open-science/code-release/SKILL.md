@@ -1,28 +1,19 @@
 ---
-name: ors-open-science-code-release
-display_name: "Code Release: Zenodo DOIs, CFF, Containers, Reproducibility Badges"
-description: "Use when releasing research code: Zenodo-GitHub integration for a citable DOI, Citation File Format (CFF), containerization with Docker/Apptainer, conda lockfiles, and reproducibility badges for end-to-end reproducibility.
+
+name: code-release
+description: "Use when releasing research code: Zenodo-GitHub integration for a citable DOI, Citation File Format (CFF), containerization with Docker/Apptainer, conda lockfiles, and reproducibility badges for end-to-end reproducibility."
+license: MIT
+---
+<!-- metadata:
+category: open-science
 version: 1.0.0
 author: Pradyumna Jayaram
-maintained_by: Pradyumna Jayaram
-license: MIT
-category: open-science
-tags: [code-release, zenodo, doi, cff, docker, singularity, apptainer, conda, reproducibility]
+tags: [open-science, research]
 difficulty: intermediate
-prerequisites:
-  tools: [git, github, docker-or-apptainer, conda-or-mamba, zenodo-cli-or-web]
-  skills: []
-sources_consulted:"
-  - "Original: Zenodo GitHub integration guide (https://docs.github.com/en/repositories/archiving-a-github-repository/about-archiving-content-for-your-repository). Note: GitHub has migrated the Zenodo integration to the Software Heritage Archive + Zenodo upload workflow; the spirit is the same — a DOI for each release."
-  - "Original: Citation File Format (CFF) Initiative (https://citation-file-format.github.io/)."
-  - "Original: Open Container Initiative (https://opencontainers.org/)."
-  - "Original: Singularity/Apptainer (https://apptainer.org/)."
-  - "Original: conda-forge lockfile specification (https://conda-forge.org/)."
-  - "Original: Software Heritage Archive (https://www.softwareheritage.org/)."
-  - "Original: JOSS (Journal of Open Source Software) review checklist."
-  - "Improvisions: Pradyumna Jayaram — code-release checklist, CITATION.cff template, Dockerfile + Apptainer example, conda lockfile snippet, end-to-end reproducibility test protocol."
-last_updated: 2026-06-10
----
+-->
+
+
+
 
 # Code Release
 

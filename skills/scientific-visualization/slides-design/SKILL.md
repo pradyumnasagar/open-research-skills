@@ -1,10 +1,10 @@
 ---
 name: slides-design
-description: "Design scientific conference and lecture slides. Covers the 6x6 rule,
-  results-first structure, the 5-second test, build progression, citation format,
-  dark-mode contrast, and accessibility.
+description: "Design scientific conference and lecture slides. Covers the 6x6 rule,"
 license: MIT
 ---
+
+
 
 <!-- metadata:
 category: scientific-visualization

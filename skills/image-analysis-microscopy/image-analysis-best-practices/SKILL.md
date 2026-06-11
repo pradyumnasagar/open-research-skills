@@ -1,11 +1,10 @@
 ---
-name: best-practices
-description: "Apply best practices for microscopy image analysis: pixel-size calibration,
-  channel bleed-through, exposure and dynamic range, controls, publication figures,
-  color-blind safe palettes, and proper statistical handling of n=cells vs n=images
-  vs n=animals.
+name: image-analysis-best-practices
+description: "Apply best practices for microscopy image analysis: pixel-size calibration,"
 license: MIT
 ---
+
+
 
 <!-- metadata:
 category: image-analysis-microscopy

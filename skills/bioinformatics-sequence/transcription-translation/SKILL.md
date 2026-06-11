@@ -1,10 +1,10 @@
 ---
 name: transcription-translation
-description: "Transcribe DNA to RNA (and back), translate coding sequences to protein
-  using NCBI codon tables, and pick the right genetic code for mitochondria, plastids,
-  or non-standard organisms.
+description: "Transcribe DNA to RNA (and back), translate coding sequences to protein"
 license: MIT
 ---
+
+
 
 <!-- metadata:
 category: bioinformatics-sequence

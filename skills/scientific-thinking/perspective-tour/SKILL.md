@@ -1,10 +1,10 @@
 ---
 name: perspective-tour
-description: "Multi-perspective exploration of a research question using 5-7 expert
-  lenses. Use for grant specific aims, manuscript framing, project scoping, or when
-  a question benefits from theoretical, methodological, clinical, and ethical viewpoints.
+description: "Multi-perspective exploration of a research question using 5-7 expert"
 license: MIT
 ---
+
+
 
 <!-- metadata:
 category: scientific-thinking

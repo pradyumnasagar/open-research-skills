@@ -1,10 +1,10 @@
 ---
-name: bam-processing
-description: "Process BAM files with samtools — sort, index, merge, flagstat,\
-  \ mark duplicates, fixmate, depth, filter, and stream — the standard CLI toolkit\
-  \ for 2026.
+name: samtools-bam-processing
+description: "Process BAM files with samtools — sort, index, merge, flagstat,"
 license: MIT
 ---
+
+
 
 <!-- metadata:
 category: bioinformatics-sequence

@@ -1,9 +1,10 @@
 ---
-name: quality-scores
-description: "Access, filter, and trim Phred quality scores in FASTQ reads using Biopython\
-  \ 1.83+ — including per-position profiles and encoding auto-detection.
+name: fastq-quality-scores
+description: "Access, filter, and trim Phred quality scores in FASTQ reads using Biopython"
 license: MIT
 ---
+
+
 
 <!-- metadata:
 category: bioinformatics-sequence

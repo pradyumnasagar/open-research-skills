@@ -1,10 +1,10 @@
 ---
-name: science-preprints
-description: "Use when choosing a preprint server (bioRxiv, medRxiv, ChemRxiv, SSRN,
-  arXiv), selecting a license (CC-BY vs CC-BY-NC-ND), versioning, scoop protection,
-  or planning journal transfer with In Review / Reviewed Preprint services.
+name: preprints
+description: "Use when choosing a preprint server (bioRxiv, medRxiv, ChemRxiv, SSRN,"
 license: MIT
 ---
+
+
 
 <!-- metadata:
 category: open-science

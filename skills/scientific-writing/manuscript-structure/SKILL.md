@@ -1,11 +1,10 @@
 ---
 name: manuscript-structure
-description: "Section-by-section guidance for biomedical manuscripts using the IMRAD
-  frame (Introduction, Methods, Results, Discussion), title and abstract strategies,
-  figure/table selection, citation styles, and reporting checklists (CONSORT, STROBE,
-  PRISMA, ARRIVE 2.0, MIAME, MINSEQE).
+description: "Section-by-section guidance for biomedical manuscripts using the IMRAD"
 license: MIT
 ---
+
+
 
 <!-- metadata:
 category: scientific-writing

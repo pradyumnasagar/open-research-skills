@@ -1,13 +1,10 @@
 ---
 name: similarity-searching
-description: "Performs molecular similarity searching using Tanimoto, Tversky, Dice,
-  and cosine coefficients on bit/count fingerprints with explicit choice rules for
-  symmetric vs asymmetric measures, scaffold-hopping vs lead-optimization regimes,
-  activity-cliff diagnosis, and large-library nearest-neighbor methods (BulkTanimoto,
-  Annoy MHFP6, USRCAT). Use when ranking compounds by structural resemblance to a
-  query, clustering libraries, finding analogs, or diagnosing activity cliffs.
+description: "Performs molecular similarity searching using Tanimoto, Tversky, Dice,"
 license: MIT
 ---
+
+
 
 <!-- metadata:
 category: ''

@@ -1,10 +1,10 @@
 ---
 name: poster-design
-description: "Design academic posters for conferences. Covers A0 portrait/landscape,
-  the 6-foot test, grid layout, hierarchy, QR codes, accessibility, and online sessions
-  on iPosters.
+description: "Design academic posters for conferences. Covers A0 portrait/landscape,"
 license: MIT
 ---
+
+
 
 <!-- metadata:
 category: scientific-visualization

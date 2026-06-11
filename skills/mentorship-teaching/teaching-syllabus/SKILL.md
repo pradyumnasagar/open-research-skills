@@ -1,12 +1,10 @@
 ---
 name: teaching-syllabus
-description: "Translates course design into a complete syllabus with learning outcomes
-  mapped to Bloom's Taxonomy, weekly schedule, assessment rubrics, inclusive teaching
-  policies, and Universal Design for Learning (UDL) accommodations. Use when creating
-  a new syllabus, revising an existing one, or aligning course policies with institutional
-  accessibility requirements.
+description: "Translates course design into a complete syllabus with learning outcomes"
 license: MIT
 ---
+
+
 
 <!-- metadata:
 category: ''

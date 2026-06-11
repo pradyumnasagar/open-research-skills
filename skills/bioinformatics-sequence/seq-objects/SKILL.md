@@ -1,9 +1,10 @@
 ---
 name: seq-objects
-description: "Master the Seq, MutableSeq, and SeqRecord objects — slicing, immutability,\
-  \ ambiguity codes, alphabets, and the 2026 Biopython alphabet deprecation reality.
+description: "Master the Seq, MutableSeq, and SeqRecord objects — slicing, immutability,"
 license: MIT
 ---
+
+
 
 <!-- metadata:
 category: bioinformatics-sequence

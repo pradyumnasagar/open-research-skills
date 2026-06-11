@@ -1,10 +1,10 @@
 ---
 name: codon-usage
-description: "Compute codon usage frequencies, RSCU, CAI, and tRNA adaptation —\
-  \ for gene expression prediction, heterologous expression design, and comparative\
-  \ genomics.
+description: "Compute codon usage frequencies, RSCU, CAI, and tRNA adaptation —"
 license: MIT
 ---
+
+
 
 <!-- metadata:
 category: bioinformatics-sequence

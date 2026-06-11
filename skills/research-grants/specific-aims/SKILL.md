@@ -1,10 +1,10 @@
 ---
 name: specific-aims
-description: "Use when drafting or revising the NIH Specific Aims page (1 page) for
-  an R01, R21, R03, F-series, or K-series: concrete structure, opening-paragraph formula,
-  Aim-construction pattern, decision rules, common failure modes.
+description: "Use when drafting or revising the NIH Specific Aims page (1 page) for"
 license: MIT
 ---
+
+
 
 <!-- metadata:
 category: research-grants

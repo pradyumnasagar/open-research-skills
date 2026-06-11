@@ -1,10 +1,10 @@
 ---
 name: reverse-complement
-description: "Compute reverse complements, complements, and strand-aware operations\
-  \ on DNA/RNA — including IUPAC ambiguity support, batch processing, and the\
-  \ orientation trap.
+description: "Compute reverse complements, complements, and strand-aware operations"
 license: MIT
 ---
+
+
 
 <!-- metadata:
 category: bioinformatics-sequence

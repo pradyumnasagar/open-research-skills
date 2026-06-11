@@ -1,14 +1,10 @@
 ---
 name: comm-podcast
-description: "Produces a 20-60 minute scientific podcast episode (interview, narrated
-  story, or panel) for a general audience, with a pre-published show note, three-act
-  structure, host prep, guest prep, and an editorial pass. Applies the Anderson TED-principle
-  of the one-idea transmission, the Gopen & Swan listener-stress-position principle,
-  and the AAAS Toolkit audience-first discipline. Use when launching a science podcast,
-  preparing for an interview, recording a research-summary episode, or producing a
-  panel discussion.
+description: "Produces a 20-60 minute scientific podcast episode (interview, narrated"
 license: MIT
 ---
+
+
 
 <!-- metadata:
 category: ''

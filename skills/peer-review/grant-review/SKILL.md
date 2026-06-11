@@ -1,10 +1,10 @@
 ---
 name: grant-review
-description: "Review a research grant proposal (NIH/NSF/ERC/private foundation): section-by-section
-  criteria, panel process, criterion scoring, overall impact, reviewer etiquette,
-  and a defensible written critique.
+description: "Review a research grant proposal (NIH/NSF/ERC/private foundation): section-by-section"
 license: MIT
 ---
+
+
 
 <!-- metadata:
 category: peer-review

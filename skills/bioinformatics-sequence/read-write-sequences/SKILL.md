@@ -1,9 +1,10 @@
 ---
-name: write-sequences
-description: "Read and write FASTA, FASTQ, GenBank, EMBL using Biopython SeqIO —\
-  \ including indexed random access, conversion, and 2026 best practices.
+name: read-write-sequences
+description: "Read and write FASTA, FASTQ, GenBank, EMBL using Biopython SeqIO —"
 license: MIT
 ---
+
+
 
 <!-- metadata:
 category: bioinformatics-sequence

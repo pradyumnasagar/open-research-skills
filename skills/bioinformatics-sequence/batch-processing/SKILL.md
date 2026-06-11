@@ -1,9 +1,10 @@
 ---
 name: batch-processing
-description: "Process many FASTA/FASTQ/GenBank files in batch — merge, split,\
-  \ convert, summarize, organize — using Biopython 1.83+.
+description: "Process many FASTA/FASTQ/GenBank files in batch — merge, split,"
 license: MIT
 ---
+
+
 
 <!-- metadata:
 category: bioinformatics-sequence
