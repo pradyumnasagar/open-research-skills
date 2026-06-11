@@ -201,6 +201,12 @@ playground/
 work-in-progress/
 wip/
 
+# Internal working folders (prefixed with underscore)
+# The user-facing template lives at `template/` (no underscore)
+_templates/
+_inventory/
+_meta/
+
 # ── Markdown / doc build artifacts ────────────────────────
 *.aux
 *.lof
