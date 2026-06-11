@@ -1,12 +1,10 @@
 ---
 name: mentorship-onboarding
-description: "Establishes effective mentor-mentee relationships through structured
-  onboarding using the Entering Mentoring curriculum (CIMER, UW-Madison), defining
-  expectations, communication cadences, and feedback norms. Use when initiating a
-  new mentoring relationship, transitioning between mentors, or formalizing an informal
-  mentorship.
+description: "Establishes effective mentor-mentee relationships through structured"
 license: MIT
 ---
+
+
 
 <!-- metadata:
 category: ''

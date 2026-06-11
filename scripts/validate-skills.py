@@ -97,7 +97,7 @@ def validate_metadata_block(content: str, path: pathlib.Path) -> list[str]:
             errors.append(f"metadata YAML is invalid: {e}")
     return errors
 
-def validate_skill(path: pathlib.Path) -> list[str]:
+def validate_skill(path: pathlib.Path, seen_names: dict) -> list[str]:
     """Validate a single SKILL.md file."""
     errors = []
     content = path.read_text()
@@ -161,7 +161,7 @@ def main():
     seen_names = {}
 
     for skill_file in skill_files:
-        errors = validate_skill(skill_file)
+        errors = validate_skill(skill_file, seen_names)
         if errors:
             prefix = f"❌ {skill_file.relative_to(args.skills_dir)}"
             print(f"{prefix}:")

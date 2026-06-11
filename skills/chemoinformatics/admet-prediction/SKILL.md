@@ -1,13 +1,10 @@
 ---
 name: admet-prediction
-description: "Predicts ADMET properties using ADMETlab 3.0 (119 endpoints with uncertainty),
-  ADMET-AI, DeepChem MolNet, and chemprop D-MPNN with explicit handling of OECD QSAR
-  principles, applicability domain assessment, calibration, hERG/CYP/AMES gold-standard
-  endpoints, and PAINS / Lipinski / Ro5 / Veber / BBB druglikeness filters. Use when
-  filtering compounds for drug-likeness, prioritizing leads by predicted safety, or
-  building an in-house ADMET QSAR model.
+description: "Predicts ADMET properties using ADMETlab 3.0 (119 endpoints with uncertainty),"
 license: MIT
 ---
+
+
 
 <!-- metadata:
 category: ''

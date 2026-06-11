@@ -1,14 +1,10 @@
 ---
 name: molecular-standardization
-description: "Standardizes molecular structures using ChEMBL chembl_structure_pipeline
-  and RDKit rdMolStandardize covering sanitization, salt/solvent stripping, neutralization,
-  tautomer canonicalization, stereochemistry standardization, mixture handling, and
-  isotope normalization. Explicitly compares ChEMBL pipeline, canSARchem, and PubChem
-  standardization choices. Use when preparing libraries for QSAR training, joining
-  datasets across sources, deduplicating compound collections, or building canonical
-  compound registries.
+description: "Standardizes molecular structures using ChEMBL chembl_structure_pipeline"
 license: MIT
 ---
+
+
 
 <!-- metadata:
 category: ''

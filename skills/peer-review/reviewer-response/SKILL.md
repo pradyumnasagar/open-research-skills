@@ -1,10 +1,10 @@
 ---
 name: reviewer-response
-description: "Write a respectful, point-by-point response to peer-reviewer comments
-  (rebuttal): tone, structure, line-numbered references, conflict handling, partial-response
-  strategy, and appeal of a desk reject.
+description: "Write a respectful, point-by-point response to peer-reviewer comments"
 license: MIT
 ---
+
+
 
 <!-- metadata:
 category: peer-review

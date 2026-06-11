@@ -1,11 +1,10 @@
 ---
-name: deep-learning
-description: "Use scVI, scANVI, totalVI, scGPT, Geneformer, and scFoundation for single-cell
-  RNA-seq analysis. Use for batch correction, label transfer, perturbation prediction,
-  and foundation model fine-tuning. Covers training, inference, GPU sizing, and evaluation
-  metrics.
+name: scrnaseq-deep-learning
+description: "Use scVI, scANVI, totalVI, scGPT, Geneformer, and scFoundation for single-cell"
 license: MIT
 ---
+
+
 
 <!-- metadata:
 category: machine-learning-bio

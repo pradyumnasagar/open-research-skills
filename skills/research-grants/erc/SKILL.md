@@ -1,10 +1,10 @@
 ---
-name: grants-erc
-description: "Use when drafting or revising an ERC proposal: B1 Extended Synopsis\
-  \ (2 pp), B2 Full Proposal (\u22487–8 pp), CV, Track Record, resources, ethics\
-  \ issues table, and host institution commitment letter in the ERC format.
+name: erc
+description: "Use when drafting or revising an ERC proposal: B1 Extended Synopsis"
 license: MIT
 ---
+
+
 
 <!-- metadata:
 category: research-grants

@@ -1,10 +1,10 @@
 ---
-name: disclosure-statement
-description: "Use when drafting or auditing an AI/LLM disclosure statement for a manuscript,\
-  \ preprint, grant, or venue — what to include, where to put it, and how to\
-  \ meet major journal and conference policies.
+name: ai-disclosure-statement
+description: "Use when drafting or auditing an AI/LLM disclosure statement for a manuscript,"
 license: MIT
 ---
+
+
 
 <!-- metadata:
 category: humanizer-skills

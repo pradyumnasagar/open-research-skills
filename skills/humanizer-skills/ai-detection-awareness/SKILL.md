@@ -1,11 +1,10 @@
 ---
-name: detection-awareness
-description: "Use when you or your institution are using, evaluating, or responding\
-  \ to AI-detection tools (GPTZero, Turnitin, Copyleaks, Originality.ai, Pangram)\
-  \ — how detectors work, their failure modes, the limits of paraphrasing tools,\
-  \ and the move toward process-based assessment.
+name: ai-detection-awareness
+description: "Use when you or your institution are using, evaluating, or responding"
 license: MIT
 ---
+
+
 
 <!-- metadata:
 category: humanizer-skills

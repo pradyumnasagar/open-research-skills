@@ -1,11 +1,10 @@
 ---
-name: learning-genomics
-description: "Use CNNs (DeepBind, Basset), RNNs, and transformers (DNABERT, HyenaDNA,
-  Evo, Nucleotide Transformer) for genomic sequence analysis. Use when predicting
-  TF binding, chromatin profiles, splicing, or noncoding variant effects from raw
-  sequence.
+name: deep-learning-genomics
+description: "Use CNNs (DeepBind, Basset), RNNs, and transformers (DNABERT, HyenaDNA,"
 license: MIT
 ---
+
+
 
 <!-- metadata:
 category: machine-learning-bio

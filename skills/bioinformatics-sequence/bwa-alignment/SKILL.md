@@ -1,10 +1,10 @@
 ---
 name: bwa-alignment
-description: "Align Illumina short reads to a reference genome with BWA-MEM —\
-  \ including index, MEM algorithm, paired-end, alt-contig handling, and 2026 best\
-  \ practices.
+description: "Align Illumina short reads to a reference genome with BWA-MEM —"
 license: MIT
 ---
+
+
 
 <!-- metadata:
 category: bioinformatics-sequence

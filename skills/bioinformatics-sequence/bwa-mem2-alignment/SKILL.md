@@ -1,9 +1,10 @@
 ---
-name: mem2-alignment
-description: "Use BWA-MEM2 — the SIMD-accelerated BWA-MEM replacement —\
-  \ for 2-3x speedup on human genome alignment with identical results to BWA-MEM.
+name: bwa-mem2-alignment
+description: "Use BWA-MEM2 — the SIMD-accelerated BWA-MEM replacement —"
 license: MIT
 ---
+
+
 
 <!-- metadata:
 category: bioinformatics-sequence

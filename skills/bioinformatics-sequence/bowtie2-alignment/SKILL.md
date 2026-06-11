@@ -1,10 +1,10 @@
 ---
 name: bowtie2-alignment
-description: "Align short reads to a reference with Bowtie2 — the standard aligner\
-  \ for ChIP-seq, ATAC-seq, and other short-fragment applications where sensitivity\
-  \ for short indels matters less than speed.
+description: "Align short reads to a reference with Bowtie2 — the standard aligner"
 license: MIT
 ---
+
+
 
 <!-- metadata:
 category: bioinformatics-sequence

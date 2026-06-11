@@ -1,11 +1,10 @@
 ---
 name: cover-letter
-description: "Crafts a cover letter to a biomedical journal editor: addressing the
-  editor, novelty statement, suggested and recommended-against reviewers, conflicts
-  of interest, what not to say, and how to respond to a desk-rejection for 'out of
-  scope''.'
+description: "Crafts a cover letter to a biomedical journal editor: addressing the"
 license: MIT
 ---
+
+
 
 <!-- metadata:
 category: scientific-writing

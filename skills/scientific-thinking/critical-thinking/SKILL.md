@@ -1,10 +1,10 @@
 ---
 name: critical-thinking
-description: "Evaluate scientific claims and evidence quality. Use for assessing experimental
-  design validity, identifying biases and confounders, applying evidence grading frameworks
-  (GRADE, Cochrane ROB), or teaching critical analysis.
+description: "Evaluate scientific claims and evidence quality. Use for assessing experimental"
 license: MIT
 ---
+
+
 
 <!-- metadata:
 category: scientific-thinking

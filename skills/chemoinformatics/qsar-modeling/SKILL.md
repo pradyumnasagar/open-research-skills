@@ -1,14 +1,10 @@
 ---
 name: qsar-modeling
-description: "Builds QSAR / QSPR models using chemprop D-MPNN, MolFormer, Uni-Mol,
-  ChemBERTa, random forest baselines, and Gaussian processes with explicit handling
-  of OECD 5 principles, applicability domain (kNN, leverage, conformal prediction,
-  Mahalanobis), scaffold-balanced splits, ensemble uncertainty, calibration (Platt,
-  isotonic), feature importance (SHAP, atomic attribution), and prospective validation.
-  Use when building target-specific predictive models from in-house bioassay data,
-  ADMET endpoints, or selectivity profiles.
+description: "Builds QSAR / QSPR models using chemprop D-MPNN, MolFormer, Uni-Mol,"
 license: MIT
 ---
+
+
 
 <!-- metadata:
 category: ''

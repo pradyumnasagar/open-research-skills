@@ -1,10 +1,10 @@
 ---
 name: schematics-diagrams
-description: "Design scientific schematics, workflow diagrams, and architecture figures.
-  Covers draw.io, Inkscape, Mermaid, Graphviz, TikZ, BioRender, and one-idea-per-figure
-  best practice.
+description: "Design scientific schematics, workflow diagrams, and architecture figures."
 license: MIT
 ---
+
+
 
 <!-- metadata:
 category: scientific-visualization

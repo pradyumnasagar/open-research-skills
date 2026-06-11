@@ -1,10 +1,10 @@
 ---
-name: humanizing-editorial
-description: "Use when editing AI-assisted or AI-generated text so that it reads as\
-  \ written by a knowledgeable human — workflow from AI draft to authorial voice,\
-  \ what to keep, what to rewrite, and the line that humanizing must not cross.
+name: text-humanizing-editorial
+description: "Use when editing AI-assisted or AI-generated text so that it reads as"
 license: MIT
 ---
+
+
 
 <!-- metadata:
 category: humanizer-skills

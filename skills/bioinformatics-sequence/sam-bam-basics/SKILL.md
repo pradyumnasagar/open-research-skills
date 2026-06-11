@@ -1,9 +1,10 @@
 ---
-name: bam-basics
-description: "Understand the SAM format header, alignment records, FLAGs, MAPQ, CIGAR,\
-  \ and coordinate conventions — the foundation for all downstream BAM analysis.
+name: sam-bam-basics
+description: "Understand the SAM format header, alignment records, FLAGs, MAPQ, CIGAR,"
 license: MIT
 ---
+
+
 
 <!-- metadata:
 category: bioinformatics-sequence

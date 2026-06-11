@@ -1,10 +1,10 @@
 ---
 name: sequence-slicing
-description: "Slice, subset, and extract regions from sequences and SeqRecords —\
-  \ including feature extraction, fuzzy ends, and the location algebra behind GenBank\
-  \ features.
+description: "Slice, subset, and extract regions from sequences and SeqRecords —"
 license: MIT
 ---
+
+
 
 <!-- metadata:
 category: bioinformatics-sequence

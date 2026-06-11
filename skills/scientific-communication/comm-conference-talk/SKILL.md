@@ -1,14 +1,10 @@
 ---
-name: conference-talk
-description: "Designs, scripts, and rehearses a 10-20 minute scientific conference
-  talk (job talk, contributed talk, plenary, lightning) for a technical but non-specialist
-  audience. Enforces a single-take-home-message structure (motivation-gap-evidence-claim-implication),
-  prescribes slide-budget allocation by time, and codifies the Loui & Smith audience-engagement
-  rubric. Use when preparing a contributed conference talk, defending a thesis chapter,
-  writing a job-talk job talk, or rewriting a sprawling results-heavy talk into a
-  12-minute contribution.
+name: comm-conference-talk
+description: "Designs, scripts, and rehearses a 10-20 minute scientific conference"
 license: MIT
 ---
+
+
 
 <!-- metadata:
 category: ''

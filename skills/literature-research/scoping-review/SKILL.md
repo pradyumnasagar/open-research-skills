@@ -1,10 +1,10 @@
 ---
 name: scoping-review
-description: "Map evidence landscapes in emerging fields using Arksey-O'Malley and
-  JBI scoping review frameworks. Includes charting, narrative synthesis, consultation
-  exercise, and gap identification without formal quality assessment.
+description: "Map evidence landscapes in emerging fields using Arksey-O'Malley and"
 license: MIT
 ---
+
+
 
 <!-- metadata:
 category: literature-research

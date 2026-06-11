@@ -1,10 +1,10 @@
 ---
-name: thinking-brainstorming
-description: "Creative research ideation and exploration. Use for open-ended brainstorming,
-  interdisciplinary connections, challenging assumptions, or identifying research
-  gaps in early-stage research planning.
+name: brainstorming
+description: "Creative research ideation and exploration. Use for open-ended brainstorming,"
 license: MIT
 ---
+
+
 
 <!-- metadata:
 category: scientific-thinking

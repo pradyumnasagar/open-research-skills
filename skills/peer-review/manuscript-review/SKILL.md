@@ -1,10 +1,10 @@
 ---
 name: manuscript-review
-description: "Conduct a formal peer review of a scientific manuscript for a journal:
-  section-by-section evaluation, reporting-checklist compliance, major/minor comments,
-  recommendation to editor.
+description: "Conduct a formal peer review of a scientific manuscript for a journal:"
 license: MIT
 ---
+
+
 
 <!-- metadata:
 category: peer-review

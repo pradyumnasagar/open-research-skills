@@ -1,11 +1,10 @@
 ---
-name: protocol-repository
-description: "Search and download published wet-lab protocols from protocols.io REST
-  API. Find 90,000+ community protocols by keyword, DOI, or filter; extract steps,
-  reagents, materials, timing, equipment. Free for public protocols. Use to build
-  automation with opentrons-protocol-api or record runs in an ELN.
-license: CC-BY-4.0
+name: protocolsio-protocol-repository
+description: "Search and download published wet-lab protocols from protocols.io REST"
+license: MIT
 ---
+
+
 
 <!-- metadata:
 category: ''

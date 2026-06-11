@@ -1,12 +1,10 @@
 ---
 name: substructure-search
-description: "Searches molecular libraries for substructure matches using SMARTS patterns
-  with explicit handling of recursive SMARTS, ring membership, aromaticity dialect,
-  vector binding, atom map indices, and reactive/PAINS/REOS/Brenk/Aldridge filter
-  catalogs. Use when filtering compounds by pharmacophore features, functional groups,
-  scaffold matches, or screening for assay-interference / structural alerts.
+description: "Searches molecular libraries for substructure matches using SMARTS patterns"
 license: MIT
 ---
+
+
 
 <!-- metadata:
 category: ''

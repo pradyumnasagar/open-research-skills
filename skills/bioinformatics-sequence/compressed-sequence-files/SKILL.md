@@ -1,9 +1,10 @@
 ---
-name: sequence-files
-description: "Read and write gzip, bzip2, and BGZF-compressed FASTA/FASTQ using Python\
-  \ stdlib and Biopython — including indexable BGZF.
+name: compressed-sequence-files
+description: "Read and write gzip, bzip2, and BGZF-compressed FASTA/FASTQ using Python"
 license: MIT
 ---
+
+
 
 <!-- metadata:
 category: bioinformatics-sequence
