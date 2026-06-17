@@ -8,6 +8,7 @@ license: MIT
   category: <one of the 18 categories in spec/category-taxonomy.md>
   version: 1.0.0
   author: Pradyumna Jayaram
+  oversight: medium
   tags: [lowercase, 3-6, tags]
   difficulty: beginner | intermediate | advanced
   sources: <upstream source name, e.g. bioSkills/sequence-io/my-skill>
@@ -27,6 +28,23 @@ license: MIT
 
 - Anti-trigger 1 (where another skill fits better)
 - Anti-trigger 2
+
+## Hard rules
+
+1. **No fabricated citations** — every cited work must resolve to a verifiable record (DOI, PMID, arXiv ID, ISBN, URL with retrieval date).
+2. **No claim without provenance** — every quantitative or factual claim must point to a file, line, table, figure, or external source the agent can show.
+3. **No silent failure** — every script invocation, API call, or tool use must declare its exit status and what to do on non-zero.
+
+**Domain extensions (optional):**
+
+- Domain-specific rule 1.
+- Domain-specific rule 2.
+
+## Cross-references
+
+- related-skill-slug-1 — one-line description.
+- related-skill-slug-2 — one-line description.
+- meta/integrity-audit — 7-mode AI failure-mode checklist (cross-cutting).
 
 ## Workflow
 

@@ -12,10 +12,15 @@ license: MIT
 category: literature-research
 version: 1.0.0
 author: Pradyumna Jayaram
+oversight: high
 tags:
-  - literature-research
-  - research
-difficulty: intermediate
+  - systematic-review
+  - meta-analysis
+  - prisma
+  - evidence-synthesis
+  - grade
+difficulty: advanced
+sources: bioSkills/meta-analysis
 -->
 
 # Systematic Review and Meta-Analysis
@@ -259,6 +264,30 @@ Complete the 27-item PRISMA checklist:
 25. Other information (authors)
 26. Other information (declaration)
 27. Other information (availability)
+
+## Hard rules
+
+1. **No fabricated citations** — every cited study must resolve to a verifiable record (DOI, PMID, or full reference). A meta-analysis of N studies requires N retrievable records. If a record cannot be retrieved, the study is excluded and the exclusion is reported.
+2. **No claim without provenance** — every pooled effect size, heterogeneity statistic, and GRADE rating must point to the data file (`extraction.csv`), the R script that produced it (`analysis.R`), the line number, and the PRISMA item it satisfies.
+3. **No silent failure** — every script invocation (R, Python, screening tool, risk-of-bias tool) must declare its exit status. A non-zero exit means the result is not published. `rma()` errors are not "warnings" — they are stop signals.
+
+**Domain extensions:**
+
+- **PRISMA 2020 is the report contract.** The 27-item checklist is not optional. Every item maps to a section, table, or supplementary file. Missing items lead to peer-review rejection.
+- **Dual screening is the screening contract.** Single screening is acceptable only for <50 papers and must be documented as a limitation. Discrepancies require a third adjudicator.
+- **Pre-registered protocol.** The review must have a registered protocol (PROSPERO, OSF, INPLASY) before screening begins. Deviating from the protocol requires a documented justification.
+- **Heterogeneity precedes pooling.** I² > 75% blocks fixed-effect pooling; meta-regression or subgroup analysis must be performed to explain heterogeneity before reporting a pooled effect.
+- **GRADE is per-outcome, not per-review.** Each clinically important outcome receives its own certainty rating. A "high certainty for the review overall" rating is meaningless to decision-makers.
+
+## Cross-references
+
+- literature-search — PRISMA-S-compliant search before this skill runs.
+- citation-management — reference deduplication, export formats.
+- scoping-review — when the question is exploratory and synthesis is narrative, not statistical.
+- preprints — for protocol pre-registration and results preprints.
+- preregistration — register the review protocol in PROSPERO or OSF before screening.
+
+> Forward references: `data-extraction` (a planned companion skill for the extraction phase), plus `integrity-audit` and `provenance-tracking` (planned cross-cutting meta skills) are referenced from the Hard rules above but not listed here because they do not yet resolve.
 
 ## Code patterns
 
