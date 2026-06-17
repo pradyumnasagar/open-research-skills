@@ -4,23 +4,22 @@ name: alphafold-structure-prediction
 description: "Run AlphaFold 2/3 and Boltz-1 for protein structure prediction, including MSA generation with MMseqs2/JackHMMER, pLDDT/PAE interpretation, multimer prediction, and querying the AlphaFold Database (AFDB)."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: machine-learning-bio
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - machine-learning-bio
-  - research
-difficulty: intermediate
+  category: machine-learning-bio
+  oversight: low
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [machine-learning-bio, research]
+  difficulty: intermediate
 -->
 
 # AlphaFold & Boltz-1 Structure Prediction
 
-> Modern protein structure prediction runs in two stages: build a deep multiple-sequence alignment (MSA) capturing evolutionary covariation, then feed it to AlphaFold 2/3 or Boltz-1. This skill walks you through both, the differences between models, how to interpret the confidence outputs (pLDDT, PAE), and how to query the AlphaFold Database (AFDB) before running your own prediction. It also covers the practical pitfalls that distinguish a confident structure from a confidently-wrong one.
+## Hard rules
+
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
 
 ## When to use
 
@@ -346,3 +345,11 @@ def filter_msa_to_no_pdb_hits(a3m_path, pdb_hits, output_path):
 ## Changelog
 
 - 1.0.0 (2026-06-10): Initial adaptation by Pradyumna Jayaram from Jumper et al. 2021, Abramson et al. 2024, the Boltz-1 repo, and ColabFold docs; added multimer guidance, AFDB query patterns, validation rubric, and confidence-interpretation rules of thumb.
+
+## Cross-references
+
+Other skills in this category:
+
+- deep-learning-genomics
+- protein-language-models
+- scrnaseq-deep-learning

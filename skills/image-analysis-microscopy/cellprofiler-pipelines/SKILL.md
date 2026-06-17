@@ -4,31 +4,22 @@ name: cellprofiler-pipelines
 description: "Use CellProfiler 5.x to build reproducible pipelines for cell/nuclei segmentation, illumination correction, feature extraction, and high-content screening assays including CellPainting."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: image-analysis-microscopy
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - image-analysis-microscopy
-  - research
-difficulty: intermediate
+  category: image-analysis-microscopy
+  oversight: low
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [image-analysis-microscopy, research]
+  difficulty: intermediate
 -->
 
 # CellProfiler Pipelines for High-Content Image Analysis
 
-> CellProfiler is the de-facto open-source standard for building modular,
-> reproducible image-analysis pipelines at scale. The 5.x line introduced
-> a redesigned module browser, a Java-less native distribution, and tighter
-> integration with the Open Microscopy Environment (OME) formats. This skill
-> walks through building a high-content pipeline end-to-end: ingest →
-> illumination correction → primary/secondary object identification →
-> measurement → export. Use it whenever you have a multi-well plate, a
-> tissue microarray, or a CellPainting screen and need an auditable,
-> GUI-friendly workflow that a non-programmer biologist can review and run.
+## Hard rules
+
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
 
 ## When to use
 
@@ -290,3 +281,11 @@ print(merged.shape)
 - 1.0.0 (2026-06-10): Initial adaptation by Pradyumna Jayaram from
   the Broad Institute CellProfiler documentation set; consolidated
   CellPainting notes and CellProfiler Analyst pointers.
+
+## Cross-references
+
+Other skills in this category:
+
+- image-analysis-best-practices
+- imagej-fiji-macro
+- qupath-pathology

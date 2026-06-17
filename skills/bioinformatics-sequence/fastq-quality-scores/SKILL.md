@@ -4,28 +4,22 @@ name: fastq-quality-scores
 description: "Access, filter, and trim Phred quality scores in FASTQ reads using Biopython 1.83+ — including per-position profiles and encoding auto-detection."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: bioinformatics-sequence
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - bioinformatics-sequence
-  - research
-difficulty: intermediate
+  category: bioinformatics-sequence
+  oversight: low
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [bioinformatics-sequence, research]
+  difficulty: intermediate
 -->
 
 # FASTQ Quality Scores
 
-> Quality scores are the currency of trust in sequencing data. Every filter
-> you set — `Q20`, `Q30`, sliding-window trim — is a bet that bases above
-> that threshold are usable for downstream variant calls, assemblies, and
-> quantification. This skill covers reading Phred scores from FASTQ, building
-> per-position profiles, and the three encodings you might still meet in
-> 2026 (Sanger, Solexa, Illumina 1.3-1.7).
+## Hard rules
+
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
 
 ## When to use
 
@@ -221,3 +215,30 @@ SeqIO.write(records, "modern.fastq", "fastq")
 ## Changelog
 
 - 1.0.0 (2026-06-10): Initial adaptation by Pradyumna Jayaram from `bio-fastq-quality` (bioSkills-main/sequence-io/fastq-quality).
+
+## Cross-references
+
+Other skills in this category:
+
+- batch-processing
+- bowtie2-alignment
+- bwa-alignment
+- bwa-mem2-alignment
+- codon-usage
+- compressed-sequence-files
+- filter-sequences
+- format-conversion
+- hisat2-alignment
+- motif-search
+- paired-end-fastq
+- pysam-genomics
+- read-write-sequences
+- reverse-complement
+- sam-bam-basics
+- samtools-bam-processing
+- seq-objects
+- sequence-properties
+- sequence-slicing
+- sequence-statistics
+- star-alignment
+- transcription-translation

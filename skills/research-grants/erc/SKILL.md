@@ -4,23 +4,22 @@ name: erc
 description: "Use when drafting or revising an ERC proposal: B1 Extended Synopsis (2 pp), B2 Full Proposal (≈7–8 pp), CV, Track Record, resources, ethics issues table, and host institution commitment letter in the ERC format."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: research-grants
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - research-grants
-  - research
-difficulty: intermediate
+  category: research-grants
+  oversight: high
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [research-grants, research]
+  difficulty: intermediate
 -->
 
 # ERC Starting/Consolidator/Advanced Grants
 
-> A working framework for drafting or self-reviewing an ERC proposal to the European Research Council. The ERC funds frontier research across all disciplines and uses a two-panel structure: the B1 Extended Synopsis and the B2 Full Proposal, reviewed by a specialized evaluation panel. This skill covers the Starting (StG), Consolidator (CoG), and Advanced (AdG) grant types under the latest Work Programme.
+## Hard rules
+
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
 
 ## When to use
 
@@ -238,3 +237,16 @@ For and on behalf of,
 ## Changelog
 
 - 1.0.0 (2026-06-10): Initial adaptation by Pradyumna Jayaram.
+
+## Cross-references
+
+Other skills in this category:
+
+- bio-sketch
+- darpa-baa
+- fellowships
+- foundation-grants
+- nih-k-series
+- nih-r01
+- nsf-standard
+- specific-aims

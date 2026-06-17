@@ -4,21 +4,22 @@ name: eln-chemotion
 description: "Chemotion open electronic lab notebook for chemists via REST API. Molecule editor, reactions, samples, spectra (NMR/IR/MS), inventory. Open-source alternative to ChemAxon/Accelrys for synthetic chemistry. For biology workflows use eln-elabftw; for assay pipelines use eln-openbis."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: lab-automation
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - lab-automation
-  - research
-difficulty: intermediate
+  category: lab-automation
+  oversight: low
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [lab-automation, research]
+  difficulty: intermediate
 -->
 
 # Chemotion Electronic Lab Notebook
+
+## Hard rules
+
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
 
 ## Overview
 
@@ -514,3 +515,22 @@ for hit in r.json().get("samples", []):
 - `eln-elabftw` — open ELN for general biology workflows (no chemistry editor)
 - `eln-openbis` — open LIMS for high-throughput assay and sample tracking
 - `protocolsio-protocol-repository` — search and import published synthetic procedures
+
+## Cross-references
+
+Other skills in this category:
+
+- eln-elabftw
+- eln-openbis
+- opentrons-ot2-protocols
+- protocolsio-protocol-repository
+- pylabrobot-vendor-agnostic
+
+## Changelog
+
+- **1.1.0** (migration) — Bulk-migrated to v0.4.0 schema: canonical
+  metadata block, base Hard rules, Cross-references. Body content
+  unchanged; author should review and fill in any domain-specific
+  extensions to the Hard rules.
+- **1.0.0** — Initial release.
+

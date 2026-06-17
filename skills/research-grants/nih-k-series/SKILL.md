@@ -4,23 +4,22 @@ name: nih-k-series
 description: "Use when planning or drafting an NIH mentored career-development award (K01, K08, K23, K99/R00, K25, K22, K07): Candidate Section, Mentorship Plan, Training Plan, Sponsor/Co-Sponsor statements, and the K99-to-R00 transition logic. Anchored to the K Kiosk on the NIH website and current Forms-H/I."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: research-grants
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - research-grants
-  - research
-difficulty: intermediate
+  category: research-grants
+  oversight: high
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [research-grants, research]
+  difficulty: intermediate
 -->
 
 # NIH K-Series Mentored Career Awards
 
-> A working framework for planning, drafting, and self-reviewing a mentored career-development award (K-series). The K-series is a contract between a candidate, a primary mentor, a sponsoring institution, and a funding IC about how three to five years of protected time will convert a trainee into an independent investigator.
+## Hard rules
+
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
 
 ## When to use
 
@@ -184,3 +183,16 @@ difficulty: intermediate
 ## Changelog
 
 - 1.0.0 (2026-06-10): Initial adaptation by Pradyumna Jayaram.
+
+## Cross-references
+
+Other skills in this category:
+
+- bio-sketch
+- darpa-baa
+- erc
+- fellowships
+- foundation-grants
+- nih-r01
+- nsf-standard
+- specific-aims

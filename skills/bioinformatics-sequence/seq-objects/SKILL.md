@@ -4,27 +4,22 @@ name: seq-objects
 description: "Master the Seq, MutableSeq, and SeqRecord objects — slicing, immutability, ambiguity codes, alphabets, and the 2026 Biopython alphabet deprecation reality."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: bioinformatics-sequence
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - bioinformatics-sequence
-  - research
-difficulty: intermediate
+  category: bioinformatics-sequence
+  oversight: low
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [bioinformatics-sequence, research]
+  difficulty: intermediate
 -->
 
 # Biopython Seq and SeqRecord Objects
 
-> `Seq` is a string with a memory. It knows it's a biological sequence, so it
-> understands complementarity, transcription, and translation. `SeqRecord`
-> wraps `Seq` with an ID, a description, annotations, and a list of
-> features. This skill is the 101 on both — and the alphabet deprecation
-> story that has confused newcomers since Biopython 1.80.
+## Hard rules
+
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
 
 ## When to use
 
@@ -216,3 +211,30 @@ hash(Seq("ACGT")) == hash("ACGT")  # True
 ## Changelog
 
 - 1.0.0 (2026-06-10): Initial adaptation by Pradyumna Jayaram from `bio-seq-objects` (bioSkills-main/sequence-manipulation/seq-objects).
+
+## Cross-references
+
+Other skills in this category:
+
+- batch-processing
+- bowtie2-alignment
+- bwa-alignment
+- bwa-mem2-alignment
+- codon-usage
+- compressed-sequence-files
+- fastq-quality-scores
+- filter-sequences
+- format-conversion
+- hisat2-alignment
+- motif-search
+- paired-end-fastq
+- pysam-genomics
+- read-write-sequences
+- reverse-complement
+- sam-bam-basics
+- samtools-bam-processing
+- sequence-properties
+- sequence-slicing
+- sequence-statistics
+- star-alignment
+- transcription-translation

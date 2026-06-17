@@ -4,23 +4,22 @@ name: ai-detection-awareness
 description: "Use when you or your institution are using, evaluating, or responding to AI-detection tools (GPTZero, Turnitin, Copyleaks, Originality.ai, Pangram) — how detectors work, their failure modes, the limits of paraphrasing tools, and the move toward process-based assessment."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: humanizer-skills
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - humanizer-skills
-  - research
-difficulty: intermediate
+  category: humanizer-skills
+  oversight: very-high
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [humanizer-skills, research]
+  difficulty: intermediate
 -->
 
 # AI Detection Awareness
 
-> AI detection tools are now embedded in learning management systems, journal submission pipelines, and institutional review processes. They are also unreliable, particularly against non-native English writers, neurodivergent writers, and formal scientific prose. This skill is a working understanding of how detectors work, what they miss, who they harm when they are wrong, and why the institutional response is moving toward *process-based* assessment (draft history, oral defense, replication) rather than reliance on a single classifier's score.
+## Hard rules
+
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
 
 ## When to use
 
@@ -233,3 +232,11 @@ You understand the state of detection well enough to act when:
 ## Changelog
 
 - 1.0.0 (2026-06-10): Initial adaptation by Pradyumna Jayaram. Sources: public statements and product pages of GPTZero, Turnitin, Copyleaks, Originality.ai, Pangram (structural summary; specific accuracy claims not repeated); representative university teaching-and-learning center guidance. Added: false-positive analysis by population, paraphrase-tool failure mode explained structurally, process-based assessment as the institutional direction.
+
+## Cross-references
+
+Other skills in this category:
+
+- ai-disclosure-statement
+- scientific-voice-style
+- text-humanizing-editorial

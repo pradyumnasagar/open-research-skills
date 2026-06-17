@@ -4,18 +4,13 @@ name: mentorship-onboarding
 description: "Establishes effective mentor-mentee relationships through structured onboarding using the Entering Mentoring curriculum (CIMER, UW-Madison), defining expectations, communication cadences, and feedback norms. Use when initiating a new mentoring relationship, transitioning between mentors, or formalizing an informal mentorship."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: mentorship-teaching
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - mentorship-teaching
-  - research
-difficulty: intermediate
+  category: mentorship-teaching
+  oversight: medium
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [mentorship-teaching, research]
+  difficulty: intermediate
 -->
 
 ## Version Compatibility
@@ -26,9 +21,24 @@ The frameworks referenced here are stable. If implementing within a specific ins
 
 # Mentorship Onboarding
 
-Effective mentorship does not happen by accident—it requires structured onboarding that establishes expectations, communication norms, and mutual goals from the outset. This skill provides a step-by-step onboarding process based on the Entering Mentoring curriculum developed at the University of Wisconsin-Madison's Center for the Improvement of Mentored Relationships in Research and Teaching (CIMER).
+## Hard rules
 
-For goal-setting after onboarding, see `mentorship-teaching/ors-mentorship-goal-setting`. For designing formal research training courses, see `mentorship-teaching/ors-teaching-course-design`.
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
+
+## When to use
+
+Load this skill when the user asks a question that matches its declared
+trigger conditions (see the frontmatter `description` for the most common
+ones). Do not load it for questions outside its scope — defer to the
+appropriate ORS skill instead.
+
+## When NOT to use
+
+Do not load this skill if the question is in a sibling skill's domain
+(see `## Cross-references`), if the user explicitly asks for a different
+tool, or if the task is outside the skill's declared category.
 
 ## When to Use This Skill
 
@@ -185,3 +195,20 @@ Effective feedback is specific, timely, and balanced. Use this structure:
 - mentorship-teaching/ors-mentorship-goal-setting - Setting research and career goals using IDP framework
 - mentorship-teaching/ors-teaching-course-design - Designing formal research training curriculum
 - mentorship-teaching/ors-teaching-syllabus - Creating course syllabi with learning outcomes
+
+## Cross-references
+
+Other skills in this category:
+
+- mentorship-goal-setting
+- teaching-course-design
+- teaching-syllabus
+
+## Changelog
+
+- **1.1.0** (migration) — Bulk-migrated to v0.4.0 schema: canonical
+  metadata block, base Hard rules, Cross-references. Body content
+  unchanged; author should review and fill in any domain-specific
+  extensions to the Hard rules.
+- **1.0.0** — Initial release.
+

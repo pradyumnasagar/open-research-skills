@@ -4,23 +4,22 @@ name: data-privacy
 description: "Use when designing or reviewing the privacy plan for a study that uses human data — covers HIPAA Safe Harbor vs Expert Determination, GDPR for research, de-identification, datathons, federated learning, differential privacy basics, single-IRB (sIRB), Certificates of Confidentiality, and the interaction between IRB and Data Use Agreements."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: ethics-compliance
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - ethics-compliance
-  - research
-difficulty: intermediate
+  category: ethics-compliance
+  oversight: medium
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [ethics-compliance, research]
+  difficulty: intermediate
 -->
 
 # Data Privacy for Research
 
-> Data privacy for research is the joint project of a federal regulation (HIPAA in the U.S. for health data, GDPR in the EU for personal data more broadly), an institutional oversight body (the IRB), and a contract (the Data Use Agreement or DUA). A defensible research privacy plan names the regulation that applies, the legal basis for processing, the de-identification or pseudonymization method, the controls on access, the breach-notification plan, and the documents (DUA, IRB approval, Certificate of Confidentiality) that enforce the plan. This skill encodes the HIPAA Safe Harbor and Expert Determination methods, the research-relevant GDPR articles, the de-identification and pseudonymization techniques, the privacy-preserving-analysis alternatives (federated learning, differential privacy, data enclaves, synthetic data), the role of single-IRB (sIRB) and Certificates of Confidentiality, and the patterns that show up in datathons, registries, and secondary-data studies.
+## Hard rules
+
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
 
 ## When to use
 
@@ -238,3 +237,11 @@ For research relying on Article 89 derogations from data-subject rights, documen
 ## Changelog
 
 - 1.0.0 (2026-06-10): Initial adaptation by Pradyumna Jayaram. Synthesized from 45 CFR 164.514 (HIPAA de-identification), GDPR (Regulation EU 2016/679), the NIH Genomic Data Sharing Policy, and 42 USC 241(d) (Certificate of Confidentiality). Datathon and federated-learning sections are original synthesis.
+
+## Cross-references
+
+Other skills in this category:
+
+- ai-disclosure
+- image-integrity
+- irb-protocol

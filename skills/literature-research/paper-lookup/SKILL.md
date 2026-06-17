@@ -4,23 +4,22 @@ name: paper-lookup
 description: "Look up and resolve academic papers by DOI, PMID, arXiv ID, or title using Crossref, PubMed, OpenAlex, Semantic Scholar, and check retractions, preprints, and forward citations."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: literature-research
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - literature-research
-  - research
-difficulty: intermediate
+  category: literature-research
+  oversight: high
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [literature-research, research]
+  difficulty: intermediate
 -->
 
 # Paper Lookup and Resolution
 
-> Finding a specific paper is the most common task in literature research, but it's harder than it should be. A DOI might be broken, a PMID might map to a retracted paper, an arXiv preprint might have evolved into a journal article, and authors with common names create ambiguity. This skill provides the tools and APIs to resolve papers reliably, check their status, and trace their citation relationships.
+## Hard rules
+
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
 
 ## When to use
 
@@ -561,3 +560,12 @@ External sources:
 ## Changelog
 
 - 1.0.0 (2026-06-10): Initial adaptation by Pradyumna Jayaram. Rewritten from Bioinfoskill `paper-lookup` with modern API examples (Crossref, OpenAlex, Semantic Scholar), retraction checking, preprint version tracking, ORCID-based author disambiguation, and batch lookup utilities.
+
+## Cross-references
+
+Other skills in this category:
+
+- citation-management
+- literature-search
+- scoping-review
+- systematic-review

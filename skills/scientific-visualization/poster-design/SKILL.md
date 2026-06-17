@@ -4,23 +4,22 @@ name: poster-design
 description: "Design academic posters for conferences. Covers A0 portrait/landscape, the 6-foot test, grid layout, hierarchy, QR codes, accessibility, and online sessions on iPosters."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: scientific-visualization
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - scientific-visualization
-  - research
-difficulty: intermediate
+  category: scientific-visualization
+  oversight: medium
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [scientific-visualization, research]
+  difficulty: intermediate
 -->
 
 # Academic Poster Design
 
-> This skill turns a research paper into a poster that an attendee can read in 2–3 minutes while standing 3–6 feet away. A poster is a *medium*: a long, narrow conversation, not a paper pasted to a wall. The deliverable is a single-page document, typically A0 portrait or landscape, that a passer-by can read top-to-bottom or left-to-right in a logical order.
+## Hard rules
+
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
 
 ## When to use
 
@@ -413,3 +412,12 @@ External resources (do not fabricate exact paths):
 ## Changelog
 
 - 1.0.0 (2026-06-10): Initial adaptation by Pradyumna Jayaram from `latex-research-posters` (K-Dense Inc.). Consolidated the LaTeX-only workflow into a tool-selection matrix, added Beamerposter / tikzposter / PowerPoint / Inkscape paths, added a QR-code workflow, online-session and iPosters patterns, and an accessibility audit.
+
+## Cross-references
+
+Other skills in this category:
+
+- color-and-accessibility
+- figure-design
+- schematics-diagrams
+- slides-design

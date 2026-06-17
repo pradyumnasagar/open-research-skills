@@ -165,6 +165,33 @@ def validate_hard_rules(body: str) -> list[str]:
     for rule in BASE_HARD_RULES:
         if rule not in section_lower:
             errors.append(f"## Hard rules section missing base rule '{rule}'")
+
+    # Heuristic: a hard rule is "truncated" if it is a single line consisting
+    # of just the bolded title (no body). E.g. "1. **No fabricated citations.**"
+    # with no continuation on subsequent lines.
+    lines = section.splitlines()
+    for i, line in enumerate(lines):
+        m = re.match(r"^\s*\d+\.\s+\*\*([^*]+?)\*\*\s*$", line)
+        if not m:
+            continue
+        title = m.group(1).strip()
+        # Is this one of the base rules? (Otherwise, domain-specific rules
+        # legitimately can be short.)
+        if not any(rule.split('.')[0] in title.lower() for rule in BASE_HARD_RULES):
+            continue
+        # The line is the title only (no body on the same line). Look at the
+        # next non-blank line: if it is another numbered item, the body is
+        # missing and the rule is truncated.
+        next_non_blank = ""
+        for j in range(i + 1, len(lines)):
+            if lines[j].strip():
+                next_non_blank = lines[j].strip()
+                break
+        if re.match(r"^\d+\.\s+\*\*", next_non_blank):
+            errors.append(
+                f"## Hard rules base rule '{title}' has no body (truncated)"
+            )
+            break
     return errors
 
 
@@ -202,7 +229,12 @@ def validate_cross_references(slugs: list[str],
                               known_meta_slugs: set[str]) -> list[str]:
     errors = []
     for slug in slugs:
-        if slug in known_skill_slugs or slug in known_meta_slugs:
+        # Accept both bare slugs and `meta/<slug>` for meta skills.
+        bare = slug
+        if slug.startswith("meta/"):
+            bare = slug[len("meta/"):]
+        if (slug in known_skill_slugs or slug in known_meta_slugs
+                or bare in known_skill_slugs or bare in known_meta_slugs):
             continue
         errors.append(
             f"cross-reference slug '{slug}' does not resolve to any skill under skills/ or meta/"

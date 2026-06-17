@@ -4,18 +4,13 @@ name: admet-prediction
 description: "Predicts ADMET properties using ADMETlab 3.0 (119 endpoints with uncertainty), ADMET-AI, DeepChem MolNet, and chemprop D-MPNN with explicit handling of OECD QSAR principles, applicability domain assessment, calibration, hERG/CYP/AMES gold-standard endpoints, and PAINS / Lipinski / Ro5 / Veber / BBB druglikeness filters. Use when filtering compounds for drug-likeness, prioritizing leads by predicted safety, or building an in-house ADMET QSAR model."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: chemoinformatics
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - chemoinformatics
-  - research
-difficulty: intermediate
+  category: chemoinformatics
+  oversight: low
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [chemoinformatics, research]
+  difficulty: intermediate
 -->
 
 ## Version Compatibility
@@ -29,9 +24,24 @@ If code throws ImportError, AttributeError, or TypeError, introspect the install
 
 # ADMET Prediction
 
-Predict absorption, distribution, metabolism, excretion, and toxicity properties of drug candidates. ADMET prediction underpins lead selection and de-risking; calibrated, applicability-domain-aware predictions distinguish a working filter from a costly false-confidence rejection. Modern best practice combines online services (ADMETlab 3.0 with uncertainty estimates), open-source models (chemprop D-MPNN), and rule-based filters (Lipinski / Veber / BBB heuristics) -- each with known failure modes.
+## Hard rules
 
-For PAINS / Brenk / structural alerts, see `chemoinformatics/substructure-search`. For QSAR model building from in-house data, see `chemoinformatics/qsar-modeling`.
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
+
+## When to use
+
+Load this skill when the user asks a question that matches its declared
+trigger conditions (see the frontmatter `description` for the most common
+ones). Do not load it for questions outside its scope — defer to the
+appropriate ORS skill instead.
+
+## When NOT to use
+
+Do not load this skill if the question is in a sibling skill's domain
+(see `## Cross-references`), if the user explicitly asks for a different
+tool, or if the task is outside the skill's declared category.
 
 ## ADMET Model Taxonomy
 
@@ -115,3 +125,35 @@ def druglike_score(mol):
 - chemoinformatics/molecular-descriptors - Physicochemical descriptors
 - chemoinformatics/substructure-search - PAINS / BRENK / REOS
 - chemoinformatics/qsar-modeling - In-house ADMET model training"
+
+## Cross-references
+
+Other skills in this category:
+
+- conformer-generation
+- covalent-design
+- docking-rescoring
+- free-energy-calculations
+- generative-design
+- molecular-descriptors
+- molecular-io
+- molecular-standardization
+- pharmacophore-modeling
+- pose-validation
+- protac-degraders
+- qsar-modeling
+- retrosynthesis
+- scaffold-analysis
+- shape-similarity
+- similarity-searching
+- substructure-search
+- virtual-screening
+
+## Changelog
+
+- **1.1.0** (migration) — Bulk-migrated to v0.4.0 schema: canonical
+  metadata block, base Hard rules, Cross-references. Body content
+  unchanged; author should review and fill in any domain-specific
+  extensions to the Hard rules.
+- **1.0.0** — Initial release.
+

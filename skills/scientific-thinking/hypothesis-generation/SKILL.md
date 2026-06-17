@@ -4,23 +4,22 @@ name: hypothesis-generation
 description: "Generate testable hypotheses from literature and observation. Use for converting research gaps, contradictory findings, cross-domain analogies, or clinical observations into falsifiable predictions for experimental design."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: scientific-thinking
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - scientific-thinking
-  - research
-difficulty: intermediate
+  category: scientific-thinking
+  oversight: very-high
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [scientific-thinking, research]
+  difficulty: intermediate
 -->
 
 # Hypothesis Generation
 
-> Hypothesis generation is the bridge between observation and experimentation. A good hypothesis transforms vague curiosity into a testable prediction, making explicit what you expect to happen, why, and under what conditions. This skill provides frameworks for converting research gaps, contradictory findings, and cross-domain insights into falsifiable statements that drive experimental design and scientific progress.
+## Hard rules
+
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
 
 ## When to use
 
@@ -321,3 +320,12 @@ How to know your hypothesis generation was successful:
 ## Changelog
 
 - 1.0.0 (2026-06-10): Initial adaptation by Pradyumna Jayaram, integrating Popper's falsifiability criterion, Lakatos's research programmes, and structured frameworks for converting knowledge gaps and contradictions into testable hypotheses.
+
+## Cross-references
+
+Other skills in this category:
+
+- brainstorming
+- critical-thinking
+- failure-handling
+- perspective-tour

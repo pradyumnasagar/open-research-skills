@@ -4,27 +4,21 @@ name: transcription-translation
 description: "Transcribe DNA to RNA (and back), translate coding sequences to protein using NCBI codon tables, and pick the right genetic code for mitochondria, plastids, or non-standard organisms."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: bioinformatics-sequence
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - bioinformatics-sequence
-  - research
-difficulty: intermediate
+  category: bioinformatics-sequence
+  oversight: low
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [bioinformatics-sequence, research]
+  difficulty: intermediate
 -->
 
 # Transcription and Translation
-"
-> Transcribe is "T → U". Translate is "3 bases → 1 amino acid". The whole
-> problem is picking the right codon table — there are 27 NCBI genetic
-> codes, and picking the wrong one for a mitochondrial gene silently
-> produces a wrong protein. This skill is the canonical patterns, the
-> `cds=True` strictness check, and the codon-table index.
+## Hard rules
+
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
 
 ## When to use
 
@@ -203,3 +197,30 @@ def validate_cds(seq: str, table: int = 1) -> bool:
 ## Changelog
 
 - 1.0.0 (2026-06-10): Initial adaptation by Pradyumna Jayaram from `bio-transcription-translation` (bioSkills-main/sequence-manipulation/transcription-translation).
+
+## Cross-references
+
+Other skills in this category:
+
+- batch-processing
+- bowtie2-alignment
+- bwa-alignment
+- bwa-mem2-alignment
+- codon-usage
+- compressed-sequence-files
+- fastq-quality-scores
+- filter-sequences
+- format-conversion
+- hisat2-alignment
+- motif-search
+- paired-end-fastq
+- pysam-genomics
+- read-write-sequences
+- reverse-complement
+- sam-bam-basics
+- samtools-bam-processing
+- seq-objects
+- sequence-properties
+- sequence-slicing
+- sequence-statistics
+- star-alignment

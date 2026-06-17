@@ -4,23 +4,22 @@ name: color-and-accessibility
 description: "Choose and audit color palettes for scientific figures. Covers ColorBrewer, viridis, color-blindness simulators (Coblis, Sim Daltonism), texture/pattern encoding, WCAG 2.1 contrast, and alt text."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: scientific-visualization
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - scientific-visualization
-  - research
-difficulty: intermediate
+  category: scientific-visualization
+  oversight: medium
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [scientific-visualization, research]
+  difficulty: intermediate
 -->
 
 # Color and Accessibility in Scientific Figures
 
-> This skill is the audit and palette layer for everything else in the visualization category. It is the answer to: "Will every reader of my figure — including the ~8% of men and ~0.5% of women with color vision deficiency (CVD), the low-vision reader, the screen-reader user, the projector-on-yellow-tint reader — extract the same message?" Use it whenever a figure is destined for publication, a talk, a poster, or a public web page.
+## Hard rules
+
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
 
 ## When to use
 
@@ -335,3 +334,12 @@ External resources (do not fabricate exact paths):
 ## Changelog
 
 - 1.0.0 (2026-06-10): Initial adaptation by Pradyumna Jayaram from `scientific-visualization` and `bio-data-visualization-color-palettes` (K-Dense Inc.). Merged the two source skills into a single color-and-accessibility skill, added a CVD simulator matrix, redundant-encoding patterns, WCAG 2.1 contrast code, an alt-text template, and a "colors to avoid" section with rationale.
+
+## Cross-references
+
+Other skills in this category:
+
+- figure-design
+- poster-design
+- schematics-diagrams
+- slides-design

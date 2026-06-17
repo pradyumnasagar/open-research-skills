@@ -4,23 +4,22 @@ name: scholar-evaluation
 description: "Evaluate a researcher's portfolio (CV, publications, citations, funding, mentorship, service, software, talks) for tenure, awards, recruitment, or promotion: field-normalized metrics, evidence weighting, fit assessment, and a defensible written evaluation."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: peer-review
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - peer-review
-  - research
-difficulty: intermediate
+  category: peer-review
+  oversight: high
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [peer-review, research]
+  difficulty: intermediate
 -->
 
 # Scholar / Researcher Evaluation
 
-> Produces a structured, criterion-anchored evaluation of a researcher's portfolio: CV, publication record with field-normalized citation metrics (h-index, i10, total citations, field-weighted citation impact), grant funding, mentorship, service, software and data outputs, invited talks, and professional conduct. Renders a defensible written evaluation suitable for tenure, promotion, awards, recruitment, or annual review. Adapted by Pradyumna Jayaram from public evaluation frameworks (DORA, CoARA), open citation indices (OpenAlex, Semantic Scholar), and funder biosketch guidance (NIH, NSF).
+## Hard rules
+
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
 
 ## When to use
 
@@ -352,3 +351,11 @@ A good written evaluation is itself a small scholarly document. Before submittin
 ## Changelog
 
 - 1.0.0 (2026-06-10): Initial adaptation by Pradyumna Jayaram. Heavy rewrite of upstream scholar-evaluation skill: added field-normalized metrics table (h-index, i10, total citations, FWCI) with explicit "do not compare across fields" guardrail, added multi-author paper contribution check, added software/data outputs section, added DORA / CoARA framing for venue-independent evaluation, added CRediT cross-link, added retraction/expression-of-concern red-flag section, added fit-for-role explicit structure, added "do not paste case materials into third-party LLMs" guardrail.
+
+## Cross-references
+
+Other skills in this category:
+
+- grant-review
+- manuscript-review
+- reviewer-response

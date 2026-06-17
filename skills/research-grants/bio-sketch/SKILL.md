@@ -4,23 +4,22 @@ name: bio-sketch
 description: "Use when generating an NIH or NSF Biographical Sketch in SciENcv (current format): personal statement, contribution statements (new 2025 NIH format), positions and honors, research support. Covers NIH vs NSF differences."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: research-grants
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - research-grants
-  - research
-difficulty: intermediate
+  category: research-grants
+  oversight: high
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [research-grants, research]
+  difficulty: intermediate
 -->
 
 # NIH/NSF Biographical Sketch via SciENcv
 
-> A working framework for generating the NIH or NSF Biographical Sketch in SciENcv (Science Experts Network Curriculum Vitae). The biosketch is the second-most-revised document in any NIH submission (after the Specific Aims). SciENcv is the canonical generator for both NIH and NSF biosketches; the format is agency-specific. This skill covers the current format, the new contribution-statement pattern, the personal-statement pattern, and the NIH vs NSF differences.
+## Hard rules
+
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
 
 ## When to use
 
@@ -233,3 +232,16 @@ The NSF biosketch in SciENcv has these sections, in this order:
 ## Changelog
 
 - 1.0.0 (2026-06-10): Initial adaptation by Pradyumna Jayaram.
+
+## Cross-references
+
+Other skills in this category:
+
+- darpa-baa
+- erc
+- fellowships
+- foundation-grants
+- nih-k-series
+- nih-r01
+- nsf-standard
+- specific-aims

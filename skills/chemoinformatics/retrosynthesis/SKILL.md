@@ -4,18 +4,13 @@ name: retrosynthesis
 description: "Performs retrosynthetic planning using AiZynthFinder (MCTS, template-based), Chemformer (template-free transformer), ASKCOS, and emerging RetroSynFormer with explicit handling of route scoring, building-block availability (eMolecules, Enamine, Mcule), forward prediction validation (Molecular Transformer), and disconnection-aware multi-objective search (MO-MCTS). Use when assessing synthetic feasibility of generated or selected molecules, planning multi-step syntheses, building synthesis-aware design pipelines, or screening libraries for retro-route feasibility."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: chemoinformatics
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - chemoinformatics
-  - research
-difficulty: intermediate
+  category: chemoinformatics
+  oversight: low
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [chemoinformatics, research]
+  difficulty: intermediate
 -->
 
 ## Version Compatibility
@@ -30,9 +25,24 @@ If code throws ImportError, AttributeError, or TypeError, introspect the install
 
 # Retrosynthesis
 
-Plan synthetic routes from a target molecule back to commercially-available building blocks. AiZynthFinder 4.0 is the open-source production-grade tool: Monte Carlo Tree Search (MCTS) + template-based expansion + multi-objective scoring (MO-MCTS). Chemformer is the template-free transformer alternative. ASKCOS is the academic reference. Modern best practice combines retrosynthesis with **forward validation** (the predicted route should also predict the target from starting materials via Molecular Transformer) and building-block availability.
+## Hard rules
 
-For generative design pipelines that need synthetic feasibility, see `chemoinformatics/generative-design`. For reaction enumeration (forward direction), see `chemoinformatics/reaction-enumeration`.
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
+
+## When to use
+
+Load this skill when the user asks a question that matches its declared
+trigger conditions (see the frontmatter `description` for the most common
+ones). Do not load it for questions outside its scope — defer to the
+appropriate ORS skill instead.
+
+## When NOT to use
+
+Do not load this skill if the question is in a sibling skill's domain
+(see `## Cross-references`), if the user explicitly asks for a different
+tool, or if the task is outside the skill's declared category.
 
 ## Method Taxonomy
 
@@ -171,3 +181,35 @@ For each compound, returns top-K routes. Score-feasibility for generative design
 - chemoinformatics/generative-design - Generative design with feasibility scoring
 - chemoinformatics/reaction-enumeration - Forward direction
 - chemoinformatics/scaffold-analysis - R-group decomposition
+
+## Cross-references
+
+Other skills in this category:
+
+- admet-prediction
+- conformer-generation
+- covalent-design
+- docking-rescoring
+- free-energy-calculations
+- generative-design
+- molecular-descriptors
+- molecular-io
+- molecular-standardization
+- pharmacophore-modeling
+- pose-validation
+- protac-degraders
+- qsar-modeling
+- scaffold-analysis
+- shape-similarity
+- similarity-searching
+- substructure-search
+- virtual-screening
+
+## Changelog
+
+- **1.1.0** (migration) — Bulk-migrated to v0.4.0 schema: canonical
+  metadata block, base Hard rules, Cross-references. Body content
+  unchanged; author should review and fill in any domain-specific
+  extensions to the Hard rules.
+- **1.0.0** — Initial release.
+

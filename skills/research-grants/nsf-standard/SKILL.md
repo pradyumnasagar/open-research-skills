@@ -4,23 +4,22 @@ name: nsf-standard
 description: "Use when planning, drafting, or revising an NSF Standard Research Proposal: Project Description (15 pp), Data Management Plan, Postdoc Mentoring Plan, Broader Impacts, biographical sketch via SciENcv, and current PAPPG compliance."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: research-grants
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - research-grants
-  - research
-difficulty: intermediate
+  category: research-grants
+  oversight: high
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [research-grants, research]
+  difficulty: intermediate
 -->
 
 # NSF Standard Research Proposal
 
-> A working framework for assembling, self-reviewing, and submitting an NSF Standard Research Proposal under the current Proposal & Award Policies & Procedures Guide (PAPPG). The default scope is a single-PI research proposal to a single program; CAREER, RAPID, EAGER, and IUCRC have additional rules noted where relevant.
+## Hard rules
+
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
 
 ## When to use
 
@@ -196,3 +195,16 @@ difficulty: intermediate
 ## Changelog
 
 - 1.0.0 (2026-06-10): Initial adaptation by Pradyumna Jayaram.
+
+## Cross-references
+
+Other skills in this category:
+
+- bio-sketch
+- darpa-baa
+- erc
+- fellowships
+- foundation-grants
+- nih-k-series
+- nih-r01
+- specific-aims

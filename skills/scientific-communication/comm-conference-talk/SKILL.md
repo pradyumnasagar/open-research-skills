@@ -4,18 +4,13 @@ name: comm-conference-talk
 description: "Designs, scripts, and rehearses a 10-20 minute scientific conference talk (job talk, contributed talk, plenary, lightning) for a technical but non-specialist audience. Enforces a single-take-home-message structure (motivation-gap-evidence-claim-implication), prescribes slide-budget allocation by time, and codifies the Loui & Smith audience-engagement rubric. Use when preparing a contributed conference talk, defending a thesis chapter, writing a job-talk job talk, or rewriting a sprawling results-heavy talk into a 12-minute contribution."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: scientific-communication
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - scientific-communication
-  - research
-difficulty: intermediate
+  category: scientific-communication
+  oversight: very-high
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [scientific-communication, research]
+  difficulty: intermediate
 -->
 
 ## Version Compatibility
@@ -29,9 +24,24 @@ If audience-size, time, or venue constraints differ from the defaults below, sca
 
 # Conference Talk
 
-A conference talk is not a paper read aloud. It is a single take-home message, carried on a structure your audience can follow without reading the slide, and delivered at a pace that gives them time to think. The default failure mode of a research talk is the speaker trying to transmit every result; the actual job is to transmit one message and let the audience remember one sentence when they leave the room.
+## Hard rules
 
-This skill encodes the structural and rhetorical choices that distinguish a talk the audience remembers from a talk the audience sits through. The default is a 12-minute contributed talk; the same framework extends to 5-minute lightning and 45-minute job talks by scaling time and slide count, not structure.
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
+
+## When to use
+
+Load this skill when the user asks a question that matches its declared
+trigger conditions (see the frontmatter `description` for the most common
+ones). Do not load it for questions outside its scope — defer to the
+appropriate ORS skill instead.
+
+## When NOT to use
+
+Do not load this skill if the question is in a sibling skill's domain
+(see `## Cross-references`), if the user explicitly asks for a different
+tool, or if the task is outside the skill's declared category.
 
 ## The Take-Home Message Test
 
@@ -192,3 +202,21 @@ This 11-slide, 12-minute structure is the working template. Adapt the slide coun
 - scientific-communication/elevator-pitch — distilled version of the take-home message for hallway conversation.
 - scientific-communication/press-release — the take-home message recast for a general audience.
 - scientific-communication/podcast — long-form spoken version of the same take-home message.
+
+## Cross-references
+
+Other skills in this category:
+
+- comm-elevator-pitch
+- comm-podcast
+- comm-poster
+- comm-press-release
+
+## Changelog
+
+- **1.1.0** (migration) — Bulk-migrated to v0.4.0 schema: canonical
+  metadata block, base Hard rules, Cross-references. Body content
+  unchanged; author should review and fill in any domain-specific
+  extensions to the Hard rules.
+- **1.0.0** — Initial release.
+

@@ -4,18 +4,13 @@ name: protac-degraders
 description: "Designs PROTACs, molecular glues, and bivalent degraders with explicit handling of E3 ligase choice (VHL, CRBN, IAP, MDM2, KEAP1), linker design (length, composition, rigidity), ternary complex prediction (PRosettaC, DeepTernary, AlphaFold3 with constraints), cooperativity (alpha), DC50 / Dmax characterization, hook effect, and prediction-experiment reconciliation. Use when designing targeted protein degraders, planning linker SAR, predicting ternary complex stability, or building generative degrader workflows."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: chemoinformatics
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - chemoinformatics
-  - research
-difficulty: intermediate
+  category: chemoinformatics
+  oversight: low
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [chemoinformatics, research]
+  difficulty: intermediate
 -->
 
 ## Version Compatibility
@@ -29,9 +24,24 @@ If code throws ImportError, AttributeError, or TypeError, introspect the install
 
 # PROTAC and Bivalent Degrader Design
 
-Design bifunctional molecules (PROTACs) that recruit an E3 ubiquitin ligase to a target protein, inducing target ubiquitination and proteasomal degradation. PROTACs differ from traditional drugs: a stable **ternary complex** (target + PROTAC + E3) is required, not just target binding. The PROTAC field exploded post-2020 with clinical successes (ARV-471 estrogen-receptor degrader, ARV-110 androgen-receptor degrader). Postdoc-grade PROTAC design balances **target ligand binding**, **E3 ligand binding**, **linker geometry** (length, rigidity, chemistry), **cooperativity** (positive = ternary stable; negative = hook effect), and **cell permeability** (PROTACs are 800-1500 Da, often Lipinski-violating).
+## Hard rules
 
-For target ligand design, see `chemoinformatics/virtual-screening` and `chemoinformatics/admet-prediction`. For linker-only enumeration, see `chemoinformatics/reaction-enumeration`. For generative linker design, see `chemoinformatics/generative-design`.
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
+
+## When to use
+
+Load this skill when the user asks a question that matches its declared
+trigger conditions (see the frontmatter `description` for the most common
+ones). Do not load it for questions outside its scope — defer to the
+appropriate ORS skill instead.
+
+## When NOT to use
+
+Do not load this skill if the question is in a sibling skill's domain
+(see `## Cross-references`), if the user explicitly asks for a different
+tool, or if the task is outside the skill's declared category.
 
 ## E3 Ligase Choice
 
@@ -164,3 +174,35 @@ Cooperativity > 5 is desirable for cellular activity. Negative cooperativity sug
 - chemoinformatics/retrosynthesis - Synthesizability
 - chemoinformatics/generative-design - Generative linker design
 - chemoinformatics/covalent-design - Covalent E3 ligands
+
+## Cross-references
+
+Other skills in this category:
+
+- admet-prediction
+- conformer-generation
+- covalent-design
+- docking-rescoring
+- free-energy-calculations
+- generative-design
+- molecular-descriptors
+- molecular-io
+- molecular-standardization
+- pharmacophore-modeling
+- pose-validation
+- qsar-modeling
+- retrosynthesis
+- scaffold-analysis
+- shape-similarity
+- similarity-searching
+- substructure-search
+- virtual-screening
+
+## Changelog
+
+- **1.1.0** (migration) — Bulk-migrated to v0.4.0 schema: canonical
+  metadata block, base Hard rules, Cross-references. Body content
+  unchanged; author should review and fill in any domain-specific
+  extensions to the Hard rules.
+- **1.0.0** — Initial release.
+

@@ -4,18 +4,13 @@ name: comm-elevator-pitch
 description: "Crafts a 30-second, 60-second, and 2-minute scientific elevator pitch (a researcher describing their work to a non-specialist) using the Problem-Approach-Result-So-What (PARS) frame, the Alda Center's improv-and-clarity discipline, and the Gopen & Swan stress-position principle. Use when preparing for a job fair, networking at a conference, raising funds from a non-scientific donor, or introducing a research project to a collaborator outside the field."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: scientific-communication
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - scientific-communication
-  - research
-difficulty: intermediate
+  category: scientific-communication
+  oversight: very-high
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [scientific-communication, research]
+  difficulty: intermediate
 -->
 
 ## Version Compatibility
@@ -29,9 +24,24 @@ If audience profile, time, or venue constraints differ from the defaults, scale 
 
 # Elevator Pitch
 
-An elevator pitch is the most concentrated form of scientific communication: in 30 to 120 seconds, the speaker must convey a research project, a research program, or a research career to a listener who has no background in the field and no obligation to keep listening. The pitch succeeds when the listener can repeat the problem and the result in one sentence; it fails when the listener walks away remembering a technique ("they do CRISPR") but not a question ("they want to know why some patients resist therapy").
+## Hard rules
 
-The skill encodes the structural moves that work across all three standard durations, the rhetorical discipline that keeps the message sharp, and the failure modes that turn pitches into jargon dumps.
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
+
+## When to use
+
+Load this skill when the user asks a question that matches its declared
+trigger conditions (see the frontmatter `description` for the most common
+ones). Do not load it for questions outside its scope — defer to the
+appropriate ORS skill instead.
+
+## When NOT to use
+
+Do not load this skill if the question is in a sibling skill's domain
+(see `## Cross-references`), if the user explicitly asks for a different
+tool, or if the task is outside the skill's declared category.
 
 ## The Four-Move PARS Frame
 
@@ -231,3 +241,21 @@ Practice the 30-second pitch first; the other two are expansions of the 30-secon
 - scientific-communication/poster — visual version of the same message.
 - scientific-communication/press-release — general-audience version of the same message.
 - scientific-communication/podcast — long-form spoken version for a general audience.
+
+## Cross-references
+
+Other skills in this category:
+
+- comm-conference-talk
+- comm-podcast
+- comm-poster
+- comm-press-release
+
+## Changelog
+
+- **1.1.0** (migration) — Bulk-migrated to v0.4.0 schema: canonical
+  metadata block, base Hard rules, Cross-references. Body content
+  unchanged; author should review and fill in any domain-specific
+  extensions to the Hard rules.
+- **1.0.0** — Initial release.
+

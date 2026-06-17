@@ -4,23 +4,22 @@ name: fellowship-application
 description: "Apply for predoctoral fellowships (Hertz, NDSEG, NSF GRFP, Ford, AAAS Mass Media) and the Packard postdoctoral fellowship. Covers personal statement, research statement, transcript curation, grad school list, referee coordination, and submission timing. Use when applying for a major external fellowship as a PhD applicant or early postdoc."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: career-navigation
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - career-navigation
-  - research
-difficulty: intermediate
+  category: career-navigation
+  oversight: high
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [career-navigation, research]
+  difficulty: intermediate
 -->
 
 # Pre-Doctoral and Postdoctoral Fellowship Application
 
-> A workflow for applying to major external fellowships, including predoctoral awards (Hertz, NDSEG, NSF GRFP, Ford, AAAS Mass Media) and the Packard postdoctoral fellowship. Covers personal statement, research statement, transcript curation, graduate school list, referee coordination, and submission timing across multiple application cycles. Produces a portfolio of application materials tailored to each fellowship, a referee plan, and a calendar of submission deadlines.
+## Hard rules
+
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
 
 ## When to use
 
@@ -363,3 +362,13 @@ A complete fellowship-application package satisfies:
 ## Changelog
 
 - 1.0.0 (2026-06-10): Initial adaptation by Pradyumna Jayaram. Compiled from public Hertz, NSF GRFP, NDSEG, Ford, AAAS, and Packard program descriptions; cross-referenced to CV and grants skills.
+
+## Cross-references
+
+Other skills in this category:
+
+- academic-cv
+- faculty-interview
+- industry-transition
+- negotiation
+- tenure-dossier

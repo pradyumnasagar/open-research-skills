@@ -4,33 +4,21 @@ name: image-analysis-best-practices
 description: "Apply best practices for microscopy image analysis: pixel-size calibration, channel bleed-through, exposure and dynamic range, controls, publication figures, color-blind safe palettes, and proper statistical handling of n=cells vs n=images vs n=animals."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: image-analysis-microscopy
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - image-analysis-microscopy
-  - research
-difficulty: intermediate
+  category: image-analysis-microscopy
+  oversight: low
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [image-analysis-microscopy, research]
+  difficulty: intermediate
 -->
 
 # Image Analysis Best Practices: Acquisition, Controls, and Publication
-"
-> This skill is the "do no harm" companion to the tool-specific
-> image-analysis skills. It covers what to do *before* you open a
-> single image in CellProfiler, QuPath, or Fiji: how to plan controls,
-> how to acquire with enough dynamic range and a real scale bar, how
-> to keep channels from contaminating each other, how to make figures
-> that survive peer review, and — most importantly — how to handle
-> statistics correctly when the unit of analysis is not what the
-> spreadsheet says it is. Pair this with
-> `ors-image-analysis-microscopy-cellprofiler-pipelines`,
-> `ors-image-analysis-microscopy-qupath-pathology`, or
-> `ors-image-analysis-microscopy-imagej-fiji-macro`.
+## Hard rules
+
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
 
 ## When to use
 
@@ -446,3 +434,11 @@ legend.*
   QUAREP-LiMi reporting standards; consolidated the
   n = cells vs n = images vs n = animals guidance and the
   color-blind palette reference.
+
+## Cross-references
+
+Other skills in this category:
+
+- cellprofiler-pipelines
+- imagej-fiji-macro
+- qupath-pathology

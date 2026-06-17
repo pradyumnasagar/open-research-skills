@@ -4,23 +4,22 @@ name: schematics-diagrams
 description: "Design scientific schematics, workflow diagrams, and architecture figures."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: scientific-visualization
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - scientific-visualization
-  - research
-difficulty: intermediate
+  category: scientific-visualization
+  oversight: medium
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [scientific-visualization, research]
+  difficulty: intermediate
 -->
 
 # Scientific Schematics and Diagrams
 
-> This skill produces the non-data illustrative figures that anchor a manuscript: experimental workflows, study designs, model architectures, system diagrams, and conceptual schematics. It complements `ors-scientific-visualization-figure-design` (data plots) and `ors-scientific-visualization-color-and-accessibility` (palette audits). The cardinal rule is **one main idea per figure**; if the reader has to read the figure twice, split it.
+## Hard rules
+
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
 
 ## When to use
 
@@ -306,3 +305,12 @@ External resources (do not fabricate exact paths):
 ## Changelog
 
 - 1.0.0 (2026-06-10): Initial adaptation by Pradyumna Jayaram from `scientific-schematics` (K-Dense Inc.). Consolidated the AI-image-generation workflow into a disclosure note, added Mermaid + Graphviz + TikZ declarative patterns, added journal-specific schematic conventions and an accessibility checklist.
+
+## Cross-references
+
+Other skills in this category:
+
+- color-and-accessibility
+- figure-design
+- poster-design
+- slides-design

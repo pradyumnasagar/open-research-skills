@@ -4,18 +4,13 @@ name: generative-design
 description: "Designs novel molecules using REINVENT 4 (de novo, scaffold decoration, linker design, R-group, molecular optimization), MolMIM, Diffusion-based generators (DiGress, DiffSMol), and JT-VAE with explicit handling of multi-parameter optimization (MPO), goal-directed scoring functions, transfer/reinforcement/curriculum learning, synthetic accessibility scoring, and chemical space exploration vs exploitation. Use when designing new chemical matter against a target, decorating a scaffold, linking fragments, or optimizing a hit for multiple ADMET / activity properties simultaneously."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: chemoinformatics
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - chemoinformatics
-  - research
-difficulty: intermediate
+  category: chemoinformatics
+  oversight: low
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [chemoinformatics, research]
+  difficulty: intermediate
 -->
 
 ## Version Compatibility
@@ -29,9 +24,24 @@ If code throws ImportError, AttributeError, or TypeError, introspect the install
 
 # Generative Molecular Design
 
-Generate novel molecules biased toward desired properties using deep generative models. REINVENT 4 (Loeffler 2024, AstraZeneca) is the open-source production-grade framework, supporting 4 generation modes (de novo, scaffold decoration, linker design, molecular optimization) and 3 learning algorithms (transfer learning, reinforcement learning, curriculum learning). The art of generative design is in the **scoring function**: poorly-designed scoring rewards uninteresting molecules, while well-designed scoring captures both activity and developability.
+## Hard rules
 
-For QSAR/scoring models that feed generative design, see `chemoinformatics/qsar-modeling`. For synthetic feasibility, see `chemoinformatics/retrosynthesis`. For library enumeration as alternative, see `chemoinformatics/reaction-enumeration`.
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
+
+## When to use
+
+Load this skill when the user asks a question that matches its declared
+trigger conditions (see the frontmatter `description` for the most common
+ones). Do not load it for questions outside its scope — defer to the
+appropriate ORS skill instead.
+
+## When NOT to use
+
+Do not load this skill if the question is in a sibling skill's domain
+(see `## Cross-references`), if the user explicitly asks for a different
+tool, or if the task is outside the skill's declared category.
 
 ## Generator Mode Taxonomy
 
@@ -210,3 +220,35 @@ Junction Tree VAE optimizes in latent space then decodes:
 - chemoinformatics/retrosynthesis - Synthetic feasibility
 - chemoinformatics/reaction-enumeration - Library enumeration alternative
 - chemoinformatics/protac-degraders - Linker design for PROTACs
+
+## Cross-references
+
+Other skills in this category:
+
+- admet-prediction
+- conformer-generation
+- covalent-design
+- docking-rescoring
+- free-energy-calculations
+- molecular-descriptors
+- molecular-io
+- molecular-standardization
+- pharmacophore-modeling
+- pose-validation
+- protac-degraders
+- qsar-modeling
+- retrosynthesis
+- scaffold-analysis
+- shape-similarity
+- similarity-searching
+- substructure-search
+- virtual-screening
+
+## Changelog
+
+- **1.1.0** (migration) — Bulk-migrated to v0.4.0 schema: canonical
+  metadata block, base Hard rules, Cross-references. Body content
+  unchanged; author should review and fill in any domain-specific
+  extensions to the Hard rules.
+- **1.0.0** — Initial release.
+

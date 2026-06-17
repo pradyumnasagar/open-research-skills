@@ -4,18 +4,13 @@ name: pose-validation
 description: "Validates docked / generated protein-ligand poses using PoseBusters physical-validity tests, strain energy quantification, geometric checks (planarity, vdW overlap, bond/angle distortion), and pose-energy reasonableness. Filters AI-docking outputs (DiffDock, EquiBind, NeuralPLexer) where ~50% of poses fail physical-validity tests. Use when QC-ing docking results, comparing classical vs ML docking outputs, or filtering pose lists before SAR analysis."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: chemoinformatics
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - chemoinformatics
-  - research
-difficulty: intermediate
+  category: chemoinformatics
+  oversight: low
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [chemoinformatics, research]
+  difficulty: intermediate
 -->
 
 ## Version Compatibility
@@ -29,9 +24,24 @@ If code throws ImportError, AttributeError, or TypeError, introspect the install
 
 # Pose Validation
 
-Test docked or AI-generated protein-ligand poses for physical plausibility. PoseBusters (Buttenschoen 2024) is the modern gold standard: a suite of geometric, chemical, and energetic checks that flag implausible poses (planar aromatic rings now non-planar, vdW clashes, broken bonds, wrong chirality, unrealistic torsions). The PoseBusters benchmark showed that AI-based docking methods (DiffDock, EquiBind, TANKBind) produce ~50% physically-invalid poses despite reporting good RMSD; classical methods (Vina, GOLD) produce ~5-15% invalid. PB-valid status is therefore essential for downstream SAR, FEP setup, or generative model training.
+## Hard rules
 
-For docking, see `chemoinformatics/virtual-screening`. For ML docking specifically, see `chemoinformatics/docking-rescoring`.
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
+
+## When to use
+
+Load this skill when the user asks a question that matches its declared
+trigger conditions (see the frontmatter `description` for the most common
+ones). Do not load it for questions outside its scope — defer to the
+appropriate ORS skill instead.
+
+## When NOT to use
+
+Do not load this skill if the question is in a sibling skill's domain
+(see `## Cross-references`), if the user explicitly asks for a different
+tool, or if the task is outside the skill's declared category.
 
 ## PoseBusters Test Suite
 
@@ -200,3 +210,35 @@ def strain_kcal_per_mol(mol, max_attempts=200):
 - chemoinformatics/docking-rescoring - ML pose prediction
 - chemoinformatics/molecular-io - Parse ligands
 - chemoinformatics/conformer-generation - Generate 3D conformers
+
+## Cross-references
+
+Other skills in this category:
+
+- admet-prediction
+- conformer-generation
+- covalent-design
+- docking-rescoring
+- free-energy-calculations
+- generative-design
+- molecular-descriptors
+- molecular-io
+- molecular-standardization
+- pharmacophore-modeling
+- protac-degraders
+- qsar-modeling
+- retrosynthesis
+- scaffold-analysis
+- shape-similarity
+- similarity-searching
+- substructure-search
+- virtual-screening
+
+## Changelog
+
+- **1.1.0** (migration) — Bulk-migrated to v0.4.0 schema: canonical
+  metadata block, base Hard rules, Cross-references. Body content
+  unchanged; author should review and fill in any domain-specific
+  extensions to the Hard rules.
+- **1.0.0** — Initial release.
+

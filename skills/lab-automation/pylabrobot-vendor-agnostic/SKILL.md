@@ -4,21 +4,22 @@ name: pylabrobot-vendor-agnostic
 description: "PyLabRobot hardware-agnostic Python liquid-handler library for Hamilton STAR, Tecan Freedom EVO, Opentrons OT-2, and simulator. Write protocols once, run on any robot. Async-first API. Plate reformatting, cherry-picking, serial dilutions. Use for vendor-agnostic workflows; use opentrons-ot2-protocols for Opentrons-only features."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: lab-automation
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - lab-automation
-  - research
-difficulty: intermediate
+  category: lab-automation
+  oversight: low
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [lab-automation, research]
+  difficulty: intermediate
 -->
 
 # PyLabRobot Vendor-Agnostic Liquid Handling
+
+## Hard rules
+
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
 
 ## Overview
 
@@ -504,3 +505,22 @@ for col in range(1, 13):
 - `robot-deck-layout-calibration` — design and verify deck layouts across robot types
 - `eln-elabftw`, `eln-chemotion`, `eln-openbis` — record runs in an ELN
 - `western-blot-quantification` — sample-prep protocols for downstream analysis
+
+## Cross-references
+
+Other skills in this category:
+
+- eln-chemotion
+- eln-elabftw
+- eln-openbis
+- opentrons-ot2-protocols
+- protocolsio-protocol-repository
+
+## Changelog
+
+- **1.1.0** (migration) — Bulk-migrated to v0.4.0 schema: canonical
+  metadata block, base Hard rules, Cross-references. Body content
+  unchanged; author should review and fill in any domain-specific
+  extensions to the Hard rules.
+- **1.0.0** — Initial release.
+

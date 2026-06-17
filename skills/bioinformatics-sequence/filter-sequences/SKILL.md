@@ -4,27 +4,21 @@ name: filter-sequences
 description: "Filter FASTA/FASTQ records by length, identity, regex on headers, GC window, complexity, and custom predicates — streaming with Biopython 1.83+."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: bioinformatics-sequence
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - bioinformatics-sequence
-  - research
-difficulty: intermediate
+  category: bioinformatics-sequence
+  oversight: low
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [bioinformatics-sequence, research]
+  difficulty: intermediate
 -->
 
 # Filter Sequences by Criteria
-"
-> Filtering is the most common "preprocessing" step you'll write. The
-> canonical mistake is to filter twice — once to compute, again to write.
-> Stream records through a chain of predicate generators and write the
-> survivors once. This skill is the predicate catalog: length, GC, identity
-> (regex on headers), N content, complexity, and how to compose them.
+## Hard rules
+
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
 
 ## When to use
 
@@ -195,3 +189,30 @@ def non_empty(rec):
 ## Changelog
 
 - 1.0.0 (2026-06-10): Initial adaptation by Pradyumna Jayaram from `bio-filter-sequences` (bioSkills-main/sequence-io/filter-sequences).
+
+## Cross-references
+
+Other skills in this category:
+
+- batch-processing
+- bowtie2-alignment
+- bwa-alignment
+- bwa-mem2-alignment
+- codon-usage
+- compressed-sequence-files
+- fastq-quality-scores
+- format-conversion
+- hisat2-alignment
+- motif-search
+- paired-end-fastq
+- pysam-genomics
+- read-write-sequences
+- reverse-complement
+- sam-bam-basics
+- samtools-bam-processing
+- seq-objects
+- sequence-properties
+- sequence-slicing
+- sequence-statistics
+- star-alignment
+- transcription-translation

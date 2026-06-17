@@ -4,27 +4,22 @@ name: star-alignment
 description: "Splice-aware RNA-seq alignment with STAR — the gold-standard aligner for novel junction discovery, with 2-pass mapping and genome-generation strategies for 2026."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: bioinformatics-sequence
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - bioinformatics-sequence
-  - research
-difficulty: intermediate
+  category: bioinformatics-sequence
+  oversight: low
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [bioinformatics-sequence, research]
+  difficulty: intermediate
 -->
 
 # STAR RNA-seq Alignment
 
-> STAR (Spliced Transcripts Alignment to a Reference) is the gold standard
-> for RNA-seq alignment — sensitive to novel junctions, fast, and the
-> default in `nf-core/rnaseq`. The 2026 reality: STAR 2.7.11+ has improved
-> memory management and 2-pass mapping is now standard for sensitive
-> analyses. The cost: ~40 GB RAM for human genome index generation.
+## Hard rules
+
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
 
 ## When to use
 
@@ -221,3 +216,30 @@ awk 'BEGIN{OFS="\t"} $1 !~ /#/ {print $1, $2-1, $3, ".", $7, $4}' SJ.out.tab > s
 ## Changelog
 
 - 1.0.0 (2026-06-10): Initial adaptation by Pradyumna Jayaram from `bio-star-alignment` (bioSkills-main/read-alignment/star-alignment).
+
+## Cross-references
+
+Other skills in this category:
+
+- batch-processing
+- bowtie2-alignment
+- bwa-alignment
+- bwa-mem2-alignment
+- codon-usage
+- compressed-sequence-files
+- fastq-quality-scores
+- filter-sequences
+- format-conversion
+- hisat2-alignment
+- motif-search
+- paired-end-fastq
+- pysam-genomics
+- read-write-sequences
+- reverse-complement
+- sam-bam-basics
+- samtools-bam-processing
+- seq-objects
+- sequence-properties
+- sequence-slicing
+- sequence-statistics
+- transcription-translation

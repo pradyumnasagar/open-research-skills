@@ -4,23 +4,22 @@ name: manuscript-structure
 description: "Section-by-section guidance for biomedical manuscripts using the IMRAD frame (Introduction, Methods, Results, Discussion), title and abstract strategies, figure/table selection, citation styles, and reporting checklists (CONSORT, STROBE, PRISMA, ARRIVE 2.0, MIAME, MINSEQE)."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: scientific-writing
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - scientific-writing
-  - research
-difficulty: intermediate
+  category: scientific-writing
+  oversight: very-high
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [scientific-writing, research]
+  difficulty: intermediate
 -->
 
 # Manuscript Structure (IMRAD)
 
-> A biomedical research manuscript is a contract between the authors and the reader: the authors promise to state a question, describe how they answered it, show what they found, and explain what the finding means. IMRAD (Introduction, Methods, Results, Discussion) is the dominant contract across biomedicine because it makes that promise auditable. This skill encodes the section-by-section moves, the title and abstract strategies that vary by journal, the figure/table selection logic, the citation style choices, and the reporting checklists that increasingly gate publication.
+## Hard rules
+
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
 
 ## When to use
 
@@ -259,3 +258,12 @@ For commercial writing tools, the open alternatives are:
 ## Changelog
 
 - 1.0.0 (2026-06-10): Initial adaptation by Pradyumna Jayaram. Consolidated public IMRAD guidance, journal-specific title and abstract strategies, figure/table selection logic, and reporting-checklist pointers (CONSORT, STROBE, PRISMA, ARRIVE 2.0, MIAME, MINSEQE). All sources are publicly accessible and verifiable; no specific journal policies are quoted verbatim.
+
+## Cross-references
+
+Other skills in this category:
+
+- ai-disclosure-writing
+- cover-letter
+- rebuttal-letter
+- response-to-reviewers

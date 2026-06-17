@@ -4,27 +4,22 @@ name: sequence-statistics
 description: "Compute length, GC, N50, L50, and per-file summaries for FASTA/FASTQ — including the N50 trick and modern streaming stats with Polars."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: bioinformatics-sequence
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - bioinformatics-sequence
-  - research
-difficulty: intermediate
+  category: bioinformatics-sequence
+  oversight: low
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [bioinformatics-sequence, research]
+  difficulty: intermediate
 -->
 
 # Sequence Statistics
 
-> Per-record length and GC are the two stats you always want. For assemblies,
-> N50 / L50 / auN tell you whether your contigs are useful or just long
-> sequences. For QC, the read-length distribution and per-cycle quality tell
-> you whether the run is healthy. This skill is the small-but-correct set of
-> computations I use in every project.
+## Hard rules
+
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
 
 ## When to use
 
@@ -235,3 +230,30 @@ kc.most_common(10)
 ## Changelog
 
 - 1.0.0 (2026-06-10): Initial adaptation by Pradyumna Jayaram from `bio-sequence-statistics` (bioSkills-main/sequence-io/sequence-statistics).
+
+## Cross-references
+
+Other skills in this category:
+
+- batch-processing
+- bowtie2-alignment
+- bwa-alignment
+- bwa-mem2-alignment
+- codon-usage
+- compressed-sequence-files
+- fastq-quality-scores
+- filter-sequences
+- format-conversion
+- hisat2-alignment
+- motif-search
+- paired-end-fastq
+- pysam-genomics
+- read-write-sequences
+- reverse-complement
+- sam-bam-basics
+- samtools-bam-processing
+- seq-objects
+- sequence-properties
+- sequence-slicing
+- star-alignment
+- transcription-translation

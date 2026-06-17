@@ -4,32 +4,22 @@ name: imagej-fiji-macro
 description: "Record, write, and run ImageJ/Fiji macros for batch processing, ROI handling, intensity measurement, colocalization, time-lapse, FRET, and plugin installation in life-sciences microscopy."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: image-analysis-microscopy
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - image-analysis-microscopy
-  - research
-difficulty: intermediate
+  category: image-analysis-microscopy
+  oversight: low
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [image-analysis-microscopy, research]
+  difficulty: intermediate
 -->
 
 # ImageJ / Fiji Macro Language for Bioimage Analysis
 
-> ImageJ and its batteries-included distribution **Fiji** (Fiji Is Just
-> ImageJ) have been the swiss-army knife of bioimage analysis for over
-> 25 years. The macro language is a small, JavaScript-derived syntax
-> that biologists can record by clicking through the GUI and then
-> generalize into batch scripts. Use it for quick measurements on
-> dozens to thousands of images, ROI handling, intensity and shape
-> quantification, colocalization, time-lapse, and FRET — anything
-> where a single workstation and a reproducible script are enough. For
-> production pipelines, macros can be wrapped in a Java/Python bridge
-> (e.g. `pyimagej`).
+## Hard rules
+
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
 
 ## When to use
 "
@@ -322,3 +312,11 @@ ij.py.run_macro(macro, {"path": "/data/sample.tif"})
   the ImageJ.net and Fiji documentation sets; consolidated
   headless and pyimagej pointers; updated plugin-install path
   to the modern Fiji Updater.
+
+## Cross-references
+
+Other skills in this category:
+
+- cellprofiler-pipelines
+- image-analysis-best-practices
+- qupath-pathology

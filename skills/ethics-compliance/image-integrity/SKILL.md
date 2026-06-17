@@ -4,23 +4,22 @@ name: image-integrity
 description: "Use when preparing, reviewing, or auditing research images (Western blots, gels, microscopy, EM, multi-panel figures) for submission — covers manipulation detection by proofreader tools and human review, figure assembly best practices, raw data retention, journal image-checking policies (e.g., Nature's screening), RRIDs, and concrete examples of what gets flagged."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: ethics-compliance
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - ethics-compliance
-  - research
-difficulty: intermediate
+  category: ethics-compliance
+  oversight: medium
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [ethics-compliance, research]
+  difficulty: intermediate
 -->
 
 # Research Image Integrity
 
-> Image integrity is the discipline of producing research figures (Western blots, gels, microscopy, electron microscopy, multi-panel composites) that accurately represent the underlying data, with all adjustments disclosed, all features preserved, and all source files available. The default mode of image manipulation is innocent: a contrast is pushed so a band is visible, a crop is tightened so a panel is tight, a lane is moved to make a story. The default mode of detection is forensic: editorial screeners and post-publication reviewers now apply automated tools and visual inspection to every figure, and a flag can trigger a multi-year investigation. This skill encodes the journal policies (Nature's screening, Science's requirements, Cell's standards, ORI guidelines), the manipulation rules that apply universally, the figure-assembly best practices, the proofreader tools (and their limits), the raw-data retention policy, the RRID convention, and the concrete patterns that get flagged in 2025-2026.
+## Hard rules
+
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
 
 ## When to use
 
@@ -246,3 +245,11 @@ The RRID is obtained from the SciCrunch resolver at [scicrunch.org](https://scic
 ## Changelog
 
 - 1.0.0 (2026-06-10): Initial adaptation by Pradyumna Jayaram. Synthesized from the ORI Guidelines for Scientific Images, the Nature Portfolio image-screening policy, the Rossner & Yamada (2004) manipulation rules, the SciCrunch RRID portal, and the standard proofreader-tool landscape. The Python forensic-check pattern and the worked example are original.
+
+## Cross-references
+
+Other skills in this category:
+
+- ai-disclosure
+- data-privacy
+- irb-protocol

@@ -4,27 +4,22 @@ name: sam-bam-basics
 description: "Understand the SAM format header, alignment records, FLAGs, MAPQ, CIGAR, and coordinate conventions — the foundation for all downstream BAM analysis."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: bioinformatics-sequence
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - bioinformatics-sequence
-  - research
-difficulty: intermediate
+  category: bioinformatics-sequence
+  oversight: low
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [bioinformatics-sequence, research]
+  difficulty: intermediate
 -->
 
 # SAM / BAM File Basics
 
-> Every aligner produces SAM (text) or BAM (binary). The format is the
-> lingua franca of short-read genomics. If you understand the SAM line
-> format — QNAME through the optional fields — you can debug anything: why
-> reads are unmapped, why a variant isn't callable, or why your count matrix
-> has fewer reads than expected. This skill is the 101.
+## Hard rules
+
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
 
 ## When to use
 
@@ -243,3 +238,30 @@ samtools view input.bam | awk '$20 ~ /XS:A:[+-]/ {print $20}'
 ## Changelog
 
 - 1.0.0 (2026-06-10): Initial adaptation by Pradyumna Jayaram from `bio-sam-bam-basics` (bioSkills-main/alignment-files/sam-bam-basics).
+
+## Cross-references
+
+Other skills in this category:
+
+- batch-processing
+- bowtie2-alignment
+- bwa-alignment
+- bwa-mem2-alignment
+- codon-usage
+- compressed-sequence-files
+- fastq-quality-scores
+- filter-sequences
+- format-conversion
+- hisat2-alignment
+- motif-search
+- paired-end-fastq
+- pysam-genomics
+- read-write-sequences
+- reverse-complement
+- samtools-bam-processing
+- seq-objects
+- sequence-properties
+- sequence-slicing
+- sequence-statistics
+- star-alignment
+- transcription-translation

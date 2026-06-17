@@ -4,27 +4,22 @@ name: sequence-properties
 description: "Compute GC content, molecular weight, melting temperature, isoelectric point, and instability index for DNA, RNA, and protein sequences."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: bioinformatics-sequence
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - bioinformatics-sequence
-  - research
-difficulty: intermediate
+  category: bioinformatics-sequence
+  oversight: low
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [bioinformatics-sequence, research]
+  difficulty: intermediate
 -->
 
 # Sequence Properties
 
-> Six numbers tell you almost everything about a sequence: length, GC
-> fraction, molecular weight, melting temperature (DNA), isoelectric point
-> (protein), instability index (protein). This skill is the canonical
-> computation, the formula citations, and the 2026 modern-API reality in
-> `Bio.SeqUtils` 1.83+.
+## Hard rules
+
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
 
 ## When to use
 
@@ -197,3 +192,30 @@ def gc_with_n(s: str) -> float:
 ## Changelog
 
 - 1.0.0 (2026-06-10): Initial adaptation by Pradyumna Jayaram from `bio-sequence-properties` (bioSkills-main/sequence-manipulation/sequence-properties).
+
+## Cross-references
+
+Other skills in this category:
+
+- batch-processing
+- bowtie2-alignment
+- bwa-alignment
+- bwa-mem2-alignment
+- codon-usage
+- compressed-sequence-files
+- fastq-quality-scores
+- filter-sequences
+- format-conversion
+- hisat2-alignment
+- motif-search
+- paired-end-fastq
+- pysam-genomics
+- read-write-sequences
+- reverse-complement
+- sam-bam-basics
+- samtools-bam-processing
+- seq-objects
+- sequence-slicing
+- sequence-statistics
+- star-alignment
+- transcription-translation

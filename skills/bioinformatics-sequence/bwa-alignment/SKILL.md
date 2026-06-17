@@ -4,28 +4,22 @@ name: bwa-alignment
 description: "Align Illumina short reads to a reference genome with BWA-MEM — including index, MEM algorithm, paired-end, alt-contig handling, and 2026 best practices."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: bioinformatics-sequence
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - bioinformatics-sequence
-  - research
-difficulty: intermediate
+  category: bioinformatics-sequence
+  oversight: low
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [bioinformatics-sequence, research]
+  difficulty: intermediate
 -->
 
 # BWA-MEM Short-Read Alignment
 
-> BWA-MEM is the workhorse short-read aligner: fast, sensitive, and the
-> default in most production pipelines since 2015. BWA-MEM2 is the 2024+
-> drop-in replacement with multi-threading and ~2-3x speedup on large
-> genomes. This skill covers the canonical workflow: index, align,
-> sort/index, mark duplicates — and the flags that matter for variant
-> calling.
+## Hard rules
+
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
 
 ## When to use
 
@@ -211,3 +205,30 @@ done
 ## Changelog
 
 - 1.0.0 (2026-06-10): Initial adaptation by Pradyumna Jayaram from `bio-bwa-alignment` (bioSkills-main/read-alignment/bwa-alignment).
+
+## Cross-references
+
+Other skills in this category:
+
+- batch-processing
+- bowtie2-alignment
+- bwa-mem2-alignment
+- codon-usage
+- compressed-sequence-files
+- fastq-quality-scores
+- filter-sequences
+- format-conversion
+- hisat2-alignment
+- motif-search
+- paired-end-fastq
+- pysam-genomics
+- read-write-sequences
+- reverse-complement
+- sam-bam-basics
+- samtools-bam-processing
+- seq-objects
+- sequence-properties
+- sequence-slicing
+- sequence-statistics
+- star-alignment
+- transcription-translation

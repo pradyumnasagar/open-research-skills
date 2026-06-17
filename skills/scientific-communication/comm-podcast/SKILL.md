@@ -4,18 +4,13 @@ name: comm-podcast
 description: "Produces a 20-60 minute scientific podcast episode (interview, narrated story, or panel) for a general audience, with a pre-published show note, three-act structure, host prep, guest prep, and an editorial pass. Applies the Anderson TED-principle of the one-idea transmission, the Gopen & Swan listener-stress-position principle, and the AAAS Toolkit audience-first discipline. Use when launching a science podcast, preparing for an interview, recording a research-summary episode, or producing a panel discussion."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: scientific-communication
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - scientific-communication
-  - research
-difficulty: intermediate
+  category: scientific-communication
+  oversight: very-high
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [scientific-communication, research]
+  difficulty: intermediate
 -->
 
 ## Version Compatibility
@@ -29,9 +24,24 @@ If episode length, audience profile, or format (interview vs. narrated story vs.
 
 # Podcast
 
-A scientific podcast is the long-form spoken version of the same research story the conference talk, poster, and press release are trying to tell. Where the conference talk has 12 minutes and the press release has 400 words, the podcast has 20-60 minutes. The longer format is a feature: it allows the host to do the work the conference talk cannot — to land the result, explain the mechanism, address the limitations, and end on the implication. The longer format is also a risk: a 45-minute episode with no structure is 45 minutes of wandering.
+## Hard rules
 
-This skill encodes the structural moves that make a science podcast an effective long-form communication, not a slow news report.
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
+
+## When to use
+
+Load this skill when the user asks a question that matches its declared
+trigger conditions (see the frontmatter `description` for the most common
+ones). Do not load it for questions outside its scope — defer to the
+appropriate ORS skill instead.
+
+## When NOT to use
+
+Do not load this skill if the question is in a sibling skill's domain
+(see `## Cross-references`), if the user explicitly asks for a different
+tool, or if the task is outside the skill's declared category.
 
 ## The Three Format Modes
 
@@ -281,3 +291,21 @@ Total: 30 minutes. The deciding experiment (7:00-15:00) is 8 minutes — the lon
 - scientific-communication/poster — visual version for conferences.
 - scientific-communication/elevator-pitch — distilled version for the hallway conversation.
 - scientific-communication/press-release — written version for journalists and the public.
+
+## Cross-references
+
+Other skills in this category:
+
+- comm-conference-talk
+- comm-elevator-pitch
+- comm-poster
+- comm-press-release
+
+## Changelog
+
+- **1.1.0** (migration) — Bulk-migrated to v0.4.0 schema: canonical
+  metadata block, base Hard rules, Cross-references. Body content
+  unchanged; author should review and fill in any domain-specific
+  extensions to the Hard rules.
+- **1.0.0** — Initial release.
+

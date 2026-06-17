@@ -4,23 +4,22 @@ name: fair-data
 description: "Use when designing a data management plan, choosing a repository, structuring metadata, or making research data Findable, Accessible, Interoperable, and Reusable per Wilkinson et al. 2016."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: open-science
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - open-science
-  - research
-difficulty: intermediate
+  category: open-science
+  oversight: medium
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [open-science, research]
+  difficulty: intermediate
 -->
 
 # FAIR Data Principles
 
-> The FAIR principles — Findable, Accessible, Interoperable, Reusable — are a 15-point framework for making research data usable by humans and machines. Originally published by Wilkinson et al. in 2016 (Sci Data 3:160018), FAIR is now the de-facto policy language for funders (NIH, ERC, Wellcome, Horizon Europe), journals (Nature, PLOS, Science), and institutional data-management plans. This skill provides a decision tree for choosing a metadata standard, a repository, and a license, plus a self-assessment rubric to grade any dataset.
+## Hard rules
+
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
 
 ## When to use
 
@@ -208,3 +207,12 @@ A quick FAIR self-assessment. Score 1 point per satisfied sub-principle (max 15)
 ## Changelog
 
 - 1.0.0 (2026-06-10): Initial adaptation by Pradyumna Jayaram. Synthesised Wilkinson et al. 2016 (the canonical source); GO-FAIR; FAIRsharing; ELIXIR FAIR Cookbook; domain standards (MIAME, MINSEQE, MIAPE, MIRAGE, MIxS, REMBI, MIASE); major repositories (ENA, GEO/SRA, PRIDE, MetaboLights, BioImage Archive, EMDB, PDB, GenBank, Zenodo). Decision tree, 15-sub-principle table, and self-assessment rubric are original compositions.
+
+## Cross-references
+
+Other skills in this category:
+
+- code-release
+- licensing
+- preprints
+- preregistration

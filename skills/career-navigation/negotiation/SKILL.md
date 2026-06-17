@@ -4,23 +4,22 @@ name: negotiation
 description: "Negotiate academic and industry offers: startup packages, postdoc salaries, industry offers and counter-offers, dual-career accommodation, equity vs salary trade-offs, BATNA analysis, and the difference between written and verbal offers. Use when preparing for, conducting, or evaluating a negotiation."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: career-navigation
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - career-navigation
-  - research
-difficulty: intermediate
+  category: career-navigation
+  oversight: high
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [career-navigation, research]
+  difficulty: intermediate
 -->
 
 # Salary and Package Negotiation
 
-> A general-purpose negotiation framework, applied to the specific contexts a researcher is most likely to face: startup-package negotiation for a faculty offer, postdoc salary negotiation, industry offer and counter-offer, dual-career / partner-accommodation negotiation, and equity-vs-salary trade-offs. Covers Fisher and Ury's principled negotiation (interests, options, criteria, BATNA), written-vs-verbal offer dynamics, and the practical scripts for the most common conversations. Produces a negotiation plan, a written counter-offer, and a clear BATNA analysis.
+## Hard rules
+
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
 
 ## When to use
 
@@ -443,3 +442,13 @@ A complete negotiation plan satisfies:
 ## Changelog
 
 - 1.0.0 (2026-06-10): Initial adaptation by Pradyumna Jayaram. Compiled from Fisher and Ury, Mnookin, Voss, Babcock and Laschever, Shell, Malhotra, BLS OES, AAUP, and Levels.fyi public sources; cross-referenced to faculty-interview and industry-transition skills.
+
+## Cross-references
+
+Other skills in this category:
+
+- academic-cv
+- faculty-interview
+- fellowship-application
+- industry-transition
+- tenure-dossier

@@ -4,26 +4,22 @@ name: batch-processing
 description: "Process many FASTA/FASTQ/GenBank files in batch — merge, split, convert, summarize, organize — using Biopython 1.83+."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: bioinformatics-sequence
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - bioinformatics-sequence
-  - research
-difficulty: intermediate
+  category: bioinformatics-sequence
+  oversight: low
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [bioinformatics-sequence, research]
+  difficulty: intermediate
 -->
 
 # Batch Sequence File Processing
 
-> When you have 5 files, a `for` loop is enough. When you have 5,000, you need
-> streaming iterators, a single-pass design, and a deterministic way to merge,
-> split, and summarize. This skill is the playbook for the in-between zone —
-> Python, Biopython `SeqIO`, and the `pathlib` patterns I reach for daily.
+## Hard rules
+
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
 
 ## When to use
 
@@ -221,3 +217,30 @@ with ThreadPoolExecutor(max_workers=8) as ex:
 ## Changelog
 
 - 1.0.0 (2026-06-10): Initial adaptation by Pradyumna Jayaram from `bio-batch-processing` (bioSkills-main/sequence-io/batch-processing).
+
+## Cross-references
+
+Other skills in this category:
+
+- bowtie2-alignment
+- bwa-alignment
+- bwa-mem2-alignment
+- codon-usage
+- compressed-sequence-files
+- fastq-quality-scores
+- filter-sequences
+- format-conversion
+- hisat2-alignment
+- motif-search
+- paired-end-fastq
+- pysam-genomics
+- read-write-sequences
+- reverse-complement
+- sam-bam-basics
+- samtools-bam-processing
+- seq-objects
+- sequence-properties
+- sequence-slicing
+- sequence-statistics
+- star-alignment
+- transcription-translation

@@ -4,23 +4,22 @@ name: ai-disclosure-writing
 description: "AI/LLM usage disclosure for biomedical manuscripts: which journals require disclosure (Nature, Science, Cell), what counts as AI authorship (banned) vs. AI tool use (allowed with disclosure), text snippets for common policies, ICMJE/COPE positions, and image-AI specific rules."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: scientific-writing
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - scientific-writing
-  - research
-difficulty: intermediate
+  category: scientific-writing
+  oversight: very-high
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [scientific-writing, research]
+  difficulty: intermediate
 -->
 
 # AI/LLM Usage Disclosure in Manuscripts
 
-> AI tools — large language models (LLMs), image generators, code assistants, transcription services — are now used at almost every stage of the research and writing process. Biomedical journals have converged on a position: AI tools cannot be authors, but their use must be disclosed. The position is consistent across ICMJE, COPE, Nature, Science, Cell, and the major general-interest journals. The details vary (which use cases require disclosure, where the disclosure goes, and whether image generation is permitted at all), and the policies are evolving quickly. This skill encodes the consensus framework, the journal-specific variations, the language templates for the Methods and Acknowledgments sections, and the image-AI specific rules that have tightened considerably since 2023.
+## Hard rules
+
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
 
 ## When to use
 
@@ -333,3 +332,12 @@ For open peer-review platforms (eLife, F1000Research, OpenReview), the AI disclo
 ## Changelog
 
 - 1.0.0 (2026-06-10): Initial adaptation by Pradyumna Jayaram. Consolidated public AI-disclosure guidance from ICMJE, COPE, WAME, Nature Portfolio, Science, Cell Press, PLOS, eLife, Elsevier, JAMA Network, and NIH. Included the consensus framework (AI cannot be author, but must be disclosed), disclosure snippets for common use cases (text drafting, code generation, image annotation, translation, image-AI generation), decision trees for placement and journal policy, and image-AI specific rules. No specific journal policies are quoted verbatim; all sources are publicly accessible via the URLs above.
+
+## Cross-references
+
+Other skills in this category:
+
+- cover-letter
+- manuscript-structure
+- rebuttal-letter
+- response-to-reviewers

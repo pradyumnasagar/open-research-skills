@@ -4,18 +4,13 @@ name: scaffold-analysis
 description: "Analyzes chemical libraries by scaffold using Bemis-Murcko scaffolds, generic frameworks, cyclic skeletons, matched molecular pair (MMP) analysis via mmpdb, R-group decomposition, Free-Wilson analysis, scaffold hopping, and chemotype-aware ML train/test splits. Use when identifying chemotype clusters in a library, deriving SAR transformation rules, decomposing series into R-groups, performing scaffold-balanced QSAR splits, or planning analog campaigns."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: chemoinformatics
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - chemoinformatics
-  - research
-difficulty: intermediate
+  category: chemoinformatics
+  oversight: low
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [chemoinformatics, research]
+  difficulty: intermediate
 -->
 
 ## Version Compatibility
@@ -28,10 +23,24 @@ Before using code patterns, verify installed versions match. If versions differ:
 If code throws ImportError, AttributeError, or TypeError, introspect the installed package and adapt the example to match the actual API rather than retrying.
 
 # Scaffold Analysis
-"
-Analyze chemical libraries by their underlying scaffolds. Bemis-Murcko is the canonical scaffold decomposition: ring systems + linkers, with all R-groups stripped. Generic framework + cyclic skeleton are progressively-more-abstract views. Scaffold analysis underpins QSAR train/test splits (preventing data leakage), library diversity assessment, chemotype clustering, R-group decomposition for SAR modeling, and matched molecular pair analysis (MMPA). The choice of scaffold representation determines whether two compounds are "the same series" -- a critical decision for medicinal chemistry workflows.
+## Hard rules
 
-For reaction-based enumeration and Free-Wilson, see `chemoinformatics/reaction-enumeration`. For scaffold-hopping via fingerprints, see `chemoinformatics/similarity-searching`. For 3D shape-based scaffold hopping, see `chemoinformatics/shape-similarity`.
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
+
+## When to use
+
+Load this skill when the user asks a question that matches its declared
+trigger conditions (see the frontmatter `description` for the most common
+ones). Do not load it for questions outside its scope — defer to the
+appropriate ORS skill instead.
+
+## When NOT to use
+
+Do not load this skill if the question is in a sibling skill's domain
+(see `## Cross-references`), if the user explicitly asks for a different
+tool, or if the task is outside the skill's declared category.
 
 ## Scaffold Representation Taxonomy
 
@@ -307,3 +316,35 @@ For ML splits: Bemis-Murcko. For library diversity: Bemis-Murcko + cluster size.
 - chemoinformatics/shape-similarity - 3D scaffold-hopping
 - chemoinformatics/qsar-modeling - Mandatory scaffold split for QSAR
 - chemoinformatics/generative-design - Scaffold-decoration generative tasks
+
+## Cross-references
+
+Other skills in this category:
+
+- admet-prediction
+- conformer-generation
+- covalent-design
+- docking-rescoring
+- free-energy-calculations
+- generative-design
+- molecular-descriptors
+- molecular-io
+- molecular-standardization
+- pharmacophore-modeling
+- pose-validation
+- protac-degraders
+- qsar-modeling
+- retrosynthesis
+- shape-similarity
+- similarity-searching
+- substructure-search
+- virtual-screening
+
+## Changelog
+
+- **1.1.0** (migration) — Bulk-migrated to v0.4.0 schema: canonical
+  metadata block, base Hard rules, Cross-references. Body content
+  unchanged; author should review and fill in any domain-specific
+  extensions to the Hard rules.
+- **1.0.0** — Initial release.
+

@@ -4,18 +4,13 @@ name: teaching-course-design
 description: "Designs research training courses using Wiggins and McTighe's Backward Design framework, Bloom's Taxonomy (revised) for cognitive scaffolding, and Universal Design for Learning (UDL) principles for accessibility. Use when designing new courses, redesigning existing curricula, creating research training modules, or building learning progressions."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: mentorship-teaching
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - mentorship-teaching
-  - research
-difficulty: intermediate
+  category: mentorship-teaching
+  oversight: medium
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [mentorship-teaching, research]
+  difficulty: intermediate
 -->
 
 ## Version Compatibility
@@ -26,9 +21,24 @@ The frameworks are stable. Adapt templates to your institution's course approval
 
 # Course Design for Research Training
 
-Effective research training courses—whether semester-long graduate courses, multi-day workshops, or structured rotation curricula—do not start with content. They start with the desired learning outcomes. This skill applies Wiggins and McTighe's Backward Design to research training, scaffolding learning progressions with Bloom's Taxonomy and ensuring accessibility through Universal Design for Learning (UDL).
+## Hard rules
 
-For syllabus-level course structure and policies, see `mentorship-teaching/ors-teaching-syllabus`. For individual mentee development planning, see `mentorship-teaching/ors-mentorship-goal-setting`.
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
+
+## When to use
+
+Load this skill when the user asks a question that matches its declared
+trigger conditions (see the frontmatter `description` for the most common
+ones). Do not load it for questions outside its scope — defer to the
+appropriate ORS skill instead.
+
+## When NOT to use
+
+Do not load this skill if the question is in a sibling skill's domain
+(see `## Cross-references`), if the user explicitly asks for a different
+tool, or if the task is outside the skill's declared category.
 
 ## When to Use This Skill
 
@@ -265,3 +275,20 @@ Lab rotations require module-level design that integrates with the broader IDP f
 - mentorship-teaching/ors-teaching-syllabus - Translating course design into syllabus
 - mentorship-teaching/ors-mentorship-goal-setting - Individual mentee development planning
 - mentorship-teaching/ors-mentorship-onboarding - Mentor-mentee relationship setup
+
+## Cross-references
+
+Other skills in this category:
+
+- mentorship-goal-setting
+- mentorship-onboarding
+- teaching-syllabus
+
+## Changelog
+
+- **1.1.0** (migration) — Bulk-migrated to v0.4.0 schema: canonical
+  metadata block, base Hard rules, Cross-references. Body content
+  unchanged; author should review and fill in any domain-specific
+  extensions to the Hard rules.
+- **1.0.0** — Initial release.
+

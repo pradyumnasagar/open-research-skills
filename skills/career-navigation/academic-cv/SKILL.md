@@ -4,23 +4,22 @@ name: academic-cv
 description: "Build an academic CV for US/EU faculty or postdoc applications, with proper section ordering, professional service, mentoring statements, and NSF/NIH biosketch cross-reference. Use when applying to tenure-track or postdoctoral positions."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: career-navigation
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - career-navigation
-  - research
-difficulty: intermediate
+  category: career-navigation
+  oversight: high
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [career-navigation, research]
+  difficulty: intermediate
 -->
 
 # Academic CV (US/EU Faculty/Postdoc)
 
-> A complete guide to assembling an academic CV tailored for US and EU faculty and postdoctoral positions. Covers section ordering conventions used in North American and European applications, mentoring and service statements, h-index / i10 caveats, and cross-referencing the new NSF/NIH biosketch format. Produces a single, comprehensive document that satisfies the conventions of a research-intensive (R1) application packet.
+## Hard rules
+
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
 
 ## When to use
 
@@ -395,3 +394,13 @@ A complete academic CV satisfies:
 ## Changelog
 
 - 1.0.0 (2026-06-10): Initial adaptation by Pradyumna Jayaram. Compiled from public agency guidance (NSF PAPPG, NIH biosketch), university faculty affairs offices (UC Berkeley, Stanford), and bibliometric literature (Hirsch 2005, DORA, CoARA).
+
+## Cross-references
+
+Other skills in this category:
+
+- faculty-interview
+- fellowship-application
+- industry-transition
+- negotiation
+- tenure-dossier

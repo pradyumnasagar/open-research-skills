@@ -4,23 +4,22 @@ name: manuscript-review
 description: "Conduct a formal peer review of a scientific manuscript for a journal: section-by-section evaluation, reporting-checklist compliance, major/minor comments, recommendation to editor."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: peer-review
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - peer-review
-  - research
-difficulty: intermediate
+  category: peer-review
+  oversight: high
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [peer-review, research]
+  difficulty: intermediate
 -->
 
 # Manuscript Peer Review
 
-> Produces a journal-ready peer review for a scientific manuscript: structured summary, checklist-based evaluation, major and minor issues, constructive feedback, confidential comments to the editor, and a defensible recommendation (accept / minor revision / major revision / reject). Adapted by Pradyumna Jayaram from public reporting-standards bodies (EQUATOR Network, ICMJE, COPE) and journal reviewer guidance (Elsevier, Nature).
+## Hard rules
+
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
 
 ## When to use
 
@@ -292,3 +291,11 @@ A good review is itself a small scientific document. Before submitting, check:
 ## Changelog
 
 - 1.0.0 (2026-06-10): Initial adaptation by Pradyumna Jayaram. Heavy rewrite of upstream peer-review skill: removed embedded schematic-generator script instructions (kept as cross-link), added EQUATOR-checklist routing table for 10 manuscript types, added image-integrity red-flag list, added journal-fit / COI / double-blind etiquette sections, replaced detailed step lists with rubric tables for faster reuse.
+
+## Cross-references
+
+Other skills in this category:
+
+- grant-review
+- reviewer-response
+- scholar-evaluation

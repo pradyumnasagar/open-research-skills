@@ -4,23 +4,22 @@ name: brainstorming
 description: "Creative research ideation and exploration. Use for open-ended brainstorming, interdisciplinary connections, challenging assumptions, or identifying research gaps in early-stage research planning."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: scientific-thinking
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - scientific-thinking
-  - research
-difficulty: intermediate
+  category: scientific-thinking
+  oversight: very-high
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [scientific-thinking, research]
+  difficulty: intermediate
 -->
 
 # Scientific Brainstorming
 
-> Brainstorming in science is not about generating random ideas—it's about structured creative exploration that respects domain knowledge while opening space for novel connections. This skill provides a conversational framework for ideation sessions where the goal is to expand the space of possibilities before committing to a specific research direction. Use it when you're at the early stages of a project, facing a creative block, or trying to see a problem from a fresh angle.
+## Hard rules
+
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
 
 ## When to use
 
@@ -240,3 +239,12 @@ For structured creativity methods, all the frameworks referenced (SCAMPER, Six T
 ## Changelog
 
 - 1.0.0 (2026-06-10): Initial adaptation by Pradyumna Jayaram, integrating established creative problem-solving frameworks (SCAMPER, Six Thinking Hats, biomimicry) with scientific research planning workflows.
+
+## Cross-references
+
+Other skills in this category:
+
+- critical-thinking
+- failure-handling
+- hypothesis-generation
+- perspective-tour

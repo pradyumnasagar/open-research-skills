@@ -4,23 +4,22 @@ name: preregistration
 description: "Use when preregistering a study design (hypothesis, methods, analysis plan) before data collection on OSF Registries or AsPredicted, applying for ClinicalTrials.gov registration for interventional trials, or submitting a Registered Report."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: open-science
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - open-science
-  - research
-difficulty: intermediate
+  category: open-science
+  oversight: medium
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [open-science, research]
+  difficulty: intermediate
 -->
 
 # Preregistration
 
-> Preregistration is the act of publicly committing to a research plan — hypothesis, primary outcome, sample size, and analysis — **before** data are collected. It is a powerful anti-dashboarding measure (the "fishing" / "p-hacking" problem) and is now mandated or strongly recommended by many funders (US Office of Science and Technology Policy 2023 memo; the UK Reproducibility Network; the NIH analytic guide). This skill covers OSF Registries, AsPredicted, ClinicalTrials.gov (required for US clinical trials), and Registered Reports — the four preregistration pathways.
+## Hard rules
+
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
 
 ## When to use
 
@@ -301,3 +300,12 @@ A preregistration is complete when:
 ## Changelog
 
 - 1.0.0 (2026-06-10): Initial adaptation by Pradyumna Jayaram. Synthesised OSF Registries help; AsPredicted FAQ; ClinicalTrials.gov fields; SPIRIT 2013; Registered Reports info (cRedi); NIH analytic guide; US OSTP memo. OSF vs AsPredicted vs ClinicalTrials decision tree; OSF template skeleton; AsPredicted 10 questions; Registered Report format comparison are original compositions.
+
+## Cross-references
+
+Other skills in this category:
+
+- code-release
+- fair-data
+- licensing
+- preprints

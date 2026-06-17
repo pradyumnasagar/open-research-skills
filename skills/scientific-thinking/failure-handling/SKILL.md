@@ -4,23 +4,22 @@ name: failure-handling
 description: "Handle negative results, failed experiments, preregistration violations, and replication failures. Use for reporting null findings, deciding when to revise vs. discard hypotheses, and connecting to preregistration and registered reports."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: scientific-thinking
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - scientific-thinking
-  - research
-difficulty: intermediate
+  category: scientific-thinking
+  oversight: very-high
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [scientific-thinking, research]
+  difficulty: intermediate
 -->
 
 # Failure Handling
 
-> Failed experiments and negative results are not failures of science—they are the core of how science self-corrects. The skill is not in avoiding failure but in handling it well: distinguishing between a robust negative result and a failed experiment, knowing when to revise a hypothesis versus when to discard it, and reporting findings transparently so that other researchers can build on them. This skill provides frameworks for interpreting, reporting, and responding to results that didn't go as expected, with explicit connections to preregistration and registered reports.
+## Hard rules
+
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
 
 ## When to use
 
@@ -383,3 +382,12 @@ For preregistration, free services include:
 ## Changelog
 
 - 1.0.0 (2026-06-10): Initial adaptation by Pradyumna Jayaram, integrating frameworks for hypothesis revision from Lakatos, reproducibility findings from the Open Science Collaboration, and best practices for negative result reporting and preregistration.
+
+## Cross-references
+
+Other skills in this category:
+
+- brainstorming
+- critical-thinking
+- hypothesis-generation
+- perspective-tour

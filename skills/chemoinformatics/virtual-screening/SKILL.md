@@ -4,18 +4,13 @@ name: virtual-screening
 description: "Performs structure-based virtual screening using AutoDock Vina, SMINA, GNINA (CNN scoring), and DiffDock-L hybrid workflows with explicit choice rules across rigid vs flexible docking, cross-docking vs self-docking, binding-site detection (P2Rank, fpocket), receptor preparation (PDB2PQR, PROPKA), ligand preparation (meeko, OpenBabel), and ultralarge-library screening (ZINC22, Enamine REAL). Use when screening chemical libraries against a protein target to find candidate binders, ranking docking poses, or selecting a docking workflow for a specific scenario."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: chemoinformatics
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - chemoinformatics
-  - research
-difficulty: intermediate
+  category: chemoinformatics
+  oversight: low
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [chemoinformatics, research]
+  difficulty: intermediate
 -->
 
 ## Version Compatibility
@@ -30,9 +25,24 @@ If code throws ImportError, AttributeError, or TypeError, introspect the install
 
 # Virtual Screening
 
-Screen chemical libraries against protein targets via molecular docking. Vina is the de-facto default, SMINA adds flexibility (Vinardo scoring, custom scoring), and GNINA adds CNN-based pose scoring. Deep-learning docking (DiffDock-L, EquiBind, NeuralPLexer) competes in pose accuracy but fails physical-plausibility tests (PoseBusters) ~50% of the time; the postdoc-grade workflow combines ML pose sampling with classical scoring and physical validation. For ultralarge libraries (>1M), library preparation, hierarchical filtering, and HPC orchestration become the limiting steps.
+## Hard rules
 
-For pose physical-validity QC, see `chemoinformatics/pose-validation`. For ML-driven docking + rescoring, see `chemoinformatics/docking-rescoring`. For covalent docking, see `chemoinformatics/covalent-design`. For affinity calculations (FEP), see `chemoinformatics/free-energy-calculations`.
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
+
+## When to use
+
+Load this skill when the user asks a question that matches its declared
+trigger conditions (see the frontmatter `description` for the most common
+ones). Do not load it for questions outside its scope — defer to the
+appropriate ORS skill instead.
+
+## When NOT to use
+
+Do not load this skill if the question is in a sibling skill's domain
+(see `## Cross-references`), if the user explicitly asks for a different
+tool, or if the task is outside the skill's declared category.
 
 ## Docking Tool Taxonomy
 
@@ -360,3 +370,35 @@ Lyu et al. 2019 ZINC15 ultralarge VS gold standard: 138M docked, top 96 hits pic
 - chemoinformatics/admet-prediction - Filter library before docking
 - structural-biology/structure-io - PDB / mmCIF handling
 - structural-biology/modern-structure-prediction - AlphaFold3 / Boltz-1 for apo receptors
+
+## Cross-references
+
+Other skills in this category:
+
+- admet-prediction
+- conformer-generation
+- covalent-design
+- docking-rescoring
+- free-energy-calculations
+- generative-design
+- molecular-descriptors
+- molecular-io
+- molecular-standardization
+- pharmacophore-modeling
+- pose-validation
+- protac-degraders
+- qsar-modeling
+- retrosynthesis
+- scaffold-analysis
+- shape-similarity
+- similarity-searching
+- substructure-search
+
+## Changelog
+
+- **1.1.0** (migration) — Bulk-migrated to v0.4.0 schema: canonical
+  metadata block, base Hard rules, Cross-references. Body content
+  unchanged; author should review and fill in any domain-specific
+  extensions to the Hard rules.
+- **1.0.0** — Initial release.
+

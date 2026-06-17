@@ -4,18 +4,13 @@ name: comm-press-release
 description: "Drafts a 400-word scientific press release for the public and journalists using the Inverted Pyramid structure, the AAAS Newsmakers framework, and the Gopen & Swan sentence stress-position principle to prioritize the take-home message. Translates technical jargon to plain language and frames the result in terms of public health, policy, or funding impact. Use when announcing a breakthrough publication, communicating a grant award, or defending research for public accountability."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: scientific-communication
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - scientific-communication
-  - research
-difficulty: intermediate
+  category: scientific-communication
+  oversight: very-high
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [scientific-communication, research]
+  difficulty: intermediate
 -->
 
 ## Version Compatibility
@@ -29,9 +24,24 @@ If audience profile, publication, or framing needs differ from the defaults belo
 
 # Press Release
 
-A scientific press release is a 400-word document designed to translate a technical research finding into a news story for a general audience. Unlike a paper abstract, it is not read by specialists; it is read by journalists, policymakers, and the public, and its purpose is to generate coverage that accurately represents the research while making the implications understandable to a non-specialist.
+## Hard rules
 
-The default failure mode is the jargon-dump press release that sounds like an abstract; the solution is the Inverted Pyramid structure, where the single-take-home message is in the first paragraph, not buried in the fifth. This skill encodes the structural discipline that ensures the press release serves two audiences: the journalist (who needs a story in 60 seconds) and the public (who needs the story in one sentence).
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
+
+## When to use
+
+Load this skill when the user asks a question that matches its declared
+trigger conditions (see the frontmatter `description` for the most common
+ones). Do not load it for questions outside its scope — defer to the
+appropriate ORS skill instead.
+
+## When NOT to use
+
+Do not load this skill if the question is in a sibling skill's domain
+(see `## Cross-references`), if the user explicitly asks for a different
+tool, or if the task is outside the skill's declared category.
 
 ## The Inverted Pyramid
 
@@ -237,3 +247,21 @@ Total word count: 400. The press release passes the AAAS test: it answers what h
 - scientific-communication/poster — visual version for conferences.
 - scientific-communication/elevator-pitch — distilled version for conversation.
 - scientific-communication/podcast — long-form spoken version for a general audience.
+
+## Cross-references
+
+Other skills in this category:
+
+- comm-conference-talk
+- comm-elevator-pitch
+- comm-podcast
+- comm-poster
+
+## Changelog
+
+- **1.1.0** (migration) — Bulk-migrated to v0.4.0 schema: canonical
+  metadata block, base Hard rules, Cross-references. Body content
+  unchanged; author should review and fill in any domain-specific
+  extensions to the Hard rules.
+- **1.0.0** — Initial release.
+

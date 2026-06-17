@@ -90,3 +90,12 @@ Each step will be grounded in the skill's code patterns and pitfalls.
 ## Anti-pattern
 
 Don't load 20+ skills at once. The model gets confused about which skill applies and the response quality drops. If you need 20 skills, route them — let the agent pick which one to load for each step.
+
+## See also
+
+- `docs/pipelines.md` — full reference pipelines (RNA-seq, systematic review,
+  compound screening, microscopy, grant writing).
+- `examples/showcase-rnaseq-mini.md` — runnable RNA-seq mini pipeline with
+  Material Passport chaining.
+- `spec/material-passport.md` — the envelope that lets the 6 skills above
+  share state without re-derivation.

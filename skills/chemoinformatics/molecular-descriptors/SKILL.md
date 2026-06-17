@@ -4,18 +4,13 @@ name: molecular-descriptors
 description: "Calculates molecular fingerprints (ECFP/Morgan, FCFP, MACCS, RDKit, AtomPair, TopologicalTorsion, Avalon, MAP4, MHFP6) and physicochemical descriptors (Lipinski, QED, TPSA, Crippen LogP, 3D shape) with explicit choice tables, bit vs count semantics, and partial-charge model selection. Use when featurizing molecules for similarity, QSAR, virtual screening, or ML, or selecting the correct fingerprint for a chemotype-aware task."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: chemoinformatics
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - chemoinformatics
-  - research
-difficulty: intermediate
+  category: chemoinformatics
+  oversight: low
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [chemoinformatics, research]
+  difficulty: intermediate
 -->
 
 ## Version Compatibility
@@ -29,9 +24,24 @@ If code throws ImportError, AttributeError, or TypeError, introspect the install
 
 # Molecular Descriptors
 
-Featurize molecules for similarity search, QSAR, virtual screening, or ML. The fingerprint or descriptor choice is **chemotype-aware**: ECFP4 dominates drug-like organic similarity, AtomPair and TopologicalTorsion outperform for scaffold hopping, MAP4/MHFP6 win on metabolomics-scale chemical diversity, and 3D conformer-based descriptors are essential when shape and stereochemistry matter.
+## Hard rules
 
-For canonicalization before featurization, see `chemoinformatics/molecular-standardization`. For 3D-only descriptors, see `chemoinformatics/conformer-generation`.
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
+
+## When to use
+
+Load this skill when the user asks a question that matches its declared
+trigger conditions (see the frontmatter `description` for the most common
+ones). Do not load it for questions outside its scope — defer to the
+appropriate ORS skill instead.
+
+## When NOT to use
+
+Do not load this skill if the question is in a sibling skill's domain
+(see `## Cross-references`), if the user explicitly asks for a different
+tool, or if the task is outside the skill's declared category.
 
 ## Fingerprint Taxonomy
 
@@ -259,3 +269,35 @@ QED (Bickerton 2012) is a single-number drug-likeness measure (0-1) combining 8 
 - chemoinformatics/similarity-searching - Use fingerprints for similarity ranking
 - chemoinformatics/qsar-modeling - ML using these descriptors as features
 - chemoinformatics/admet-prediction - Filter by drug-likeness criteria"
+
+## Cross-references
+
+Other skills in this category:
+
+- admet-prediction
+- conformer-generation
+- covalent-design
+- docking-rescoring
+- free-energy-calculations
+- generative-design
+- molecular-io
+- molecular-standardization
+- pharmacophore-modeling
+- pose-validation
+- protac-degraders
+- qsar-modeling
+- retrosynthesis
+- scaffold-analysis
+- shape-similarity
+- similarity-searching
+- substructure-search
+- virtual-screening
+
+## Changelog
+
+- **1.1.0** (migration) — Bulk-migrated to v0.4.0 schema: canonical
+  metadata block, base Hard rules, Cross-references. Body content
+  unchanged; author should review and fill in any domain-specific
+  extensions to the Hard rules.
+- **1.0.0** — Initial release.
+

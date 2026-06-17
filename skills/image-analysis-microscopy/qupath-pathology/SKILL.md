@@ -4,32 +4,22 @@ name: qupath-pathology
 description: "Use QuPath 0.5.x for whole-slide image import, annotation, cell detection, pixel classification, deep-learning workflows (StarDist, Cellpose), and multiplexed analysis in digital pathology."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: image-analysis-microscopy
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - image-analysis-microscopy
-  - research
-difficulty: intermediate
+  category: image-analysis-microscopy
+  oversight: low
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [image-analysis-microscopy, research]
+  difficulty: intermediate
 -->
 
 # QuPath for Digital Pathology and Whole-Slide Image Analysis
 
-> QuPath is the leading open-source platform for whole-slide image
-> (WSI) analysis in digital pathology. The 0.5.x line introduced a
-> revamped extension manager, improved GPU support for deep-learning
-> extensions (StarDist, Cellpose, InstanSeg), and a more performant
-> tile-streaming data model. Use QuPath when you have gigapixel H&E or
-> fluorescence slides, need a graphical annotator that a pathologist
-> can review, and want pixel- or cell-level quantification that scales
-> to hundreds of slides. The same project file can drive downstream"
-> bioimage analysis in Python via QuPath's "Run script" and command-line
-> automation interfaces.
+## Hard rules
+
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
 
 ## When to use
 
@@ -328,3 +318,11 @@ reproducible record of the analysis.
 - 1.0.0 (2026-06-10): Initial adaptation by Pradyumna Jayaram from
   the QuPath documentation set; consolidated 0.5.x extension
   install notes, TMA and multiplexed workflow pointers.
+
+## Cross-references
+
+Other skills in this category:
+
+- cellprofiler-pipelines
+- image-analysis-best-practices
+- imagej-fiji-macro

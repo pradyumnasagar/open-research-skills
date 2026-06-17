@@ -4,23 +4,29 @@ name: snakemake-workflow-engine
 description: "Python-based workflow manager for reproducible, scalable pipelines. Define rules with file-based dependencies; Snakemake resolves execution order and parallelism. Runs local, SLURM, LSF, AWS, GCP via profiles; per-rule conda/Singularity envs. For NGS pipelines, ML training, and multi-step file processing. Use Nextflow for Groovy dataflow or nf-core integration."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: data-engineering
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - data-engineering
-  - research
-difficulty: intermediate
+  category: data-engineering
+  oversight: low
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [data-engineering, research]
+  difficulty: intermediate
 -->
 
 # Snakemake Workflow Engine
 
-> Snakemake treats pipeline steps as **rules with file-based dependencies** and resolves the execution DAG backward from your requested outputs. The same Snakefile runs on a laptop, an HPC cluster, or a cloud VM — you only swap a profile. This is the workhorse for reproducible data-engineering pipelines in research computing, especially when every step needs to be re-runnable, citable, and tied to a specific tool version.
+## Hard rules
+
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+   record (DOI, PMID, arXiv ID, ISBN, URL with retrieval date, or stable
+   identifier). If a source cannot be resolved, the skill must say so
+   explicitly rather than presenting the claim as established.
+2. **No claim without provenance.** Every quantitative or factual claim
+   must point to a file, line, table, figure, dataset, or external source
+   the agent can show. "Trust me" is not provenance.
+3. **No silent failure.** Every script invocation, API call, or tool use
+   must declare its exit status and what to do on non-zero. A skill that
+   silently swallows errors is a violation.
 
 ## When to use
 
@@ -314,3 +320,9 @@ snakemake --profile profiles/slurm --report report.html # post-run HTML report
 ## Changelog
 
 - 1.0.0 (2026-06-10): Initial adaptation by Pradyumna Jayaram from `snakemake-workflow-engine` (SciAgent-Skills-main/scientific-computing/snakemake-workflow-engine).
+
+## Cross-references
+
+_No related skills in this category yet. 
+Add sibling skills as they are created in this category. 
+Universal research-workflow skills live under `meta/`._

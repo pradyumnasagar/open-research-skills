@@ -4,23 +4,22 @@ name: industry-transition
 description: "Translate a PhD into an industry resume, navigate technical screens and system design for ML roles, and compare biotech, big-pharma, ML-for-bio, science writing, and consulting paths. Includes startup vs established company trade-offs. Use when a PhD student or postdoc is preparing for a job search outside academia."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: career-navigation
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - career-navigation
-  - research
-difficulty: intermediate
+  category: career-navigation
+  oversight: high
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [career-navigation, research]
+  difficulty: intermediate
 -->
 
 # PhD to Industry Career Transition
 
-> A workflow for PhD students and postdocs transitioning to industry, covering resume translation (academic CV to one or two-page industry resume), sector selection (biotech, big-pharma, ML-for-bio, science writing, consulting), technical interview preparation including system design for ML roles, salary negotiation, and the trade-offs between startup and established-company roles. Produces a sector-specific resume, a target list of companies by role type, and a structured interview-prep plan.
+## Hard rules
+
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
 
 ## When to use
 
@@ -318,3 +317,13 @@ A complete industry-transition plan satisfies:
 ## Changelog
 
 - 1.0.0 (2026-06-10): Initial adaptation by Pradyumna Jayaram. Compiled from public AAAS, iBiology, Nature Careers, BLS, and Levels.fyi data; cross-referenced to negotiation and resume skills.
+
+## Cross-references
+
+Other skills in this category:
+
+- academic-cv
+- faculty-interview
+- fellowship-application
+- negotiation
+- tenure-dossier

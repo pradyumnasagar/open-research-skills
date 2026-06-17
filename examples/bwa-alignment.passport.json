@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0.0",
+  "passport_id": "550e8400-e29b-41d4-a716-446655440000",
+  "created_at": "2026-06-17T12:34:56Z",
+  "produced_by": {
+    "skill": "bwa-alignment",
+    "skill_version": "1.2.0",
+    "agent": "claude-opus-4-8",
+    "session_id": "abc-123-def-456"
+  },
+  "inputs": [
+    {
+      "type": "fastq",
+      "path": "data/sampleA_R1.fastq.gz",
+      "sha256": "abc123def456abc123def456abc123def456abc123def456abc123def456abcd",
+      "source": "ENA ERR123456"
+    },
+    {
+      "type": "fasta",
+      "path": "refs/genome.fa",
+      "sha256": "0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef",
+      "source": "GRCh38"
+    }
+  ],
+  "outputs": [
+    {
+      "type": "bam",
+      "path": "results/sampleA.sorted.bam",
+      "sha256": "fedcba9876543210fedcba9876543210fedcba9876543210fedcba9876543210",
+      "size_bytes": 12345678
+    },
+    {
+      "type": "bam-index",
+      "path": "results/sampleA.sorted.bam.bai",
+      "sha256": "111122223333444455556666777788889999aaaabbbbccccddddeeeeffff0000",
+      "size_bytes": 256000
+    }
+  ],
+  "decisions": [
+    {
+      "step": "alignment",
+      "choice": "bwa-mem2",
+      "alternatives_considered": ["bwa-mem", "bowtie2", "minimap2"],
+      "rationale": "bwa-mem2 is the multi-threaded successor of bwa-mem; chosen for short Illumina DNA-seq reads where minimap2 is suboptimal."
+    },
+    {
+      "step": "sort",
+      "choice": "samtools sort -@ 8",
+      "alternatives_considered": ["picard SortSam", "sambamba sort"],
+      "rationale": "samtools is the canonical sorter; 8 threads matched the SLURM allocation."
+    }
+  ],
+  "parameters": {
+    "threads": 8,
+    "min_mapq": 20,
+    "reference": "GRCh38"
+  },
+  "errors": [
+    {
+      "step": "alignment",
+      "tool": "bwa-mem2",
+      "exit_code": 0,
+      "stderr_excerpt": "[M::process] read 1000000 sequences (150bp)..."
+    },
+    {
+      "step": "sort",
+      "tool": "samtools",
+      "exit_code": 0,
+      "stderr_excerpt": "[bam_sort] sorting by coordinate..."
+    },
+    {
+      "step": "index",
+      "tool": "samtools",
+      "exit_code": 0,
+      "stderr_excerpt": "[bam_idx_build] building index..."
+    }
+  ],
+  "consumed_passports": [],
+  "downstream_hints": {
+    "next_skills": ["samtools-bam-processing", "gatk-variant-calling", "picard-mark-duplicates"],
+    "expected_inputs": ["bam", "bam-index"]
+  }
+}

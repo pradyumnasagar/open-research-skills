@@ -4,18 +4,13 @@ name: substructure-search
 description: "Searches molecular libraries for substructure matches using SMARTS patterns with explicit handling of recursive SMARTS, ring membership, aromaticity dialect, vector binding, atom map indices, and reactive/PAINS/REOS/Brenk/Aldridge filter catalogs. Use when filtering compounds by pharmacophore features, functional groups, scaffold matches, or screening for assay-interference / structural alerts."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: chemoinformatics
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - chemoinformatics
-  - research
-difficulty: intermediate
+  category: chemoinformatics
+  oversight: low
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [chemoinformatics, research]
+  difficulty: intermediate
 -->
 
 ## Version Compatibility
@@ -28,10 +23,24 @@ Before using code patterns, verify installed versions match. If versions differ:
 If code throws ImportError, AttributeError, or TypeError, introspect the installed package and adapt the example to match the actual API rather than retrying.
 
 # Substructure Search
-"
-Search molecular collections for structural patterns using SMARTS. The choice of SMARTS dialect, atom/bond matching mode, and structural-alert catalog determines whether the search is correctly capturing the intended chemistry. PAINS (Baell & Holloway 2010) is the most-cited but most-misunderstood filter -- it identifies patterns of assay interference, not "bad molecules". Knowing when to apply each catalog and how to interpret hits is essential.
+## Hard rules
 
-For SMARTS-based reactions (transforming matched substructures), see `chemoinformatics/reaction-enumeration`. For 3D pharmacophore matching, see `chemoinformatics/pharmacophore-modeling`.
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
+
+## When to use
+
+Load this skill when the user asks a question that matches its declared
+trigger conditions (see the frontmatter `description` for the most common
+ones). Do not load it for questions outside its scope — defer to the
+appropriate ORS skill instead.
+
+## When NOT to use
+
+Do not load this skill if the question is in a sibling skill's domain
+(see `## Cross-references`), if the user explicitly asks for a different
+tool, or if the task is outside the skill's declared category.
 
 ## SMARTS Grammar Essentials
 
@@ -340,3 +349,35 @@ amide_C, amide_N, aryl_C = match
 - chemoinformatics/reaction-enumeration - SMARTS for chemical transformations
 - chemoinformatics/admet-prediction - PAINS as ADMET filter
 - chemoinformatics/covalent-design - Warhead chemistry
+
+## Cross-references
+
+Other skills in this category:
+
+- admet-prediction
+- conformer-generation
+- covalent-design
+- docking-rescoring
+- free-energy-calculations
+- generative-design
+- molecular-descriptors
+- molecular-io
+- molecular-standardization
+- pharmacophore-modeling
+- pose-validation
+- protac-degraders
+- qsar-modeling
+- retrosynthesis
+- scaffold-analysis
+- shape-similarity
+- similarity-searching
+- virtual-screening
+
+## Changelog
+
+- **1.1.0** (migration) — Bulk-migrated to v0.4.0 schema: canonical
+  metadata block, base Hard rules, Cross-references. Body content
+  unchanged; author should review and fill in any domain-specific
+  extensions to the Hard rules.
+- **1.0.0** — Initial release.
+

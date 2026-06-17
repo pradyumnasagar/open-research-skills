@@ -4,23 +4,21 @@ name: irb-protocol
 description: "Use when writing, reviewing, or revising an Institutional Review Board (IRB) protocol for human-subjects research — anchors the protocol to the Belmont Report, the Common Rule (45 CFR 46), and the specific subparts for vulnerable populations."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: ethics-compliance
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - ethics-compliance
-  - research
-difficulty: intermediate
+  category: ethics-compliance
+  oversight: medium
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [ethics-compliance, research]
+  difficulty: intermediate
 -->
 
 # IRB Protocol Writing
-"
-> An IRB protocol is the formal document that tells an Institutional Review Board (IRB) exactly what you intend to do with human participants, why the benefits justify the risks, and how you will protect the people who agree to take part. A good protocol reads as a risk-managed research plan: every claim about risk has a mitigation beside it, every claim about consent has a procedure behind it, and every claim about vulnerable participants has a subpart reference. This skill encodes the Common Rule's required elements, the Belmont Report's three principles, the subparts for vulnerable populations, the three review levels (exempt, expedited, convened board), and the psychological patterns that distinguish a protocol an IRB will approve in one round from one that gets bounced for "deferred" or "stipulations."
+## Hard rules
+
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
 
 ## When to use
 
@@ -208,3 +206,11 @@ The single most common subpart error is using 46.404 for a study that is not act
 ## Changelog
 
 - 1.0.0 (2026-06-10): Initial adaptation by Pradyumna Jayaram. Synthesized from 45 CFR 46 (Common Rule, 2018 revision), The Belmont Report (OHRP, 1979), and OHRP guidance on reportable events. Reviewer-psychology section is original.
+
+## Cross-references
+
+Other skills in this category:
+
+- ai-disclosure
+- data-privacy
+- image-integrity

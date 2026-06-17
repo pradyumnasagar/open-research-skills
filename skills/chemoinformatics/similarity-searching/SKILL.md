@@ -4,18 +4,13 @@ name: similarity-searching
 description: "Performs molecular similarity searching using Tanimoto, Tversky, Dice, and cosine coefficients on bit/count fingerprints with explicit choice rules for symmetric vs asymmetric measures, scaffold-hopping vs lead-optimization regimes, activity-cliff diagnosis, and large-library nearest-neighbor methods (BulkTanimoto, Annoy MHFP6, USRCAT). Use when ranking compounds by structural resemblance to a query, clustering libraries, finding analogs, or diagnosing activity cliffs."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: chemoinformatics
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - chemoinformatics
-  - research
-difficulty: intermediate
+  category: chemoinformatics
+  oversight: low
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [chemoinformatics, research]
+  difficulty: intermediate
 -->
 
 ## Version Compatibility
@@ -28,10 +23,24 @@ Before using code patterns, verify installed versions match. If versions differ:
 If code throws ImportError, AttributeError, or TypeError, introspect the installed package and adapt the example to match the actual API rather than retrying.
 
 # Similarity Searching
-"
-Find structurally similar compounds and cluster libraries by similarity. The choice of similarity coefficient and fingerprint is **task-aware**: Tanimoto for symmetric similarity in lead optimization, Tversky for asymmetric "substructure-like" queries, Dice for higher sensitivity in low-similarity regimes, and MaxCommon Substructure (MCS) for scaffold-hopping. Tanimoto similarity above 0.7 is not a guarantee of activity preservation; activity cliffs (similar molecules with dissimilar activities) are common (Maggiora 2014).
+## Hard rules
 
-For fingerprint choice, see `chemoinformatics/molecular-descriptors`. For 3D shape similarity, see `chemoinformatics/shape-similarity`.
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
+
+## When to use
+
+Load this skill when the user asks a question that matches its declared
+trigger conditions (see the frontmatter `description` for the most common
+ones). Do not load it for questions outside its scope — defer to the
+appropriate ORS skill instead.
+
+## When NOT to use
+
+Do not load this skill if the question is in a sibling skill's domain
+(see `## Cross-references`), if the user explicitly asks for a different
+tool, or if the task is outside the skill's declared category.
 
 ## Similarity Coefficient Taxonomy
 
@@ -325,3 +334,35 @@ If a pair flags as an activity cliff in ECFP4 but not in MCS-based, the local en
 - chemoinformatics/substructure-search - SMARTS pattern-based searching
 - chemoinformatics/scaffold-analysis - Scaffold-based similarity (Bemis-Murcko, MMPA)
 - chemoinformatics/shape-similarity - 3D shape similarity (USRCAT, ROCS)
+
+## Cross-references
+
+Other skills in this category:
+
+- admet-prediction
+- conformer-generation
+- covalent-design
+- docking-rescoring
+- free-energy-calculations
+- generative-design
+- molecular-descriptors
+- molecular-io
+- molecular-standardization
+- pharmacophore-modeling
+- pose-validation
+- protac-degraders
+- qsar-modeling
+- retrosynthesis
+- scaffold-analysis
+- shape-similarity
+- substructure-search
+- virtual-screening
+
+## Changelog
+
+- **1.1.0** (migration) — Bulk-migrated to v0.4.0 schema: canonical
+  metadata block, base Hard rules, Cross-references. Body content
+  unchanged; author should review and fill in any domain-specific
+  extensions to the Hard rules.
+- **1.0.0** — Initial release.
+
