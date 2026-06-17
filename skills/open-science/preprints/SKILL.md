@@ -4,23 +4,22 @@ name: preprints
 description: "Use when choosing a preprint server (bioRxiv, medRxiv, ChemRxiv, SSRN, arXiv), selecting a license (CC-BY vs CC-BY-NC-ND), versioning, scoop protection, or planning journal transfer with In Review / Reviewed Preprint services."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: open-science
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - open-science
-  - research
-difficulty: intermediate
+  category: open-science
+  oversight: medium
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [open-science, research]
+  difficulty: intermediate
 -->
 
 # Preprints
 
-> A preprint is a complete, draft manuscript posted to a public server before peer review. Preprints accelerate dissemination, establish priority ("scoop protection"), invite community feedback, and increasingly count as formal scholarly outputs (NIH allows preprints in grant submissions, Plan S funders require immediate open access, and PubMed Central indexes NIH-funded preprints since 2020). This skill covers server selection, licensing, versioning, and the journal transfer process — the four decisions a researcher must make before the first click.
+## Hard rules
+
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
 
 ## When to use
 
@@ -239,3 +238,12 @@ A preprint is "well-posted" when:
 ## Changelog
 
 - 1.0.0 (2026-06-10): Initial adaptation by Pradyumna Jayaram. Synthesised bioRxiv/medRxiv posting guides; ChemRxiv author guidelines; arXiv help; ASAPbio server directory; Creative Commons license deeds; NIH Preprint Policy; Plan S; eLife Reviewed Preprints; Review Commons. Server decision tree, license comparison, scoop-protection timeline, and journal-transfer flow are original compositions.
+
+## Cross-references
+
+Other skills in this category:
+
+- code-release
+- fair-data
+- licensing
+- preregistration

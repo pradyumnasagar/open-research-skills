@@ -5,19 +5,14 @@ name: docking-rescoring
 description: "Performs ML-based protein-ligand pose prediction and scoring using DiffDock-L (diffusion-based), Boltz-1 / Boltz-2 (foundation model with affinity), Chai-1, AlphaFold3 ligand, EquiBind, TANKBind, NeuralPLexer, and hybrid workflows (DiffDock pose + GNINA rescore + PoseBusters QC). Explicit handling of when ML beats classical docking, when classical beats ML, the PB-invalid pose problem, and rescoring as the standard production hybrid. Use when modern docking is needed: foundation-model ligand-pose prediction, AI rescoring of classical poses, or scaffold-hopping in cross-docking scenarios."
 license: MIT
 ---
-
 <!-- metadata:
-category: chemoinformatics
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - chemoinformatics
-  - research
-difficulty: intermediate
+  category: chemoinformatics
+  oversight: low
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [chemoinformatics, research]
+  difficulty: intermediate
 -->
-
-
-
 
 ## Version Compatibility
 
@@ -31,9 +26,24 @@ If code throws ImportError, AttributeError, or TypeError, introspect the install
 
 # ML Docking and Rescoring
 
-Use machine learning models for protein-ligand pose prediction and affinity scoring. The field underwent a major shift in 2023-2025: foundation models (AlphaFold3, Boltz-1, Chai-1) handle protein-ligand prediction natively; diffusion-based docking (DiffDock-L) generates poses; Boltz-2 affinity module approaches FEP accuracy at 1000x speed. Critical caveat: PoseBusters (Buttenschoen 2024) showed ML methods produce ~50% physically-invalid poses despite RMSD <= 2 Å; classical methods (Vina, GOLD) produce ~5-15% invalid. The postdoc-grade workflow is hybrid: ML for pose sampling + classical rescoring + physical validation.
+## Hard rules
 
-For classical docking, see `chemoinformatics/virtual-screening`. For pose validation (PoseBusters), see `chemoinformatics/pose-validation`. For free-energy calculations (post-docking), see `chemoinformatics/free-energy-calculations`. For PROTAC ternary complex prediction, see `chemoinformatics/protac-degraders`.
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
+
+## When to use
+
+Load this skill when the user asks a question that matches its declared
+trigger conditions (see the frontmatter `description` for the most common
+ones). Do not load it for questions outside its scope — defer to the
+appropriate ORS skill instead.
+
+## When NOT to use
+
+Do not load this skill if the question is in a sibling skill's domain
+(see `## Cross-references`), if the user explicitly asks for a different
+tool, or if the task is outside the skill's declared category.
 
 ## ML Docking Method Taxonomy
 
@@ -229,3 +239,35 @@ chai-lab predict input.fasta --output-dir chai_out/
 - chemoinformatics/free-energy-calculations - Post-docking FEP
 - chemoinformatics/covalent-design - Covalent docking
 - chemoinformatics/protac-degraders - Ternary complex prediction
+
+## Cross-references
+
+Other skills in this category:
+
+- admet-prediction
+- conformer-generation
+- covalent-design
+- free-energy-calculations
+- generative-design
+- molecular-descriptors
+- molecular-io
+- molecular-standardization
+- pharmacophore-modeling
+- pose-validation
+- protac-degraders
+- qsar-modeling
+- retrosynthesis
+- scaffold-analysis
+- shape-similarity
+- similarity-searching
+- substructure-search
+- virtual-screening
+
+## Changelog
+
+- **1.1.0** (migration) — Bulk-migrated to v0.4.0 schema: canonical
+  metadata block, base Hard rules, Cross-references. Body content
+  unchanged; author should review and fill in any domain-specific
+  extensions to the Hard rules.
+- **1.0.0** — Initial release.
+

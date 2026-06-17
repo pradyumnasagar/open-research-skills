@@ -4,23 +4,22 @@ name: response-to-reviewers
 description: "Detailed how-to for the actual response-to-reviewers document: tone discipline, heading structure (Reviewer N, Comment M: ... Response: ...), line-number references, embedding revised figure panels, and when to send the response with vs. without an editor's cover letter."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: scientific-writing
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - scientific-writing
-  - research
-difficulty: intermediate
+  category: scientific-writing
+  oversight: very-high
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [scientific-writing, research]
+  difficulty: intermediate
 -->
 
 # Response to Reviewers (How-To)
 
-> The response document is the technical deliverable of the revision. It pairs every reviewer comment with an author response, a manuscript location, and (where applicable) a revised figure. Done well, the document is self-contained: the editor can read it without re-opening the original review file. Done poorly, the document is a paste-and-reply that forces the editor to hunt for the changes. This skill encodes the document architecture, the line-number discipline, the figure-embedding rules, and the workflow for producing a submission-ready response file.
+## Hard rules
+
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
 
 ## When to use
 
@@ -340,3 +339,12 @@ The response document itself is plain text; no commercial tool is required.
 ## Changelog
 
 - 1.0.0 (2026-06-10): Initial adaptation by Pradyumna Jayaram. Consolidated public guidance on response-document architecture (ICMJE, Nature/eLife/PLOS/BMJ peer-review policies, COPE), line-number discipline, figure-embedding rules, cover-letter bundling, and a table-of-changes convention. No specific journal policies are quoted verbatim; all sources are publicly accessible.
+
+## Cross-references
+
+Other skills in this category:
+
+- ai-disclosure-writing
+- cover-letter
+- manuscript-structure
+- rebuttal-letter

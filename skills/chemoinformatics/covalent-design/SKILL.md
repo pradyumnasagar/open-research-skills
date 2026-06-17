@@ -4,18 +4,13 @@ name: covalent-design
 description: "Designs covalent inhibitors and warheads targeting cysteine (most common, ~98% of covalent drugs), lysine, serine, threonine, tyrosine, and aspartate residues, with explicit handling of warhead reactivity (acrylamide, chloroacetamide, vinyl sulfone, sulfonyl fluoride, fluorosulfate, aldehyde, boronate, nitrile), reversibility (kinact/Ki, t_residence), glutathione (GSH) stability, intrinsic reactivity assays, and covalent docking (DOCKovalent, GOLD, HCovDock). Use when designing covalent inhibitors for targeted covalent inhibition (TCI), KRAS G12C-style approaches, or rationalizing covalent SAR."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: chemoinformatics
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - chemoinformatics
-  - research
-difficulty: intermediate
+  category: chemoinformatics
+  oversight: low
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [chemoinformatics, research]
+  difficulty: intermediate
 -->
 
 ## Version Compatibility
@@ -28,10 +23,24 @@ Before using code patterns, verify installed versions match. If versions differ:
 If code throws ImportError, AttributeError, or TypeError, introspect the installed package and adapt the example to match the actual API rather than retrying.
 
 # Covalent Inhibitor Design
-"
-Design molecules that form covalent bonds with target protein residues. The "covalent revolution" made TCIs (Targeted Covalent Inhibitors) clinically validated: KRAS G12C inhibitors (sotorasib, adagrasib), BTK inhibitors (ibrutinib), and EGFR inhibitors (osimertinib) are recent successes. Postdoc-grade covalent design requires balancing **intrinsic reactivity** vs **selectivity**, **reversibility** (irreversible vs reversible covalent), and **drug-likeness** (warheads can hurt PK).
+## Hard rules
 
-For warhead substructure filtering (in non-covalent contexts), see `chemoinformatics/substructure-search`. For non-covalent docking, see `chemoinformatics/virtual-screening`. For pose validation, see `chemoinformatics/pose-validation`.
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
+
+## When to use
+
+Load this skill when the user asks a question that matches its declared
+trigger conditions (see the frontmatter `description` for the most common
+ones). Do not load it for questions outside its scope — defer to the
+appropriate ORS skill instead.
+
+## When NOT to use
+
+Do not load this skill if the question is in a sibling skill's domain
+(see `## Cross-references`), if the user explicitly asks for a different
+tool, or if the task is outside the skill's declared category.
 
 ## Reactive Residue Taxonomy
 
@@ -193,3 +202,35 @@ adduct_rxn = AllChem.ReactionFromSmarts(
 - chemoinformatics/virtual-screening - Non-covalent docking
 - chemoinformatics/protac-degraders - Bifunctional covalent
 - chemoinformatics/pose-validation - Pose QC for covalent adducts
+
+## Cross-references
+
+Other skills in this category:
+
+- admet-prediction
+- conformer-generation
+- docking-rescoring
+- free-energy-calculations
+- generative-design
+- molecular-descriptors
+- molecular-io
+- molecular-standardization
+- pharmacophore-modeling
+- pose-validation
+- protac-degraders
+- qsar-modeling
+- retrosynthesis
+- scaffold-analysis
+- shape-similarity
+- similarity-searching
+- substructure-search
+- virtual-screening
+
+## Changelog
+
+- **1.1.0** (migration) — Bulk-migrated to v0.4.0 schema: canonical
+  metadata block, base Hard rules, Cross-references. Body content
+  unchanged; author should review and fill in any domain-specific
+  extensions to the Hard rules.
+- **1.0.0** — Initial release.
+

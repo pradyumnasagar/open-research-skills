@@ -4,23 +4,22 @@ name: critical-thinking
 description: "Evaluate scientific claims and evidence quality. Use for assessing experimental design validity, identifying biases and confounders, applying evidence grading frameworks (GRADE, Cochrane ROB), or teaching critical analysis."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: scientific-thinking
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - scientific-thinking
-  - research
-difficulty: intermediate
+  category: scientific-thinking
+  oversight: very-high
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [scientific-thinking, research]
+  difficulty: intermediate
 -->
 
 # Scientific Critical Thinking
 
-> Critical thinking in science is the systematic evaluation of evidence quality, methodological rigor, and logical validity. It's not about being contrarian—it's about being appropriately skeptical, recognizing the difference between strong and weak evidence, and understanding what conclusions are actually supported by the data. This skill provides frameworks for evaluating research claims, identifying biases, and applying evidence grading systems used in evidence-based medicine and meta-research.
+## Hard rules
+
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
 
 ## When to use
 
@@ -385,3 +384,12 @@ All major evidence grading frameworks referenced (GRADE, Cochrane RoB 2, ROBINS-
 ## Changelog
 
 - 1.0.0 (2026-06-10): Initial adaptation by Pradyumna Jayaram, integrating GRADE methodology, Cochrane Risk of Bias tools, Bradford Hill criteria, and established frameworks for bias detection and evidence evaluation in scientific research.
+
+## Cross-references
+
+Other skills in this category:
+
+- brainstorming
+- failure-handling
+- hypothesis-generation
+- perspective-tour

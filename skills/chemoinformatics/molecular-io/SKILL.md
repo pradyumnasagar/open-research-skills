@@ -4,18 +4,13 @@ name: molecular-io
 description: "Reads, writes, and converts molecular file formats (SMILES, InChI, SDF V2000/V3000, MOL2, PDB, MMTF) using RDKit and Open Babel with rigorous handling of aromaticity perception, stereochemistry, implicit/explicit hydrogens, kekulization, and salt/fragment separation. Use when loading chemical libraries, debugging parse failures, or preparing molecules for downstream standardization, descriptor calculation, or docking."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: chemoinformatics
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - chemoinformatics
-  - research
-difficulty: intermediate
+  category: chemoinformatics
+  oversight: low
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [chemoinformatics, research]
+  difficulty: intermediate
 -->
 
 ## Version Compatibility
@@ -30,9 +25,24 @@ If code throws ImportError, AttributeError, or TypeError, introspect the install
 
 # Molecular I/O
 
-Parse, write, and convert molecular file formats. Most downstream errors trace back to silent I/O issues: incorrect aromaticity perception, lost stereochemistry, mishandled charges, dropped stereo bonds, or non-canonical tautomers. This skill enumerates each format's failure modes and prescribes the correct toolchain for each scenario.
+## Hard rules
 
-For full standardization (canonicalization, salt stripping, tautomer enumeration) see `chemoinformatics/molecular-standardization`. For generating 3D conformers from parsed 2D molecules, see `chemoinformatics/conformer-generation`.
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
+
+## When to use
+
+Load this skill when the user asks a question that matches its declared
+trigger conditions (see the frontmatter `description` for the most common
+ones). Do not load it for questions outside its scope — defer to the
+appropriate ORS skill instead.
+
+## When NOT to use
+
+Do not load this skill if the question is in a sibling skill's domain
+(see `## Cross-references`), if the user explicitly asks for a different
+tool, or if the task is outside the skill's declared category.
 
 ## Format Taxonomy
 
@@ -286,3 +296,35 @@ def draw_grid(mols, fname, mols_per_row=5, sub_img_size=(250, 200)):
 - chemoinformatics/conformer-generation - Generate 3D coordinates from 2D inputs
 - chemoinformatics/virtual-screening - Prepare ligands for docking
 - chemoinformatics/similarity-searching - Use parsed structures for similarity
+
+## Cross-references
+
+Other skills in this category:
+
+- admet-prediction
+- conformer-generation
+- covalent-design
+- docking-rescoring
+- free-energy-calculations
+- generative-design
+- molecular-descriptors
+- molecular-standardization
+- pharmacophore-modeling
+- pose-validation
+- protac-degraders
+- qsar-modeling
+- retrosynthesis
+- scaffold-analysis
+- shape-similarity
+- similarity-searching
+- substructure-search
+- virtual-screening
+
+## Changelog
+
+- **1.1.0** (migration) — Bulk-migrated to v0.4.0 schema: canonical
+  metadata block, base Hard rules, Cross-references. Body content
+  unchanged; author should review and fill in any domain-specific
+  extensions to the Hard rules.
+- **1.0.0** — Initial release.
+

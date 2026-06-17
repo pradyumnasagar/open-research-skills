@@ -4,21 +4,22 @@ name: opentrons-ot2-protocols
 description: "Opentrons Python Protocol API v2 for OT-2 and Flex robots. Liquid handling protocols for PCR, ELISA, plate stamping, magnetic bead cleanup. Hardware modules: thermocycler, heater-shaker, magnetic, temperature. Simulate with opentrons_simulate before robot runs. For vendor-agnostic protocols use pylabrobot-vendor-agnostic."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: lab-automation
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - lab-automation
-  - research
-difficulty: intermediate
+  category: lab-automation
+  oversight: low
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [lab-automation, research]
+  difficulty: intermediate
 -->
 
 # Opentrons OT-2 / Flex Protocol API
+
+## Hard rules
+
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
 
 ## Overview
 
@@ -561,3 +562,22 @@ def run(protocol: protocol_api.ProtocolContext):
 - `robot-deck-layout-calibration` — design and verify deck layouts across robot types
 - `eln-elabftw`, `eln-chemotion`, `eln-openbis` — record the run in an ELN
 - `western-blot-quantification` — sample-prep protocols that can be partially automated here
+
+## Cross-references
+
+Other skills in this category:
+
+- eln-chemotion
+- eln-elabftw
+- eln-openbis
+- protocolsio-protocol-repository
+- pylabrobot-vendor-agnostic
+
+## Changelog
+
+- **1.1.0** (migration) — Bulk-migrated to v0.4.0 schema: canonical
+  metadata block, base Hard rules, Cross-references. Body content
+  unchanged; author should review and fill in any domain-specific
+  extensions to the Hard rules.
+- **1.0.0** — Initial release.
+

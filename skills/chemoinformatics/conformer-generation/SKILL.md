@@ -4,18 +4,13 @@ name: conformer-generation
 description: "Generates 3D conformer ensembles using RDKit ETKDGv3 with knowledge-enhanced distance geometry, MMFF94/UFF force-field optimization, CREST + GFN2-xTB semi-empirical refinement, and macrocycle-aware torsion preferences. Provides explicit decision rules for single vs ensemble conformer use, RMSD pruning, energy windows, conformer count, and force-field choice. Use when preparing 3D ligands for docking, generating descriptor input for 3D QSAR, or sampling macrocycle/peptide conformational ensembles."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: chemoinformatics
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - chemoinformatics
-  - research
-difficulty: intermediate
+  category: chemoinformatics
+  oversight: low
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [chemoinformatics, research]
+  difficulty: intermediate
 -->
 
 ## Version Compatibility
@@ -30,9 +25,24 @@ If code throws ImportError, AttributeError, or TypeError, introspect the install
 
 # Conformer Generation
 
-Generate 3D conformer ensembles for molecules from 2D structures. The choice of method depends on molecule size, flexibility, and downstream use: ETKDG / ETKDGv3 (Riniker & Landrum 2015) is the modern default for drug-like molecules, MMFF94/UFF for fast energy minimization, CREST + GFN2-xTB for high-accuracy semi-empirical sampling of macrocycles and peptides. A single conformer is rarely sufficient: descriptor variance across the ensemble can exceed the descriptor signal, and docking pose accuracy degrades if the starting conformer is non-bioactive.
+## Hard rules
 
-For docking pose validation, see `chemoinformatics/pose-validation`. For free-energy methods (which require ensemble sampling), see `chemoinformatics/free-energy-calculations`.
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
+
+## When to use
+
+Load this skill when the user asks a question that matches its declared
+trigger conditions (see the frontmatter `description` for the most common
+ones). Do not load it for questions outside its scope — defer to the
+appropriate ORS skill instead.
+
+## When NOT to use
+
+Do not load this skill if the question is in a sibling skill's domain
+(see `## Cross-references`), if the user explicitly asks for a different
+tool, or if the task is outside the skill's declared category.
 
 ## Conformer Method Taxonomy
 
@@ -374,3 +384,35 @@ For ETKDGv3 ensembles, run CREST on a subset for benchmarking; if RMSD < 1A acro
 - chemoinformatics/virtual-screening - Generate 3D ligands for docking
 - chemoinformatics/free-energy-calculations - Sample conformers for MD setup
 - chemoinformatics/pharmacophore-modeling - 3D pharmacophore from ensembles
+
+## Cross-references
+
+Other skills in this category:
+
+- admet-prediction
+- covalent-design
+- docking-rescoring
+- free-energy-calculations
+- generative-design
+- molecular-descriptors
+- molecular-io
+- molecular-standardization
+- pharmacophore-modeling
+- pose-validation
+- protac-degraders
+- qsar-modeling
+- retrosynthesis
+- scaffold-analysis
+- shape-similarity
+- similarity-searching
+- substructure-search
+- virtual-screening
+
+## Changelog
+
+- **1.1.0** (migration) — Bulk-migrated to v0.4.0 schema: canonical
+  metadata block, base Hard rules, Cross-references. Body content
+  unchanged; author should review and fill in any domain-specific
+  extensions to the Hard rules.
+- **1.0.0** — Initial release.
+

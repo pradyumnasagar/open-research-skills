@@ -4,23 +4,22 @@ name: ai-disclosure-statement
 description: "Use when drafting or auditing an AI/LLM disclosure statement for a manuscript, preprint, grant, or venue — what to include, where to put it, and how to meet major journal and conference policies."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: humanizer-skills
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - humanizer-skills
-  - research
-difficulty: intermediate
+  category: humanizer-skills
+  oversight: very-high
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [humanizer-skills, research]
+  difficulty: intermediate
 -->
 
 # AI Disclosure Statement
 
-> A disclosure statement is a small paragraph that does outsized work: it is the record by which editors, reviewers, funders, and future readers judge whether you used AI responsibly. Get it wrong in either direction — under-disclosing, or padding it with performative detail — and you create risk that has nothing to do with the science. This skill is a drafting and audit guide for that paragraph, covering what to include, where to put it, and how to align with major journal and venue policies as of 2024-2026.
+## Hard rules
+
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
 
 ## When to use
 
@@ -232,3 +231,11 @@ A disclosure statement is well-formed if:
 ## Changelog
 
 - 1.0.0 (2026-06-10): Initial adaptation by Pradyumna Jayaram. Sources: ICMJE Recommendations; COPE position on AI authorship; current public AI policies of Nature, Science, Cell, PNAS, PLOS, eLife, ICML, NeurIPS, AAAI, ACL, JAMA, Lancet, BMJ, NEJM (verified structurally; specific text varies by venue and updates frequently). Added: venue placement decision tree, common under- and over-disclosure failure modes, Methods vs. Acknowledgments template variants.
+
+## Cross-references
+
+Other skills in this category:
+
+- ai-detection-awareness
+- scientific-voice-style
+- text-humanizing-editorial

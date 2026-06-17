@@ -4,28 +4,22 @@ name: hisat2-alignment
 description: "Splice-aware RNA-seq alignment with HISAT2 — fast, memory-efficient, and the default in many bulk RNA-seq pipelines alongside STAR."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: bioinformatics-sequence
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - bioinformatics-sequence
-  - research
-difficulty: intermediate
+  category: bioinformatics-sequence
+  oversight: low
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [bioinformatics-sequence, research]
+  difficulty: intermediate
 -->
 
 # HISAT2 RNA-seq Alignment
 
-> HISAT2 (Hierarchical Indexing for Spliced Alignment of Transcripts 2) is
-> the fast, memory-efficient RNA-seq aligner that uses a hierarchical
-> FM-index. It's the right choice when STAR's RAM cost is too high or when
-> you want a balance of speed and accuracy. The 2026 reality: STAR is the
-> gold standard for novel-junction discovery; HISAT2 is the fast standard
-> for known-junction discovery and low-RAM environments.
+## Hard rules
+
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
 
 ## When to use
 
@@ -161,3 +155,30 @@ hisat2 -p 16 --dta -x genome_hs2 -U iso_seq.fq.gz --no-temp-splicesite |
 ## Changelog
 
 - 1.0.0 (2026-06-10): Initial adaptation by Pradyumna Jayaram from `bio-hisat2-alignment` (bioSkills-main/read-alignment/hisat2-alignment)."
+
+## Cross-references
+
+Other skills in this category:
+
+- batch-processing
+- bowtie2-alignment
+- bwa-alignment
+- bwa-mem2-alignment
+- codon-usage
+- compressed-sequence-files
+- fastq-quality-scores
+- filter-sequences
+- format-conversion
+- motif-search
+- paired-end-fastq
+- pysam-genomics
+- read-write-sequences
+- reverse-complement
+- sam-bam-basics
+- samtools-bam-processing
+- seq-objects
+- sequence-properties
+- sequence-slicing
+- sequence-statistics
+- star-alignment
+- transcription-translation

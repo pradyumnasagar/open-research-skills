@@ -4,23 +4,22 @@ name: slides-design
 description: "Design scientific conference and lecture slides. Covers the 6x6 rule, results-first structure, the 5-second test, build progression, citation format, dark-mode contrast, and accessibility."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: scientific-visualization
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - scientific-visualization
-  - research
-difficulty: intermediate
+  category: scientific-visualization
+  oversight: medium
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [scientific-visualization, research]
+  difficulty: intermediate
 -->
 
 # Scientific Slide Design
 
-> This skill turns a research story into a deck that an audience can read in real time. The goal is comprehension at speaking pace: every slide communicates one idea in the time it takes to say one sentence. It complements `ors-scientific-visualization-figure-design` (data plots for the slides) and `ors-scientific-visualization-schematics-diagrams` (workflow / study-design cartoons).
+## Hard rules
+
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
 
 ## When to use
 
@@ -370,3 +369,12 @@ External resources (do not fabricate exact paths):
 ## Changelog
 
 - 1.0.0 (2026-06-10): Initial adaptation by Pradyumna Jayaram from `scientific-slides` (K-Dense Inc.). Consolidated talk-demo scripts into a template, added Beamer / Marp / Quarto code patterns, added a results-first talk-time table, dark-mode contrast guidance, and an accessibility checklist.
+
+## Cross-references
+
+Other skills in this category:
+
+- color-and-accessibility
+- figure-design
+- poster-design
+- schematics-diagrams

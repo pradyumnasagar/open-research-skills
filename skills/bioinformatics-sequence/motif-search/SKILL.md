@@ -4,27 +4,21 @@ name: motif-search
 description: "Find patterns, motifs, and binding sites in DNA/RNA/protein sequences — using regex, IUPAC patterns, position weight matrices, and modern motif databases (JASPAR 2024, CIS-BP)."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: bioinformatics-sequence
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - bioinformatics-sequence
-  - research
-difficulty: intermediate
+  category: bioinformatics-sequence
+  oversight: low
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [bioinformatics-sequence, research]
+  difficulty: intermediate
 -->
 
 # Motif and Pattern Search
-"
-> Three kinds of "motif" hide in sequences: a literal pattern (TATA box),
-> an IUPAC consensus (RRRYYCC, the poly-A signal), or a statistical profile
-> (a JASPAR PWM for a TF). Each demands a different tool. This skill covers
-> regex / IUPAC exact search, position weight matrix scanning, and the
-> modern 2026 open databases.
+## Hard rules
+
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
 
 ## When to use
 
@@ -202,3 +196,30 @@ for enz in (EcoRI, BamHI, HindIII):
 ## Changelog
 
 - 1.0.0 (2026-06-10): Initial adaptation by Pradyumna Jayaram from `bio-motif-search` (bioSkills-main/sequence-manipulation/motif-search).
+
+## Cross-references
+
+Other skills in this category:
+
+- batch-processing
+- bowtie2-alignment
+- bwa-alignment
+- bwa-mem2-alignment
+- codon-usage
+- compressed-sequence-files
+- fastq-quality-scores
+- filter-sequences
+- format-conversion
+- hisat2-alignment
+- paired-end-fastq
+- pysam-genomics
+- read-write-sequences
+- reverse-complement
+- sam-bam-basics
+- samtools-bam-processing
+- seq-objects
+- sequence-properties
+- sequence-slicing
+- sequence-statistics
+- star-alignment
+- transcription-translation

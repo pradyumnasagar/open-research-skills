@@ -4,23 +4,22 @@ name: scientific-voice-style
 description: "Use when developing or auditing a distinctive scientific writing voice that survives AI-generation — voice as a signal of authorship, common AI tells to avoid, and craft habits that build a recognisable authorial register."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: humanizer-skills
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - humanizer-skills
-  - research
-difficulty: intermediate
+  category: humanizer-skills
+  oversight: very-high
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [humanizer-skills, research]
+  difficulty: intermediate
 -->
 
 # Scientific Voice & Style
 
-> Voice is what survives when everything else gets rewritten. In an era when LLMs can produce grammatically clean, structurally correct, and technically empty prose, the things that mark you as a thinker — your idioms, your hesitations, your particular way of seeing a result — become the only signal of authorship left. This skill is a craft guide for building that signal deliberately, and for recognising the patterns by which AI assistance erodes it.
+## Hard rules
+
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
 
 ## When to use
 
@@ -223,3 +222,11 @@ You know voice is failing when:
 ## Changelog
 
 - 1.0.0 (2026-06-10): Initial adaptation by Pradyumna Jayaram. Sources: Pinker 2014, Sword 2012, Gopen & Swan 1990. Added: AI-tell taxonomy, voice-build workflow with AI only as editor, sentence-variance diagnostic.
+
+## Cross-references
+
+Other skills in this category:
+
+- ai-detection-awareness
+- ai-disclosure-statement
+- text-humanizing-editorial

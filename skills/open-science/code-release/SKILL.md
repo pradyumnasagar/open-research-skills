@@ -5,23 +5,22 @@ name: code-release
 description: "Use when releasing research code: Zenodo-GitHub integration for a citable DOI, Citation File Format (CFF), containerization with Docker/Apptainer, conda lockfiles, and reproducibility badges for end-to-end reproducibility."
 license: MIT
 ---
-
 <!-- metadata:
-category: open-science
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - open-science
-  - research
-difficulty: intermediate
+  category: open-science
+  oversight: medium
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [open-science, research]
+  difficulty: intermediate
 -->
-
-
-
 
 # Code Release
 
-> Releasing research code well means making it citable, reproducible, and easy to use. This skill covers the canonical pipeline: a public Git repository, a tagged release, a DOI minted on Zenodo (or a JOSS publication), a `CITATION.cff` for human readers, a container image (Docker/Apptainer) and/or a conda lockfile for environment reproducibility, a Software Heritage archive for long-term preservation, and a documented test that a stranger can run. Each step addresses a different failure mode of "we will release the code when the paper is accepted," which usually means: never, badly, or in a way no one can run.
+## Hard rules
+
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
 
 ## When to use
 
@@ -366,3 +365,12 @@ diff -r results/ expected_results/  # should be empty (or small tolerance)
 ## Changelog
 
 - 1.0.0 (2026-06-10): Initial adaptation by Pradyumna Jayaram. Synthesised Zenodo GitHub integration; Citation File Format (CFF) Initiative; Open Container Initiative; Apptainer docs; conda-forge lockfile spec; Software Heritage; JOSS reviewer checklist. Code-release checklist, CITATION.cff template, Dockerfile, Apptainer def file, environment.yml, reproduce.sh, and end-to-end test protocol are original compositions.
+
+## Cross-references
+
+Other skills in this category:
+
+- fair-data
+- licensing
+- preprints
+- preregistration

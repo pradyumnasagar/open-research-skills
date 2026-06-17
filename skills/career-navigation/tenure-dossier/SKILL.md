@@ -4,23 +4,22 @@ name: tenure-dossier
 description: "Assemble a tenure case from research statement, teaching portfolio, external letters, internal documentation, mentoring record, service, and counter-narrative for low-citation fields. Use when preparing a tenure case packet for a US/EU tenure review."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: career-navigation
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - career-navigation
-  - research
-difficulty: intermediate
+  category: career-navigation
+  oversight: high
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [career-navigation, research]
+  difficulty: intermediate
 -->
 
 # Tenure Dossier Assembly
 
-> A workflow for assembling a tenure case at a US research university, with adaptations for European tenure-equivalent processes (Habilitation, Gruppenleitung, Senior Scientist). Covers the structure of the case (research statement, teaching portfolio, external letters, internal documentation), the selection and timing of external reviewers, the handling of arm's-length requirements, and the construction of a counter-narrative for low-citation or field-specific evaluation contexts. Produces a complete, audit-ready case file organized for both committee reading and administrative compliance.
+## Hard rules
+
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
 
 ## When to use
 
@@ -326,3 +325,13 @@ A complete tenure dossier satisfies:
 ## Changelog
 
 - 1.0.0 (2026-06-10): Initial adaptation by Pradyumna Jayaram. Compiled from public AAUP, AAC&U, COARA, DORA, and university faculty handbook guidance; cross-referenced to mentoring and grants skills.
+
+## Cross-references
+
+Other skills in this category:
+
+- academic-cv
+- faculty-interview
+- fellowship-application
+- industry-transition
+- negotiation

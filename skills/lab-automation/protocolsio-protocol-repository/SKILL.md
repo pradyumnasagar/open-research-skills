@@ -4,21 +4,22 @@ name: protocolsio-protocol-repository
 description: "Search and download published wet-lab protocols from protocols.io REST API. Find 90,000+ community protocols by keyword, DOI, or filter; extract steps, reagents, materials, timing, equipment. Free for public protocols. Use to build automation with opentrons-protocol-api or record runs in an ELN."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: lab-automation
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - lab-automation
-  - research
-difficulty: intermediate
+  category: lab-automation
+  oversight: low
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [lab-automation, research]
+  difficulty: intermediate
 -->
 
 # protocols.io Protocol Repository
+
+## Hard rules
+
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
 
 ## Overview
 
@@ -528,3 +529,22 @@ equipment = extract_equipment_from_category(22, 20)  # Molecular Biology
 - `eln-elabftw`, `eln-chemotion`, `eln-openbis` — store protocols and run details in an ELN
 - `pylabrobot-vendor-agnostic` — run protocols across Hamilton, Tecan, Opentrons robots
 - `western-blot-quantification` — follow published protocols for WB analysis
+
+## Cross-references
+
+Other skills in this category:
+
+- eln-chemotion
+- eln-elabftw
+- eln-openbis
+- opentrons-ot2-protocols
+- pylabrobot-vendor-agnostic
+
+## Changelog
+
+- **1.1.0** (migration) — Bulk-migrated to v0.4.0 schema: canonical
+  metadata block, base Hard rules, Cross-references. Body content
+  unchanged; author should review and fill in any domain-specific
+  extensions to the Hard rules.
+- **1.0.0** — Initial release.
+

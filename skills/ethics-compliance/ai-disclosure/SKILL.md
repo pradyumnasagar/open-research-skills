@@ -4,23 +4,22 @@ name: ai-disclosure
 description: "Use when writing, reviewing, or editing the AI/LLM usage disclosure in a research manuscript, grant, or submission — covers venue-specific policies (Nature, Science, Cell, NEJM, Lancet, ICML, NeurIPS, AAAI, ACL), COPE position statement, ICMJE recommendations, prompt disclosure, and what is permitted vs banned per venue (2025-2026). Name the venue explicitly; when in doubt, name 'varies by venue' rather than invent."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: ethics-compliance
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - ethics-compliance
-  - research
-difficulty: intermediate
+  category: ethics-compliance
+  oversight: medium
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [ethics-compliance, research]
+  difficulty: intermediate
 -->
 
 # AI / LLM Usage Disclosure in Research
 
-> Since 2023, every major scientific publisher and many major conferences have issued explicit policies on the use of generative AI (ChatGPT, Claude, Gemini, Llama, Mistral, and similar) in manuscripts and submissions. The policies converge on three rules — AI cannot be an author, AI use must be disclosed, and the human author is fully accountable for the content — but the implementation varies by venue, the disclosure locations vary (Methods, Acknowledgments, dedicated declaration), and the rules for AI-generated or AI-modified figures and code are stricter than the rules for AI-assisted copyediting. This skill encodes the public policies of the major publishers and conferences, the COPE position statement, the ICMJE recommendations, and the disclosure patterns that satisfy reviewers and editors across venues.
+## Hard rules
+
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
 
 ## When to use
 
@@ -221,3 +220,11 @@ This is not author-facing, but increasingly appears in editorial-style documents
 ## Changelog
 
 - 1.0.0 (2026-06-10): Initial adaptation by Pradyumna Jayaram. Synthesized from COPE Position Statement (Feb 2023), ICMJE Recommendations (AI language added 2023), Nature Editorial, Science Editorial (2023, updated), Cell Press Editorial Policies, and current ICML / NeurIPS / AAAI / ACL guidelines. Venue-by-venue matrix is original synthesis as of 2026-06.
+
+## Cross-references
+
+Other skills in this category:
+
+- data-privacy
+- image-integrity
+- irb-protocol

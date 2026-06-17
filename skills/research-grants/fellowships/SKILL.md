@@ -4,23 +4,22 @@ name: fellowships
 description: "Use when applying to pre-doctoral fellowships: NSF GRFP, Hertz, NDSEG, Ford, Rhodes, Marshall, Churchill, AAAS. Distinguishes personal statement vs research statement, builds a graduate-school list, coordinates referee timing, and aligns submission cycles."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: research-grants
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - research-grants
-  - research
-difficulty: intermediate
+  category: research-grants
+  oversight: high
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [research-grants, research]
+  difficulty: intermediate
 -->
 
 # Pre-doctoral Fellowships
 
-> A working framework for navigating the pre-doctoral fellowship landscape. The fellowships covered share three structural features: (1) a personal statement (narrative, character, motivation) and (2) a research statement (technical plan, intellectual merit, broader impact), (3) referee letters from people who can speak to the candidate's research and character. The skill helps you differentiate them, build a grad-school list, coordinate referees, and time the submissions.
+## Hard rules
+
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
 
 ## When to use
 
@@ -220,3 +219,16 @@ Thank you,
 ## Changelog
 
 - 1.0.0 (2026-06-10): Initial adaptation by Pradyumna Jayaram.
+
+## Cross-references
+
+Other skills in this category:
+
+- bio-sketch
+- darpa-baa
+- erc
+- foundation-grants
+- nih-k-series
+- nih-r01
+- nsf-standard
+- specific-aims

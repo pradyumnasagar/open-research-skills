@@ -4,23 +4,22 @@ name: darpa-baa
 description: "Use when responding to a DARPA Broad Agency Announcement: white paper vs full proposal, Heilmeier Catechism framing, program manager engagement, BAA-specific formatting, cost volume construction."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: research-grants
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - research-grants
-  - research
-difficulty: intermediate
+  category: research-grants
+  oversight: high
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [research-grants, research]
+  difficulty: intermediate
 -->
 
 # DARPA Broad Agency Announcement (BAA)
 
-> A working framework for responding to a DARPA Broad Agency Announcement. DARPA BAAs are different from NIH/NSF announcements: they are open-ended (most BAA topics stay open for years), they are reviewed by a small set of program managers, and the standard workflow is white paper → invitation to a full proposal → cost volume → negotiation → award. A BAA proposal is a procurement, not a grant in the NIH sense.
+## Hard rules
+
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
 
 ## When to use
 
@@ -253,3 +252,16 @@ Thank you,
 ## Changelog
 
 - 1.0.0 (2026-06-10): Initial adaptation by Pradyumna Jayaram.
+
+## Cross-references
+
+Other skills in this category:
+
+- bio-sketch
+- erc
+- fellowships
+- foundation-grants
+- nih-k-series
+- nih-r01
+- nsf-standard
+- specific-aims

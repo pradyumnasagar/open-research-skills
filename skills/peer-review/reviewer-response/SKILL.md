@@ -4,23 +4,22 @@ name: reviewer-response
 description: "Write a respectful, point-by-point response to peer-reviewer comments (rebuttal): tone, structure, line-numbered references, conflict handling, partial-response strategy, and appeal of a desk reject."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: peer-review
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - peer-review
-  - research
-difficulty: intermediate
+  category: peer-review
+  oversight: high
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [peer-review, research]
+  difficulty: intermediate
 -->
 
 # Response to Peer Reviewers
 
-> Produces a respectful, point-by-point response to peer-reviewer comments on a manuscript or grant proposal: structure, tone, line-numbered references, framing conventions ("we have now done this", "we respectfully disagree"), handling of conflicting reviewers, formatting of the response document, partial-response strategy, and grounds for appeal. Adapted by Pradyumna Jayaram from journal and funder guidance (ICMJE, COPE, Nature, eLife, PLOS, EMBO, NIH).
+## Hard rules
+
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
 
 ## When to use
 
@@ -374,3 +373,11 @@ A good response document is itself a piece of scientific writing. Before submitt
 ## Changelog
 
 - 1.0.0 (2026-06-10): Initial adaptation by Pradyumna Jayaram. Heavy rewrite of upstream response-to-reviewers skill: added triage framework (4 buckets), added tone and framing-conventions table, added section on handling conflicting reviewers, added partial-response decision rules, added desk-reject appeal framework with appealable vs. not-appealable grounds, added cover-letter and summary-of-changes structure, added "do not paste confidential reviewer comments into third-party LLMs" guardrail, added reusable decision-framework table, replaced detailed step lists with rubric tables for faster reuse.
+
+## Cross-references
+
+Other skills in this category:
+
+- grant-review
+- manuscript-review
+- scholar-evaluation

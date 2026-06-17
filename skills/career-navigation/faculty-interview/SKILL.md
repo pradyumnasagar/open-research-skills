@@ -4,23 +4,22 @@ name: faculty-interview
 description: "Prepare for an academic job interview: job talk, chalk talk, 1:1 meetings with PIs and deans, dean's talk, dinner etiquette, thank-you emails, and start-up package negotiation (funds, lab space, equipment, moving, partner accommodation). Use when invited for an on-site or virtual on-site for a faculty position."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: career-navigation
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - career-navigation
-  - research
-difficulty: intermediate
+  category: career-navigation
+  oversight: high
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [career-navigation, research]
+  difficulty: intermediate
 -->
 
 # Academic Faculty Job Interview
 
-> A complete preparation guide for the academic faculty job interview, from the application packet through the on-site, the job talk, the chalk talk, the 1:1 meetings, the dean's talk, dinner etiquette, the thank-you emails, and the start-up package negotiation. Covers R1 (research-intensive) and teaching-focused institutions. Produces a prep plan, talk drafts, a Q&A bank, a start-up budget, and a negotiation script.
+## Hard rules
+
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
 
 ## When to use
 
@@ -376,3 +375,13 @@ A complete faculty-interview preparation satisfies:
 ## Changelog
 
 - 1.0.0 (2026-06-10): Initial adaptation by Pradyumna Jayaram. Compiled from public AAUP, university faculty handbooks, Nature Careers, Science Careers, and Hertz Foundation guidance; cross-referenced to negotiation and tenure skills.
+
+## Cross-references
+
+Other skills in this category:
+
+- academic-cv
+- fellowship-application
+- industry-transition
+- negotiation
+- tenure-dossier

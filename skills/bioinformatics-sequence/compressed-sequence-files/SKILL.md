@@ -4,27 +4,22 @@ name: compressed-sequence-files
 description: "Read and write gzip, bzip2, and BGZF-compressed FASTA/FASTQ using Python stdlib and Biopython — including indexable BGZF."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: bioinformatics-sequence
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - bioinformatics-sequence
-  - research
-difficulty: intermediate
+  category: bioinformatics-sequence
+  oversight: low
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [bioinformatics-sequence, research]
+  difficulty: intermediate
 -->
 
 # Compressed Sequence Files (gzip / bzip2 / BGZF)
 
-> Every modern sequencing deliverable is compressed, but only **BGZF** is
-> indexable. If you ever need to seek into a `.fasta.gz` from Python — for
-> `SeqIO.index()`, region queries, or `tabix`-style lookups — you must convert
-> it to BGZF first. This skill covers the three formats you'll actually meet,
-> the `'rt'/'wt'` text-mode trap, and when to reach for `htslib bgzip` instead.
+## Hard rules
+
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
 
 ## When to use
 
@@ -199,3 +194,30 @@ print(f"{n} sequences")
 ## Changelog
 
 - 1.0.0 (2026-06-10): Initial adaptation by Pradyumna Jayaram from `bio-compressed-files` (bioSkills-main/sequence-io/compressed-files).
+
+## Cross-references
+
+Other skills in this category:
+
+- batch-processing
+- bowtie2-alignment
+- bwa-alignment
+- bwa-mem2-alignment
+- codon-usage
+- fastq-quality-scores
+- filter-sequences
+- format-conversion
+- hisat2-alignment
+- motif-search
+- paired-end-fastq
+- pysam-genomics
+- read-write-sequences
+- reverse-complement
+- sam-bam-basics
+- samtools-bam-processing
+- seq-objects
+- sequence-properties
+- sequence-slicing
+- sequence-statistics
+- star-alignment
+- transcription-translation

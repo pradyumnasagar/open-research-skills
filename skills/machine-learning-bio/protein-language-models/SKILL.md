@@ -4,23 +4,21 @@ name: protein-language-models
 description: "Use ESM-2, ESMFold, ProtTrans, AlphaFold 2/3, Boltz-1, RoseTTAFold and OmegaFold for protein embeddings, zero-shot mutational-effect prediction, and 3D structure prediction. Use when scoring variants without a structure, designing mutant libraries, or predicting conformations."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: machine-learning-bio
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - machine-learning-bio
-  - research
-difficulty: intermediate
+  category: machine-learning-bio
+  oversight: low
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [machine-learning-bio, research]
+  difficulty: intermediate
 -->
 
 # Protein Language Models
-"
-> Protein language models (pLMs) treat amino-acid sequences as a "language" learned at scale from UniProt. They power three things you will do in practice: dense embeddings of arbitrary proteins, zero-shot predictions of variant effects (log-probability ratios), and (when coupled with a structure head) full 3D structure prediction. This skill picks the right model for each task, sets up the environment, and gives copy-pasteable code for the canonical workflows.
+## Hard rules
+
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
 
 ## When to use
 
@@ -336,3 +334,11 @@ def embed_in_chunks(seqs, model, tok, batch_size=8, max_len=1022):
 ## Changelog
 
 - 1.0.0 (2026-06-10): Initial adaptation by Pradyumna Jayaram from Meta ESM docs, AlphaFold papers, and Boltz-1 repo; added HuggingFace-native patterns, fine-tuning recipe, AFDB query patterns, and zero-shot variant-effect loop.
+
+## Cross-references
+
+Other skills in this category:
+
+- alphafold-structure-prediction
+- deep-learning-genomics
+- scrnaseq-deep-learning

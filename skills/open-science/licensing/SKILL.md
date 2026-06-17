@@ -4,23 +4,22 @@ name: licensing
 description: "Use when choosing a Creative Commons license (CC0, CC-BY, CC-BY-SA) for data, picking a software license (MIT, Apache-2.0, GPL), handling EU database sui generis rights, or planning dual-licensing for a research project."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: open-science
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - open-science
-  - research
-difficulty: intermediate
+  category: open-science
+  oversight: medium
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [open-science, research]
+  difficulty: intermediate
 -->
 
 # Licensing
 
-> A license is the legal frame around an open output: it says what others may do with your code, data, or text. Choosing the wrong license is the single most common cause of "I made it open but no one can use it" — a CC-BY-NC clause forbids commercial use and disqualifies most industrial users; a GPL copyleft clause surprises users who expected permissiveness; a missing license is "all rights reserved" by default, even if the file is on GitHub. This skill gives a decision tree for data, code, and databases, and explains the "what does open mean in different contexts" question that confuses researchers and policymakers alike.
+## Hard rules
+
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
 
 ## When to use
 
@@ -301,3 +300,12 @@ grep -E "^# SPDX-License-Identifier:" *.py
 ## Changelog
 
 - 1.0.0 (2026-06-10): Initial adaptation by Pradyumna Jayaram. Synthesised Creative Commons license deeds; Open Source Initiative license list; SPDX license list; GNU, Apache, MIT, MPL, BSD license texts; EU Directive 96/9/EC on database rights; Wellcome Trust open access policy; Plan S rights retention strategy. "What does open mean" matrix, code/data/database decision trees, dual-licensing flowchart, and license compatibility table are original compositions.
+
+## Cross-references
+
+Other skills in this category:
+
+- code-release
+- fair-data
+- preprints
+- preregistration

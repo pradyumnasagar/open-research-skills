@@ -4,23 +4,22 @@ name: cover-letter
 description: "Crafts a cover letter to a biomedical journal editor: addressing the editor, novelty statement, suggested and recommended-against reviewers, conflicts of interest, what not to say, and how to respond to a desk-rejection for 'out of scope'."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: scientific-writing
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - scientific-writing
-  - research
-difficulty: intermediate
+  category: scientific-writing
+  oversight: very-high
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [scientific-writing, research]
+  difficulty: intermediate
 -->
 
 # Cover Letter to Journal Editor
 
-> The cover letter is the first document the editor reads and the only document written directly to the editor. It is the place to make the case for novelty, fit, and integrity — and to disclose anything the manuscript text cannot disclose. A well-crafted cover letter can move a borderline-fit manuscript into the review queue; a poorly crafted one can move a clearly fit manuscript into the desk-reject pile. This skill encodes the structure, the disclosures, the reviewer suggestions, and the response to an "out of scope" decision.
+## Hard rules
+
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
 
 ## When to use
 
@@ -368,3 +367,12 @@ The cover letter content itself is independent of the submission system.
 ## Changelog
 
 - 1.0.0 (2026-06-10): Initial adaptation by Pradyumna Jayaram. Consolidated public cover-letter guidance (ICMJE, Nature/Science/Cell author pages, COPE). Worked examples for clinical-trial and basic-science submissions; suggested-reviewer and recommended-against-reviewer discipline; "out of scope" response template. No specific journal policies are quoted verbatim; all sources are publicly accessible.
+
+## Cross-references
+
+Other skills in this category:
+
+- ai-disclosure-writing
+- manuscript-structure
+- rebuttal-letter
+- response-to-reviewers

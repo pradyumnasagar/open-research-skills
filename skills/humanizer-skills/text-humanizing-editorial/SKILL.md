@@ -4,23 +4,22 @@ name: text-humanizing-editorial
 description: "Use when editing AI-assisted or AI-generated text so that it reads as written by a knowledgeable human — workflow from AI draft to authorial voice, what to keep, what to rewrite, and the line that humanizing must not cross."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: humanizer-skills
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - humanizer-skills
-  - research
-difficulty: intermediate
+  category: humanizer-skills
+  oversight: very-high
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [humanizer-skills, research]
+  difficulty: intermediate
 -->
 
 # Text Humanizing (Editorial)
 
-> Humanizing is the editorial work of turning text that reads as machine-generated into text that reads as written by someone who knows the field. It is a craft skill, not a synonym for "paraphrase until undetectable." Done well, it recovers the author's voice without changing the underlying claims; done badly, it smuggles fabrication, removes caveats, or substitutes vocabulary churn for understanding. This skill describes the workflow, the AI tells to rewrite, the rewrite playbook, and the integrity boundary that the work must not cross.
+## Hard rules
+
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
 
 ## When to use
 
@@ -225,3 +224,11 @@ You know the pass is failing when:
 ## Changelog
 
 - 1.0.0 (2026-06-10): Initial adaptation by Pradyumna Jayaram. Sources: Pinker 2014, Sword 2012, Gopen & Swan 1990. Added: AI-tell -> rewrite playbook, sentence-rhythm diagnostic, paraphrase-tool failure mode explained structurally, integrity-boundary audit step.
+
+## Cross-references
+
+Other skills in this category:
+
+- ai-detection-awareness
+- ai-disclosure-statement
+- scientific-voice-style

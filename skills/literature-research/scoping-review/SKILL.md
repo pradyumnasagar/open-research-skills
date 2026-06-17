@@ -4,23 +4,21 @@ name: scoping-review
 description: "Map evidence landscapes in emerging fields using Arksey-O'Malley and JBI scoping review frameworks. Includes charting, narrative synthesis, consultation exercise, and gap identification without formal quality assessment."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: literature-research
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - literature-research
-  - research
-difficulty: intermediate
+  category: literature-research
+  oversight: high
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [literature-research, research]
+  difficulty: intermediate
 -->
 
 # Scoping Review Methodology
-"
-> A scoping review asks "what exists?" not "what works?" When the field is new, the question is broad, or the goal is to map concepts and identify gaps, a systematic review's emphasis on quantitative synthesis and risk-of-bias is the wrong tool. This skill covers the Arksey-O'Malley and JBI frameworks for scoping reviews: how to chart the literature narratively, synthesize conceptually, and engage stakeholders in the consultation exercise.
+## Hard rules
+
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
 
 ## When to use
 
@@ -468,3 +466,12 @@ External sources:
 ## Changelog
 
 - 1.0.0 (2026-06-10): Initial adaptation by Pradyumna Jayaram. Written from scratch following Arksey-O'Malley framework, JBI methodology, and PRISMA-ScR reporting guidelines. Includes PCC framework, charting workflows, consultation exercise guidance, evidence gap mapping, and code examples for data extraction and visualization.
+
+## Cross-references
+
+Other skills in this category:
+
+- citation-management
+- literature-search
+- paper-lookup
+- systematic-review

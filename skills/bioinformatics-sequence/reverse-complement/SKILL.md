@@ -4,28 +4,22 @@ name: reverse-complement
 description: "Compute reverse complements, complements, and strand-aware operations on DNA/RNA — including IUPAC ambiguity support, batch processing, and the orientation trap."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: bioinformatics-sequence
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - bioinformatics-sequence
-  - research
-difficulty: intermediate
+  category: bioinformatics-sequence
+  oversight: low
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [bioinformatics-sequence, research]
+  difficulty: intermediate
 -->
 
 # Reverse Complement and Strand Operations
 
-> Reverse-complement is the single most error-prone operation in genomics
-> scripting. Get the orientation wrong and your gene is on the opposite
-> strand, your primer doesn't match, your probe is a hairpin. This skill
-> gives you the right call for every case: complement vs reverse-complement,
-> IUPAC ambiguity handling, batch processing, and the"
-> "which strand am I on?" sanity checks.
+## Hard rules
+
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
 
 ## When to use
 
@@ -197,3 +191,30 @@ def rc_region(record, start, end):
 ## Changelog
 
 - 1.0.0 (2026-06-10): Initial adaptation by Pradyumna Jayaram from `bio-reverse-complement` (bioSkills-main/sequence-manipulation/reverse-complement).
+
+## Cross-references
+
+Other skills in this category:
+
+- batch-processing
+- bowtie2-alignment
+- bwa-alignment
+- bwa-mem2-alignment
+- codon-usage
+- compressed-sequence-files
+- fastq-quality-scores
+- filter-sequences
+- format-conversion
+- hisat2-alignment
+- motif-search
+- paired-end-fastq
+- pysam-genomics
+- read-write-sequences
+- sam-bam-basics
+- samtools-bam-processing
+- seq-objects
+- sequence-properties
+- sequence-slicing
+- sequence-statistics
+- star-alignment
+- transcription-translation

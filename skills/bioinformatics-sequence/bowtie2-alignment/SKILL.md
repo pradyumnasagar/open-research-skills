@@ -4,27 +4,22 @@ name: bowtie2-alignment
 description: "Align short reads to a reference with Bowtie2 — the standard aligner for ChIP-seq, ATAC-seq, and other short-fragment applications where sensitivity for short indels matters less than speed."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: bioinformatics-sequence
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - bioinformatics-sequence
-  - research
-difficulty: intermediate
+  category: bioinformatics-sequence
+  oversight: low
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [bioinformatics-sequence, research]
+  difficulty: intermediate
 -->
 
 # Bowtie2 Alignment for ChIP-seq / ATAC-seq
 
-> Bowtie2 is the workhorse for ChIP-seq, ATAC-seq, and other short-fragment
-> applications. It's faster than BWA-MEM for reads ≤ 100 bp and handles
-> gapped alignment with reasonable sensitivity. The 2026 reality: Bowtie2
-> is still the default in most ChIP-seq and ATAC-seq pipelines, with
-> STAR and BWA-MEM2 as alternatives for specific use cases.
+## Hard rules
+
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
 
 ## When to use
 
@@ -163,3 +158,30 @@ samtools view -f 2 s.bam | awk '{print $9}' | sort -n | uniq -c > insert_sizes.t
 ## Changelog
 
 - 1.0.0 (2026-06-10): Initial adaptation by Pradyumna Jayaram from `bio-bowtie2-alignment` (bioSkills-main/read-alignment/bowtie2-alignment)."
+
+## Cross-references
+
+Other skills in this category:
+
+- batch-processing
+- bwa-alignment
+- bwa-mem2-alignment
+- codon-usage
+- compressed-sequence-files
+- fastq-quality-scores
+- filter-sequences
+- format-conversion
+- hisat2-alignment
+- motif-search
+- paired-end-fastq
+- pysam-genomics
+- read-write-sequences
+- reverse-complement
+- sam-bam-basics
+- samtools-bam-processing
+- seq-objects
+- sequence-properties
+- sequence-slicing
+- sequence-statistics
+- star-alignment
+- transcription-translation

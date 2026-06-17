@@ -4,27 +4,22 @@ name: sequence-slicing
 description: "Slice, subset, and extract regions from sequences and SeqRecords — including feature extraction, fuzzy ends, and the location algebra behind GenBank features."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: bioinformatics-sequence
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - bioinformatics-sequence
-  - research
-difficulty: intermediate
+  category: bioinformatics-sequence
+  oversight: low
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [bioinformatics-sequence, research]
+  difficulty: intermediate
 -->
 
 # Sequence Slicing and Subsetting
 
-> Slicing a string is intuitive. Slicing a biological sequence is not —
-> coordinates may be 0-based or 1-based, strand may be reversed, features"
-> may span exon junctions, and "fuzzy" ends (e.g., `>100..<200`) are real
-> GenBank syntax. This skill is the algebra: which slice gives you what,
-> and how to extract a region with the right strand in 2026.
+## Hard rules
+
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
 
 ## When to use
 
@@ -195,3 +190,30 @@ print(sub.id, sub.description)
 ## Changelog
 
 - 1.0.0 (2026-06-10): Initial adaptation by Pradyumna Jayaram from `bio-sequence-slicing` (bioSkills-main/sequence-manipulation/sequence-slicing).
+
+## Cross-references
+
+Other skills in this category:
+
+- batch-processing
+- bowtie2-alignment
+- bwa-alignment
+- bwa-mem2-alignment
+- codon-usage
+- compressed-sequence-files
+- fastq-quality-scores
+- filter-sequences
+- format-conversion
+- hisat2-alignment
+- motif-search
+- paired-end-fastq
+- pysam-genomics
+- read-write-sequences
+- reverse-complement
+- sam-bam-basics
+- samtools-bam-processing
+- seq-objects
+- sequence-properties
+- sequence-statistics
+- star-alignment
+- transcription-translation

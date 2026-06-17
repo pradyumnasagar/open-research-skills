@@ -4,23 +4,22 @@ name: perspective-tour
 description: "Multi-perspective exploration of a research question using 5-7 expert lenses. Use for grant specific aims, manuscript framing, project scoping, or when a question benefits from theoretical, methodological, clinical, and ethical viewpoints."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: scientific-thinking
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - scientific-thinking
-  - research
-difficulty: intermediate
+  category: scientific-thinking
+  oversight: very-high
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [scientific-thinking, research]
+  difficulty: intermediate
 -->
 
 # Perspective Tour
 
-> A Perspective Tour systematically examines a research question through 5-7 distinct expert lenses, revealing blind spots, strengthening framing, and surfacing critiques you would otherwise miss. By imagining how different experts—each with their own values, methods, and standards—would approach the same question, you produce research that is more rigorous, more relevant, and more defensible. Use it when you want to stress-test a proposal, sharpen a manuscript, or build a compelling grant application.
+## Hard rules
+
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
 
 ## When to use
 
@@ -290,3 +289,12 @@ How to know the perspective tour was valuable:
 ## Changelog
 
 - 1.0.0 (2026-06-10): Initial adaptation by Pradyumna Jayaram, integrating multi-perspective analysis traditions from philosophy of science (Kuhn, Laudan, Feyerabend, Lakatos) with practical grant-writing and project-scoping workflows.
+
+## Cross-references
+
+Other skills in this category:
+
+- brainstorming
+- critical-thinking
+- failure-handling
+- hypothesis-generation

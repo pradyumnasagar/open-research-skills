@@ -4,23 +4,22 @@ name: specific-aims
 description: "Use when drafting or revising the NIH Specific Aims page (1 page) for an R01, R21, R03, F-series, or K-series: concrete structure, opening-paragraph formula, Aim-construction pattern, decision rules, common failure modes."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: research-grants
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - research-grants
-  - research
-difficulty: intermediate
+  category: research-grants
+  oversight: high
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [research-grants, research]
+  difficulty: intermediate
 -->
 
 # NIH Specific Aims Page (1 page)
 
-> A working framework for drafting and revising the NIH Specific Aims page. The Specific Aims page is the single most-revised document in any NIH submission; it is the first thing the reviewer reads, the only thing many reviewers re-read, and the document that drives the Approach. A focused 1-page Aims is the difference between a focused 12-page Approach and a 12-page shopping list.
+## Hard rules
+
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
 
 ## When to use
 
@@ -226,3 +225,16 @@ Rule 3 (falsifiable):
 ## Changelog
 
 - 1.0.0 (2026-06-10): Initial adaptation by Pradyumna Jayaram.
+
+## Cross-references
+
+Other skills in this category:
+
+- bio-sketch
+- darpa-baa
+- erc
+- fellowships
+- foundation-grants
+- nih-k-series
+- nih-r01
+- nsf-standard

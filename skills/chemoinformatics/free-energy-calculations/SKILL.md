@@ -4,18 +4,13 @@ name: free-energy-calculations
 description: "Performs alchemical free-energy calculations including relative binding free energy (RBFE / FEP+) and absolute binding free energy (ABFE) via OpenFE, FEP+, GROMACS, AMBER pmemd, and OpenMM with explicit lambda window scheduling, soft-core potentials, REST2 enhanced sampling, MBAR/BAR analysis, and cycle closure validation. Compares ML alternatives (Boltz-2 affinity, DeepDock). Use when ranking analogs by binding affinity beyond docking accuracy, performing prospective lead optimization, or validating SAR predictions."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: chemoinformatics
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - chemoinformatics
-  - research
-difficulty: intermediate
+  category: chemoinformatics
+  oversight: low
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [chemoinformatics, research]
+  difficulty: intermediate
 -->
 
 ## Version Compatibility
@@ -30,9 +25,24 @@ If code throws ImportError, AttributeError, or TypeError, introspect the install
 
 # Free Energy Calculations
 
-Predict binding affinity differences (RBFE) or absolute binding affinities (ABFE) using alchemical free-energy methods. FEP+ (Schrödinger) is the commercial industry standard; OpenFE (Open Free Energy) is the open-source reference. Modern best practice achieves 1-2 kcal/mol RMSE vs experimental for well-set-up RBFE on rigid receptors. Boltz-2 affinity module (Wohlwend 2025) approaches FEP accuracy at 1000x speed on benchmarks, but FEP remains gold standard for production lead optimization.
+## Hard rules
 
-For docking input poses, see `chemoinformatics/virtual-screening`. For pose validation before FEP, see `chemoinformatics/pose-validation`. For ML alternatives, see `chemoinformatics/docking-rescoring`.
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
+
+## When to use
+
+Load this skill when the user asks a question that matches its declared
+trigger conditions (see the frontmatter `description` for the most common
+ones). Do not load it for questions outside its scope — defer to the
+appropriate ORS skill instead.
+
+## When NOT to use
+
+Do not load this skill if the question is in a sibling skill's domain
+(see `## Cross-references`), if the user explicitly asks for a different
+tool, or if the task is outside the skill's declared category.
 
 ## FEP Method Taxonomy
 
@@ -205,3 +215,35 @@ protocol.settings.n_replicas_solute = 8
 - chemoinformatics/pose-validation - Pose QC before FEP
 - chemoinformatics/docking-rescoring - ML alternatives
 - chemoinformatics/covalent-design - Covalent FEP setup"
+
+## Cross-references
+
+Other skills in this category:
+
+- admet-prediction
+- conformer-generation
+- covalent-design
+- docking-rescoring
+- generative-design
+- molecular-descriptors
+- molecular-io
+- molecular-standardization
+- pharmacophore-modeling
+- pose-validation
+- protac-degraders
+- qsar-modeling
+- retrosynthesis
+- scaffold-analysis
+- shape-similarity
+- similarity-searching
+- substructure-search
+- virtual-screening
+
+## Changelog
+
+- **1.1.0** (migration) — Bulk-migrated to v0.4.0 schema: canonical
+  metadata block, base Hard rules, Cross-references. Body content
+  unchanged; author should review and fill in any domain-specific
+  extensions to the Hard rules.
+- **1.0.0** — Initial release.
+

@@ -4,27 +4,22 @@ name: paired-end-fastq
 description: "Keep R1/R2 reads in lockstep — synchronize iteration, filter pairs together, interleave, and deinterleave — using Biopython and the 2026 best practices."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: bioinformatics-sequence
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - bioinformatics-sequence
-  - research
-difficulty: intermediate
+  category: bioinformatics-sequence
+  oversight: low
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [bioinformatics-sequence, research]
+  difficulty: intermediate
 -->
 
 # Paired-End FASTQ Handling
 
-> Paired-end reads are two halves of a story: R1 and R2 must travel together.
-> Sort by read ID, shuffle wrong, and your aligner will silently lose half
-> your fragments. This skill covers the canonical operations: synchronized"
-> iteration, paired filtering, interleaving, deinterleaving, and the "never
-> sort FASTQ" rule that everyone learns the hard way.
+## Hard rules
+
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
 
 ## When to use
 
@@ -188,3 +183,30 @@ For millions of reads, prefer `seqkit pair -1 R1.fq.gz -2 R2.fq.gz`.
 ## Changelog
 
 - 1.0.0 (2026-06-10): Initial adaptation by Pradyumna Jayaram from `bio-paired-end-fastq` (bioSkills-main/sequence-io/paired-end-fastq).
+
+## Cross-references
+
+Other skills in this category:
+
+- batch-processing
+- bowtie2-alignment
+- bwa-alignment
+- bwa-mem2-alignment
+- codon-usage
+- compressed-sequence-files
+- fastq-quality-scores
+- filter-sequences
+- format-conversion
+- hisat2-alignment
+- motif-search
+- pysam-genomics
+- read-write-sequences
+- reverse-complement
+- sam-bam-basics
+- samtools-bam-processing
+- seq-objects
+- sequence-properties
+- sequence-slicing
+- sequence-statistics
+- star-alignment
+- transcription-translation

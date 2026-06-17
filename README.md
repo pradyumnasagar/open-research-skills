@@ -9,9 +9,9 @@
 literature search → experimental design → analysis → writing → publication → grant writing → mentorship → ethics
 ```
 
-## Current status (v0.3.0)
+## Current status (v0.4.0)
 
-**18 categories, 118 skills** — see `INDEX.md` for the per-skill table.
+**18 categories, 118 skills + 5 meta skills** — see `INDEX.md` for the per-skill table.
 
 | Category | Skills | Description |
 |---|---|---|
@@ -34,6 +34,19 @@ literature search → experimental design → analysis → writing → publicati
 | `humanizer-skills` | 4 | Scientific voice, AI disclosure, text humanizing, AI detection awareness |
 | `data-engineering` | 1 | Snakemake pipeline management |
 
+### Meta skills (5)
+
+Cross-cutting skills that orchestrate or audit the domain skills. Loaded
+for authoring, pre-publish audits, and inter-skill handoffs.
+
+| Meta skill | Role |
+|---|---|
+| `meta/roadmap-author` | Author a new ORS skill from scratch (template + author guide + validator). |
+| `meta/integrity-audit` | 7-mode AI failure-mode checklist applied before any publish / release / merge. |
+| `meta/release-management` | Semver discipline, changelog, marketplace.json update, graduation criteria. |
+| `meta/cross-reference-mapper` | Generate and verify `## Cross-references` between skills. |
+| `meta/agent-handoff` | Material Passport schema for inter-skill handoffs. |
+
 ## Installation
 
 ### Option 1: Claude Code plugin (recommended)
@@ -43,6 +56,7 @@ literature search → experimental design → analysis → writing → publicati
 /plugin install ors-research@pradyumnasagar
 /plugin install ors-bioinformatics@pradyumnasagar
 /plugin install ors-career-ethics@pradyumnasagar
+/plugin install ors-meta@pradyumnasagar
 ```
 
 Then in a chat:
@@ -86,7 +100,12 @@ open-research-skills/
 ├── spec/                    # ORS specification
 │   ├── README.md
 │   ├── skill-format.md      # frontmatter spec
-│   └── category-taxonomy.md # 18 categories
+│   ├── category-taxonomy.md # 18 categories
+│   ├── material-passport.md # Material Passport spec (v1.0.0)
+│   └── material-passport.schema.json  # JSON Schema (Draft 2020-12)
+│
+├── docs/
+│   └── pipelines.md         # end-to-end reference pipelines
 │
 ├── template/
 │   └── SKILL.md             # template for new skills
@@ -95,22 +114,34 @@ open-research-skills/
 │   ├── README.md
 │   ├── claude-code-installation.md
 │   ├── api-integration.md
-│   └── multi-skill-workflow.md
+│   ├── multi-skill-workflow.md
+│   ├── showcase-rnaseq-mini.md
+│   ├── Makefile
+│   └── bwa-alignment.passport.json
 │
 ├── scripts/                 # repo automation
 │   ├── README.md
 │   ├── validate-skills.py
-│   └── build-index.py
+│   ├── validate-passport.py
+│   ├── build-index.py
+│   └── bulk-migrate-v0.4.0.py
 │
 ├── tests/                   # test suite
 │   └── ...
 │
-└── skills/                  # all 118 skills, organized in 18 categories
-    ├── AGENTS.md            # skill-authoring guide
-    ├── bioinformatics-sequence/  (23 skills)
-    ├── chemoinformatics/         (19 skills)
-    ├── research-grants/          (9 skills)
-    └── ... (15 more categories)
+├── skills/                  # all 118 skills, organized in 18 categories
+│   ├── AGENTS.md            # skill-authoring guide
+│   ├── bioinformatics-sequence/  (23 skills)
+│   ├── chemoinformatics/         (19 skills)
+│   ├── research-grants/          (9 skills)
+│   └── ... (15 more categories)
+│
+└── meta/                    # 5 cross-cutting meta skills
+    ├── roadmap-author/
+    ├── integrity-audit/
+    ├── release-management/
+    ├── cross-reference-mapper/
+    └── agent-handoff/
 ```
 
 ## How a skill is structured
@@ -122,27 +153,40 @@ description: <one or two sentences — what & when>
 license: MIT        # optional
 ---
 
-<!-- metadata: (optional) -->
+<!-- metadata:
+  category: <one of 18 leaf categories>
+  oversight: very-high | high | medium | low
+  version: <semver>
+  author: <name>
+  tags: [<kebab-case tags>]
+  difficulty: beginner | intermediate | advanced
+-->
 
 # Skill Title
 
 > Tagline
 
 ## When to use
+## When NOT to use
+## Hard rules
 ## Workflow
 ## Code patterns
-## Pitfalls
 ## Validation
-## References
+## Cross-references
+## Changelog
 ```
 
-The full spec is in [`spec/skill-format.md`](spec/skill-format.md). The minimal contract is `name` + `description`, matching the [Anthropic Agent Skills specification](https://agentskills.io/specification). ORS adds an optional `<!-- metadata: ... -->` block in the body for category, version, author, and tags.
+The full spec is in [`spec/skill-format.md`](spec/skill-format.md). The
+minimal contract is `name` + `description`, matching the
+[Anthropic Agent Skills specification](https://agentskills.io/specification).
+ORS v0.4.0 adds a `<!-- metadata: ... -->` block in the body and requires
+`## Hard rules`, `## Cross-references`, and `## Changelog` sections.
 
 ## How this was made
 
 ORS was authored by Pradyumna Jayaram in June 2026, adapting patterns from 5 upstream sources. **No prose was copied verbatim.** Every `SKILL.md` carries a `sources` field in its metadata block listing what was consulted. See `THIRD_PARTY_NOTICES.md` for the full attribution.
 
-## Upcoming (v0.4.0)
+## Upcoming (v0.5.0 and beyond)
 
 Additional categories to be built:
 
@@ -152,6 +196,8 @@ Additional categories to be built:
 - `ecological-genomics` (metagenomics, eDNA)
 - `phylogenetics` (IQ-TREE, BEAST, pangenomes)
 - `clinical-translation` (clinical trials, IND/NDA, regulatory pathways)
+
+For the current v0.4.0 release, see [What's new in v0.4.0](#whats-new-in-v040) below.
 
 ## License
 
@@ -172,6 +218,36 @@ See `AGENTS.md` and `skills/AGENTS.md`. The short version:
 **v0.1.0** (2026-06-10) — Initial release with 58 skills across 6 source-mapped categories.
 **v0.2.0** (2026-06-10) — Gap-build with 60 additional skills across 12 new categories.
 **v0.3.0** (2026-06-11) — Restructure to match Anthropic skills pattern. Skills moved into `skills/`, frontmatter simplified, `.claude-plugin/marketplace.json` added for plugin install, `spec/`, `template/`, `examples/`, `scripts/`, `tests/`, `.github/workflows/` added.
+**v0.4.0** (2026-06-17) — Spec hardening + meta skills. v0.4.0 schema with `## Hard rules`, `## When NOT to use`, `## Cross-references`, `## Changelog` sections; canonical `<!-- metadata: ... -->` block with `oversight`, `version`, `author`, `tags`, `difficulty`; 5 meta skills (`roadmap-author`, `integrity-audit`, `release-management`, `cross-reference-mapper`, `agent-handoff`); Material Passport schema (`spec/material-passport.md` + `spec/material-passport.schema.json`) with example and `scripts/validate-passport.py`; pipeline reference (`docs/pipelines.md`); runnable showcase (`examples/showcase-rnaseq-mini.md` + `examples/Makefile`); validator (`scripts/validate-skills.py`) enforces the new schema across all 118 + 5 skills.
+
+## What's new in v0.4.0
+
+- **Spec hardening** — every skill now has a `<!-- metadata: ... -->` block
+  recording its category, oversight level, version, author, tags, and
+  difficulty. The validator enforces required sections: `## Hard rules`,
+  `## Cross-references`, `## Changelog`. See `spec/skill-format.md`.
+- **Hard rules** — every skill states 3 base rules (no fabricated citations,
+  no claim without provenance, no silent failure) plus 0-5 domain-specific
+  rules. These are the **contract** an agent agrees to when loading the skill.
+- **5 meta skills** — cross-cutting orchestration patterns that don't fit
+  any single domain. See [Meta skills](#meta-skills-5) above.
+- **Material Passport** — a JSON envelope that travels with every artifact,
+  capturing inputs, outputs, decisions, errors, and provenance. Lets one
+  skill's output feed another without re-deriving context. See
+  `spec/material-passport.md` and `examples/bwa-alignment.passport.json`.
+- **Pipelines** — `docs/pipelines.md` documents 5 end-to-end reference
+  pipelines (RNA-seq, systematic review, compound screening, microscopy,
+  grant writing), each linking the skills and the passports between them.
+- **Runnable showcase** — `examples/showcase-rnaseq-mini.md` + `examples/Makefile`
+  walks a user through a 4-skill, 4-passport pipeline that produces a
+  volcano plot from synthetic FASTQ in < 5 minutes.
+- **Release discipline** — `meta/release-management/SKILL.md` codifies the
+  semver workflow: per-skill bumps, package bumps, changelog discipline,
+  breaking-change protocol, and the v1.0.0 graduation criteria.
+- **Integrity audit** — `meta/integrity-audit/SKILL.md` provides a 7-mode
+  checklist (fabricated citations, silent failures, scope creep, missing
+  provenance, unsupervised writes, version drift, hallucinated APIs) to
+  run before any publish / release / merge.
 
 ## Index
 

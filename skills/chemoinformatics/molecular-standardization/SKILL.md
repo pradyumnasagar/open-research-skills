@@ -4,18 +4,13 @@ name: molecular-standardization
 description: "Standardizes molecular structures using ChEMBL chembl_structure_pipeline and RDKit rdMolStandardize covering sanitization, salt/solvent stripping, neutralization, tautomer canonicalization, stereochemistry standardization, mixture handling, and isotope normalization. Explicitly compares ChEMBL pipeline, canSARchem, and PubChem standardization choices. Use when preparing libraries for QSAR training, joining datasets across sources, deduplicating compound collections, or building canonical compound registries."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: chemoinformatics
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - chemoinformatics
-  - research
-difficulty: intermediate
+  category: chemoinformatics
+  oversight: low
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [chemoinformatics, research]
+  difficulty: intermediate
 -->
 
 ## Version Compatibility
@@ -29,9 +24,24 @@ If code throws ImportError, AttributeError, or TypeError, introspect the install
 
 # Molecular Standardization
 
-Convert raw molecular structures into a single canonical form for ML training data, deduplication, registry, and cross-database joining. Standardization is the single most underrated upstream step: skipping it causes silent ML data leakage (training and test compounds with different tautomers count as separate), bogus QSAR predictions, and database join misses. The ChEMBL pipeline (Bento 2020) and canSARchem (Ravi 2022) are the two industry references; canSARchem extends ChEMBL with canonical-tautomer-before-parent extraction. RDKit's `rdMolStandardize` implements ChEMBL-equivalent logic in C++ (the older `MolVS` Python implementation was deprecated Q1 2024).
+## Hard rules
 
-For format-level I/O and aromaticity perception, see `chemoinformatics/molecular-io`. For descriptor calculation after standardization, see `chemoinformatics/molecular-descriptors`.
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
+
+## When to use
+
+Load this skill when the user asks a question that matches its declared
+trigger conditions (see the frontmatter `description` for the most common
+ones). Do not load it for questions outside its scope — defer to the
+appropriate ORS skill instead.
+
+## When NOT to use
+
+Do not load this skill if the question is in a sibling skill's domain
+(see `## Cross-references`), if the user explicitly asks for a different
+tool, or if the task is outside the skill's declared category.
 
 ## Standardization Pipeline Stages
 
@@ -329,3 +339,35 @@ Deduplication by InChIKey collapses tautomer-equivalent compounds. Replicate cou
 - chemoinformatics/similarity-searching - Standardize before comparing
 - chemoinformatics/substructure-search - Standardize before SMARTS matching
 - chemoinformatics/qsar-modeling - Mandatory upstream for QSAR
+
+## Cross-references
+
+Other skills in this category:
+
+- admet-prediction
+- conformer-generation
+- covalent-design
+- docking-rescoring
+- free-energy-calculations
+- generative-design
+- molecular-descriptors
+- molecular-io
+- pharmacophore-modeling
+- pose-validation
+- protac-degraders
+- qsar-modeling
+- retrosynthesis
+- scaffold-analysis
+- shape-similarity
+- similarity-searching
+- substructure-search
+- virtual-screening
+
+## Changelog
+
+- **1.1.0** (migration) — Bulk-migrated to v0.4.0 schema: canonical
+  metadata block, base Hard rules, Cross-references. Body content
+  unchanged; author should review and fill in any domain-specific
+  extensions to the Hard rules.
+- **1.0.0** — Initial release.
+

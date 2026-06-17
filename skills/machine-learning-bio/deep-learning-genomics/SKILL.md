@@ -4,23 +4,22 @@ name: deep-learning-genomics
 description: "Use CNNs (DeepBind, Basset), RNNs, and transformers (DNABERT, HyenaDNA, Evo, Nucleotide Transformer) for genomic sequence analysis. Use when predicting TF binding, chromatin profiles, splicing, or noncoding variant effects from raw sequence."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: machine-learning-bio
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - machine-learning-bio
-  - research
-difficulty: intermediate
+  category: machine-learning-bio
+  oversight: low
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [machine-learning-bio, research]
+  difficulty: intermediate
 -->
 
 # Deep Learning for Genomics
 
-> DNA is inherently a sequence: the same convolutional and self-attention architectures that revolutionized NLP now power genomic function prediction. This skill maps the canonical architectures (CNN to transformer) to the tasks you will face — binding site prediction, chromatin profiling, variant effect, and functional noncoding element discovery. It gives you a working pipeline and the decision framework to pick between tools when they overlap.
+## Hard rules
+
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
 
 ## When to use
 
@@ -299,3 +298,11 @@ def forward_with_checkpoint(seq):
 ## Changelog
 
 - 1.0.0 (2026-06-10): Initial adaptation by Pradyumna Jayaram from DeepBind paper, DNABERT repo, and HyenaDNA paper; added practical k-mer tokenization and variant-scoring pipeline, GPU baselines, and model-selection rubric.
+
+## Cross-references
+
+Other skills in this category:
+
+- alphafold-structure-prediction
+- protein-language-models
+- scrnaseq-deep-learning

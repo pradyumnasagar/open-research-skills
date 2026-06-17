@@ -4,23 +4,22 @@ name: rebuttal-letter
 description: "Structures the rebuttal letter to reviewers and editor after peer review: response architecture, point-by-point format, how to handle conflicting reviewers, polite disagreement, framing new experiments, and what to do when the reviewer is wrong."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: scientific-writing
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - scientific-writing
-  - research
-difficulty: intermediate
+  category: scientific-writing
+  oversight: very-high
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [scientific-writing, research]
+  difficulty: intermediate
 -->
 
 # Rebuttal Letter (Response to Reviewers)
 
-> A rebuttal letter is a negotiation document. The authors are negotiating with three readers: the editor (who decides whether the manuscript is publishable), the reviewers (who advise the editor), and the future readers of the published article (who will judge the strength of the claims). A successful rebuttal acknowledges the strongest version of each reviewer concern, addresses it with evidence or reframing, and protects the manuscript's central claims. A failed rebuttal either capitulates to every request (and dilutes the manuscript) or fights every comment (and antagonizes the editor). This skill encodes the architecture, the tone discipline, the handling of conflicting reviewers, and the framing of polite disagreement.
+## Hard rules
+
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
 
 ## When to use
 
@@ -261,3 +260,12 @@ The rebuttal document itself is plain text/Markdown; no commercial tool is requi
 ## Changelog
 
 - 1.0.0 (2026-06-10): Initial adaptation by Pradyumna Jayaram. Consolidated public guidance on rebuttal architecture (ICMJE, Nature/eLife/PLOS/BMJ peer-review policies, COPE), point-by-point format, polite-disagreement repertoire, and worked examples for the four common scenarios (fix, reframe, disagree-with-evidence, disagree-on-principle). No specific journal policies are quoted verbatim; all sources are publicly accessible.
+
+## Cross-references
+
+Other skills in this category:
+
+- ai-disclosure-writing
+- cover-letter
+- manuscript-structure
+- response-to-reviewers

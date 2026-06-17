@@ -4,28 +4,22 @@ name: format-conversion
 description: "Convert between sequence and annotation formats using Biopython SeqIO.convert and custom writers — including batch, lossy, and round-trip-safe patterns."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: bioinformatics-sequence
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - bioinformatics-sequence
-  - research
-difficulty: intermediate
+  category: bioinformatics-sequence
+  oversight: low
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [bioinformatics-sequence, research]
+  difficulty: intermediate
 -->
 
 # Sequence Format Conversion
 
-> Format conversion looks trivial — call `SeqIO.convert` and you're done — but
-> it isn't. FASTA is *sequence-only*; GenBank/EMBL/INSDC carry annotation
-> (features, qualifiers, references); FASTQ carries quality. Crossing those
-> boundaries is a one-way trip. This skill is the safe path: which conversions
-> are lossless, which lose annotation, and how to batch the safe ones at
-> scale.
+## Hard rules
+
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
 
 ## When to use
 
@@ -192,3 +186,30 @@ SeqIO.write(records, "modern.fastq", "fastq")
 ## Changelog
 
 - 1.0.0 (2026-06-10): Initial adaptation by Pradyumna Jayaram from `bio-format-conversion` (bioSkills-main/sequence-io/format-conversion).
+
+## Cross-references
+
+Other skills in this category:
+
+- batch-processing
+- bowtie2-alignment
+- bwa-alignment
+- bwa-mem2-alignment
+- codon-usage
+- compressed-sequence-files
+- fastq-quality-scores
+- filter-sequences
+- hisat2-alignment
+- motif-search
+- paired-end-fastq
+- pysam-genomics
+- read-write-sequences
+- reverse-complement
+- sam-bam-basics
+- samtools-bam-processing
+- seq-objects
+- sequence-properties
+- sequence-slicing
+- sequence-statistics
+- star-alignment
+- transcription-translation

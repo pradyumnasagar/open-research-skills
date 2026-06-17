@@ -1,0 +1,185 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://open-research-skills.org/schemas/material-passport/v1.json",
+  "title": "ORS Material Passport",
+  "description": "Structured envelope for inter-skill handoff. See spec/material-passport.md.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "passport_id",
+    "created_at",
+    "produced_by",
+    "inputs",
+    "outputs",
+    "decisions",
+    "errors",
+    "downstream_hints"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$",
+      "description": "Semver of the passport schema this passport conforms to."
+    },
+    "passport_id": {
+      "type": "string",
+      "format": "uuid",
+      "description": "Globally unique identifier for this passport."
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "UTC timestamp of creation (ISO-8601)."
+    },
+    "produced_by": {
+      "type": "object",
+      "required": ["skill", "skill_version"],
+      "additionalProperties": false,
+      "properties": {
+        "skill": {
+          "type": "string",
+          "description": "Slug of the producing skill."
+        },
+        "skill_version": {
+          "type": "string",
+          "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$",
+          "description": "Version of the producing skill."
+        },
+        "agent": {
+          "type": "string",
+          "description": "Model identifier that produced the work."
+        },
+        "session_id": {
+          "type": "string",
+          "description": "Session identifier for traceability."
+        }
+      }
+    },
+    "inputs": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/artifact" }
+    },
+    "outputs": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/artifact" }
+    },
+    "decisions": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/decision" }
+    },
+    "errors": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/error" }
+    },
+    "parameters": {
+      "type": "object",
+      "description": "Free-form parameters the skill was given.",
+      "additionalProperties": true
+    },
+    "consumed_passports": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uuid"
+      },
+      "description": "Passport IDs of upstream passports this skill consumed."
+    },
+    "downstream_hints": {
+      "type": "object",
+      "required": ["next_skills"],
+      "additionalProperties": false,
+      "properties": {
+        "next_skills": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Skill slugs that can consume this passport's outputs."
+        },
+        "expected_inputs": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Input types the next skill should expect."
+        }
+      }
+    }
+  },
+  "$defs": {
+    "artifact": {
+      "type": "object",
+      "required": ["type", "path", "sha256"],
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "string",
+          "description": "Artifact type (fastq, bam, vcf, ...)."
+        },
+        "path": {
+          "type": "string",
+          "description": "Filesystem path (relative to the passport's directory is preferred)."
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$",
+          "description": "SHA-256 of the artifact at the time of consumption/production."
+        },
+        "size_bytes": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Optional file size for large artifacts."
+        },
+        "source": {
+          "type": "string",
+          "description": "Human-readable provenance pointer (accession, URL, upstream passport_id)."
+        }
+      }
+    },
+    "decision": {
+      "type": "object",
+      "required": ["step", "choice", "rationale"],
+      "additionalProperties": false,
+      "properties": {
+        "step": {
+          "type": "string",
+          "description": "Label for the decision point."
+        },
+        "choice": {
+          "type": "string",
+          "description": "What the skill decided."
+        },
+        "alternatives_considered": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Other options the skill evaluated."
+        },
+        "rationale": {
+          "type": "string",
+          "minLength": 10,
+          "description": "Short, concrete justification. Vague rationales are a schema violation."
+        }
+      }
+    },
+    "error": {
+      "type": "object",
+      "required": ["step", "tool", "exit_code"],
+      "additionalProperties": false,
+      "properties": {
+        "step": {
+          "type": "string",
+          "description": "Which pipeline step produced the error."
+        },
+        "tool": {
+          "type": "string",
+          "description": "The tool that was invoked."
+        },
+        "exit_code": {
+          "type": "integer",
+          "description": "Process exit code. MUST be 0 for a successful passport."
+        },
+        "stderr_excerpt": {
+          "type": "string",
+          "description": "First ~500 chars of stderr (or full if shorter)."
+        }
+      }
+    }
+  }
+}

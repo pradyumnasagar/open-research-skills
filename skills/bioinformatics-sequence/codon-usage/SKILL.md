@@ -4,29 +4,22 @@ name: codon-usage
 description: "Compute codon usage frequencies, RSCU, CAI, and tRNA adaptation — for gene expression prediction, heterologous expression design, and comparative genomics."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: bioinformatics-sequence
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - bioinformatics-sequence
-  - research
-difficulty: intermediate
+  category: bioinformatics-sequence
+  oversight: low
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [bioinformatics-sequence, research]
+  difficulty: intermediate
 -->
 
 # Codon Usage and Bias
 
-> Amino acids are encoded by 1-6 synonymous codons, and organisms don't
-> use them with equal probability. E. coli hates CGA, loves CGT. S.
-> cerevisiae prefers CAA over CAG for glutamine. The bias is a real
-> factor in heterologous expression: a human gene full of rare-for-E.coli
-> codons produces poorly. This skill is the math (CAI, RSCU, ENC) and
-> the modern open alternatives (DNA Chisel, GeneDesign) for codon
-> optimization in 2026.
+## Hard rules
+
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
 
 ## When to use
 
@@ -245,3 +238,30 @@ Tools: `codon harmonization` Python package; CHARMING web server (academic).
 ## Changelog
 
 - 1.0.0 (2026-06-10): Initial adaptation by Pradyumna Jayaram from `bio-codon-usage` (bioSkills-main/sequence-manipulation/codon-usage).
+
+## Cross-references
+
+Other skills in this category:
+
+- batch-processing
+- bowtie2-alignment
+- bwa-alignment
+- bwa-mem2-alignment
+- compressed-sequence-files
+- fastq-quality-scores
+- filter-sequences
+- format-conversion
+- hisat2-alignment
+- motif-search
+- paired-end-fastq
+- pysam-genomics
+- read-write-sequences
+- reverse-complement
+- sam-bam-basics
+- samtools-bam-processing
+- seq-objects
+- sequence-properties
+- sequence-slicing
+- sequence-statistics
+- star-alignment
+- transcription-translation

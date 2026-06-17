@@ -4,23 +4,22 @@ name: nih-r01
 description: "Use when planning, drafting, or revising an NIH R01 (Research Project Grant) application: Specific Aims, Significance/Innovation/Approach, Authentication, Budget Justification, Resubmission (A1) strategy, and study-section navigation. Anchored to NIH Forms-H/I and the NIH SF424 Application Guide."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: research-grants
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - research-grants
-  - research
-difficulty: intermediate
+  category: research-grants
+  oversight: high
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [research-grants, research]
+  difficulty: intermediate
 -->
 
 # NIH R01 Research Project Grant
 
-> A working framework for assembling, self-reviewing, and submitting an NIH R01 application under the current Forms-H/I package. The default scope is a new (Type 1) R01 from a single PI; deviations (multiple PI, resubmission, renewal, R56, R21) are noted where the rules diverge.
+## Hard rules
+
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
 
 ## When to use
 
@@ -182,3 +181,16 @@ difficulty: intermediate
 ## Changelog
 
 - 1.0.0 (2026-06-10): Initial adaptation by Pradyumna Jayaram.
+
+## Cross-references
+
+Other skills in this category:
+
+- bio-sketch
+- darpa-baa
+- erc
+- fellowships
+- foundation-grants
+- nih-k-series
+- nsf-standard
+- specific-aims

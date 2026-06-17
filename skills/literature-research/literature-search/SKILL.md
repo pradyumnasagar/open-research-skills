@@ -4,23 +4,22 @@ name: literature-search
 description: "Design reproducible, multi-database literature searches for biomedical and scientific questions. Covers PubMed/Web of Science/Scopus/Embase/IEEE/ACM/AGRICOLA/ERIC/PsycINFO, open indexes (OpenAlex, Semantic Scholar, Google Scholar), MeSH, Boolean operators, snowballing, citation alerts, and PRISMA-S compliant reporting."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: literature-research
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - literature-research
-  - research
-difficulty: intermediate
+  category: literature-research
+  oversight: high
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [literature-research, research]
+  difficulty: intermediate
 -->
 
 # Literature Search Strategy
 
-> A literature search is a small research project. The question drives the query, the query drives the database, and the database drives the syntax. This skill captures the questions worth asking before any string is sent to a server, the database-specific syntax that actually returns what you want, and the reporting format that satisfies PRISMA-S so the search is reproducible by a third party months later.
+## Hard rules
+
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
 
 ## When to use
 
@@ -324,3 +323,12 @@ External sources:
 ## Changelog
 
 - 1.0.0 (2026-06-10): Initial adaptation by Pradyumna Jayaram. Rewritten from the Bioinfoskill `literature-review` SKILL with a focus on the search (vs. synthesis) step, an open-index-first database table, PRISMA-S reporting, and code patterns using E-utilities, OpenAlex, and Semantic Scholar.
+
+## Cross-references
+
+Other skills in this category:
+
+- citation-management
+- paper-lookup
+- scoping-review
+- systematic-review

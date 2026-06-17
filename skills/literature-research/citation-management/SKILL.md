@@ -4,23 +4,22 @@ name: citation-management
 description: "Set up and use reference managers (Zotero, Mendeley, EndNote) with citation styles, group libraries, PDF annotation, DOI/PMID workflows, and BibTeX export for reproducible research."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: literature-research
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - literature-research
-  - research
-difficulty: intermediate
+  category: literature-research
+  oversight: high
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [literature-research, research]
+  difficulty: intermediate
 -->
 
 # Citation and Reference Management
 
-> Reference management is the scaffolding of reproducible research. A well-organized library saves hundreds of hours across a career, enables collaboration through group libraries, and ensures that citations are accurate in any document. This skill covers the full reference manager stack: from initial setup through export formats, citation styles, and PDF organization for modern research workflows.
+## Hard rules
+
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
 
 ## When to use
 
@@ -451,3 +450,12 @@ External sources:
 ## Changelog
 
 - 1.0.0 (2026-06-10): Initial adaptation by Pradyumna Jayaram. Updated from Bioinfoskill `reference-management` with focus on Zotero as primary tool, modern PDF annotation workflows, Better BibTeX integration for version control, DOI/PMID management with programmatic examples, and CSL style customization.
+
+## Cross-references
+
+Other skills in this category:
+
+- literature-search
+- paper-lookup
+- scoping-review
+- systematic-review

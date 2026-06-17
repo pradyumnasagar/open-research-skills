@@ -4,23 +4,22 @@ name: figure-design
 description: "Design publication-quality scientific figures in Python (matplotlib, seaborn, plotly) and R (ggplot2). Covers DPI, vector vs raster, color-blind safe palettes, fonts, multi-panel layout, legends, scale bars, and axis labels with units."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: scientific-visualization
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - scientific-visualization
-  - research
-difficulty: intermediate
+  category: scientific-visualization
+  oversight: medium
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [scientific-visualization, research]
+  difficulty: intermediate
 -->
 
 # Publication-Quality Figure Design
 
-> This skill turns raw analytical output into figures ready for peer review. It is a self-contained workflow covering resolution, color, typography, layout, and export. Use it whenever the deliverable is a figure that will appear in a manuscript, supplement, thesis, or report — not when you are still exploring data.
+## Hard rules
+
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
 
 ## When to use
 
@@ -343,3 +342,12 @@ External resources (do not fabricate exact paths):
 ## Changelog
 
 - 1.0.0 (2026-06-10): Initial adaptation by Pradyumna Jayaram from `scientific-visualization` (K-Dense Inc.). Removed AI image-generation scripts, restructured around the publication rcParams + gridspec pattern, added ggplot2 R patterns and a journal-width reference table.
+
+## Cross-references
+
+Other skills in this category:
+
+- color-and-accessibility
+- poster-design
+- schematics-diagrams
+- slides-design

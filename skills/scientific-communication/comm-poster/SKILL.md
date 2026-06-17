@@ -3,18 +3,13 @@ name: comm-poster
 description: "Designs and presents a scientific conference poster (A0 / 48x36 inches) for a 2-minute scan by a passing expert, a 10-minute deep read by a collaborator, and a 3-minute Q&A with the presenting author. Uses the single-take-home-message structure, the decide-support-imply grid, and the Loui & Smith signposting adapted to the visual register. Use when preparing a first poster draft, converting a paper to a poster, or defending a poster against a \"what's new compared to your last poster\" question."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: scientific-communication
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - scientific-communication
-  - research
-difficulty: intermediate
+  category: scientific-communication
+  oversight: very-high
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [scientific-communication, research]
+  difficulty: intermediate
 -->
 
 ## Version Compatibility
@@ -28,9 +23,24 @@ If dimensions, time, or font-size constraints differ from the defaults below, re
 
 # Poster
 
-A conference poster is a document designed for three reading modes with different times: the 2-minute scan (the passerby who glances at 20 posters and stops at 3), the 10-minute deep read (the collaborator who reads every figure), and the 3-minute Q&A (the presenter who must defend every element of the deciding experiment). A poster that does not serve all three modes serves none of them.
+## Hard rules
 
-A poster is not a paper printed on a single page. It reorganizes a paper into the visual register, where the reader's eye follows a grid, not a narrative. The default failure mode is the single-column paper-flow; the alternative is the single-take-home-message grid.
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
+
+## When to use
+
+Load this skill when the user asks a question that matches its declared
+trigger conditions (see the frontmatter `description` for the most common
+ones). Do not load it for questions outside its scope — defer to the
+appropriate ORS skill instead.
+
+## When NOT to use
+
+Do not load this skill if the question is in a sibling skill's domain
+(see `## Cross-references`), if the user explicitly asks for a different
+tool, or if the task is outside the skill's declared category.
 
 ## The Three-Mode Design Test
 
@@ -251,3 +261,21 @@ This 8-panel grid (title + take-home) serves the scan at 60 seconds, the deep re
 - scientific-communication/elevator-pitch — distilled version for the hallway conversation.
 - scientific-communication/press-release — the take-home message recast for a general audience.
 - scientific-communication/podcast — long-form spoken version for the same research story.
+
+## Cross-references
+
+Other skills in this category:
+
+- comm-conference-talk
+- comm-elevator-pitch
+- comm-podcast
+- comm-press-release
+
+## Changelog
+
+- **1.1.0** (migration) — Bulk-migrated to v0.4.0 schema: canonical
+  metadata block, base Hard rules, Cross-references. Body content
+  unchanged; author should review and fill in any domain-specific
+  extensions to the Hard rules.
+- **1.0.0** — Initial release.
+

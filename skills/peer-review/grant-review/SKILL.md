@@ -4,23 +4,22 @@ name: grant-review
 description: "Review a research grant proposal (NIH/NSF/ERC/private foundation): section-by-section criteria, panel process, criterion scoring, overall impact, reviewer etiquette, and a defensible written critique."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: peer-review
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - peer-review
-  - research
-difficulty: intermediate
+  category: peer-review
+  oversight: high
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [peer-review, research]
+  difficulty: intermediate
 -->
 
 # Grant Proposal Review
 
-> Produces a section-by-section, criterion-anchored critique of a research grant proposal: structured summary, criterion-by-criterion evaluation, panel-process awareness, major/minor issues, budget and feasibility concerns, and an overall-impact recommendation. Adapted by Pradyumna Jayaram from public funder guidance (NIH, NSF, ERC) and reviewer-training resources (AAAS, ESF).
+## Hard rules
+
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
 
 ## When to use
 
@@ -405,3 +404,11 @@ A good written critique is itself a small scientific document. Before submitting
 ## Changelog
 
 - 1.0.0 (2026-06-10): Initial adaptation by Pradyumna Jayaram. Heavy rewrite of upstream grant-review skill: added funder-specific criterion tables (NIH, NSF, ERC), section-by-section rubric, three written-critique skeletons, budget/feasibility/environment checks, late-discovered conflict disclosure notes, and explicit "do not paste proposal text into third-party LLMs" guardrail.
+
+## Cross-references
+
+Other skills in this category:
+
+- manuscript-review
+- reviewer-response
+- scholar-evaluation

@@ -4,27 +4,22 @@ name: pysam-genomics
 description: "Programmatically read, modify, filter, and write BAM/CRAM/VCF files using pysam 0.22+ — the Python interface to htslib for NGS I/O, variant calling, and custom pipelines."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: bioinformatics-sequence
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - bioinformatics-sequence
-  - research
-difficulty: intermediate
+  category: bioinformatics-sequence
+  oversight: low
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [bioinformatics-sequence, research]
+  difficulty: intermediate
 -->
 
 # pysam — BAM/CRAM Python Interface
 
-> `pysam` is the Pythonic interface to htslib: read BAM/CRAM/VCF/TBF, iterate
-> alignments, call variants, and build custom pipelines. The 2026
-> reality: pysam 0.22+ pairs with htslib 1.19+ and is the low-level I/O engine
-> behind GATK, freebayes, and most variant callers. If you need to
-> programmatically iterate through NGS files, this is the canonical way.
+## Hard rules
+
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
 
 ## When to use
 
@@ -249,3 +244,30 @@ for read in rg_bam:
 ## Changelog
 
 - 1.0.0 (2026-06-10): Initial adaptation by Pradyumna Jayaram from `pysam-genomic-files` (SciAgent-Skills).
+
+## Cross-references
+
+Other skills in this category:
+
+- batch-processing
+- bowtie2-alignment
+- bwa-alignment
+- bwa-mem2-alignment
+- codon-usage
+- compressed-sequence-files
+- fastq-quality-scores
+- filter-sequences
+- format-conversion
+- hisat2-alignment
+- motif-search
+- paired-end-fastq
+- read-write-sequences
+- reverse-complement
+- sam-bam-basics
+- samtools-bam-processing
+- seq-objects
+- sequence-properties
+- sequence-slicing
+- sequence-statistics
+- star-alignment
+- transcription-translation

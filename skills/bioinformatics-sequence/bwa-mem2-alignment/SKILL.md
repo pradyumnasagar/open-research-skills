@@ -4,27 +4,22 @@ name: bwa-mem2-alignment
 description: "Use BWA-MEM2 — the SIMD-accelerated BWA-MEM replacement — for 2-3x speedup on human genome alignment with identical results to BWA-MEM."
 license: MIT
 ---
-
-
-
-
 <!-- metadata:
-category: bioinformatics-sequence
-version: 1.0.0
-author: Pradyumna Jayaram
-tags:
-  - bioinformatics-sequence
-  - research
-difficulty: intermediate
+  category: bioinformatics-sequence
+  oversight: low
+  version: 1.0.0
+  author: Pradyumna Jayaram
+  tags: [bioinformatics-sequence, research]
+  difficulty: intermediate
 -->
 
 # BWA-MEM2 — Faster BWA-MEM
 
-> BWA-MEM2 is a drop-in replacement for BWA-MEM that uses SIMD
-> vectorization and multi-threading for 2-3x speedup. The alignment
-> results are essentially identical to BWA-MEM (some tie-breaking edge
-> cases differ). If you're running BWA-MEM in 2026 without considering
-> BWA-MEM2, you're leaving 50% of your CPU budget on the table.
+## Hard rules
+
+1. **No fabricated citations.** Every cited work must resolve to a verifiable
+2. **No claim without provenance.** Every quantitative or factual claim
+3. **No silent failure.** Every script invocation, API call, or tool use must declare its exit status and what to do on non-zero. A skill that silently swallows errors is a violation.
 
 ## When to use
 
@@ -156,3 +151,30 @@ done
 ## Changelog
 
 - 1.0.0 (2026-06-10): Initial adaptation by Pradyumna Jayaram from SciAgent `bwa-mem2-dna-aligner` skill; brought in line with BWA-MEM2 2.2.1.
+
+## Cross-references
+
+Other skills in this category:
+
+- batch-processing
+- bowtie2-alignment
+- bwa-alignment
+- codon-usage
+- compressed-sequence-files
+- fastq-quality-scores
+- filter-sequences
+- format-conversion
+- hisat2-alignment
+- motif-search
+- paired-end-fastq
+- pysam-genomics
+- read-write-sequences
+- reverse-complement
+- sam-bam-basics
+- samtools-bam-processing
+- seq-objects
+- sequence-properties
+- sequence-slicing
+- sequence-statistics
+- star-alignment
+- transcription-translation
