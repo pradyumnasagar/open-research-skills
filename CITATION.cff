@@ -1,0 +1,43 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "open-research-skills"
+version: 0.4.0
+date-released: 2026-06-17
+url: "https://github.com/pradyumnasagar/open-research-skills"
+repository-code: "https://github.com/pradyumnasagar/open-research-skills"
+license: MIT
+authors:
+  - family-names: Jayaram
+    given-names: Pradyumna
+    email: pradyumna.j.ram@gmail.com
+    affiliation: "Independent researcher"
+type: software
+keywords:
+  - research
+  - academic
+  - ai-agents
+  - skill-library
+  - agent-skills
+  - systematic-review
+  - bioinformatics
+  - chemoinformatics
+  - scientific-writing
+  - reproducible-research
+  - material-passport
+  - grant-writing
+abstract: >-
+  A curated collection of 118 domain skills plus 5 cross-cutting meta skills
+  for AI agents working alongside researchers, academics, graduate students,
+  postdocs, and R&D engineers. Covers the full research lifecycle: literature
+  search, experimental design, bioinformatics analysis, scientific writing,
+  grant writing, peer review, publication, ethics, and mentorship. v0.4.0
+  introduces a hardened schema with required Hard Rules, Cross-references,
+  and Changelog sections; a Material Passport schema for inter-skill
+  handoffs; five end-to-end reference pipelines; a runnable RNA-seq
+  showcase; and five meta skills (roadmap-author, integrity-audit,
+  release-management, cross-reference-mapper, agent-handoff) for authoring,
+  auditing, releasing, mapping, and chaining ORS skills.
+references:
+  - type: software
+    title: "Anthropic Agent Skills specification"
+    url: "https://agentskills.io/specification"
