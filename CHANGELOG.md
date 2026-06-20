@@ -1,5 +1,20 @@
 # Changelog — open-research-skills
 
+## [0.4.0] — 2026-06-17
+
+**Cite as:** Jayaram, Pradyumna. (2026). *open-research-skills* (v0.4.0) [Software].
+Zenodo. https://doi.org/10.5281/zenodo.20769989
+(Concept DOI: https://doi.org/10.5281/zenodo.20769990)
+
+### Added
+
+- Hardened `spec/skill-format.md` (Hard Rules, Cross-references, Changelog sections now required).
+- Five end-to-end reference pipelines in `meta/` (e.g. `meta/rnaseq-pipeline/`).
+- Five cross-cutting meta skills: `roadmap-author`, `integrity-audit`, `release-management`, `cross-reference-mapper`, `agent-handoff`.
+- **Material Passport** schema in `spec/material-passport.md` for inter-skill handoffs.
+- Runnable RNA-seq showcase (see `meta/rnaseq-pipeline/`).
+- `CITATION.cff` for automated DOI minting via the Zenodo–GitHub integration.
+
 ## [0.3.0] — 2026-06-11
 
 ### Restructure to match Anthropic skills pattern

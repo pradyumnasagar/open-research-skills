@@ -5,7 +5,15 @@ version: 0.4.0
 date-released: 2026-06-17
 url: "https://github.com/pradyumnasagar/open-research-skills"
 repository-code: "https://github.com/pradyumnasagar/open-research-skills"
+repository: "https://github.com/pradyumnasagar/open-research-skills"
 license: MIT
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.20769989"
+    description: "Version-specific DOI for v0.4.0 (this release)"
+  - type: doi
+    value: "10.5281/zenodo.20769990"
+    description: "Concept DOI for the open-research-skills project (resolves to latest version)"
 authors:
   - family-names: Jayaram
     given-names: Pradyumna
