@@ -188,7 +188,7 @@ ORS v0.4.0 adds a `<!-- metadata: ... -->` block in the body and requires
 
 ORS was authored by Pradyumna Jayaram in June 2026, adapting patterns from 5 upstream sources. **No prose was copied verbatim.** Every `SKILL.md` carries a `sources` field in its metadata block listing what was consulted. See `THIRD_PARTY_NOTICES.md` for the full attribution.
 
-## Upcoming (v0.5.0 and beyond)
+## Upcoming (v0.6.0 and beyond)
 
 Additional categories to be built:
 
