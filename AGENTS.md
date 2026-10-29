@@ -15,7 +15,7 @@ literature search → experimental design → analysis → writing → publicati
 
 ## Current status (v0.3.0)
 
-**18 categories, 118 skills** — see `INDEX.md` for the per-skill table.
+**19 categories, 123 skills** — see `INDEX.md` for the per-skill table.
 
 ## Layout
 
@@ -63,7 +63,7 @@ open-research-skills/
 │   ├── validate.yml
 │   └── release.yml
 │
-└── skills/                      # all 118 skills, organized in 18 categories
+└── skills/                      # all 123 skills, organized in 19 categories
     ├── AGENTS.md                # skill-authoring guide
     ├── bioinformatics-sequence/ # 23 skills
     ├── chemoinformatics/        # 19 skills

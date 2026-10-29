@@ -5,8 +5,8 @@
     "email": "pradyumna.j.ram@gmail.com"
   },
   "metadata": {
-    "description": "A curated collection of research-domain skills for AI agents — 118 domain skills across 18 categories plus 5 meta skills for authoring, integrity audit, release management, cross-reference mapping, and agent handoff",
-    "version": "0.4.0"
+    "description": "A curated collection of research-domain skills for AI agents — 123 domain skills across 19 categories plus 5 meta skills for authoring, integrity audit, release management, cross-reference mapping, and agent handoff",
+    "version": "0.5.0"
   },
   "plugins": [
     {
@@ -16,6 +16,7 @@
       "strict": false,
       "skills": [
         "./skills/research-grants",
+        "./skills/thesis-writing",
         "./skills/scientific-writing",
         "./skills/scientific-thinking",
         "./skills/scientific-communication",

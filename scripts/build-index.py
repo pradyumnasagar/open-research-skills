@@ -77,7 +77,7 @@ def main():
     descriptions = {
         'bioinformatics-sequence': 'FASTA/FASTQ/BAM/VCF, alignment, QC, Biopython',
         'chemoinformatics': 'RDKit, ADMET, virtual screening, retrosynthesis, generative design',
-        'research-grants': 'NIH R01/K, NSF, ERC, fellowships, foundations, DARPA',
+        'research-grants': 'NIH R01/K, NSF, ERC, fellowships, foundations, DARPA, India, proposal craft',
         'lab-automation': 'Opentrons/PyLabRobot, ELNs (eLabFTW/Chemotion/openBIS)',
         'career-navigation': 'Academic CV, tenure, industry transition, interview prep',
         'scientific-communication': 'Talks, posters, podcasts, press releases, elevator pitch',
@@ -93,6 +93,7 @@ def main():
         'peer-review': 'Manuscript review, grant review, scholar evaluation, reviewer response',
         'humanizer-skills': 'Scientific voice, AI disclosure, text humanizing, AI detection awareness',
         'data-engineering': 'Snakemake pipeline management',
+        'thesis-writing': 'Monograph / article-based structure, methods & reproducibility, viva defense',
     }
 
     for category, skills in sorted_cats:

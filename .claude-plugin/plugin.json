@@ -1,7 +1,7 @@
 {
   "name": "open-research-skills",
-  "version": "0.4.0",
-  "description": "A curated collection of research-domain skills for AI agents — 118 domain skills across 18 categories plus 5 meta skills for authoring, integrity audit, release management, cross-reference mapping, and agent handoff",
+  "version": "0.5.0",
+  "description": "A curated collection of research-domain skills for AI agents — 123 domain skills across 19 categories plus 5 meta skills for authoring, integrity audit, release management, cross-reference mapping, and agent handoff",
   "author": {
     "name": "Pradyumna Jayaram",
     "email": "pradyumna.j.ram@gmail.com"
@@ -116,6 +116,8 @@
     "./skills/research-grants/erc",
     "./skills/research-grants/fellowships",
     "./skills/research-grants/foundation-grants",
+    "./skills/research-grants/grant-proposal-craft",
+    "./skills/research-grants/indian-grant-ecosystem",
     "./skills/research-grants/nih-k-series",
     "./skills/research-grants/nih-r01",
     "./skills/research-grants/nsf-standard",
@@ -140,6 +142,9 @@
     "./skills/scientific-writing/manuscript-structure",
     "./skills/scientific-writing/rebuttal-letter",
     "./skills/scientific-writing/response-to-reviewers",
+    "./skills/thesis-writing/thesis-defense-viva",
+    "./skills/thesis-writing/thesis-methods-reproducibility",
+    "./skills/thesis-writing/thesis-structure",
     "./meta/agent-handoff",
     "./meta/cross-reference-mapper",
     "./meta/integrity-audit",

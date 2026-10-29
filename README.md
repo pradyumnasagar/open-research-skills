@@ -10,15 +10,15 @@
 literature search → experimental design → analysis → writing → publication → grant writing → mentorship → ethics
 ```
 
-## Current status (v0.4.0)
+## Current status (v0.5.0)
 
-**18 categories, 118 skills + 5 meta skills** — see `INDEX.md` for the per-skill table.
+**19 categories, 123 skills + 5 meta skills** — see `INDEX.md` for the per-skill table.
 
 | Category | Skills | Description |
 |---|---|---|
 | `bioinformatics-sequence` | 23 | FASTA/FASTQ/BAM/VCF, alignment, QC, Biopython |
 | `chemoinformatics` | 19 | RDKit, ADMET, virtual screening, retrosynthesis, generative design |
-| `research-grants` | 9 | NIH R01/K, NSF, ERC, fellowships, foundations, DARPA |
+| `research-grants` | 11 | NIH R01/K, NSF, ERC, fellowships, foundations, DARPA, India, proposal craft |
 | `lab-automation` | 6 | Opentrons/PyLabRobot, ELNs (eLabFTW/Chemotion/openBIS) |
 | `career-navigation` | 6 | Academic CV, tenure, industry transition, interview prep |
 | `scientific-communication` | 5 | Talks, posters, podcasts, press releases, elevator pitch |
@@ -33,6 +33,7 @@ literature search → experimental design → analysis → writing → publicati
 | `ethics-compliance` | 4 | IRB protocols, data privacy, AI disclosure, image integrity |
 | `peer-review` | 4 | Manuscript review, grant review, scholar evaluation, reviewer response |
 | `humanizer-skills` | 4 | Scientific voice, AI disclosure, text humanizing, AI detection awareness |
+| `thesis-writing` | 3 | Monograph / article-based structure, methods & reproducibility, viva defense |
 | `data-engineering` | 1 | Snakemake pipeline management |
 
 ### Meta skills (5)
@@ -101,7 +102,7 @@ open-research-skills/
 ├── spec/                    # ORS specification
 │   ├── README.md
 │   ├── skill-format.md      # frontmatter spec
-│   ├── category-taxonomy.md # 18 categories
+│   ├── category-taxonomy.md # 19 categories
 │   ├── material-passport.md # Material Passport spec (v1.0.0)
 │   └── material-passport.schema.json  # JSON Schema (Draft 2020-12)
 │
@@ -130,7 +131,7 @@ open-research-skills/
 ├── tests/                   # test suite
 │   └── ...
 │
-├── skills/                  # all 118 skills, organized in 18 categories
+├── skills/                  # all 123 skills, organized in 19 categories
 │   ├── AGENTS.md            # skill-authoring guide
 │   ├── bioinformatics-sequence/  (23 skills)
 │   ├── chemoinformatics/         (19 skills)
@@ -155,7 +156,7 @@ license: MIT        # optional
 ---
 
 <!-- metadata:
-  category: <one of 18 leaf categories>
+  category: <one of 19 leaf categories>
   oversight: very-high | high | medium | low
   version: <semver>
   author: <name>
@@ -198,11 +199,11 @@ Additional categories to be built:
 - `phylogenetics` (IQ-TREE, BEAST, pangenomes)
 - `clinical-translation` (clinical trials, IND/NDA, regulatory pathways)
 
-For the current v0.4.0 release, see [What's new in v0.4.0](#whats-new-in-v040) below.
+For the current v0.5.0 release, see [What's new in v0.5.0](#whats-new-in-v050) below; the v0.4.0 notes remain in [What's new in v0.4.0](#whats-new-in-v040).
 
 ## License
 
-MIT. All 118 skills are original work by Pradyumna Jayaram. See `LICENSE` and `THIRD_PARTY_NOTICES.md`.
+MIT. All 123 skills are original work by Pradyumna Jayaram. See `LICENSE` and `THIRD_PARTY_NOTICES.md`.
 
 ## Contributing
 
@@ -220,6 +221,31 @@ See `AGENTS.md` and `skills/AGENTS.md`. The short version:
 **v0.2.0** (2026-06-10) — Gap-build with 60 additional skills across 12 new categories.
 **v0.3.0** (2026-06-11) — Restructure to match Anthropic skills pattern. Skills moved into `skills/`, frontmatter simplified, `.claude-plugin/marketplace.json` added for plugin install, `spec/`, `template/`, `examples/`, `scripts/`, `tests/`, `.github/workflows/` added.
 **v0.4.0** (2026-06-17) — Spec hardening + meta skills. v0.4.0 schema with `## Hard rules`, `## When NOT to use`, `## Cross-references`, `## Changelog` sections; canonical `<!-- metadata: ... -->` block with `oversight`, `version`, `author`, `tags`, `difficulty`; 5 meta skills (`roadmap-author`, `integrity-audit`, `release-management`, `cross-reference-mapper`, `agent-handoff`); Material Passport schema (`spec/material-passport.md` + `spec/material-passport.schema.json`) with example and `scripts/validate-passport.py`; pipeline reference (`docs/pipelines.md`); runnable showcase (`examples/showcase-rnaseq-mini.md` + `examples/Makefile`); validator (`scripts/validate-skills.py`) enforces the new schema across all 118 + 5 skills.
+**v0.5.0** (2026-06-18) — New `thesis-writing` category (3 skills: monograph / article-based structure, methods & reproducibility, viva defense) and 2 new `research-grants` skills (`indian-grant-ecosystem`, `grant-proposal-craft`). 123 content skills across 19 categories.
+
+## What's new in v0.5.0
+
+- **New `thesis-writing` category** — 3 skills for doctoral theses in
+  bioinformatics and the life sciences:
+  - `thesis-structure` — monograph vs article-based, IMRaD chapter spine,
+    front/back matter, and a structure workflow.
+  - `thesis-methods-reproducibility` — versioned code, FAIR data, figure
+    manifests, and self-describing panels for bioinformatics pipelines.
+  - `thesis-defense-viva` — viva question-set building, presentation script,
+    and "when stuck" recovery moves.
+- **Indian grant ecosystem** — `research-grants/indian-grant-ecosystem`
+  maps the national funding landscape (VGST, NRF, PMRG, OIM, ISTIP,
+  IndiaBioscience, ICMR, BIRAC) with scheme-selection workflow and budget
+  discipline. Indicative figures throughout; every number is labeled as
+  directional, and agency sites are the source of truth.
+- **Grant proposal craft** — `research-grants/grant-proposal-craft` codifies
+  the four scoring dimensions (novelty, usefulness, methodology, who) plus
+  section-by-section writing guidance, SMART objectives, pitfall planning,
+  and Gantt / budget discipline.
+- **Package bump to 0.5.0** — validator now accepts the new
+  `category: thesis-writing`; INDEX regenerated (123 skills / 19 categories);
+  plugin registration updated (`.claude-plugin/marketplace.json`,
+  `plugin.json`).
 
 ## What's new in v0.4.0
 

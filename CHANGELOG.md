@@ -1,5 +1,33 @@
 # Changelog — open-research-skills
 
+## [0.5.0] — 2026-06-18
+
+**Cite as:** Jayaram, Pradyumna. (2026). *open-research-skills* (v0.5.0) [Software].
+Zenodo. DOI to be minted on tag.
+
+### Added
+
+- New `thesis-writing` category (3 skills) for doctoral theses in
+  bioinformatics and the life sciences:
+  - `thesis-structure` — monograph vs article-based, IMRaD chapter spine,
+    front/back matter, structure workflow.
+  - `thesis-methods-reproducibility` — versioned code (lockfiles, seeds),
+    FAIR data, figure manifests, self-describing panels.
+  - `thesis-defense-viva` — viva question-set building, presentation script,
+    "when stuck" recovery moves.
+- Two new `research-grants` skills:
+  - `indian-grant-ecosystem` — national funding landscape (VGST, NRF, PMRG,
+    OIM, ISTIP, IndiaBioscience, ICMR, BIRAC) with scheme-selection workflow
+    and budget discipline. All figures indicative; agency sites are the
+    source of truth.
+  - `grant-proposal-craft` — four scoring dimensions (novelty, usefulness,
+    methodology, who), section-by-section writing guidance, SMART objectives,
+    pitfall planning, Gantt and budget discipline.
+- **Package bump to 0.5.0.** Validator now accepts
+  `category: thesis-writing`; `INDEX.md` regenerated (123 skills / 19
+  categories); `.claude-plugin/marketplace.json` and
+  `.claude-plugin/plugin.json` updated.
+
 ## [0.4.0] — 2026-06-17
 
 **Cite as:** Jayaram, Pradyumna. (2026). *open-research-skills* (v0.4.0) [Software].
